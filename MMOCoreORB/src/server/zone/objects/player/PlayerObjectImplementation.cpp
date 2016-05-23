@@ -1796,10 +1796,10 @@ void PlayerObjectImplementation::activateForcePowerRegen() {
 		if (regenDivisor != 0)
 			regen /= regenDivisor;
 
-		float timer = regen / 51f;
+		float timer = regen / 1.f;
 
 		float scheduledTime = 1 / timer;
-		uint64 miliTime = static_cast<uint64>(scheduledTime * 1000.f);
+		uint64 miliTime = static_cast<uint64>(scheduledTime * 500.f);
 		forceRegenerationEvent->schedule(miliTime);
 	}
 }
