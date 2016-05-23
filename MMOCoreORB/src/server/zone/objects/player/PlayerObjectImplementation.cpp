@@ -2378,10 +2378,10 @@ int PlayerObjectImplementation::getOwnedChatRoomCount() {
 }
 
 void PlayerObjectImplementation::setJediState(int state, bool notifyClient) {
-	if (jediState == state)
-		return;
+	/*if (jediState == state)
+		return;*/
 
-	jediState = state;
+	jediState = 2;
 
 	if (!notifyClient)
 		return;
@@ -2394,7 +2394,7 @@ void PlayerObjectImplementation::setJediState(int state, bool notifyClient) {
 }
 
 int PlayerObjectImplementation::getSpentJediSkillPoints() {
-	if (jediState < 2)
+	if (jediState >= 0)
 		return 0;
 
 	ManagedReference<CreatureObject*> player = cast<CreatureObject*>( getParentRecursively(SceneObjectType::PLAYERCREATURE).get().get());
