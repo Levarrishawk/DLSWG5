@@ -830,3 +830,5 @@ RunSlashCommandsFile("waypoint.lua")
 RunSlashCommandsFile("unstick.lua")
 RunSlashCommandsFile("launchIntoSpace.lua")
 RunSlashCommandsFile("createVendor.lua")
+-- New DLSWG Commands
+RunSlashCommandFIle("vaapaadStrike.lua")

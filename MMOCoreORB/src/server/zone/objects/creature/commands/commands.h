@@ -837,7 +837,8 @@
 #include "InspacereloadCommand.h"
 #include "InspacerrCommand.h"
 #include "RequestSpaceTrainerCommand.h"
-
+// DLSWG New commands
+#include "VaapaadStrikeCommand.h"
 
 
 
