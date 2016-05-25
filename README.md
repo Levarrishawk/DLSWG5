@@ -8,7 +8,7 @@ Primary Professions:
 - combat_jedi
 - combat_soldier
 - combat_shocktrooper
-- combat_commando_new
+- combat_mando  
 - combat_assassin
 - combat_medic
 - combat_officer
