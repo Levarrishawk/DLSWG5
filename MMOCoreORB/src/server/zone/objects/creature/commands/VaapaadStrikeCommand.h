@@ -31,7 +31,7 @@ public:
 		return doCombatAction(creature, target, "");
 	}
 
-	String getAnimation(TangibleObject* attacker, TangibleObject* defender, WeaponObject* weapon, uint8 hitLocation, int damage) const {
+	/*String getAnimation(TangibleObject* attacker, TangibleObject* defender, WeaponObject* weapon, uint8 hitLocation, int damage) const {
 
 		String anim = "";
 		if (weapon->isJediOneHandedWeapon()) {
@@ -44,7 +44,7 @@ public:
 			warning("Invalid weapon in saberSlash getAnimation");
 			return "";
 		}
-	}
+	}*/
 
 };
 
