@@ -31,7 +31,7 @@ public:
 		return doCombatAction(creature, target, "");
 	}
 
-	/*String getAnimation(TangibleObject* attacker, TangibleObject* defender, WeaponObject* weapon, uint8 hitLocation, int damage) const {
+	String getAnimation(TangibleObject* attacker, TangibleObject* defender, WeaponObject* weapon, uint8 hitLocation, int damage) const {
 
 		String anim = "";
 		if (weapon->isJediOneHandedWeapon()) {
@@ -41,10 +41,10 @@ public:
 		} else if (weapon->isJediPolearmWeapon()) {
 			return "knockdown_polearm_1";
 		} else {
-			warning("Invalid weapon in saberSlash getAnimation");
+			warning("Invalid weapon in vaapaadStrike getAnimation");
 			return "";
 		}
-	}*/
+	}
 
 };
 
