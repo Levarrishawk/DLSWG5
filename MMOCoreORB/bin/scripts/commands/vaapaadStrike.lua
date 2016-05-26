@@ -84,7 +84,7 @@ VaapaadStrikeCommand = {
  -- animation = "combo_jedi_1", 
   animType = GENERATE_INTENSITY,
 
-	combatSpam = "saberslash2",
+	combatSpam = "vaapaadstrike",
 
 	poolsToDamage = HEALTH_ATTRIBUTE,
 
