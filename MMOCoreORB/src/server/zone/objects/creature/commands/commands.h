@@ -839,6 +839,7 @@
 #include "RequestSpaceTrainerCommand.h"
 // DLSWG New commands
 #include "VaapaadStrikeCommand.h"
+#include "JungMaStrikeCommand.h"
 
 
 
