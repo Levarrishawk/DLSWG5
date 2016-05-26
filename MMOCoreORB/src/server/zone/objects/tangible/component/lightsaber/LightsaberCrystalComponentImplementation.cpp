@@ -82,9 +82,9 @@ void LightsaberCrystalComponentImplementation::fillAttributeList(AttributeListMe
 			alm->insertAttribute("maxdamage", maximumDamage);
 			alm->insertAttribute("wpn_attack_speed", attackSpeed);
 			alm->insertAttribute("wpn_wound_chance", woundChance);
-			alm->insertAttribute("wpn_attack_cost_health", sacHealth);
+	//		alm->insertAttribute("wpn_attack_cost_health", sacHealth);
 			alm->insertAttribute("wpn_attack_cost_action", sacAction);
-			alm->insertAttribute("wpn_attack_cost_mind", sacMind);
+	//		alm->insertAttribute("wpn_attack_cost_mind", sacMind);
 			alm->insertAttribute("forcecost", (int)getForceCost());
 		} else {
 			StringBuffer str;
@@ -95,7 +95,7 @@ void LightsaberCrystalComponentImplementation::fillAttributeList(AttributeListMe
 }
 
 void LightsaberCrystalComponentImplementation::fillObjectMenuResponse(ObjectMenuResponse* menuResponse, CreatureObject* player) {
-	if (ownerID == 0 && player->hasSkill("force_title_jedi_rank_01") && hasPlayerAsParent(player)) {
+	if (ownerID == 0 && player->hasSkill("combat_jedi_novice") && hasPlayerAsParent(player)) {
 		String text = "@jedi_spam:tune_crystal";
 		menuResponse->addRadialMenuItem(128, 3, text);
 	}
@@ -104,7 +104,7 @@ void LightsaberCrystalComponentImplementation::fillObjectMenuResponse(ObjectMenu
 }
 
 int LightsaberCrystalComponentImplementation::handleObjectMenuSelect(CreatureObject* player, byte selectedID) {
-	if (selectedID == 128 && player->hasSkill("force_title_jedi_rank_01") && hasPlayerAsParent(player)) {
+	if (selectedID == 128 && player->hasSkill("combat_jedi_novice") && hasPlayerAsParent(player)) {
 		if(ownerID == 0) {
 			ManagedReference<SuiMessageBox*> suiMessageBox = new SuiMessageBox(player, SuiWindowType::TUNE_CRYSTAL);
 
@@ -148,7 +148,7 @@ bool LightsaberCrystalComponentImplementation::hasPlayerAsParent(CreatureObject*
 }
 
 void LightsaberCrystalComponentImplementation::tuneCrystal(CreatureObject* player) {
-	if(!player->hasSkill("force_title_jedi_rank_01") || !hasPlayerAsParent(player)) {
+	if(!player->hasSkill("combat_jedi_novice") || !hasPlayerAsParent(player)) {
 		return;
 	}
 
