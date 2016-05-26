@@ -373,14 +373,14 @@ bool SkillManager::surrenderSkill(const String& skillName, CreatureObject* creat
 
 	SkillList* skillList = creature->getSkillList();
 
-	if(skillName == "force_title_jedi_novice" && getForceSensitiveSkillCount(creature, true) > 0) {
+	/*if(skillName == "force_title_jedi_novice" && getForceSensitiveSkillCount(creature, true) > 0) {
 		return false;
 	}
 
 	if(skillName.beginsWith("force_sensitive_") &&
 		getForceSensitiveSkillCount(creature, false) <= 24 &&
 		creature->hasSkill("force_title_jedi_rank_01"))
-		return false;
+		return false;*/
 
 	for (int i = 0; i < skillList->size(); ++i) {
 		Skill* checkSkill = skillList->get(i);
@@ -388,10 +388,10 @@ bool SkillManager::surrenderSkill(const String& skillName, CreatureObject* creat
 		if (checkSkill->isRequiredSkillOf(skill))
 			return false;
 	}
-
+/*
 	if(creature->hasSkill("force_title_jedi_rank_03") && skillName.contains("force_discipline_") && !knightPrereqsMet(creature, skillName)) {
 		return false;
-	}
+	}*/
 
 	//If they have already surrendered the skill, then return true.
 	if (!creature->hasSkill(skill->getSkillName()))
@@ -687,7 +687,7 @@ bool SkillManager::fullfillsSkillPrerequisites(const String& skillName, Creature
 		}
 	}
 
-	PlayerObject* ghost = creature->getPlayerObject();
+	/*PlayerObject* ghost = creature->getPlayerObject();
 	if(ghost == NULL || ghost->getJediState() < skill->getJediStateRequired()) {
 		return false;
 	}
@@ -711,11 +711,11 @@ bool SkillManager::fullfillsSkillPrerequisites(const String& skillName, Creature
 
 	if(skillName == "force_title_jedi_rank_03" && !knightPrereqsMet(creature, "")) {
 		return false;
-	}
+	}*/
 
 	return true;
 }
-
+/*
 int SkillManager::getForceSensitiveSkillCount(CreatureObject* creature, bool includeNoviceMasterBoxes) {
 	SkillList* skills =  creature->getSkillList();
 	int forceSensitiveSkillCount = 0;
@@ -762,3 +762,4 @@ bool SkillManager::knightPrereqsMet(CreatureObject* creature, const String& skil
 
 	return fullTrees >= 2 && totalJediPoints >= 206;
 }
+*/
