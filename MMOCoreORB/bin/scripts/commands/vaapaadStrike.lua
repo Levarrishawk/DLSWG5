@@ -67,31 +67,6 @@ VaapaadStrikeCommand = {
 		16.66
 	  ),
 
-	  	DotEffect(
-		BLEEDING,
-		{ "resistance_bleeding", "bleed_resist" },
-		ACTION,
-		true,
-		0,
-		100,
-		75,
-		60,
-		16.66,
-		16.66
-	  ),
-
-	  	DotEffect(
-		BLEEDING,
-		{ "resistance_bleeding", "bleed_resist" },
-		MIND,
-		true,
-		0,
-		100,
-		75,
-		60,
-		16.66,
-		16.66
-	  ),
 	},
 
 	stateEffects = {
