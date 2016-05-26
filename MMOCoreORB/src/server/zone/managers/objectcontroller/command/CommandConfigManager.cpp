@@ -1623,4 +1623,5 @@ void CommandConfigManager::registerCommands() {
 	//New DLSWG Combat Commands
 	commandFactory.registerCommand<VaapaadStrikeCommand>(String("vaapaadStrike").toLowerCase());
 	commandFactory.registerCommand<JungMaStrikeCommand>(String("jungMaStrike").toLowerCase());
+	commandFactory.registerCommand<ForceRunCommand>(String("forceRun").toLowerCase());
 }

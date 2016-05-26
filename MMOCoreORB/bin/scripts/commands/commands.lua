@@ -833,3 +833,4 @@ RunSlashCommandsFile("createVendor.lua")
 -- New DLSWG Commands
 RunSlashCommandFile("vaapaadStrike.lua")
 RunSlashCommandFile("JungMaStrike.lua")
+RunSlashCommandFile("forceRun.lua")

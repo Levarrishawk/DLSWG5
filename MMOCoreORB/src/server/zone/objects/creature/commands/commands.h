@@ -840,7 +840,7 @@
 // DLSWG New commands
 #include "VaapaadStrikeCommand.h"
 #include "JungMaStrikeCommand.h"
-
+#include "ForceRunCommand.h"
 
 
 #endif /* COMMANDSNEW_H_ */
