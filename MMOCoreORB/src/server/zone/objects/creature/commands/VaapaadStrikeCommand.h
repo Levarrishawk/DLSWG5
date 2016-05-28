@@ -42,7 +42,7 @@ public:
 			return "knockdown_polearm_1";
 		} else {
 			warning("Invalid weapon in vaapaadStrike getAnimation");
-			return INVALIDWEAPON;
+			return "";
 		}
 	}
 
