@@ -838,9 +838,9 @@
 #include "InspacerrCommand.h"
 #include "RequestSpaceTrainerCommand.h"
 // DLSWG New commands
-#include "VaapaadStrikeCommand.h"
+/*#include "VaapaadStrikeCommand.h"
 #include "JungMaStrikeCommand.h"
-#include "ForceRunCommand.h"
+#include "ForceRunCommand.h" */
 
 
 #endif /* COMMANDSNEW_H_ */

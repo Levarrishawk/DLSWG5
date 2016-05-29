@@ -1621,7 +1621,7 @@ void CommandConfigManager::registerCommands() {
 	commandFactory.registerCommand<PetGetPatrolPointCommand>(String("petGetPatrolPoint").toLowerCase());
 
 	//New DLSWG Combat Commands
-	commandFactory.registerCommand<VaapaadStrikeCommand>(String("vaapaadStrike").toLowerCase());
+	/*commandFactory.registerCommand<VaapaadStrikeCommand>(String("vaapaadStrike").toLowerCase());
 	commandFactory.registerCommand<JungMaStrikeCommand>(String("jungMaStrike").toLowerCase());
-	commandFactory.registerCommand<ForceRunCommand>(String("forceRun").toLowerCase());
+	commandFactory.registerCommand<ForceRunCommand>(String("forceRun").toLowerCase());*/
 }

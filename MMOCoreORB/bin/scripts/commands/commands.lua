@@ -831,6 +831,7 @@ RunSlashCommandsFile("unstick.lua")
 RunSlashCommandsFile("launchIntoSpace.lua")
 RunSlashCommandsFile("createVendor.lua")
 -- New DLSWG Commands
+--[[
 RunSlashCommandFile("vaapaadStrike.lua")
 RunSlashCommandFile("JungMaStrike.lua")
-RunSlashCommandFile("forceRun.lua")
+RunSlashCommandFile("forceRun.lua")--]]
