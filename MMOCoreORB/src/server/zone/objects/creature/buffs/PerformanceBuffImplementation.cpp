@@ -22,7 +22,7 @@ void PerformanceBuffImplementation::activate(bool applyModifiers) {
 	else if(type == PerformanceBuffType::MUSIC_FOCUS) {
 		int focusStrength = round(strength * (float)creature.get()->getBaseHAM(CreatureAttribute::FOCUS));
 		setAttributeModifier(CreatureAttribute::HEALTH, focusStrength);
-		creature.get()->sendSystemMessage("@healing:performance_enhance_dance_mind_d);
+		creature.get()->sendSystemMessage("@healing:performance_enhance_dance_mind_d");
 
 	}
 	else if(type == PerformanceBuffType::MUSIC_WILLPOWER) {
