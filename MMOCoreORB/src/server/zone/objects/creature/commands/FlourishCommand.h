@@ -80,7 +80,7 @@ public:
 
 		//calculating cooldown as defaultTime(5s) - 1s per 30 skill mod val
 		//gives a minimum time of 2s at master
-		float duration = 1.0;
+		float duration = defaultTime - (knowledgeSkillMod / 30.0f);
 		return duration;
 	}
 

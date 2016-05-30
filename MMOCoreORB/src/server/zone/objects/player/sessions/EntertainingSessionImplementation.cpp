@@ -531,7 +531,7 @@ bool EntertainingSessionImplementation::canHealBattleFatigue() {
 bool EntertainingSessionImplementation::canGiveEntertainBuff() {
 	ManagedReference<CreatureObject*> entertainer = this->entertainer.get();
 
-	if(entertainer->getSkillMod("private_buff_mind") > 0)
+	if(entertainer->getSkillMod("private_buff_mind") >= 0)
 		return true;
 	else
 		return false;
