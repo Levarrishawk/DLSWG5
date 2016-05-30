@@ -63,7 +63,7 @@ public:
 		else if (attribute == "action")
 			return ACTION;
 		else if (attribute == "mind")
-			return MIND;
+			return HEALTH;
 		else if (attribute == "strength")
 			return STRENGTH;
 		else if (attribute == "constitution")
@@ -96,7 +96,7 @@ public:
 			name = "action";
 			break;
 		case MIND:
-			name = "mind";
+			name = "health";
 			break;
 		case STRENGTH:
 			name = "strength";
