@@ -67,13 +67,12 @@ object_weapon_melee_special_vibroknuckler = object_weapon_melee_special_shared_v
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = MELEEATTACK,
-	weaponType = UNARMEDWEAPON,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = KINETIC,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
-	armorPiercing = LIGHT,
+	armorPiercing = NONE,
 
 	-- combat_rangedspecialize_bactarifle, combat_rangedspecialize_rifle, combat_rangedspecialize_pistol, combat_rangedspecialize_heavy, combat_rangedspecialize_carbine
 	-- combat_meleespecialize_unarmed, combat_meleespecialize_twohand, combat_meleespecialize_polearm, combat_meleespecialize_onehand, combat_general,
@@ -101,34 +100,34 @@ object_weapon_melee_special_vibroknuckler = object_weapon_melee_special_shared_v
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 15,
-	actionAttackCost = 25,
-	mindAttackCost = 15,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,
-	pointBlankAccuracy = 10,
+	pointBlankAccuracy = 0,
 
 	idealRange = 1,
-	idealAccuracy = 10,
+	idealAccuracy = 0,
 
 	maxRange = 3,
-	maxRangeAccuracy = 10,
+	maxRangeAccuracy = 0,
 
-	minDamage = 20,
-	maxDamage = 120,
+	minDamage = 190,
+	maxDamage = 210,
 
-	attackSpeed = 2.6,
+	attackSpeed = 3,
 
 	woundsRatio = 8,
 
 	numberExperimentalProperties = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalProperties = {"XX", "XX", "SR", "SR", "SR", "SR", "SR", "SR", "SR", "XX", "SR", "XX", "SR", "SR", "SR"},
+	experimentalProperties = {"XX", "XX", "SR", "SR", "SR", "SR", "SR", "SR", "SR", "XX", "SR", "XX", "XX", "XX", "XX"},
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
+	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "null", "null", "null"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 7, 60, 3.6, 14, 750, 5, 5, 1, 5, 5, 36, 54, 36},
-	experimentalMax = {0, 0, 13, 111, 2.5, 26, 1500, 15, 15, 1, 15, 5, 18, 30, 18},
+	experimentalMin = {0, 0, 37, 160, 1, 14, 750, 5, 5, 1, 5, 5, 0, 300, 0},
+	experimentalMax = {0, 0, 190, 211, 1, 26, 1500, 15, 15, 1, 15, 5, 0, 300, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }
