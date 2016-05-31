@@ -68,7 +68,7 @@ object_weapon_melee_knife_knife_survival = object_weapon_melee_knife_shared_knif
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = MELEEATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
 	damageType = KINETIC,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -96,13 +96,13 @@ object_weapon_melee_knife_knife_survival = object_weapon_melee_knife_shared_knif
 	speedModifiers = { "onehandmelee_speed" },
 
 	-- Leave blank for now
-	damageModifiers = { "frenzy" },
+	damageModifiers = { },
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 0,
-	actionAttackCost = 300,
-	mindAttackCost = 0,
+	healthAttackCost = 7,
+	actionAttackCost = 22,
+	mindAttackCost = 5,
 	forceCost = 0,
 
 	pointBlankAccuracy = 30,
@@ -115,19 +115,19 @@ object_weapon_melee_knife_knife_survival = object_weapon_melee_knife_shared_knif
 	maxRangeAccuracy = 30,
 
 	minDamage = 20,
-	maxDamage = 140,
+	maxDamage = 40,
 
-	attackSpeed = 1,
+	attackSpeed = 3.25,
 
 	woundsRatio = 8,
 
 	numberExperimentalProperties = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalProperties = {"XX", "XX", "SR", "SR", "SR", "SR", "SR", "SR", "SR", "XX", "SR", "XX", "XX", "XX", "XX"},
+	experimentalProperties = {"XX", "XX", "SR", "SR", "SR", "SR", "SR", "SR", "SR", "XX", "SR", "XX", "SR", "SR", "SR"},
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "null", "null", "null"},
+	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 14, 128, 1, 5, 750, 21, 21, 3, 21, 4, 0, 300, 0},
-	experimentalMax = {0, 0, 26, 152, 1, 11, 1500, 39, 39, 3, 39, 4, 0, 300, 0},
+	experimentalMin = {0, 0, 14, 28, 4.2, 5, 750, 21, 21, 3, 21, 4, 9, 29, 7},
+	experimentalMax = {0, 0, 26, 52, 2.9, 11, 1500, 39, 39, 3, 39, 4, 5, 15, 4},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

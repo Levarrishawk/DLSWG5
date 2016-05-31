@@ -68,7 +68,7 @@ object_weapon_ranged_carbine_carbine_cdef_corsec = object_weapon_ranged_carbine_
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = RANGEDATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
 	damageType = ENERGY,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -100,9 +100,9 @@ object_weapon_ranged_carbine_carbine_cdef_corsec = object_weapon_ranged_carbine_
 	
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 0,
-	actionAttackCost = 300,
-	mindAttackCost = 0,
+	healthAttackCost = 10,
+	actionAttackCost = 20,
+	mindAttackCost = 10,
 	forceCost = 0,
 
 	pointBlankAccuracy = 0,

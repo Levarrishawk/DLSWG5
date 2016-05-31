@@ -68,7 +68,7 @@ object_weapon_melee_axe_axe_heavy_duty = object_weapon_melee_axe_shared_axe_heav
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = MELEEATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
 	damageType = KINETIC,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -100,9 +100,9 @@ object_weapon_melee_axe_axe_heavy_duty = object_weapon_melee_axe_shared_axe_heav
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 0,
-	actionAttackCost = 300,
-	mindAttackCost = 0,
+	healthAttackCost = 35,
+	actionAttackCost = 25,
+	mindAttackCost = 10,
 	forceCost = 0,
 
 	pointBlankRange = 0,
@@ -117,17 +117,17 @@ object_weapon_melee_axe_axe_heavy_duty = object_weapon_melee_axe_shared_axe_heav
 	minDamage = 35,
 	maxDamage = 140,
 
-	attackSpeed = 1,
+	attackSpeed = 5,
 
 	woundsRatio = 15,
 
 	numberExperimentalProperties = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalProperties = {"XX", "XX", "SR", "SR", "SR", "SR", "SR", "SR", "SR", "XX", "SR", "XX", "XX", "XX", "XX"},
+	experimentalProperties = {"XX", "XX", "SR", "SR", "SR", "SR", "SR", "SR", "SR", "XX", "SR", "XX", "SR", "SR", "SR"},
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "null", "null", "null"},
+	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 25, 98, 1, 11, 750, -5, -5, 3, -5, 4, 0, 300, 0},
-	experimentalMax = {0, 0, 46, 182, 1, 20, 1500, 5, 5, 3, 5, 4, 0, 300, 0},
+	experimentalMin = {0, 0, 25, 98, 6.5, 11, 750, -5, -5, 3, -5, 4, 78, 40, 13},
+	experimentalMax = {0, 0, 46, 182, 4.5, 20, 1500, 5, 5, 3, 5, 4, 42, 22, 7},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

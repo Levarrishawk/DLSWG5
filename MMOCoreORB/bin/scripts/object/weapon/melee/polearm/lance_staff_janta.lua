@@ -68,7 +68,7 @@ object_weapon_melee_polearm_lance_staff_janta = object_weapon_melee_polearm_shar
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = MELEEATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
 	damageType = KINETIC,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -100,9 +100,9 @@ object_weapon_melee_polearm_lance_staff_janta = object_weapon_melee_polearm_shar
 	
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 0,
-	actionAttackCost = 300,
-	mindAttackCost = 0,
+	healthAttackCost = 16,
+	actionAttackCost = 46,
+	mindAttackCost = 15,
 	forceCost = 0,
 
 	pointBlankAccuracy = 0,
@@ -114,10 +114,10 @@ object_weapon_melee_polearm_lance_staff_janta = object_weapon_melee_polearm_shar
 	maxRange = 6,
 	maxRangeAccuracy = 5,
 
-	minDamage = 250,
-	maxDamage = 500,
+	minDamage = 25,
+	maxDamage = 56,
 
-	attackSpeed = 1,
+	attackSpeed = 5.8,
 
 	woundsRatio = 7,
 

@@ -67,8 +67,9 @@ object_weapon_melee_unarmed_unarmed_default_player = object_weapon_melee_unarmed
 	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = MELEEATTACK,
+	weaponType = UNARMEDWEAPON,
 	
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
 	damageType = KINETIC,
 	
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -102,9 +103,9 @@ object_weapon_melee_unarmed_unarmed_default_player = object_weapon_melee_unarmed
 	       
 	
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 0,
-	actionAttackCost = 0,
-        mindAttackCost = 0,
+	healthAttackCost = 10,
+	actionAttackCost = 10,
+        mindAttackCost = 10,
 	forceCost = 0,
 	
 	pointBlankAccuracy = 0,

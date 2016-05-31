@@ -43,7 +43,7 @@
 
 object_weapon_ranged_grenade_grenade_imperial_detonator = object_weapon_ranged_grenade_shared_grenade_imperial_detonator:new {
 
-	objectMenuComponent = {"cpp", "ThrowGrenadeMenuComponent"},
+	objectMenuComponent = "ThrowGrenadeMenuComponent",
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
 			"object/creature/player/bothan_female.iff",
@@ -70,7 +70,7 @@ object_weapon_ranged_grenade_grenade_imperial_detonator = object_weapon_ranged_g
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = GRENADEATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
 	damageType = BLAST,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -99,6 +99,7 @@ object_weapon_ranged_grenade_grenade_imperial_detonator = object_weapon_ranged_g
 	useCount = 5,
 
 	combatSpam = "throw_imperial_detonator",
+	animationType = "imperial_detonator",
 
 	healthAttackCost = 125,
 	actionAttackCost = 125,
@@ -121,12 +122,12 @@ object_weapon_ranged_grenade_grenade_imperial_detonator = object_weapon_ranged_g
 	woundsRatio = 10,
 
 	numberExperimentalProperties = {1, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2},
-	experimentalProperties = {"XX", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "XX", "OQ", "SR", "OQ", "XX", "XX", "XX"},
+	experimentalProperties = {"XX", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR"},
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "null", "expRange", "expRange", "expRange", "expRange", "null", "null", "null", "null"},
+	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "null", "expRange", "expRange", "expRange", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrangemod", "midrange", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 645, 1300, 6, 7, 1000, -16, -45, 0, 10, 64, 0, 150, 0},
-	experimentalMax = {0, 0, 989, 2000, 2.5, 13, 1000, 14, -15, 30, 30, 64, 0, 150, 0},
+	experimentalMin = {0, 0, 645, 1300, 6, 7, 1000, -16, -45, 0, 10, 64, 163, 163, 65},
+	experimentalMax = {0, 0, 989, 2000, 2.5, 13, 1000, 14, -15, 30, 30, 64, 88, 88, 35},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1},
 }

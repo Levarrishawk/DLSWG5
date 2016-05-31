@@ -44,8 +44,8 @@
 object_weapon_ranged_turret_turret_block_large = object_weapon_ranged_turret_shared_turret_block_large:new {
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = RANGEDATTACK,
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-	damageType = ENERGY,
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	damageType = BLAST,
 	-- NONE, LIGHT, MEDIUM, HEAVY
 	armorPiercing = HEAVY,
 	-- See http://www.ocdsoft.com/files/accuracy.xls
@@ -53,22 +53,22 @@ object_weapon_ranged_turret_turret_block_large = object_weapon_ranged_turret_sha
 	creatureAimModifiers = { "rifle_aim", "aim" },
 	-- See http://www.ocdsoft.com/files/defense.xls
 	defenderDefenseModifiers = { "ranged_defense" },
-	-- Leave as "dodge" for now, may have additions later
-	defenderSecondaryDefenseModifiers = { "block" },
+	-- Leave blank since research says turrets didn't have
+	defenderSecondaryDefenseModifiers = { },
 	-- See http://www.ocdsoft.com/files/speed.xls
 	speedModifiers = { "rifle_speed" },
 	-- Leave blank for now
 	damageModifiers = { },
-	
+
 	pointBlankRange = 0,
 	pointBlankAccuracy = 0,
 	idealRange = 40,
 	idealAccuracy = 70,
 	maxRange = 80,
 	maxRangeAccuracy = 0,
-	minDamage = 300,
-	maxDamage = 675,
-	attackSpeed = 5,
+	minDamage = 1000,
+	maxDamage = 2700,
+	attackSpeed = 1,
 	woundsRatio = 9,
 }
 

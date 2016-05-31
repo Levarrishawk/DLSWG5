@@ -68,11 +68,11 @@ object_weapon_melee_polearm_lance_vibrolance = object_weapon_melee_polearm_share
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = MELEEATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-	damageType = KINETIC,
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	damageType = ELECTRICITY,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
-	armorPiercing = MEDIUM,
+	armorPiercing = LIGHT,
 
 	-- combat_rangedspecialize_bactarifle, combat_rangedspecialize_rifle, combat_rangedspecialize_pistol, combat_rangedspecialize_heavy, combat_rangedspecialize_carbine
 	-- combat_meleespecialize_unarmed, combat_meleespecialize_twohand, combat_meleespecialize_polearm, combat_meleespecialize_onehand, combat_general,
@@ -80,7 +80,7 @@ object_weapon_melee_polearm_lance_vibrolance = object_weapon_melee_polearm_share
 	xpType = "combat_meleespecialize_polearm",
 
 	-- See http://www.ocdsoft.com/files/certifications.xls
-	certificationsRequired = { "cert_lance_vibro_axe" },
+	certificationsRequired = { "cert_lance_vibrolance" },
 	-- See http://www.ocdsoft.com/files/accuracy.xls
 	creatureAccuracyModifiers = { "polearm_accuracy" },
 
@@ -90,7 +90,7 @@ object_weapon_melee_polearm_lance_vibrolance = object_weapon_melee_polearm_share
 	-- Leave as "dodge" for now, may have additions later
 	defenderSecondaryDefenseModifiers = { "block" },
 
-	defenderToughnessModifiers = { "polearm_toughness" }, --was toughness
+	defenderToughnessModifiers = { "polearm_toughness" },
 
 	-- See http://www.ocdsoft.com/files/speed.xls
 	speedModifiers = { "polearm_speed" },
@@ -100,34 +100,34 @@ object_weapon_melee_polearm_lance_vibrolance = object_weapon_melee_polearm_share
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 0,
-	actionAttackCost = 300,
-	mindAttackCost = 0,
+	healthAttackCost = 45,
+	actionAttackCost = 65,
+	mindAttackCost = 22,
 	forceCost = 0,
 
 	pointBlankRange = 0,
-	pointBlankAccuracy = -45,
+	pointBlankAccuracy = -24,
 
-	idealRange = 5,
-	idealAccuracy = -45,
+	idealRange = 3,
+	idealAccuracy = -24,
 
-	maxRange = 7,
-	maxRangeAccuracy = -45,
+	maxRange = 5,
+	maxRangeAccuracy = -24,
 
-	minDamage = 450,
-	maxDamage = 550,
+	minDamage = 80,
+	maxDamage = 290,
 
-	attackSpeed = 1,
+	attackSpeed = 4.5,
 
-	woundsRatio = 33,
+	woundsRatio = 20,
 
 	numberExperimentalProperties = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalProperties = {"XX", "XX", "SR", "SR", "SR", "SR", "SR", "SR", "SR", "XX", "SR", "XX", "XX", "XX", "XX"},
+	experimentalProperties = {"XX", "XX", "SR", "SR", "SR", "SR", "SR", "SR", "SR", "XX", "SR", "XX", "SR", "SR", "SR"},
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "null", "null", "null"},
+	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 398, 475, 1, 23, 750, -45, -40, 3, -45, 7, 0, 300, 0},
-	experimentalMax = {0, 0, 450, 550, 1, 43, 1500, -20, -20, 3, -20, 7, 0, 300, 0},
+	experimentalMin = {0, 0, 42, 154, 5.9, 14, 750, -24, -24, 3, -24, 5, 59, 78, 29},
+	experimentalMax = {0, 0, 78, 286, 4, 26, 1500, 0, 0, 3, 0, 5, 32, 43, 15},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }
