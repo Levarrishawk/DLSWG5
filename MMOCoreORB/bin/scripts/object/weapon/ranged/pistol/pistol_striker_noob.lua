@@ -68,7 +68,7 @@ object_weapon_ranged_pistol_pistol_striker_noob = object_weapon_ranged_pistol_sh
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = RANGEDATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = ENERGY,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -100,9 +100,9 @@ object_weapon_ranged_pistol_pistol_striker_noob = object_weapon_ranged_pistol_sh
 	
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 10,
-	actionAttackCost = 20,
-	mindAttackCost = 10,
+	healthAttackCost = 0,
+	actionAttackCost = 150,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,

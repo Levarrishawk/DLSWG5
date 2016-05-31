@@ -42,7 +42,7 @@
 
 
 object_weapon_ranged_grenade_grenade_bug_bomb = object_weapon_ranged_grenade_shared_grenade_bug_bomb:new {
-	objectMenuComponent = "ThrowGrenadeMenuComponent",
+	objectMenuComponent = {"cpp", "ThrowGrenadeMenuComponent"},
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
 			"object/creature/player/bothan_female.iff",
@@ -69,7 +69,7 @@ object_weapon_ranged_grenade_grenade_bug_bomb = object_weapon_ranged_grenade_sha
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = GRENADEATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = BLAST,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -99,9 +99,9 @@ object_weapon_ranged_grenade_grenade_bug_bomb = object_weapon_ranged_grenade_sha
 
 	combatSpam = "throw_bug_bomb",
 
-	healthAttackCost = 97,
-	actionAttackCost = 97,
-	mindAttackCost = 45,
+	healthAttackCost = 0,
+	actionAttackCost = 150,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,
@@ -112,7 +112,6 @@ object_weapon_ranged_grenade_grenade_bug_bomb = object_weapon_ranged_grenade_sha
 
 	maxRange = 32,
 	maxRangeAccuracy = -30,
-	animationType = "bug_bomb",
 
 	minDamage = 470,
 	maxDamage = 580,

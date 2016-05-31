@@ -68,7 +68,7 @@ object_weapon_ranged_rifle_rifle_victor_tusken = object_weapon_ranged_rifle_shar
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = RANGEDATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = KINETIC,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -100,9 +100,9 @@ object_weapon_ranged_rifle_rifle_victor_tusken = object_weapon_ranged_rifle_shar
 	
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 13,
-	actionAttackCost = 23,
-	mindAttackCost = 55,
+	healthAttackCost = 0,
+	actionAttackCost = 150,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankAccuracy = 0,
