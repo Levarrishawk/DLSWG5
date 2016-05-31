@@ -68,7 +68,7 @@ object_weapon_ranged_carbine_carbine_nym_slugthrower = object_weapon_ranged_carb
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = RANGEDATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
 	damageType = ACID,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -100,9 +100,9 @@ object_weapon_ranged_carbine_carbine_nym_slugthrower = object_weapon_ranged_carb
 	
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 0,
-	actionAttackCost = 300,
-	mindAttackCost = 0,
+	healthAttackCost = 36,
+	actionAttackCost = 62,
+	mindAttackCost = 32,
 	forceCost = 0,
 
 	pointBlankAccuracy = -10,
@@ -111,11 +111,11 @@ object_weapon_ranged_carbine_carbine_nym_slugthrower = object_weapon_ranged_carb
 	idealRange = 28,
 	idealAccuracy = 0,
 
-	maxRange = 55,
+	maxRange = 64,
 	maxRangeAccuracy = -60,
 
-	minDamage = 108,
-	maxDamage = 405,
+	minDamage = 103,
+	maxDamage = 207,
 	
 	woundsRatio = 16,
 
