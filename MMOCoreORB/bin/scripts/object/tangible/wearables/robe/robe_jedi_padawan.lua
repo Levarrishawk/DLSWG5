@@ -64,14 +64,14 @@ object_tangible_wearables_robe_robe_jedi_padawan = object_tangible_wearables_rob
 				"object/creature/player/zabrak_female.iff" },
 				
 				skillMods = {
-				    {"jedi_force_power_max", 250},
-				    {"jedi_force_power_regen", 10}
+				 --   {"jedi_force_power_max", 250},
+				 --   {"jedi_force_power_regen", 10}
 				},
 
 				noTrade = 1,
 
 				objectMenuComponent = "RobeObjectMenuComponent",
-				certificationsRequired = {"force_title_jedi_rank_02"},
+				certificationsRequired = {"combat_jedi_novice"},
 				attributeListComponent = "JediRobeAttributeListComponent",
 }
 
