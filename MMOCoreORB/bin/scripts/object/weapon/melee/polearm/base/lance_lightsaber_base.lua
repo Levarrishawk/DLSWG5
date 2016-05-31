@@ -42,7 +42,6 @@
 
 
 object_weapon_melee_polearm_base_lance_lightsaber_base = object_weapon_melee_polearm_base_shared_lance_lightsaber_base:new {
-	weaponType = POLEARMJEDIWEAPON,
 
 }
 

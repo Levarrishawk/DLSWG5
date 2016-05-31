@@ -68,7 +68,7 @@ object_weapon_melee_sword_sword_curved_nyax = object_weapon_melee_sword_shared_s
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = MELEEATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = KINETIC,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -96,13 +96,13 @@ object_weapon_melee_sword_sword_curved_nyax = object_weapon_melee_sword_shared_s
 	speedModifiers = { "onehandmelee_speed" },
 
 	-- Leave blank for now
-	damageModifiers = { },
+	damageModifiers = { "frenzy" },
 	
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 23,
-	actionAttackCost = 52,
-	mindAttackCost = 32,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankAccuracy = 0,
@@ -115,9 +115,9 @@ object_weapon_melee_sword_sword_curved_nyax = object_weapon_melee_sword_shared_s
 	maxRangeAccuracy = 4,
 
 	minDamage = 17,
-	maxDamage = 78,
+	maxDamage = 178,
 
-	attackSpeed = 4.0,
+	attackSpeed = 1,
 
 	woundsRatio = 15,
 

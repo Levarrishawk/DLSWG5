@@ -42,9 +42,8 @@
 
 
 object_weapon_melee_polearm_base_crafted_lance_lightsaber_base = object_weapon_melee_polearm_base_shared_crafted_lance_lightsaber_base:new {
-	weaponType = POLEARMJEDIWEAPON,
 
-	objectMenuComponent = "LightsaberObjectMenuComponent",
+	objectMenuComponent = {"cpp", "LightsaberObjectMenuComponent"},
 	--gameObjectType = 131090,
 	
 }

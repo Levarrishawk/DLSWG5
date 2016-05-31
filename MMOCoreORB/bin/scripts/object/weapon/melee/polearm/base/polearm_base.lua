@@ -42,7 +42,6 @@
 
 
 object_weapon_melee_polearm_base_polearm_base = object_weapon_melee_polearm_base_shared_polearm_base:new {
-	weaponType = POLEARMWEAPON,
 
 }
 

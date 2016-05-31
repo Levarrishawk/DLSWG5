@@ -42,7 +42,6 @@
 
 
 object_weapon_ranged_grenade_base_grenade_base = object_weapon_ranged_grenade_base_shared_grenade_base:new {
-	weaponType = GRENADEWEAPON,
 
 }
 

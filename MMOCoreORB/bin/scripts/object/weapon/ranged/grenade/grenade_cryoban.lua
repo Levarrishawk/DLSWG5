@@ -43,7 +43,7 @@
 
 object_weapon_ranged_grenade_grenade_cryoban = object_weapon_ranged_grenade_shared_grenade_cryoban:new {
 
-	objectMenuComponent = "ThrowGrenadeMenuComponent",
+	objectMenuComponent = {"cpp", "ThrowGrenadeMenuComponent"},
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
 			"object/creature/player/bothan_female.iff",
@@ -70,7 +70,7 @@ object_weapon_ranged_grenade_grenade_cryoban = object_weapon_ranged_grenade_shar
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = GRENADEATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = COLD,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -119,15 +119,14 @@ object_weapon_ranged_grenade_grenade_cryoban = object_weapon_ranged_grenade_shar
 	attackSpeed = 7,
 
 	woundsRatio = 10,
-	animationType = "cryoban",
 
 	numberExperimentalProperties = {1, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2},
-	experimentalProperties = {"XX", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR"},
+	experimentalProperties = {"XX", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "XX", "OQ", "SR", "OQ", "XX", "XX", "XX"},
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "null", "expRange", "expRange", "expRange", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
+	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "null", "expRange", "expRange", "expRange", "expRange", "null", "null", "null", "null"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrangemod", "midrange", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 190, 320, 6.5, 7, 1000, -14, -45, 0, 10, 64, 52, 130, 20},
-	experimentalMax = {0, 0, 270, 650, 3, 13, 1000, 16, -15, 30, 30, 64, 28, 70, 11},
+	experimentalMin = {0, 0, 190, 320, 6.5, 7, 1000, -14, -45, 0, 10, 64, 0, 150, 0},
+	experimentalMax = {0, 0, 270, 650, 3, 13, 1000, 16, -15, 30, 30, 64, 0, 150, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1},
 }

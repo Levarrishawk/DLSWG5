@@ -42,10 +42,10 @@
 
 
 object_weapon_ranged_grenade_grenade_fallback = object_weapon_ranged_grenade_shared_grenade_fallback:new {
-	objectMenuComponent = "ThrowGrenadeMenuComponent",
-	healthAttackCost = 19,
-	actionAttackCost = 10,
-	mindAttackCost = 23,
+	objectMenuComponent = {"cpp", "ThrowGrenadeMenuComponent"},
+	healthAttackCost = 0,
+	actionAttackCost = 150,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,

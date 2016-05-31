@@ -68,7 +68,7 @@ object_weapon_melee_polearm_lance_nightsister_npc_version = object_weapon_melee_
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = MELEEATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = ENERGY,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -100,9 +100,9 @@ object_weapon_melee_polearm_lance_nightsister_npc_version = object_weapon_melee_
 	
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 40,
-	actionAttackCost = 66,
-	mindAttackCost = 56,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankAccuracy = 0,

@@ -49,7 +49,7 @@ object_weapon_ranged_creature_creature_spit_small_toxicgreen = object_weapon_ran
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = RANGEDATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = ACID,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -70,7 +70,7 @@ object_weapon_ranged_creature_creature_spit_small_toxicgreen = object_weapon_ran
 
 	-- can be dodge, counterattack, or block or a combination
 	-- Secondary defense when equipped
-	defenderSecondaryDefenseModifiers = { "unarmed_passive_defense" },
+	defenderSecondaryDefenseModifiers = { "dodge" },
 
 	-- See http://www.ocdsoft.com/files/speed.xls
 	speedModifiers = { "unarmed_speed" },

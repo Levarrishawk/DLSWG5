@@ -43,7 +43,7 @@
 
 object_weapon_ranged_grenade_grenade_proton = object_weapon_ranged_grenade_shared_grenade_proton:new {
 
-	objectMenuComponent = "ThrowGrenadeMenuComponent",
+	objectMenuComponent = {"cpp", "ThrowGrenadeMenuComponent"},
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
 			"object/creature/player/bothan_female.iff",
@@ -70,7 +70,7 @@ object_weapon_ranged_grenade_grenade_proton = object_weapon_ranged_grenade_share
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = GRENADEATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = HEAT,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -99,11 +99,10 @@ object_weapon_ranged_grenade_grenade_proton = object_weapon_ranged_grenade_share
 	useCount = 5,
 
 	combatSpam = "throw_proton",
-	animationType = "proton",
 
-	healthAttackCost = 30,
-	actionAttackCost = 75,
-	mindAttackCost = 65,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 
 	pointBlankRange = 0,
 	pointBlankAccuracy = -10,
@@ -114,20 +113,20 @@ object_weapon_ranged_grenade_grenade_proton = object_weapon_ranged_grenade_share
 	maxRange = 64,
 	maxRangeAccuracy = -30,
 
-	minDamage = 100,
-	maxDamage = 300,
+	minDamage = 1000,
+	maxDamage = 2000,
 
-	attackSpeed = 10,
+	attackSpeed = 1,
 
 	woundsRatio = 10,
 
 	numberExperimentalProperties = {1, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2},
-	experimentalProperties = {"XX", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR"},
+	experimentalProperties = {"XX", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "XX", "OQ", "SR", "OQ", "SR", "OQ", "SR", "OQ", "SR", "XX", "OQ", "SR", "OQ", "XX", "XX", "XX"},
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "null", "expRange", "expRange", "expRange", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
+	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "null", "expRange", "expRange", "expRange", "expRange", "null", "null", "null", "null"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrangemod", "midrange", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 923, 2300, 9, 7, 1000, -16, -45, 0, 10, 64, 139, 178, 125},
-	experimentalMax = {0, 0, 1534, 2900, 4.5, 13, 1000, 14, -15, 30, 25, 64, 85, 73, 86},
+	experimentalMin = {0, 0, 923, 2000, 1.0, 7, 1000, -16, -45, 0, 10, 64, 0, 300, 0},
+	experimentalMax = {0, 0, 1534, 2000, 1.0, 13, 1000, 14, -15, 30, 25, 64, 0, 300, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1},
 }

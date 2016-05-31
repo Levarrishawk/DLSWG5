@@ -69,7 +69,7 @@ object_weapon_ranged_pistol_pistol_cdef = object_weapon_ranged_pistol_shared_pis
 	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
 	attackType = RANGEDATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, LIGHTSABER
+	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
 	damageType = ENERGY,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
@@ -101,9 +101,9 @@ object_weapon_ranged_pistol_pistol_cdef = object_weapon_ranged_pistol_shared_pis
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 10,
-	actionAttackCost = 15,
-	mindAttackCost = 10,
+	healthAttackCost = 0,
+	actionAttackCost = 300,
+	mindAttackCost = 0,
 	forceCost = 0,
 
 	pointBlankRange = 0,
@@ -115,20 +115,20 @@ object_weapon_ranged_pistol_pistol_cdef = object_weapon_ranged_pistol_shared_pis
 	maxRange = 64,
 	maxRangeAccuracy = -80,
 
-	minDamage = 25,
-	maxDamage = 50,
+	minDamage = 125,
+	maxDamage = 150,
 
 	attackSpeed = 3.5,
 
 	woundsRatio = 4,
 
 	numberExperimentalProperties = {1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 2, 2, 2, 2},
-	experimentalProperties = {"XX", "XX", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "XX", "XX", "XX", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ"},
+	experimentalProperties = {"XX", "XX", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "XX", "XX", "XX", "CD", "OQ", "CD", "OQ", "CD", "XX", "XX", "XX"},
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "expEffeciency", "exp_durability", "null", "null", "null", "expRange", "expEffeciency", "expEffeciency", "expEffeciency"},
+	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "expEffeciency", "exp_durability", "null", "null", "null", "expRange", "null", "null", "null"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "roundsused", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 17, 35, 4.6, 4, 5, 750, 0, -80, 15, 35, 10, 22, 10},
-	experimentalMax = {0, 0, 32, 65, 3.2, 5, 20, 1500, 0, -80, 15, 65, 7, 15, 7},
+	experimentalMin = {0, 0, 17, 135, 1, 4, 5, 750, 0, -80, 15, 35, 0, 300, 0},
+	experimentalMax = {0, 0, 132, 165, 1, 5, 20, 1500, 0, -80, 15, 65, 0, 300, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }

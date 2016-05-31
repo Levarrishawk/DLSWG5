@@ -42,7 +42,6 @@
 
 
 object_weapon_melee_baton_base_baton_base = object_weapon_melee_baton_base_shared_baton_base:new {
-	weaponType = ONEHANDMELEEWEAPON,
 
 }
 

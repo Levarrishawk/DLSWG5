@@ -42,7 +42,6 @@
 
 
 object_weapon_ranged_carbine_base_carbine_base = object_weapon_ranged_carbine_base_shared_carbine_base:new {
-	weaponType = CARBINEWEAPON,
 
 }
 
