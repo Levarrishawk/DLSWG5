@@ -52,7 +52,7 @@ object_draft_schematic_chemistry_component_release_mechanism_duration = object_d
    size = 4, 
 
    xpType = "crafting_medicine_general", 
-   xp = 35, 
+   xp = 335, 
 
    assemblySkill = "medicine_assembly", 
    experimentingSkill = "medicine_experimentation", 

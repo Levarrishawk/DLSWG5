@@ -52,7 +52,7 @@ object_draft_schematic_chemistry_component_biologic_effect_controller = object_d
    size = 2, 
 
    xpType = "crafting_medicine_general", 
-   xp = 35, 
+   xp = 400, 
 
    assemblySkill = "medicine_assembly", 
    experimentingSkill = "medicine_experimentation", 

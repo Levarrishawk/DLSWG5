@@ -52,7 +52,7 @@ object_draft_schematic_chemistry_med_stimpack_range_e = object_draft_schematic_c
    size = 3, 
 
    xpType = "crafting_medicine_general", 
-   xp = 100, 
+   xp = 200, 
 
    assemblySkill = "combat_medicine_assembly", 
    experimentingSkill = "combat_medicine_experimentation", 

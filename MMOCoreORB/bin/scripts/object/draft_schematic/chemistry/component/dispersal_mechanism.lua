@@ -52,7 +52,7 @@ object_draft_schematic_chemistry_component_dispersal_mechanism = object_draft_sc
    size = 2, 
 
    xpType = "crafting_medicine_general", 
-   xp = 45, 
+   xp = 245, 
 
    assemblySkill = "combat_medicine_assembly", 
    experimentingSkill = "combat_medicine_experimentation", 

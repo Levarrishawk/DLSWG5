@@ -52,7 +52,7 @@ object_draft_schematic_chemistry_component_solid_delivery_shell = object_draft_s
    size = 3, 
 
    xpType = "crafting_medicine_general", 
-   xp = 35, 
+   xp = 335, 
 
    assemblySkill = "medicine_assembly", 
    experimentingSkill = "medicine_experimentation", 
