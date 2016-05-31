@@ -44,18 +44,21 @@
 FireLightningCone2Command = {
         name = "firelightningcone2",
 
-	damageMultiplier = 4.0,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 1,
-	actionCostMultiplier = 1,
-	mindCostMultiplier = 1,
+damageMultiplier = 1.5,
+  speedMultiplier = 1,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1.75,
+  mindCostMultiplier = 0,
+
+  
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "fire_acid_rifle_single_2", 
 	animType = GENERATE_INTENSITY,
 
 	combatSpam = "firelightningcone2",
 
-	coneAngle = 60,
+	coneAngle = 180,
 	coneAction = true,
 	
 	weaponType = SPECIALHEAVYWEAPON,

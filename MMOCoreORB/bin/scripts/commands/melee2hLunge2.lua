@@ -45,12 +45,14 @@ Melee2hLunge2Command = {
 	name = "melee2hlunge2",
 
 	damageMultiplier = 1.0,
-	speedMultiplier = 2.5,
-	accuracyBonus = 10,
-
-	healthCostMultiplier = 1.5,
-	actionCostMultiplier = 0.625,
-	mindCostMultiplier = 0.625,
+  speedMultiplier = 2.5,
+  accuracyBonus = 10,
+  
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3,
+  mindCostMultiplier = 0,
+  
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "knockdown_2hmelee_1",
 

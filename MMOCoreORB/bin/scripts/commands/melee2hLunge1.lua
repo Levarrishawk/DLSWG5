@@ -45,12 +45,14 @@ Melee2hLunge1Command = {
 	name = "melee2hlunge1",
 
 	damageMultiplier = 1.0,
-	speedMultiplier = 1.5,
-	accuracyBonus = 10,
-	
-	healthCostMultiplier = 1.0,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 0.5,
+  speedMultiplier = 1.5,
+  accuracyBonus = 10,
+  
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3,
+  mindCostMultiplier = 0,
+  
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "lower_posture_2hmelee_1",
 

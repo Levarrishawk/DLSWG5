@@ -44,14 +44,26 @@
 Melee2hHeadHit1Command = {
 	name = "melee2hheadhit1",
 
-	damageMultiplier = 1.5,
-	speedMultiplier = 1.25,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 1.0,
-	mindCostMultiplier = 0.5,
-        accuracyBonus = 10,
+	damageMultiplier = 5,
+  speedMultiplier = 3.25,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.75,
+  mindCostMultiplier = 0,
+        --accuracyBonus = 10,
 
-	poolsToDamage = MIND_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
+  
+    stateEffects = {
+    StateEffect(
+      KNOCKDOWN_EFFECT, 
+    { "knockdownRecovery", "lastKnockdown" }, 
+    { "knockdown_defense" }, 
+    {}, 
+    40, 
+    100, 
+    10
+    )
+  },
 	
 	weaponType = TWOHANDMELEEWEAPON,
 

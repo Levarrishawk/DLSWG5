@@ -44,14 +44,14 @@
 Melee1hBodyHit3Command = {
         name = "melee1hbodyhit3",
 
-	damageMultiplier = 3.5,
-	speedMultiplier = 2.25,
-	healthCostMultiplier = 1.0,
-	actionCostMultiplier = 1.0,
-	mindCostMultiplier = 2.0,
+	damageMultiplier = 2,
+  speedMultiplier = 1,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1,
+  mindCostMultiplier = 0,
         accuracyBonus = 25,
 
-	poolsToDamage = HEALTH_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 	weaponType = ONEHANDMELEEWEAPON,
 
 	animation = "combo_3a", 

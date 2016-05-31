@@ -44,14 +44,14 @@
 HealthShot2Command = {
     name = "healthshot2",
 	
-	damageMultiplier = 3.0,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 1.0,
-	mindCostMultiplier = 0.5,
-        accuracyBonus = 50,
+	damageMultiplier = 1.75,
+  speedMultiplier = 1,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1.5,
+  mindCostMultiplier = 0,
+        --accuracyBonus = 50,
 
-	poolsToDamage = HEALTH_ATTRIBUTE,
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "fire_1_special_single", 
 	animType = GENERATE_RANGED,

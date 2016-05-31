@@ -45,10 +45,10 @@ SprayShotCommand = {
         name = "sprayshot",
 
 	damageMultiplier = 4.0,
-	speedMultiplier = 3.5,
-	healthCostMultiplier = 1,
-	actionCostMultiplier = 1,
-	mindCostMultiplier = 1,
+  speedMultiplier = 3.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3,
+  mindCostMultiplier = 0,
 
 	stateEffects = {
 	  StateEffect(
@@ -79,6 +79,8 @@ SprayShotCommand = {
 		10
 	  )
 	},
+	
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "fire_7_single", 
 	animType = GENERATE_RANGED,

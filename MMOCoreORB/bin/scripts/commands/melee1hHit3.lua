@@ -44,12 +44,14 @@
 Melee1hHit3Command = {
         name = "melee1hhit3",
 
-	damageMultiplier = 5.0,
-	speedMultiplier = 2.25,
-	healthCostMultiplier = 1.0,
-	actionCostMultiplier = 1.0,
-	mindCostMultiplier = 2.0,
+	damageMultiplier = 3.75,
+  speedMultiplier = 1.75,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1.25,
+  mindCostMultiplier = 0,
         accuracyBonus = 25,
+        
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "combo_5a", 
 	animType = GENERATE_INTENSITY,

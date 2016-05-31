@@ -44,42 +44,44 @@
 PolearmArea2Command = {
         name = "polearmarea2",
 
-	damageMultiplier = 2.75,
-	speedMultiplier = 2.5,
-	healthCostMultiplier = 2.0,
-	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 1.5,
-	accuracyBonus = 10,
+	damageMultiplier = 1.5,
+  speedMultiplier = 1,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1,
+  mindCostMultiplier = 0,
+  accuracyBonus = 30,
+
 
 	areaRange = 16,
 	areaAction = true,
 
-	stateEffects = {
-	  StateEffect( 
-		DIZZY_EFFECT, 
-		{}, 
-		{ "dizzy_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		75, 
-		0, 
-		30 
-	  ),
-	  StateEffect( 
-		STUN_EFFECT, 
-		{}, 
-		{ "stun_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		75, 
-		0, 
-		30
-	  )
-	},
+	
+  stateEffects = {
+    StateEffect( 
+    DIZZY_EFFECT, 
+    {}, 
+    { "dizzy_defense", "resistance_states" }, 
+    { "jedi_state_defense" }, 
+    75, 
+    75, 
+    4 
+    ),
+    StateEffect( 
+    STUN_EFFECT, 
+    {}, 
+    { "stun_defense", "resistance_states" }, 
+    { "jedi_state_defense" }, 
+    55, 
+    50, 
+    10
+    )
+  },
 
 	animation = "lower_posture_2hmelee_6",
 
 	combatSpam = "tornado",
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = POLEARMWEAPON,
 

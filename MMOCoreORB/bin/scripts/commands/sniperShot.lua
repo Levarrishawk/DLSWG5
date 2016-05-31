@@ -51,7 +51,7 @@ SniperShotCommand = {
 	mindCostMultiplier = 2.0,
 	accuracyBonus = 5,
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "fire_1_special_single", 
 	animType = GENERATE_RANGED,

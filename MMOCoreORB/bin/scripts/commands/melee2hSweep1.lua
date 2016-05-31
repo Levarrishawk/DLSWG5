@@ -45,12 +45,12 @@ Melee2hSweep1Command = {
 	name = "melee2hsweep1",
 
 	damageMultiplier = 1.5,
-	speedMultiplier = 1.5,
-	accuracyBonus = 10,
-	
-	healthCostMultiplier = 0.75,
-	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 0.75,
+  speedMultiplier = 3,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.5,
+  mindCostMultiplier = 0,
+  
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "lower_posture_2hmelee_3",
 

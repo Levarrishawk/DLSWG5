@@ -44,19 +44,19 @@
 FullAutoArea2Command = {
         name = "fullautoarea2",
 
-	damageMultiplier = 2.0,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 2.5,
-	actionCostMultiplier = 2.5,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 25,
+	damageMultiplier = 3,
+  speedMultiplier = 1,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1.5,
+  mindCostMultiplier = 0,
+  accuracyBonus = 25,
 
 	animation = "fire_area",
 	animType = GENERATE_INTENSITY,
 
 	combatSpam = "a_auto",
 
-	coneAngle = 30,
+	coneAngle = 180,
 	coneAction = true,
 
 	stateEffects = {
@@ -89,7 +89,7 @@ FullAutoArea2Command = {
 	  )
 	},
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = CARBINEWEAPON,
 

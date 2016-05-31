@@ -45,16 +45,29 @@ FireAcidCone2Command = {
         name = "fireacidcone2",
 
 	damageMultiplier = 6,
-	speedMultiplier = 4,
-	healthCostMultiplier = 2.0,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 0,
+  speedMultiplier = 1,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1.0,
+  mindCostMultiplier = 0,
+  accuracyBonus = 0,
 
-	coneAngle = 45,
-	coneAction = true,
+  coneAngle = 45,
+  coneAction = true,
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+dotEffects = {
+    DotEffect( 
+    POISONED_EFFECT, 
+    {"resistance_poison", "poison_resist"},
+    HEALTH,
+    true,
+    100,
+    100,
+    100, 
+    40,
+    50,
+    0
+    )
+  },
 
 	animation = "fire_acid_rifle_single_2", 
 	animType = GENERATE_INTENSITY,

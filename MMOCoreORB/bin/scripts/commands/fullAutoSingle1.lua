@@ -43,13 +43,12 @@
 
 FullAutoSingle1Command = {
         name = "fullautosingle1",
-
-	damageMultiplier = 2,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 1.75,
-	actionCostMultiplier = 2.5,
-	mindCostMultiplier = 0.5,
-	accuracyBonus = 25,
+  
+  damageMultiplier = 1.5,
+  speedMultiplier = 1.65,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 3.5,
+  mindCostMultiplier = 0,
 
 	animation = "fire_5_special_single", 
 	animType = GENERATE_RANGED,
@@ -86,7 +85,7 @@ FullAutoSingle1Command = {
 	  )
 	},
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 	
 	weaponType = CARBINEWEAPON,
 

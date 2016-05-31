@@ -45,13 +45,12 @@ SaberPolearmDervish2Command = {
         name = "saberpolearmdervish2",
 
 	damageMultiplier = 4.5,
-	speedMultiplier = 4.0,
+	speedMultiplier = 1.0,
 	healthCostMultiplier = 0,
 	actionCostMultiplier = 0,
 	mindCostMultiplier = 0,
-	coneAngle = 45,
-	coneAction = true,
-	coneRange = 24,
+	areaAction = true,
+	areaRange = 10,
 	forceCostMultiplier = 3.0,
 	visMod = 25,
 
@@ -90,11 +89,11 @@ SaberPolearmDervish2Command = {
 
 	combatSpam = "saberpolearmdervish2",
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	weaponType = POLEARMJEDIWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(SaberPolearmDervish2Command)

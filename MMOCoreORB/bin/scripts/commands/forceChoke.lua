@@ -44,10 +44,10 @@
 ForceChokeCommand = {
   name = "forcechoke",
 
-  minDamage = 175,
-  maxDamage = 375,
-  speed = 6.0,
-  forceCost = 400,
+  minDamage = 1100,
+  maxDamage = 1500,
+  speed = 1.0,
+  forceCost = 25,
   visMod = 25,
   forceAttack = true,
   accuracyBonus = 95,
@@ -67,32 +67,6 @@ ForceChokeCommand = {
     FORCECHOKE,
     { "", "" },
     HEALTH,
-    true,
-    -1,
-    100,
-    350,
-    35,
-    33.0,
-    0.33
-    ),
-
-    DotEffect(
-    FORCECHOKE,
-    { "", "" },
-    ACTION,
-    true,
-    -1,
-    100,
-    350,
-    35,
-    33.0,
-    0.33
-    ),
-
-    DotEffect(
-    FORCECHOKE,
-    { "", "" },
-    MIND,
     true,
     -1,
     100,

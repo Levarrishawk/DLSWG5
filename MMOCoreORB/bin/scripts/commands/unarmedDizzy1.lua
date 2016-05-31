@@ -44,24 +44,25 @@
 UnarmedDizzy1Command = {
         name = "unarmeddizzy1",
 
-	damageMultiplier = 1.5,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 1.5,
-	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 1.5,
-        accuracyBonus = 15,
+	damageMultiplier = 2,
+  speedMultiplier = 1.0,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1.75,
+  mindCostMultiplier = 0,
 
-	stateEffects = {
-	  StateEffect( 
-		DIZZY_EFFECT, 
-		{}, 
-		{ "dizzy_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		100, 
-		0, 
-		30 
-	  )
-	},
+  poolsToDamage = HEALTH_ATTRIBUTE,
+
+  stateEffects = {
+    StateEffect( 
+    DIZZY_EFFECT, 
+    {}, 
+    { "dizzy_defense", "resistance_states" }, 
+    { "jedi_state_defense" }, 
+    40, 
+    100, 
+    5 
+    )
+  },
 
 	animation = "attack_special_wookiee_slap", 
 	animType = GENERATE_INTENSITY,

@@ -44,12 +44,12 @@
 Saber1hHit1Command = {
         name = "saber1hhit1",
 
-	damageMultiplier = 1.25,
-	speedMultiplier = 1.25,
+	damageMultiplier = 2.5,
+	speedMultiplier = 1,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 0,
+	actionCostMultiplier = 1.25,
 	mindCostMultiplier = 0,
-	forceCostMultiplier = 1.0,
+	forceCostMultiplier = 2.0,
 	visMod = 25,
 	
 	animation = "combo_jedi_1", 
@@ -57,11 +57,11 @@ Saber1hHit1Command = {
 
 	combatSpam = "saber1hhit1",
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	weaponType = ONEHANDJEDIWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(Saber1hHit1Command)

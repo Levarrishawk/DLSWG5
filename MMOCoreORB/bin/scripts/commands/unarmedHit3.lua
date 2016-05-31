@@ -44,12 +44,14 @@
 UnarmedHit3Command = {
         name = "unarmedhit3",
 
-	damageMultiplier = 4.0,
-	speedMultiplier = 3.0,
-	healthCostMultiplier = 2,
-	actionCostMultiplier = 2,
-	mindCostMultiplier = 2,
-        accuracyBonus = 15,
+	damageMultiplier = 5.5,
+  speedMultiplier = 3.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1.75,
+  mindCostMultiplier = 0,
+        --accuracyBonus = 15,
+
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "combo_5a", 
 	animType = GENERATE_INTENSITY,

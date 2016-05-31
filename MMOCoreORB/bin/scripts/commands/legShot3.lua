@@ -44,26 +44,28 @@
 LegShot3Command = {
         name = "legshot3",
 
-	damageMultiplier = 2.0,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 2.0,
-	mindCostMultiplier = 2.0,
-	accuracyBonus = 25,
+	damageMultiplier = 1.25,
+  speedMultiplier = 1,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1.25,
+  mindCostMultiplier = 0,
+  accuracyBonus = 25,
+  
 
-	stateEffects = {
-	  StateEffect( 
-		STUN_EFFECT, 
-		{}, 
-		{ "stun_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		100, 
-		0, 
-		30 
-	  )
-	},
 
-	poolsToDamage = ACTION_ATTRIBUTE,
+  stateEffects = {
+    StateEffect( 
+    STUN_EFFECT, 
+    {}, 
+    { "stun_defense", "resistance_states" }, 
+    { "jedi_state_defense" }, 
+    100, 
+    0, 
+    30 
+    )
+  },
+
+  poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "test_homing",
 

@@ -44,14 +44,17 @@
 UnarmedSpinAttack2Command = {
         name = "unarmedspinattack2",
 
-	damageMultiplier = 3.0,
-	speedMultiplier = 3.0,
-	areaAction = true,
-	areaRange = 16,
-	healthCostMultiplier = 2,
-	actionCostMultiplier = 2,
-	mindCostMultiplier = 2,
-        accuracyBonus = 15,
+	damageMultiplier = 4.75,
+  speedMultiplier = 3.25,
+  areaAction = true,
+  areaRange = 7,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1.75,
+  mindCostMultiplier = 0,
+        --accuracyBonus = 15,
+
+  poolsToDamage = HEALTH_ATTRIBUTE,
+
 
 	animation = "combo_3d", 
 	animType = GENERATE_INTENSITY,

@@ -47,11 +47,11 @@ Saber1hFlurry2Command = {
 	damageMultiplier = 4.0,
 	speedMultiplier = 4.0,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 0,
+	actionCostMultiplier = 1,
 	mindCostMultiplier = 0,
 	areaRange = 16,
 	areaAction = true,
-	forceCostMultiplier = 3.0,
+	forceCostMultiplier = 2.0,
 	visMod = 25,
 
 		stateEffects = {
@@ -89,11 +89,11 @@ Saber1hFlurry2Command = {
 
 	combatSpam = "saber1hflurry2",
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	weaponType = ONEHANDJEDIWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(Saber1hFlurry2Command)

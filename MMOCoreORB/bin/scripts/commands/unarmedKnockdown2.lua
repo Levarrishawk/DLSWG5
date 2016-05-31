@@ -44,33 +44,26 @@
 UnarmedKnockdown2Command = {
         name = "unarmedknockdown2",
 
-	damageMultiplier = 1.5,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 1.5,
-	actionCostMultiplier = 1.5,
-	mindCostMultiplier = 1.5,
-        accuracyBonus = 15,
+	damageMultiplier = 4,
+  speedMultiplier = 2.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 1.75,
+  mindCostMultiplier = 0,
+        --accuracyBonus = 15,
 
-	stateEffects = {
-	  StateEffect( 
-		DIZZY_EFFECT, 
-		{}, 
-		{ "dizzy_defense", "resistance_states" }, 
-		{ "jedi_state_defense" }, 
-		75, 
-		0, 
-		40 
-	  ),
-	  StateEffect( 
-		KNOCKDOWN_EFFECT, 
-		{ "knockdownRecovery", "lastKnockdown" }, 
-		{ "knockdown_defense" }, 
-		{}, 
-		100, 
-		0, 
-		0 
-	  )
-	},
+  poolsToDamage = HEALTH_ATTRIBUTE,
+
+  stateEffects = {
+    StateEffect( 
+    KNOCKDOWN_EFFECT, 
+    { "knockdownRecovery", "lastKnockdown" }, 
+    { "knockdown_defense" }, 
+    {}, 
+    40, 
+    100, 
+    0 
+    )
+  },
 
 	animation = "knockdown_unarmed_3",
 

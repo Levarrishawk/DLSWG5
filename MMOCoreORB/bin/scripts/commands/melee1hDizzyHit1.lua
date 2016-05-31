@@ -44,12 +44,11 @@
 Melee1hDizzyHit1Command = {
 	name = "melee1hdizzyhit1",
 
-	damageMultiplier = 2.0,
-	speedMultiplier = 1.5,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 0.625,
-        accuracyBonus = 25,
+	damageMultiplier = 2,
+  speedMultiplier = 1.5,
+  healthCostMultiplier = 0,
+  actionCostMultiplier = 2.5,
+  mindCostMultiplier = 0,
 
 	animation = "combo_2b", 
 	animType = GENERATE_INTENSITY,
@@ -62,9 +61,9 @@ Melee1hDizzyHit1Command = {
 		{}, 
 		{ "dizzy_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
-		100, 
-		0, 
-		30 
+		50, 
+    50, 
+    3 
 	  )
 	},
 
