@@ -59,7 +59,7 @@ object_tangible_food_crafted_drink_vasarian_brandy = object_tangible_food_crafte
 	quantityMin = 6,
 	quantityMax = 10,
 
-	modifiers = { "mind", 0 , "focus", 0 , "willpower", 0 },
+	modifiers = { "strength", 0 , "health", 0 , "action", 0 },
 
 	buffName = "food.drink_vasarian_brandy",
 	buffCRC = 0,
