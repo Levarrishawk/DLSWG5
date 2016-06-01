@@ -1129,7 +1129,7 @@ void PlayerManagerImplementation::disseminateExperience(TangibleObject* destruct
 			Locker crossLocker(owner, destructedObject);
 
 			PlayerObject* ownerGhost = owner->getPlayerObject();
-			if (ownerGhost == NULL || !owner->hasSkill("outdoors_creaturehandler_novice") || !destructedObject->isInRange(owner, 80)) {
+			if (ownerGhost == NULL || !owner->hasSkill("secondary_beastmaster_novice") || !destructedObject->isInRange(owner, 80)) {
 				continue;
 			}
 
@@ -1197,10 +1197,10 @@ void PlayerManagerImplementation::disseminateExperience(TangibleObject* destruct
 					combatXp += xpAmount;
 
 				//Award individual expType
-				awardExperience(attacker, xpType, xpAmount);
+				awardExperience(attacker, "combat_general", xpAmount);
 			}
 
-			combatXp /= 10.f;
+			combatXp /= 1.f;
 
 			awardExperience(attacker, "combat_general", combatXp);
 
