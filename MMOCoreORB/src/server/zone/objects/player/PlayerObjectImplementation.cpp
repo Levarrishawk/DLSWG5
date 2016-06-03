@@ -2402,16 +2402,16 @@ int PlayerObjectImplementation::getSpentJediSkillPoints() {
 	if(player == NULL)
 		return 0;
 
-	int jediSkillPoints = 0;
+	int jediSkillPoints = 250;
 
-	SkillList* skillList = player->getSkillList();
+	/*SkillList* skillList = player->getSkillList();
 
 	for(int i = 0; i < skillList->size(); ++i) {
 		Skill* jediSkill = skillList->get(i);
 
 		if (jediSkill->getSkillName().indexOf("force_discipline") != -1)
 			jediSkillPoints += jediSkill->getSkillPointsRequired();
-	}
+	}*/
 
 	return jediSkillPoints;
 }
