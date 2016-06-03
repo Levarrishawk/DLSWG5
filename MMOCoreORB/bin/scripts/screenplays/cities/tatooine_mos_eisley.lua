@@ -71,8 +71,8 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "neutral")
   pNpc = spawnMobile("tatooine", "ecik",60,1.1,0.639421,66.3,101.522,1106372)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("tatooine", "trainer_shipwright",60,-3.2,0.6,67.6,160,1106372)
-  self:setMoodString(pNpc, "neutral")
+-- pNpc = spawnMobile("tatooine", "trainer_shipwright",60,-3.2,0.6,67.6,160,1106372)
+--  self:setMoodString(pNpc, "neutral")
 
   --Cantina
   pNpc = spawnMobile("tatooine", "commoner_old",60,36,0.1,0.7,310,1082876)
