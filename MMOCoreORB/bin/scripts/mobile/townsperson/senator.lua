@@ -1,4 +1,4 @@
-noble = Creature:new {
+senator = Creature:new {
 	objectName = "@mob/creature_names:noble",
   customName = "a New Republic Senator",	
 	--randomNameType = NAME_GENERIC,
@@ -78,8 +78,8 @@ noble = Creature:new {
 	},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "generic_noble_mission_giver_convotemplate",
+	conversationTemplate = "",
 	attacks = {}
 }
 
-CreatureTemplates:addCreatureTemplate(noble, "noble")
+CreatureTemplates:addCreatureTemplate(senator, "senator")
