@@ -1,7 +1,8 @@
 royal_imperial_guard = Creature:new {
 	objectName = "@mob/creature_names:emperor_royal_guard",
-	socialGroup = "imperial",
-	faction = "imperial",
+  customName = "a New Republic Senate Guard",
+  socialGroup = "rebel",
+  faction = "rebel",
 	level = 100,
 	chanceHit = 1,
 	damageMin = 645,

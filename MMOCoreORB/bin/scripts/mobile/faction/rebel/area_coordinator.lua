@@ -1,7 +1,7 @@
 area_coordinator = Creature:new {
 	objectName = "@mob/creature_names:area_coordinator",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+	--randomNameType = NAME_GENERIC,
+--	randomNameTag = true,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 13,
