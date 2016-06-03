@@ -1,7 +1,7 @@
 rebel_gungan_grand_army_soldier = Creature:new {
 	objectName = "@mob/creature_names:gungan_grand_army_soldier",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+--	randomNameType = NAME_GENERIC,
+--	randomNameTag = true,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 18,

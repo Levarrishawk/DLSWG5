@@ -1,7 +1,7 @@
 specforce_master_sergeant = Creature:new {
 	objectName = "@mob/creature_names:specforce_master_sergeant",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+--	randomNameType = NAME_GENERIC,
+--	randomNameTag = true,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 22,

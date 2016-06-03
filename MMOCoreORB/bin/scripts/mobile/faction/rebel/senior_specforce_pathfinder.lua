@@ -1,7 +1,7 @@
 senior_specforce_pathfinder = Creature:new {
 	objectName = "@mob/creature_names:senior_specforce_pathfinder",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+--	randomNameType = NAME_GENERIC,
+--	randomNameTag = true,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 20,

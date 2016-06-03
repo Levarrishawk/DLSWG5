@@ -1,7 +1,7 @@
 senior_specforce_wilderness_scout = Creature:new {
 	objectName = "@mob/creature_names:mission_senior_specforce_wilderness_trooper",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+--	randomNameType = NAME_GENERIC,
+--	randomNameTag = true,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 20,

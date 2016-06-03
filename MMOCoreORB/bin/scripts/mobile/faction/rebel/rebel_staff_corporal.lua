@@ -1,7 +1,7 @@
 rebel_staff_corporal = Creature:new {
 	objectName = "@mob/creature_names:rebel_staff_corporal",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+--	randomNameType = NAME_GENERIC,
+--	randomNameTag = true,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 16,

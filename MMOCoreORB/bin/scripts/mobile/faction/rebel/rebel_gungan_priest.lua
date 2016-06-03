@@ -1,7 +1,7 @@
 rebel_gungan_priest = Creature:new {
 	objectName = "@mob/creature_names:gungan_priest",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+--	randomNameType = NAME_GENERIC,
+--	randomNameTag = true,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 9,

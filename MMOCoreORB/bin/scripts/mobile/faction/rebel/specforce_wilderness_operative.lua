@@ -1,7 +1,7 @@
 specforce_wilderness_operative = Creature:new {
 	objectName = "@mob/creature_names:specforce_wilderness_operative",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+--	randomNameType = NAME_GENERIC,
+--	randomNameTag = true,
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 18,
