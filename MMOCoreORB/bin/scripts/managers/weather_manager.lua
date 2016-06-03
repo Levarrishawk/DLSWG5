@@ -67,19 +67,19 @@
 -- Acceptable values: 0-100
 -- A value of 95 will have the following effect:
 --  Base Weather:
---	0: 96%
---	1: 2.5%
---	2: 1.25%
---	3: < 1 so 0%
---	4: < 1 so 0%
+--  0: 96%
+--  1: 2.5%
+--  2: 1.25%
+--  3: < 1 so 0%
+--  4: < 1 so 0%
 --   Storm Patterns: 95% of storms will be mild, 5% medium to extreme
 -- A value of 60 will have the following effect:
 --  Base Weather:
---	0: 68%
---	1: 20%
---	2: 6.66%
---	3: 3.33%
---	4: 2%
+--  0: 68%
+--  1: 20%
+--  2: 6.66%
+--  3: 3.33%
+--  4: 2%
 --   Storm Patterns: 60% of storms will be mild, 40% medium to extreme
 
 -----------------------------------------------------------
@@ -104,11 +104,11 @@
 -----------------
 corellia = {
 
-	defaultWeather = 0, -- Sunny
+  defaultWeather = 0, -- Sunny
 
-	averageWeatherDuration = 3600, -- In seconds
+  averageWeatherDuration = 3600, -- In seconds
 
-	weatherStability = 90, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+  weatherStability = 90, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 }
 
 -----------------
@@ -116,15 +116,15 @@ corellia = {
 -----------------
 tatooine = {
 
-	defaultWeather = 0, -- Sunny
+  defaultWeather = 0, -- Sunny
 
-	averageWeatherDuration = 3600, -- In seconds
+  averageWeatherDuration = 3600, -- In seconds
 
-	weatherStability = 70, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+  weatherStability = 70, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 
-	hasDamagingSandstorms = 0,
+  hasDamagingSandstorms = 0,
 
-	sandstormDamage = 70, -- 40 = Annoying, 100 = deadly
+  sandstormDamage = 70, -- 40 = Annoying, 100 = deadly
 }
 
 
@@ -133,11 +133,11 @@ tatooine = {
 -----------------
 dantooine = {
 
-	defaultWeather = 0, -- Sunny
+  defaultWeather = 0, -- Sunny
 
-	averageWeatherDuration = 3600, -- In seconds
+  averageWeatherDuration = 3600, -- In seconds
 
-	weatherStability = 85, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+  weatherStability = 85, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 }
 
 -----------------
@@ -145,11 +145,11 @@ dantooine = {
 -----------------
 dathomir = {
 
-	defaultWeather = 0, -- Sunny
+  defaultWeather = 0, -- Sunny
 
-	averageWeatherDuration = 3600, -- In seconds
+  averageWeatherDuration = 3600, -- In seconds
 
-	weatherStability = 50, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+  weatherStability = 50, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 }
 
 -----------------
@@ -157,11 +157,11 @@ dathomir = {
 -----------------
 endor = {
 
-	defaultWeather = 0, -- Sunny
+  defaultWeather = 0, -- Sunny
 
-	averageWeatherDuration = 3600, -- In seconds
+  averageWeatherDuration = 3600, -- In seconds
 
-	weatherStability = 90, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+  weatherStability = 90, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 }
 
 -----------------
@@ -169,15 +169,15 @@ endor = {
 -----------------
 lok = {
 
-	defaultWeather = 0, -- Sunny
+  defaultWeather = 0, -- Sunny
 
-	averageWeatherDuration = 3600, -- In seconds
+  averageWeatherDuration = 3600, -- In seconds
 
-	weatherStability = 60, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+  weatherStability = 60, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 
-	hasDamagingSandstorms = 0,
+  hasDamagingSandstorms = 0,
 
-	sandstormDamage = 50, -- 30 = Annoying, 50 = deadly
+  sandstormDamage = 50, -- 30 = Annoying, 50 = deadly
 }
 
 -----------------
@@ -185,11 +185,11 @@ lok = {
 -----------------
 naboo = {
 
-	defaultWeather = 0, -- Sunny
+  defaultWeather = 0, -- Sunny
 
-	averageWeatherDuration = 3600, -- In seconds
+  averageWeatherDuration = 3600, -- In seconds
 
-	weatherStability = 90, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+  weatherStability = 90, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 }
 
 -----------------
@@ -197,11 +197,11 @@ naboo = {
 -----------------
 rori = {
 
-	defaultWeather = 0, -- Sunny
+  defaultWeather = 0, -- Sunny
 
-	averageWeatherDuration = 3600, -- In seconds
+  averageWeatherDuration = 3600, -- In seconds
 
-	weatherStability = 80, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+  weatherStability = 80, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 }
 
 -----------------
@@ -209,11 +209,11 @@ rori = {
 -----------------
 talus = {
 
-	defaultWeather = 0, -- Sunny
+  defaultWeather = 0, -- Sunny
 
-	averageWeatherDuration = 3600, -- In seconds
+  averageWeatherDuration = 3600, -- In seconds
 
-	weatherStability = 80, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+  weatherStability = 80, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 }
 
 -----------------
@@ -221,14 +221,23 @@ talus = {
 -----------------
 yavin4 = {
 
-	defaultWeather = 0, -- Sunny
+  defaultWeather = 0, -- Sunny
 
-	averageWeatherDuration = 3600, -- In seconds
+  averageWeatherDuration = 3600, -- In seconds
 
-	weatherStability = 70, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+  weatherStability = 70, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 }
+-----------------
+--    Chandrila
+-----------------
+chandrila = {
 
+  defaultWeather = 0, -- Sunny
 
+  averageWeatherDuration = 3600, -- In seconds
+
+  weatherStability = 90, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+}
 
 
 

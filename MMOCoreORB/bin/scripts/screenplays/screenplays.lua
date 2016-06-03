@@ -477,3 +477,15 @@ includeFile("record_keepers/record_keepers.lua")
 
 --Tests
 includeFile("tests/tests.lua")
+
+
+-- DLSWG Cities
+includeFile("cities/chandrila_hanna_city.lua")
+
+--Deactivate until AT-XT mobile is fixed.
+--[[
+includeFile("cities/chandrila_hanna_city_mobs.lua")
+includeFile("cities/chandrila_hanna_city_patrol1.lua")
+includeFile("cities/chandrila_hanna_city_patrol2.lua")
+includeFile("cities/chandrila_hanna_city_patrol3.lua")
+--]]

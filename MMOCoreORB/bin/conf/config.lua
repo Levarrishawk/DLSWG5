@@ -130,7 +130,7 @@ ZonesEnabled = {
 	--"umbra",
 	--"watertabletest",
 	"yavin4",
-	--"chandrila"
+	"chandrila"
 	
 }
 
