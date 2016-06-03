@@ -64,7 +64,7 @@ ForceKnockdown2Command = {
 	  )
 	},
 
-	animation = "force_knockdown_1_arc_particle_level_1",
+	animation = "force_mind_blast_1_arc_particle_level_1_light",
 
 	combatSpam = "forceknockdown2",
 
