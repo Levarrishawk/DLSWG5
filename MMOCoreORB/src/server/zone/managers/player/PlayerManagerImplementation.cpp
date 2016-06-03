@@ -535,7 +535,15 @@ bool PlayerManagerImplementation::checkPlayerName(ClientCreateCharacterCallback*
 }
 
 void PlayerManagerImplementation::createTutorialBuilding(CreatureObject* player) {
-	Zone* zone = server->getZone("tutorial");
+	Zone* zone = server->getZone("tatooine");
+
+	player->initializePosition(3528, 5, -4802);
+	zone->transferObject(player, -1, true);
+
+	PlayerObject* ghost = player->getPlayerObject();
+	ghost->setSavedTerrainName(zone->getZoneName());
+
+/*	Zone* zone = server->getZone("tutorial");
 
 //	const static String cell = "object/cell/cell.iff";
 
@@ -562,11 +570,20 @@ void PlayerManagerImplementation::createTutorialBuilding(CreatureObject* player)
 	ghost->setSavedTerrainName(zone->getZoneName());
 	ghost->setSavedParentID(cellTutPlayer->getObjectID());
 
-	tutorial->updateToDatabase();
+	tutorial->updateToDatabase(); */
 }
 
 void PlayerManagerImplementation::createSkippedTutorialBuilding(CreatureObject* player) {
-	Zone* zone = server->getZone("tutorial");
+
+	Zone* zone = server->getZone("tatooine");
+
+	player->initializePosition(3528, 5, -4802);
+	zone->transferObject(player, -1, true);
+
+	PlayerObject* ghost = player->getPlayerObject();
+	ghost->setSavedTerrainName(zone->getZoneName());
+
+/*	Zone* zone = server->getZone("tutorial");
 
 	Reference<BuildingObject*> tutorial = server->createObject(STRING_HASHCODE("object/building/general/newbie_hall_skipped.iff"), 1).castTo<BuildingObject*>();
 
@@ -594,7 +611,7 @@ void PlayerManagerImplementation::createSkippedTutorialBuilding(CreatureObject* 
 	ghost->setSavedTerrainName(zone->getZoneName());
 	ghost->setSavedParentID(cellTut->getObjectID());
 
-	tutorial->updateToDatabase();
+	tutorial->updateToDatabase(); */
 }
 
 uint8 PlayerManagerImplementation::calculateIncapacitationTimer(CreatureObject* playerCreature, int condition) {
