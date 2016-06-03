@@ -1,7 +1,8 @@
 trainer_bountyhunter = Creature:new {
 	objectName = "@mob/creature_names:trainer_bountyhunter",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+	customName = "a Bounty Hunter Trainer",
+	--randomNameType = NAME_GENERIC,
+	--randomNameTag = true,
 	faction = "",
 	level = 100,
 	chanceHit = 0.390000,

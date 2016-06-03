@@ -1,7 +1,8 @@
 trainer_marksman = Creature:new {
 	objectName = "@mob/creature_names:trainer_marksman",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+	customName = "a Soldier Trainer",
+--	randomNameType = NAME_GENERIC,
+--	randomNameTag = true,
 	faction = "",
 	level = 100,
 	chanceHit = 0.390000,
