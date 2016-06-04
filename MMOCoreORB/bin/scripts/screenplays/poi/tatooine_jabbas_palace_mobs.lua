@@ -81,7 +81,7 @@ function TatooineJabbasPalaceMobsScreenPlay:spawnMobiles()
 
 
 end
-
+--[[
 function TatooineJabbasPalaceMobsScreenPlay:palaceConverseJawa(pMobile)
   if AiAgent(pMobile):isInCombat() or CreatureObject(pMobile):isDead() then
     return 0
@@ -206,4 +206,4 @@ function TatooineJabbasPalaceMobsScreenPlay:jabbaPatrolDestReached(pMobile)
   createEvent(getRandomNumber(250,450) * 100, "TatooineJabbasPalaceMobsScreenPlay", "JabbaPatrol", pMobile)
 
   return 0
-end
+end --]]
