@@ -18,6 +18,52 @@ public:
 
 	int doQueueCommand(CreatureObject* creature, const uint64& target, const UnicodeString& arguments) const {
 
+				if (!checkStateMask(creature)) {
+					creature->sendSystemMessage("@teraskasi:med_fail");
+					return INVALIDSTATE;
+				}
+
+				if (!checkInvalidLocomotions(creature))
+					return INVALIDLOCOMOTION;
+
+				if (!creature->isPlayerCreature())
+					return GENERALERROR;
+
+				if (creature->isInCombat()) {
+					creature->sendSystemMessage("@jedi_spam:not_while_in_combat");
+					return GENERALERROR;
+				}
+
+				// Meditate
+				CreatureObject* player = cast<CreatureObject*>(creature);
+
+				Reference<Task*> task = player->getPendingTask("meditate");
+
+				if (task != NULL) {
+					player->sendSystemMessage("@jedi_spam:already_in_meditative_state");
+					return GENERALERROR;
+				}
+
+				creature->playEffect("clienteffect/pl_force_meditate_self.cef", "");
+
+				// Meditate Task
+				Reference<MeditateTask*> meditateTask = new MeditateTask(player);
+				meditateTask->setMoodString(player->getMoodString());
+				player->sendSystemMessage("@teraskasi:med_begin");
+
+				player->setMeditateState();
+
+				player->addPendingTask("meditate", meditateTask, 3500);
+
+				PlayerManager* playermgr = server->getZoneServer()->getPlayerManager();
+				player->registerObserver(ObserverEventType::POSTURECHANGED, playermgr);
+
+				return SUCCESS;
+
+			}
+
+	/*int doQueueCommand(CreatureObject* creature, const uint64& target, const UnicodeString& arguments) const {
+
 		if (!checkStateMask(creature))
 			return INVALIDSTATE;
 
@@ -60,7 +106,7 @@ public:
 
 		return SUCCESS;
 
-	}
+	}*/
 
 };
 
