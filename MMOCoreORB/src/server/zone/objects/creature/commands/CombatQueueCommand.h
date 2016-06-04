@@ -272,6 +272,8 @@ public:
 			case -1:
 				return INVALIDTARGET;
 			case -2:
+				creature->sendSystemMessage("You don't have enough action to use that ability yet.");
+				creature->playEffect("clienteffect/ui_quest_spawn_escort.cef", "");
 				return INSUFFICIENTHAM;
 			case -3:
 				return GENERALERROR;
