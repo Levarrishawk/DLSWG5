@@ -80,7 +80,7 @@ KnockdownFireCommand = {
 
 	combatSpam = "knockdownfire",
 	
-	weaponType = CARBINEWEAPON,
+	weaponType = SPECIALHEAVYWEAPON,
 
 	range = -1
 }
