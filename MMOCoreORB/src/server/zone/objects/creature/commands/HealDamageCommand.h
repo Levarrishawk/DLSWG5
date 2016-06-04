@@ -5,6 +5,8 @@
 #ifndef HEALDAMAGECOMMAND_H_
 #define HEALDAMAGECOMMAND_H_
 
+
+
 #include "server/zone/objects/scene/SceneObject.h"
 #include "server/zone/objects/tangible/pharmaceutical/StimPack.h"
 #include "server/zone/objects/tangible/pharmaceutical/RangedStimPack.h"
@@ -24,7 +26,7 @@ public:
 	HealDamageCommand(const String& name, ZoneProcessServer* server)
 		: QueueCommand(name, server) {
 
-		range = 5;
+		range = 0.0;
 		mindCost = 50;
 	}
 
@@ -57,7 +59,7 @@ public:
 	}
 
 	void doAnimations(CreatureObject* creature, CreatureObject* creatureTarget) const {
-		creatureTarget->playEffect("clienteffect/healing_healdamage.cef", "");
+		creatureTarget->playEffect("clienteffect/medic_heal.cef", "");
 
 		if (creature == creatureTarget)
 			creature->doAnimation("heal_self");
@@ -91,28 +93,32 @@ public:
 		int medicineUse = creature->getSkillMod("healing_ability");
 		int combatMedicineUse = creature->getSkillMod("combat_healing_ability");
 
-		bool melee = range <= 5.0f;
+		bool melee = range <= 0.0f;
 
 		for (int i = 0; i < inventory->getContainerObjectsSize(); ++i) {
 			SceneObject* item = inventory->getContainerObject(i);
 
-			if (!item->isPharmaceuticalObject())
+			if (!item->isTangibleObject())
 				continue;
 
-			PharmaceuticalObject* pharma = cast<PharmaceuticalObject*>(item);
+			TangibleObject* tano = cast<TangibleObject*>( item);
 
-			if (melee && pharma->isStimPack() && !pharma->isRangedStimPack() && !pharma->isPetStimPack() && !pharma->isDroidRepairKit()) {
-				StimPack* stimPack = cast<StimPack*>(pharma);
+			if (tano->isPharmaceuticalObject()) {
+				PharmaceuticalObject* pharma = cast<PharmaceuticalObject*>( tano);
 
-				if (stimPack->getMedicineUseRequired() <= medicineUse)
-					return stimPack;
-			}
+				if (melee && pharma->isStimPack() && !pharma->isRangedStimPack() && !pharma->isPetStimPack() && !pharma->isDroidRepairKit()) {
+					StimPack* stimPack = cast<StimPack*>(pharma);
 
-			if (pharma->isRangedStimPack()) {
-				RangedStimPack* stimPack = cast<RangedStimPack*>(pharma);
+					if (stimPack->getMedicineUseRequired() <= medicineUse)
+						return stimPack;
+				}
 
-				if (stimPack->getMedicineUseRequired() <= combatMedicineUse && stimPack->getRange(creature))
-					return stimPack;
+				if (pharma->isRangedStimPack()) {
+					RangedStimPack* stimPack = cast<RangedStimPack*>(pharma);
+
+					if (stimPack->getMedicineUseRequired() <= combatMedicineUse && stimPack->getRange(creature))
+						return stimPack;
+				}
 			}
 		}
 
@@ -247,7 +253,8 @@ public:
 			uint32 stimPower = rangeStim->calculatePower(creature, targetCreature);
 
 			uint32 healthHealed = targetCreature->healDamage(creature, CreatureAttribute::HEALTH, stimPower);
-			uint32 actionHealed = targetCreature->healDamage(creature, CreatureAttribute::ACTION, stimPower);
+			uint32 actionHealed = 0;
+			//uint32 actionHealed = targetCreature->healDamage(creature, CreatureAttribute::ACTION, stimPower);
 
 			if (creature->isPlayerCreature()) {
 				PlayerManager* playerManager = server->getZoneServer()->getPlayerManager();
@@ -257,7 +264,7 @@ public:
 			sendHealMessage(creature, targetCreature, healthHealed, actionHealed);
 
 			if (targetCreature != creature && !targetCreature->isPet())
-				awardXp(creature, "medical", (healthHealed + actionHealed)); //No experience for healing yourself or pets.
+				awardXp(creature, "combat_general", (healthHealed + actionHealed)); //No experience for healing yourself or pets.
 
 			checkForTef(creature, targetCreature);
 		}
@@ -266,8 +273,6 @@ public:
 	void handleArea(CreatureObject* creature, CreatureObject* areaCenter, StimPack* pharma,
 			float range) const {
 
-		// TODO: Replace this with a CombatManager::getAreaTargets() call
-		
 		Zone* zone = creature->getZone();
 
 		if (zone == NULL)
@@ -282,7 +287,7 @@ public:
 			closeObjectsVector->safeCopyTo(closeObjects);
 
 			for (int i = 0; i < closeObjects.size(); i++) {
-				SceneObject* object = static_cast<SceneObject*>( closeObjects.get(i));
+				SceneObject* object = cast<SceneObject*>( closeObjects.get(i));
 
 				if (!object->isPlayerCreature() && !object->isPet())
 					continue;
@@ -290,15 +295,12 @@ public:
 				if (object == areaCenter || object->isDroidObject())
 					continue;
 
-				if (areaCenter->getWorldPosition().distanceTo(object->getWorldPosition()) - object->getTemplateRadius() > range)
+				if (!areaCenter->isInRange(object, range))
 					continue;
 
 				CreatureObject* creatureTarget = cast<CreatureObject*>( object);
 
 				if (creatureTarget->isAttackableBy(creature))
-					continue;
-
-				if (!creatureTarget->isHealableBy(creature))
 					continue;
 
 				//zone->runlock();
@@ -382,12 +384,12 @@ public:
 		if (!canPerformSkill(creature, targetCreature, stimPack, mindCostNew))
 			return GENERALERROR;
 
-		float rangeToCheck = 7;
+		float rangeToCheck = 0.0;
 
 		if (stimPack->isRangedStimPack())
 			rangeToCheck = (cast<RangedStimPack*>(stimPack.get()))->getRange();
 
-		if(!checkDistance(creature, targetCreature, rangeToCheck))
+		if (!creature->isInRange(targetCreature, rangeToCheck + targetCreature->getTemplateRadius() + creature->getTemplateRadius()))
 			return TOOFAR;
 
 		if (creature != targetCreature && !CollisionManager::checkLineOfSight(creature, targetCreature)) {
@@ -398,7 +400,8 @@ public:
 		uint32 stimPower = stimPack->calculatePower(creature, targetCreature);
 
 		uint32 healthHealed = targetCreature->healDamage(creature, CreatureAttribute::HEALTH, stimPower);
-		uint32 actionHealed = targetCreature->healDamage(creature, CreatureAttribute::ACTION, stimPower, true, false);
+		uint32 actionHealed = 0;
+		//uint32 actionHealed = targetCreature->healDamage(creature, CreatureAttribute::ACTION, stimPower, true, false);
 
 		if (creature->isPlayerCreature()) {
 			PlayerManager* playerManager = server->getPlayerManager();
@@ -423,7 +426,7 @@ public:
 		}
 
 		if (stimPack->isRangedStimPack()) {
-			doAnimationsRange(creature, targetCreature, stimPack->getObjectID(), creature->getWorldPosition().distanceTo(targetCreature->getWorldPosition()));
+			doAnimationsRange(creature, targetCreature, stimPack->getObjectID(), creature->getDistanceTo(targetCreature));
 		} else {
 			doAnimations(creature, targetCreature);
 		}
@@ -438,5 +441,30 @@ public:
 	}
 
 };
+
+/*#include "server/zone/objects/scene/SceneObject.h"
+#include "TendCommand.h"
+
+class HealDamageCommand : public TendCommand {
+public:
+
+	HealDamageCommand(const String& name, ZoneProcessServer* server)
+			: TendCommand(name, server) {
+		effectName = "clienteffect/bacta_bomb.cef";
+
+		actionCost = 400;
+		mindWoundCost = 0;
+
+		tendDamage = true;
+
+		healthHealed = 1750;
+		//actionHealed = 50;
+
+		defaultTime = 4.0;
+		range = 32;
+	}
+
+};
+*/
 
 #endif //HEALDAMAGECOMMAND_H_
