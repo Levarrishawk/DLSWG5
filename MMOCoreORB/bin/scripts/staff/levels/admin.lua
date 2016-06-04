@@ -1,7 +1,7 @@
 admin = {
 	level = 15,
 	name = "admin",
-	tag = "DLSWG-Admin",
+	tag = "DLSWG-Dev",
 	skills = {
 		"admin_base",
 		"admin_debug_01",
