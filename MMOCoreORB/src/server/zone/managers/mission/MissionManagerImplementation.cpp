@@ -817,7 +817,7 @@ void MissionManagerImplementation::randomizeBountyMission(CreatureObject* player
 }
 
 void MissionManagerImplementation::randomizeGenericBountyMission(CreatureObject* player, MissionObject* mission, const uint32 faction) {
-	if (!player->hasSkill("combat_bountyhunter_novice")) {
+	if (!player->hasSkill("secondary_bountyhunter_novice")) {
 		player->sendSystemMessage("@mission/mission_generic:not_bounty_hunter_terminal");
 		mission->setTypeCRC(0);
 		return;
