@@ -41,7 +41,7 @@
 --which carries forward this exception.
 -- Core3 Config File
 -- 0 = false, 1 = true
-
+--test
 MakeLogin = 1
 MakeZone = 1
 MakePing = 1
