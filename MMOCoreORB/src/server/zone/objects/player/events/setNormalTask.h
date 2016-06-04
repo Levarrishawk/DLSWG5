@@ -15,7 +15,7 @@
 #include "server/chat/StringIdChatParameter.h"
 #include "server/zone/objects/player/PlayerObject.h"
 #include "server/zone/objects/creature/CreatureObject.h"
-#include "server/zone/objects/creature/CreatureAttribute.h"
+#include "src/templates/params/creature/CreatureAttribute.h"
 
 class setNormalTask: public Task {
 	ManagedReference<CreatureObject*> player;
