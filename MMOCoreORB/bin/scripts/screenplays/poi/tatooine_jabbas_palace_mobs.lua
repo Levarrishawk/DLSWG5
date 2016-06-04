@@ -12,21 +12,10 @@ TatooineJabbasPalaceMobsScreenPlay = ScreenPlay:new {
   },
 
   gamorrean_guards = {
-  --  {"gamorrean_guard", 60, -0.3, 5.8, 87.2, 93, 1177469, "Ortugg", "guard1"},
-  --  {"gamorrean_guard", 60, -11, 5.8, 88, 148, 1177469, "Rogua","guard2"},
   
     {"gamorrean_guard", 60, -8.3, 0.9, -6.2, 180, 35791444, "Gartogg","guard3"},
     
-  --  {"gamorrean_guard", 60, -1, 5.8, 98, 180, 1177469, "Torrug","guard4"},
-  --  {"gamorrean_guard", 60, 10, 5.8, 71, 180, 1177470, "Grogur", "guard5"},
-  --  {"gamorrean_guard", 60, -30.78, 0.2, 82.64, 180, 1177476, "Urgott","guard6"},
-  --  {"gamorrean_guard", 60, -2.04, 0.2, 82.61, 180, 1177480, "Artogg","guard7"},
-  --  {"gamorrean_guard", 60, -13, 3, 59, 180, 1177474, "Ogtur","guard8"},
-  --  {"gamorrean_guard", 60, -37, 5, 46, 180, 1177486, "Rautog","guard9"},
-  --  {"gamorrean_guard", 60, -25, 3.6, 34, 180, 1177487,  "Agtor","guard10"},
-  --  {"gamorrean_guard", 60, 6, 4, 26, 180, 1177487, "Torgau","guard11"},
-  --  {"gamorrean_guard", 60, 22, -9, 48, 180, 1177502, "Ugtaur","guard12"},
-  --  {"gamorrean_guard", 60, 0.14, 2, 53.1, 180, 1177487,  "Gurgot","guard13"},
+ 
   },
 
   droid_spawns = {
@@ -39,7 +28,6 @@ TatooineJabbasPalaceMobsScreenPlay = ScreenPlay:new {
     {"sy_snootles", 60, 23, -0.9, 9.7, -135, 35791444, "Sy Snootles", "themepark_sy_snootles"},
     {"max_rebo", 60, 25.4, -0.9, 10.7, -135, 35791444, "Max Rebo","themepark_music_3"},
     {"droopy_mccool", 60, 25.7, -0.9, 7.7, -135, 35791444, "Droopy McCool","themepark_music_3"},
-    --{"oola", 60, -10, 2, 43, 180, 1177487, "Oola", "themepark_oola"}
   },
 
 }
@@ -48,128 +36,15 @@ registerScreenPlay("TatooineJabbasPalaceMobsScreenPlay", true)
 
 function TatooineJabbasPalaceMobsScreenPlay:start()
   if (isZoneEnabled("chandrila")) then
-    spawnSceneObject("chandrila","object/tangible/instrument/organ_max_rebo.iff", 25.4, -0.9, 10.7, 35791444, 0.38,0,-0.92,0)
-    --spawnSceneObject("tatooine", "object/tangible/instrument/instrument_organ_max_rebo.iff", -11.1, 2, 36.2, 1177487, 0.9974847113288691, 0, -0.07088194879630508, 0)
+    spawnSceneObject("chandrila","object/tangible/instrument/organ_max_rebo.iff", 25.4, -0.9, 10.7, 35791444, 0.38,0,-0.92,0)    --spawnSceneObject("tatooine", "object/tangible/instrument/instrument_organ_max_rebo.iff", -11.1, 2, 36.2, 1177487, 0.9974847113288691, 0, -0.07088194879630508, 0)
     self:spawnMobiles()
     self:spawnStatics()
   end
 end
 
 function TatooineJabbasPalaceMobsScreenPlay:spawnStatics()
---  spawnMobile("tatooine", "beissa", 60, 8.11982, 2, 34.2394, 295, 1177487)
---  spawnMobile("tatooine", "bruce_mcbrain", 60, 7.71724, 0.2, 130.294, 292, 1177466)
---  spawnMobile("tatooine", "ev_9d9", 60, 24.47, 0.2, 87.86, 312, 1177479)
---  spawnMobile("tatooine", "boba_fett",60,-1,3,31,322.95,1177487)
---  spawnMobile("tatooine", "salacious_crumb",60,-16.29,2.81087,42.54,86.0692,1177487)
   spawnMobile("chandrila", "jabba_the_hutt",60,4.2,-0.9,-12.0,14,35791444)
---  spawnMobile("tatooine", "le_repair_droid", 60, 23.67, 0.2, 76.43, 130.65, 1177479)
---  spawnMobile("tatooine", "malakili", 60, 19, -11, 42, 23.355, 1177502)
---  spawnMobile("tatooine", "jabba_rancor", 60, 3.93472, -10.9823, 45.0053, 101.285, 1177503)
---  spawnMobile("tatooine", "protocol_droid_3po_red", 60, 10.71, 0.2, 84.27, 216, 1177479)
---  spawnMobile("tatooine", "ra7_bug_droid", 60, 13.33, 0.2, 88.72, 111.64,1177479)
 
---[[  pNpc = spawnMobile("tatooine", "outlaw", 300, 9.0, 5.8, 73.0, 153, 1177470)
-  self:setMoodString(pNpc, "angry")
-
-  pNpc = spawnMobile("tatooine", "commoner_naboo", 60, -33.8, 0.1, 76.6, 329, 1177491)
-  self:setMoodString(pNpc, "nervous")
-
-  pNpc = spawnMobile("tatooine", "commoner_tatooine", 60, -37.4, 0.1, 76.9, 242, 1177492)
-  self:setMoodString(pNpc, "worried")
-
-  pNpc = spawnMobile("tatooine", "commoner_tatooine", 60, -34.5, 0.1, 88.2, 228, 1177493)
-  self:setMoodString(pNpc, "nervous")
-
-  pNpc = spawnMobile("tatooine", "commoner_tatooine", 60, -38.7, 0.1, 88.2, 230, 1177494)
-  self:setMoodString(pNpc, "nervous")
-
-  pNpc = spawnMobile("tatooine", "commoner_tatooine", 60, -10.1, 0.1, 77.5, 332, 1177495)
-  self:setMoodString(pNpc, "nervous")
-
-  pNpc = spawnMobile("tatooine", "commoner_tatooine", 60, -13.6, 0.1, 77.5, 111, 1177496)
-  self:setMoodString(pNpc, "bored")
-
-  pNpc = spawnMobile("tatooine", "commoner_tatooine", 60, -10.9, 0.1, 87.5, 204, 1177497)
-  self:setMoodString(pNpc, "angry")
-
-  pNpc = spawnMobile("tatooine", "commoner_tatooine", 60, -15.4, 0.1, 87.7, 42, 1177498)
-  self:setMoodString(pNpc, "nervous") --]]
-
---[[  pNpc = spawnMobile("tatooine", "fringer", 300, -8.7, 2.0, 49.6, 347, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "jawa", 300, -23.0, 3.0, 59.0, 0, 1177474)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverseJawa", pNpc)
-
-  pNpc = spawnMobile("tatooine", "jawa", 300, -38.0, 3.0, 53.0, 46, 1177481)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverseJawa", pNpc)
-
-  pNpc = spawnMobile("tatooine", "jawa", 300, -23.0, 3.0, 61.0, 180, 1177474)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverseJawa", pNpc)
-
-  pNpc = spawnMobile("tatooine", "jawa", 300, -1.0, 3.0, 25.0, -23, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverseJawa", pNpc)
-
-  pNpc = spawnMobile("tatooine", "jawa", 300, -8.0, 3.0, 20.0, -25, 1177501)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverseJawa", pNpc)
-
-  pNpc = spawnMobile("tatooine", "jawa", 300, -18.0, 3.0, 13.0, 116, 1177501)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverseJawa", pNpc)
-
-  pNpc = spawnMobile("tatooine", "jawa", 300, 8.7, 2.0, 23.6, 16, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverseJawa", pNpc)
-
-  pNpc = spawnMobile("tatooine", "jawa", 300, 9.2, 2.0, 25.2, 196, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverseJawa", pNpc)
-
-  pNpc = spawnMobile("tatooine", "jawa", 300, 29.4, 0.2, 46.6, 179, 1177472)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverseJawa", pNpc)
-
-  pNpc = spawnMobile("tatooine", "jawa", 300, 29.4, 0.2, 45.4, 359, 1177472)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverseJawa", pNpc)
-
-  pNpc = spawnMobile("tatooine", "roughneck", 300, -9.8, 3.0, 59.7, 274, 1177474)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "roughneck", 300, -5.88, 2.0, 43.1, 8, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "roughneck", 300, -5.72, 2.0, 44.1, 188, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "scoundrel", 300, 5.0, 2.0, 44.0, 0, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "scoundrel", 300, -14.3, 2.0, 52.1, 264, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "slicer", 60, -9.0, 2.0, 51.0, 167, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "spacer", 300, -9.0, 3.0, 25.0, 303, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "thug", 300, -1.6, 3.0, 26.2, 151, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "thug", 300, -8.4, 3.0, 21.2, 160, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "thug", 300, 1.1, 2.0, 36.7, 180, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "thug", 300, -15.8, 2.0, 51.9, 84, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "thug", 300, -9.9, 3.0, 25.6, 123, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "thug", 300, 1.1, 2.0, 35.1, 0, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-
-  pNpc = spawnMobile("tatooine", "wastrel", 300, 5.1, 2.0, 45.5, 180, 1177487)
-  createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc)
-  --]]
 end
 
 
@@ -210,7 +85,7 @@ function TatooineJabbasPalaceMobsScreenPlay:spawnMobiles()
     end
   end
 
-  for i,v in ipairs(self.droid_spawns) do
+ --[[ for i,v in ipairs(self.droid_spawns) do
     pMobile = spawnMobile("tatooine", v[1], v[2], v[3], v[4], v[5], v[6], v[7])
     if (pMobile ~= nil) then
       writeData(SceneObject(pMobile):getObjectID() .. ":currentLoc", 1)
@@ -221,7 +96,7 @@ function TatooineJabbasPalaceMobsScreenPlay:spawnMobiles()
       AiAgent(pMobile):setAiTemplate("manualescortwalk")
       AiAgent(pMobile):setFollowState(4)
     end
-  end
+  end --]]
 
 end
 
@@ -272,7 +147,7 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
   local curLoc = readData(SceneObject(pMobile):getObjectID() .. ":currentLoc")
   local nextLoc
 
-  if (name == "guard1") then
+ ---[[ if (name == "guard1") then
     if (curLoc == 1) then
     nextLoc = { 6.4, .2, 130.7, 1177466 }
     else
@@ -286,7 +161,7 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
     else
     nextLoc = { 1, 5.8, 80, 1177469 }
     end
-  end
+  end --]]
 
   if (name == "guard3") then
     if (curLoc == 1) then
@@ -295,7 +170,7 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
     nextLoc = { 19.6, -0.9, -7.7, 35791444 }
     end
   end
-
+--[[
   if (name == "guard4") then
     if (curLoc == 1) then
     nextLoc = { -4.8, .2, 134.3, 1177466 }
@@ -374,7 +249,7 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
     else
     nextLoc = {.14, 2, 53.1, 1177487}
     end
-  end
+  end --]]
 
 
   if (name == "bmonk1") then
@@ -422,7 +297,7 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
     end
   end
 
-  if (name == "droid1") then
+  --[[ if (name == "droid1") then
     if (curLoc == 1) then
     nextLoc = {27.42, 0.2, 90.02, 1177479}
     else
@@ -430,7 +305,7 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
     end
   end
 
-  if (name == "droid4") then
+ if (name == "droid4") then
     if (curLoc == 1) then
     nextLoc = {8.97, 0.2, 88.26, 1177479}
     else
@@ -452,7 +327,7 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
     else
     nextLoc = {-25, 3, 61, 1177474}
     end
-  end
+  end --]]
 
   AiAgent(pMobile):stopWaiting()
   AiAgent(pMobile):setWait(0)
