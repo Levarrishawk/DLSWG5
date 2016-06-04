@@ -13,16 +13,10 @@ TatooineJabbasPalaceMobsScreenPlay = ScreenPlay:new {
 
   gamorrean_guards = {
   
-    {"gamorrean_guard", 60, -8.3, 0.9, -6.2, 180, 35791444, "Gartogg","guard3"},
+    {"gamorrean_guard", 60, -8.3, 0.9, -6.2, 180, 35791444, "Gartogg","guard1"},
     
- 
   },
 
-  droid_spawns = {
-    --{"r2", 60, 19.73, 0.2, 90.51, 0, 1177479, "R2-E7", "droid1"},
-  --  {"eg6_power_droid", 60, 17.42, 0.2, 81.22, 0, 1177479, "EG6-M5","droid4"},
-    --{"eg6_power_droid", 60, 43.29, 0.2, 7.14, 0, 1177499, "EG6-M9", "droid6"},
-  },
 
   jabba_band = {
     {"sy_snootles", 60, 23, -0.9, 9.7, -135, 35791444, "Sy Snootles", "themepark_sy_snootles"},
@@ -85,18 +79,6 @@ function TatooineJabbasPalaceMobsScreenPlay:spawnMobiles()
     end
   end
 
- --[[ for i,v in ipairs(self.droid_spawns) do
-    pMobile = spawnMobile("tatooine", v[1], v[2], v[3], v[4], v[5], v[6], v[7])
-    if (pMobile ~= nil) then
-      writeData(SceneObject(pMobile):getObjectID() .. ":currentLoc", 1)
-      writeStringData(SceneObject(pMobile):getObjectID() .. ":name", v[9])
-      CreatureObject(pMobile):setCustomObjectName(v[8])
-      createEvent(getRandomNumber(350,450) * 100, "TatooineJabbasPalaceMobsScreenPlay", "JabbaPatrol", pMobile)
-      createObserver(DESTINATIONREACHED, "TatooineJabbasPalaceMobsScreenPlay", "jabbaPatrolDestReached", pMobile)
-      AiAgent(pMobile):setAiTemplate("manualescortwalk")
-      AiAgent(pMobile):setFollowState(4)
-    end
-  end --]]
 
 end
 
@@ -147,110 +129,14 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
   local curLoc = readData(SceneObject(pMobile):getObjectID() .. ":currentLoc")
   local nextLoc
 
- --[[ if (name == "guard1") then
-    if (curLoc == 1) then
-    nextLoc = { 6.4, .2, 130.7, 1177466 }
-    else
-    nextLoc = { 0.6, 5.8, 80.4, 1177469 }
-    end
-  end
 
-  if (name == "guard2") then
-    if (curLoc == 1) then
-    nextLoc = { -22.22, 10.76, 64.30, 1177489 }
-    else
-    nextLoc = { 1, 5.8, 80, 1177469 }
-    end
-  end --]]
-
-  if (name == "guard3") then
+  if (name == "guard1") then
     if (curLoc == 1) then
     nextLoc = { -8.3, -0.9, -6.2, 35791444 }
     else
     nextLoc = { 19.6, -0.9, -7.7, 35791444 }
     end
   end
---[[
-  if (name == "guard4") then
-    if (curLoc == 1) then
-    nextLoc = { -4.8, .2, 134.3, 1177466 }
-    else
-    nextLoc = { -1, 5.8, 98, 1177469 }
-    end
-  end
-
-  if (name == "guard5") then
-    if (curLoc == 1) then
-    nextLoc = { 10, 5.8, 71, 1177470 }
-    else
-    nextLoc = {-25, 3, 61, 1177474}
-    end
-  end
-
-  if (name == "guard6") then
-    if (curLoc == 1) then
-    nextLoc = {-25.9, 0.2, 82.1, 1177475}
-    else
-    nextLoc ={-50.89, 0.2, 82.37, 1177476}
-    end
-  end
-
-  if (name == "guard7") then
-    if (curLoc == 1) then
-    nextLoc = {-19.74, .2, 82.23, 1177475}
-    else
-    nextLoc = {-2.04, .2, 82.61, 1177480}
-    end
-  end
-
-  if (name == "guard8") then
-    if (curLoc == 1) then
-    nextLoc = {-23.73, .82, 76.52, 1177475}
-    else
-    nextLoc = {-13, 5, 59, 1177474}
-    end
-  end
-
-  if (name == "guard9") then
-    if (curLoc == 1) then
-    nextLoc = {-32.17, 3, 55.89, 1177481}
-    else
-    nextLoc = {-37, 3, 46, 1177486}
-    end
-  end
-
-  if (name == "guard10") then
-    if (curLoc == 1) then
-    nextLoc = {-23.78, 3.6, 53.73, 1177487}
-    else
-    nextLoc = {-25, 5, 34, 1177487}
-    end
-  end
-
-  if (name == "guard11") then
-    if (curLoc == 1) then
-    nextLoc = {11.75, .2, -3.62, 1177484}
-    else
-    nextLoc =  {6, 4, 26, 1177487}
-    end
-  end
-
-  if (name == "guard12") then
-    if (curLoc == 1) then
-    nextLoc = {14.12, 5.55, 66.95, 1177471}
-    else
-    nextLoc = {16.2, -11, 46.2, 1177502}
-    end
-  end
-
-  if (name == "guard13") then
-    if (curLoc == 1) then
-    nextLoc = {-28.84, 8.89, 17.1, 1177485}
-    else
-    nextLoc = {.14, 2, 53.1, 1177487}
-    end
-  end --]]
-
 
   if (name == "bmonk1") then
     if (curLoc == 1) then
@@ -268,7 +154,6 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
   end
   if (name == "bmonk3") then
     if (curLoc == 1) then
-    --nextLoc = {-25, 3, 61, 1177474}
     nextLoc = {21, -11, 45.1, 1177502}
     else
     nextLoc =  {-18, 5.8, 73, 1177489}
@@ -297,37 +182,7 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
     end
   end
 
-  --[[ if (name == "droid1") then
-    if (curLoc == 1) then
-    nextLoc = {27.42, 0.2, 90.02, 1177479}
-    else
-    nextLoc = {19.73, 0.2, 90.51, 1177479}
-    end
-  end
 
- if (name == "droid4") then
-    if (curLoc == 1) then
-    nextLoc = {8.97, 0.2, 88.26, 1177479}
-    else
-    nextLoc = {17.42, 0.2, 81.22, 1177479}
-    end
-  end
-
-  if (name == "droid6") then
-    if (curLoc == 1) then
-    nextLoc = {38, .2, -5.53, 1177499}
-    else
-    nextLoc = {43.29, .2, 7.14, 1177499}
-    end
-  end
-
-  if (name == "random2") then
-    if (curLoc == 1) then
-    nextLoc = {-7.9, 3, 59.61, 1177474}
-    else
-    nextLoc = {-25, 3, 61, 1177474}
-    end
-  end --]]
 
   AiAgent(pMobile):stopWaiting()
   AiAgent(pMobile):setWait(0)
@@ -348,7 +203,7 @@ function TatooineJabbasPalaceMobsScreenPlay:jabbaPatrolDestReached(pMobile)
     writeData(SceneObject(pMobile):getObjectID() .. ":currentLoc", 1)
   end
 
-  --createEvent(getRandomNumber(350,450) * 100, "TatooineJabbasPalaceMobsScreenPlay", "JabbaPatrol", pMobile)
+  createEvent(getRandomNumber(250,450) * 100, "TatooineJabbasPalaceMobsScreenPlay", "JabbaPatrol", pMobile)
 
   return 0
 end
