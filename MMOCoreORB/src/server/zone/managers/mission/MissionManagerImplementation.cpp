@@ -832,9 +832,9 @@ void MissionManagerImplementation::randomizeGenericBountyMission(CreatureObject*
 
 	int level = 1;
 	int randomTexts = 25;
-	if (player->hasSkill("combat_bountyhunter_investigation_03")) {
+	if (player->hasSkill("secondary_bountyhunter_master")) {
 		level = 3;
-	} else if (player->hasSkill("combat_bountyhunter_investigation_01")) {
+	} else if (player->hasSkill("secondary_bountyhunter_invest_01")) {
 		level = 2;
 		randomTexts = 50;
 	}
