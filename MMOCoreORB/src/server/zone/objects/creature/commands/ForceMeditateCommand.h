@@ -7,6 +7,8 @@
 
 #include "server/zone/objects/scene/SceneObject.h"
 #include "server/zone/objects/player/events/ForceMeditateTask.h"
+#include "server/zone/objects/creature/CreatureObject.h"
+#include "server/zone/objects/player/events/MeditateTask.h"
 
 class ForceMeditateCommand : public QueueCommand {
 public:
