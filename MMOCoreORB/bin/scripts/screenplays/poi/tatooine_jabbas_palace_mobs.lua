@@ -147,7 +147,7 @@ function TatooineJabbasPalaceMobsScreenPlay:JabbaPatrol(pMobile)
   local curLoc = readData(SceneObject(pMobile):getObjectID() .. ":currentLoc")
   local nextLoc
 
- ---[[ if (name == "guard1") then
+ --[[ if (name == "guard1") then
     if (curLoc == 1) then
     nextLoc = { 6.4, .2, 130.7, 1177466 }
     else
