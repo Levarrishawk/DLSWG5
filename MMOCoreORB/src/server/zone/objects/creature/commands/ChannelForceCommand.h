@@ -34,7 +34,7 @@ public:
 
 		// Bonus is in between 200-300.
 		int rand = System::random(10);
-		int forceBonus = 200 + (rand * 10); // Needs to be divisible by amount of ticks.
+		int forceBonus = 25;
 
 		ManagedReference<PlayerObject*> playerObject = creature->getPlayerObject();
 
@@ -70,6 +70,8 @@ public:
 		// Give Force, and subtract HAM.
 		playerObject->setForcePower(playerObject->getForcePower() + forceBonus);
 
+		creature->playEffect("clienteffect/pl_force_channel_self.cef");
+
 		// Setup buffs.
 		uint32 buffCRC = STRING_HASHCODE("channelforcebuff");
 		Reference<Buff*> buff = creature->getBuff(buffCRC);
@@ -80,8 +82,9 @@ public:
 			Locker locker(buff);
 			
 			buff->setAttributeModifier(CreatureAttribute::HEALTH, -forceBonus);
-			buff->setAttributeModifier(CreatureAttribute::ACTION, -forceBonus);
-			buff->setAttributeModifier(CreatureAttribute::MIND, -forceBonus);
+
+		/*	buff->setAttributeModifier(CreatureAttribute::ACTION, -forceBonus);
+			buff->setAttributeModifier(CreatureAttribute::MIND, -forceBonus); */
 
 			creature->addBuff(buff);
 		} else {
@@ -89,14 +92,15 @@ public:
 
 			buff->setAttributeModifier(CreatureAttribute::HEALTH,
 									   buff->getAttributeModifierValue(CreatureAttribute::HEALTH)-forceBonus);
-			buff->setAttributeModifier(CreatureAttribute::ACTION,
+
+			/*buff->setAttributeModifier(CreatureAttribute::ACTION,
 									   buff->getAttributeModifierValue(CreatureAttribute::ACTION)-forceBonus);
 			buff->setAttributeModifier(CreatureAttribute::MIND,
-									   buff->getAttributeModifierValue(CreatureAttribute::MIND)-forceBonus);
+									   buff->getAttributeModifierValue(CreatureAttribute::MIND)-forceBonus); */
 			
 			creature->addMaxHAM(CreatureAttribute::HEALTH, -forceBonus);
-			creature->addMaxHAM(CreatureAttribute::ACTION, -forceBonus);
-			creature->addMaxHAM(CreatureAttribute::MIND, -forceBonus);
+		/*	creature->addMaxHAM(CreatureAttribute::ACTION, -forceBonus);
+			creature->addMaxHAM(CreatureAttribute::MIND, -forceBonus); */
 			
 			creature->renewBuff(buffCRC, duration + buff->getTimeLeft());
 			Reference<ChannelForceBuff*> channelBuff = buff.castTo<ChannelForceBuff*>();
@@ -108,7 +112,7 @@ public:
 	}
 
 	float getCommandDuration(CreatureObject* object, const UnicodeString& arguments) const {
-		return defaultTime * 3.0;
+		return defaultTime * 1.0;
 	}
 
 };
