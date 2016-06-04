@@ -348,7 +348,7 @@ function TatooineJabbasPalaceMobsScreenPlay:jabbaPatrolDestReached(pMobile)
     writeData(SceneObject(pMobile):getObjectID() .. ":currentLoc", 1)
   end
 
-  createEvent(getRandomNumber(350,450) * 100, "TatooineJabbasPalaceMobsScreenPlay", "JabbaPatrol", pMobile)
+  --createEvent(getRandomNumber(350,450) * 100, "TatooineJabbasPalaceMobsScreenPlay", "JabbaPatrol", pMobile)
 
   return 0
 end
