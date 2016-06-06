@@ -310,236 +310,139 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 				
 				"Commando",
 				{
-					"Novice", "combat_commando_novice",
-					"Field Tactics",
+					"Novice", "combat_mando_novice",
+					"Flame",
 					{
-						"Field Tactics I", "combat_commando_heavyweapon_accuracy_01",
-						"Field Tactics II", "combat_commando_heavyweapon_accuracy_02",
-						"Field Tactics III", "combat_commando_heavyweapon_accuracy_03",
-						"Field Tactics IV", "combat_commando_heavyweapon_accuracy_04"
+						"Flame I", "combat_mando_flame_01",
+						"Flame II", "combat_mando_flame_02",
+						"Flame III", "combat_mando_flame_03",
+						"Flame IV", "combat_mando_flame_04"
 					},
-					"Heavy Support Weapons",
+					"Riot Suppression",
 					{
-						"Heavy Support Weapons I", "combat_commando_heavyweapon_speed_01",
-						"Heavy Support Weapons II", "combat_commando_heavyweapon_speed_02",
-						"Heavy Support Weapons III", "combat_commando_heavyweapon_speed_03",
-						"Heavy Support Weapons IV", "combat_commando_heavyweapon_speed_04"
+						"Riot Suppression I", "combat_mando_riot_01",
+						"Riot Suppression II", "combat_mando_riot_02",
+						"Riot Suppression III", "combat_mando_riot_03",
+						"Riot Suppression IV", "combat_mando_riot_04"
 					},
-					"Flamethrower",
-					{
-						"Flamethrower Specialization I", "combat_commando_thrownweapon_01",
-						"Flamethrower Specialization II", "combat_commando_thrownweapon_02",
-						"Flamethrower Specialization III", "combat_commando_thrownweapon_03",
-						"Flamethrower Specialization IV", "combat_commando_thrownweapon_04"
-					},
-					"Acid Rifle",
-					{
-						"Acid Rifle Specialization I", "combat_commando_support_01",
-						"Acid Rifle Specialization II", "combat_commando_support_02",
-						"Acid Rifle Specialization III", "combat_commando_support_03",
-						"Acid Rifle Specialization IV", "combat_commando_support_04"
-					},
-					"Master", "combat_commando_master"
+					--"Master", "combat_commando_master"
 				},
 				"Jedi",
 				{
-					"Novice", "outdoors_creaturehandler_novice",
-					"Taming",
+					"Novice", "combat_jedi_novice",
+					"Light Side",
 					{
-						"Creature Taming I", "outdoors_creaturehandler_taming_01",
-						"Creature Taming II", "outdoors_creaturehandler_taming_02",
-						"Creature Taming III", "outdoors_creaturehandler_taming_03",
-						"Creature Taming IV", "outdoors_creaturehandler_taming_04"
+						"Light Side I", "combat_jedi_light_01",
+						"Light Side II", "combat_jedi_light_02",
+						"Light Side III", "combat_jedi_light_03",
+						"Light Side IV", "combat_jedi_light_04"
 					},
-					"Training",
+					"Dark Side",
 					{
-						"Creature Training I", "outdoors_creaturehandler_training_01",
-						"Creature Training II", "outdoors_creaturehandler_training_02",
-						"Creature Training III", "outdoors_creaturehandler_training_03",
-						"Creature Training IV", "outdoors_creaturehandler_training_04"
+						"Dark Side I", "combat_jedi_dark_01",
+						"Dark Side II", "combat_jedi_dark_02",
+						"Dark Side III", "combat_jedi_dark_03",
+						"Dark Side IV", "combat_jedi_dark_04"
 					},
-					"Empathy",
-					{
-						"Creature Empathy I", "outdoors_creaturehandler_healing_01",
-						"Creature Empathy II", "outdoors_creaturehandler_healing_02",
-						"Creature Empathy III", "outdoors_creaturehandler_healing_03",
-						"Creature Empathy IV", "outdoors_creaturehandler_healing_04"
-					},
-					"Management",
-					{
-						"Creature Management I", "outdoors_creaturehandler_support_01",
-						"Creature Management II", "outdoors_creaturehandler_support_02",
-						"Creature Management III", "outdoors_creaturehandler_support_03",
-						"Creature Management IV", "outdoors_creaturehandler_support_04"
-					},
-					"Master", "outdoors_creaturehandler_master"
+					
+					--"Master", "outdoors_creaturehandler_master"
 				},
 				"Medic",
 				{
-					"Novice", "social_dancer_novice",
-					"Techniques",
+					"Novice", "combat_medic_novice",
+					"Pistol Specialization",
 					{
-						"Dancing Techniques I", "social_dancer_ability_01",
-						"Dancing Techniques II", "social_dancer_ability_02",
-						"Dancing Techniques III", "social_dancer_ability_03",
-						"Technique Specialist IV", "social_dancer_ability_04"
+						"Pistol Specialization I", "combat_medic_pistol_01",
+						"Pistol Specialization II", "combat_medic_pistol_02",
+						"Pistol Specialization III", "combat_medic_pistol_03",
+						"Pistol Specialization IV", "combat_medic_pistol_04"
 					},
-					"Wound Healing",
+					"Polearm Specialization",
 					{
-						"Dancer's Wound Healing I", "social_dancer_wound_01",
-						"Dancer's Wound Healing II", "social_dancer_wound_02",
-						"Dancer's Wound Healing III", "social_dancer_wound_03",
-						"Dancer's Wound Healing IV", "social_dancer_wound_04"
+						"Polearm Specialization I", "combat_medic_polearm_01",
+						"Polearm Specialization II", "combat_medic_polearm_02",
+						"Polearm Specialization III", "combat_medic_polearm_03",
+						"Polearm Specialization IV", "combat_medic_polearm_04"
 					},
-					"Knowledge",
-					{
-						"Dancing Knowledge I", "social_dancer_knowledge_01",
-						"Dancing Knowledge II", "social_dancer_knowledge_02",
-						"Dancing Knowledge III", "social_dancer_knowledge_03",
-						"Dancing Knowledge IV", "social_dancer_knowledge_04"
-					},
-					"Fatigue Healing",
-					{
-						"Dancer's Fatigue Healing I", "social_dancer_shock_01",
-						"Dancer's Fatigue Healing II", "social_dancer_shock_02",
-						"Dancer's Fatigue Healing III", "social_dancer_shock_03",
-						"Dancer's Fatigue Healing IV", "social_dancer_shock_04"
-					},
-					"Master", "social_dancer_master"
+				--	"Master", "social_dancer_master"
 				},
 				"Assassin",
 				{
-					"Novice", "science_doctor_novice",
-					"Wound Treatment Speed",
+					"Novice", "combat_assassin_novice",
+					"Sniper",
 					{
-						"Intermediate Wound Treatment Speed", "science_doctor_wound_speed_01",
-						"Advanced Wound Treatment Speed", "science_doctor_wound_speed_02",
-						"Expert Wound Treatment Speed", "science_doctor_wound_speed_03",
-						"Master Wound Treatment Speed", "science_doctor_wound_speed_04"
+						"Sniper I", "combat_assassin_sniper_01",
+						"Sniper II", "combat_assassin_sniper_02",
+						"Sniper III", "combat_assassin_sniper_03",
+						"Sniper IV", "combat_assassin_sniper_04"
 					},
-					"Wound Treatment",
+					"Teras Kasi",
 					{
-						"Intermediate Wound Treatment", "science_doctor_wound_01",
-						"Advanced Wound Treatment", "science_doctor_wound_02",
-						"Expert Wound Treatment", "science_doctor_wound_03",
-						"Master Wound Treatment", "science_doctor_wound_04"
-					},
-					"Medicine Knowledge",
-					{
-						"Intermediate Doctor's Medicine Knowledge", "science_doctor_ability_01",
-						"Advanced Doctor's Medicine Knowledge", "science_doctor_ability_02",
-						"Expert Doctor's Medicine Knowledge", "science_doctor_ability_03",
-						"Master Doctor's Medicine Knowledge", "science_doctor_ability_04"
-					},
-					"Medicine Crafting",
-					{
-						"Intermediate Doctor's Medicine Crafting", "science_doctor_support_01",
-						"Advanced Doctor's Medicine Crafting", "science_doctor_support_02",
-						"Expert Doctor's Medicine Crafting", "science_doctor_support_03",
-						"Master Doctor's Medicine Crafting", "science_doctor_support_04"
-					},
-					"Master", "science_doctor_master"
+						"Teras Kasi I", "combat_assassin_tka_01",
+						"Teras Kasi II", "combat_assassin_tka_02",
+						"Teras Kasi III", "combat_assassin_tka_03",
+						"Teras Kasi IV", "combat_assassin_tka_04"
+					},					
+				--	"Master", "science_doctor_master"
 				},
 				"Officer",
 				{
-					"Novice", "crafting_droidengineer_novice",
-					"Production",
+					"Novice", "combat_officer_novice",
+					"Strike Command",
 					{
-						"Intermediate Droid Production", "crafting_droidengineer_production_01",
-						"Advanced Droid Production", "crafting_droidengineer_production_02",
-						"Expert Droid Production", "crafting_droidengineer_production_03",
-						"Master Droid Production", "crafting_droidengineer_production_04"
+						"Strike Command I", "combat_officer_strike_01",
+						"Strike Command II", "combat_officer_strike_02",
+						"Strike Command III", "combat_officer_strike_03",
+						"Strike Command IV", "combat_officer_strike_04"
 					},
-					"Construction Techniques",
+					"Battle Tactics",
 					{
-						"Intermediate Droid Construction Techniques", "crafting_droidengineer_techniques_01",
-						"Advanced Droid Construction Techniques", "crafting_droidengineer_techniques_02",
-						"Expert Droid Construction Techniques", "crafting_droidengineer_techniques_03",
-						"Master Droid Construction Techniques", "crafting_droidengineer_techniques_04"
+						"Battle Tactics I", "combat_officer_tact_01",
+						"Battle Tactics II", "combat_officer_tact_02",
+						"Battle Tactics III", "combat_officer_tact_03",
+						"Battle Tactics IV", "combat_officer_tact_04"
 					},
-					"Refinement",
-					{
-						"Intermediate Droid Refinement", "crafting_droidengineer_refinement_01",
-						"Advanced Droid Refinement", "crafting_droidengineer_refinement_02",
-						"Expert Droid Refinement", "crafting_droidengineer_refinement_03",
-						"Master Droid Refinement", "crafting_droidengineer_refinement_04"
-					},
-					"Blueprints",
-					{
-						"Intermediate Droid Blueprints", "crafting_droidengineer_blueprints_01",
-						"Advanced Droid Blueprints", "crafting_droidengineer_blueprints_02",
-						"Expert Droid Blueprints", "crafting_droidengineer_blueprints_03",
-						"Master Droid Blueprints", "crafting_droidengineer_blueprints_04"
-					},
-					"Master", "crafting_droidengineer_master"
+				--	"Master", "crafting_droidengineer_master"
 				},
 				
 				"Shock Trooper",
 				{
-					"Novice", "combat_1hsword_novice",
-					"Stances and Grips",
+					"Novice", "combat_shocktrooper_novice",
+					"Electrocution",
 					{
-						"Intermediate Fencing Stances and Grips", "combat_1hsword_accuracy_01",
-						"Advanced Fencing Stances and Grips", "combat_1hsword_accuracy_02",
-						"Expert Fencing Stances and Grips", "combat_1hsword_accuracy_03",
-						"Master Fencing Stances and Grips", "combat_1hsword_accuracy_04"
+						"Electrocution I", "combat_shocktrooper_electro_01",
+						"Electrocution II", "combat_shocktrooper_electro_02",
+						"Electrocution III", "combat_shocktrooper_electro_03",
+						"Electrocution IV", "combat_shocktrooper_electro_04"
 					},
-					"Footwork",
+					"Voltage",
 					{
-						"Intermediate Footwork", "combat_1hsword_speed_01",
-						"Advanced Footwork", "combat_1hsword_speed_02",
-						"Expert Footwork", "combat_1hsword_speed_03",
-						"Master Footwork", "combat_1hsword_speed_04"
+						"Voltage I", "combat_shocktrooper_stun_01",
+						"Voltage II", "combat_shocktrooper_stun_02",
+						"Voltage III", "combat_shocktrooper_stun_03",
+						"Voltage IV", "combat_shocktrooper_stun_04"
 					},
-					"Technique",
-					{
-						"Intermediate Fencing Technique", "combat_1hsword_ability_01",
-						"Advanced Fencing Technique", "combat_1hsword_ability_02",
-						"Expert Fencing Technique", "combat_1hsword_ability_03",
-						"Master Fencing Technique", "combat_1hsword_ability_04"
-					},
-					"Finesse",
-					{
-						"Intermediate Fencing Finesse", "combat_1hsword_support_01",
-						"Advanced Fencing Finesse", "combat_1hsword_support_02",
-						"Expert Fencing Finesse", "combat_1hsword_support_03",
-						"Master Fencing Finesse", "combat_1hsword_support_04"
-					},
-					"Master", "combat_1hsword_master"
+				--	"Master", "combat_1hsword_master"
 				},
 				
 				"Soldier",
 				{
-					"Novice", "social_imagedesigner_novice",
-					"Hairstyling",
+					"Novice", "combat_soldier_novice",
+					"Light Infantry",
 					{
-						"Hairstyling I", "social_imagedesigner_hairstyle_01",
-						"Hairstyling II", "social_imagedesigner_hairstyle_02",
-						"Hairstyling III", "social_imagedesigner_hairstyle_03",
-						"Hairstyling IV", "social_imagedesigner_hairstyle_04"
+						"Light Infantry I", "combat_soldier_light_01",
+						"Light Infantry II", "combat_soldier_light_02",
+						"Light Infantry III", "combat_soldier_light_03",
+						"Light Infantry IV", "combat_soldier_light_04"
 					},
-					"Face",
+					"Heavy Infantry",
 					{
-						"Face I", "social_imagedesigner_exotic_01",
-						"Face II", "social_imagedesigner_exotic_02",
-						"Face III", "social_imagedesigner_exotic_03",
-						"Face IV", "social_imagedesigner_exotic_04"
+						"Heavy Infantry I", "combat_soldier_heavy_01",
+						"Heavy Infantry II", "combat_soldier_heavy_02",
+						"Heavy Infantry III", "combat_soldier_heavy_03",
+						"Heavy Infantry IV", "combat_soldier_heavy_04"
 					},
-					"Bodyform",
-					{
-						"Bodyform I", "social_imagedesigner_bodyform_01",
-						"Bodyform II", "social_imagedesigner_bodyform_02",
-						"Bodyform III", "social_imagedesigner_bodyform_03",
-						"Bodyform Iv", "social_imagedesigner_bodyform_04"
-					},
-					"Markings",
-					{
-						"Markings I", "social_imagedesigner_markings_01",
-						"Markings II", "social_imagedesigner_markings_02",
-						"Markings III", "social_imagedesigner_markings_03",
-						"Markings IV", "social_imagedesigner_markings_04"
-					},
-					"Master", "social_imagedesigner_master"
+			--		"Master", "social_imagedesigner_master"
 				},
 											
 		
