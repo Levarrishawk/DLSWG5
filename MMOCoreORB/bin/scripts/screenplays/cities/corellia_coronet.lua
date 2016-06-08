@@ -674,6 +674,10 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
   spawnMobile("corellia", "stormtrooper", 1, -215.9, 28, -4688.4, 81, 0)
   spawnMobile("corellia", "stormtrooper", 1, -219.1, 28, -4683.9, 90, 0)
   spawnMobile("corellia", "stormtrooper", 1, -219.2, 28, -4678.1, 109, 0)
+  
+  spawnMobile("corellia", "at_at", 30, -194.5, 28, -4733.1, 46, 0)
+  
+  spawnMobile("corellia", "stormtrooper", 1, -204.5, 28, -4728.6, 46, 0)
     -- Republic Lines
     
   spawnMobile("corellia", "rebel_trooper", 1, -134.5, 28, -4700.3, 51, 0)  
@@ -710,5 +714,12 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
   spawnMobile("corellia", "rebel_trooper", 1, -198.7, 28, -4678.1, -93, 0)
   spawnMobile("corellia", "rebel_trooper", 1, -200.4, 28, -4684.9, -78, 0)
   spawnMobile("corellia", "rebel_trooper", 1, -201.9, 28, -4690.4, -79, 0)
+  
+  spawnMobile("corellia", "rebel_trooper", 1, -185.6, 28, -4710.7, -151, 0)
+  spawnMobile("corellia", "rebel_trooper", 1, -180.2, 28, -4715.7, -142, 0)
+  spawnMobile("corellia", "rebel_trooper", 1, -177.8, 28, -4719.2, -128, 0)
+  spawnMobile("corellia", "rebel_trooper", 1, -174.7, 28, -4724.2, -125, 0)
+  spawnMobile("corellia", "rebel_trooper", 1, -173.6, 28, -4728.7, -113, 0)
+  spawnMobile("corellia", "rebel_trooper", 1, -173.5, 28, -4734.1, -103, 0)
   
 end
