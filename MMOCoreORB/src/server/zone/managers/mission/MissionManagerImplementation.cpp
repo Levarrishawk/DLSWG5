@@ -120,7 +120,7 @@ void MissionManagerImplementation::handleMissionListRequest(MissionTerminal* mis
 	}
 
 	if (missionTerminal->isBountyTerminal()) {
-		if (!player->hasSkill("combat_bountyhunter_novice")) {
+		if (!player->hasSkill("secondary_bountyhunter_novice")) {
 			player->sendSystemMessage("@mission/mission_generic:not_bounty_hunter_terminal");
 			return;
 		}
