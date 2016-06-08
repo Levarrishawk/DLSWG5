@@ -26,8 +26,8 @@ function RoriNarmleScreenPlay:spawnMobiles()
   --starport added
   local pNpc = spawnMobile("rori", "commoner_fat",60,-31.3,1.6,66.1,-98,4635442)
   self:setMoodString(pNpc, "npc_sitting_table_eating")
---  pNpc = spawnMobile("rori", "trainer_shipwright",60,6.2,0.6,67.0,-138,4635437)
---  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile("rori", "trainer_architect",60,6.2,0.6,67.0,-138,4635437)
+  self:setMoodString(pNpc, "conversation")
   pNpc = spawnMobile("rori", "chassis_dealer",60,4.1,0.6,66.2,69,4635437)
   self:setMoodString(pNpc, "conversation")
 

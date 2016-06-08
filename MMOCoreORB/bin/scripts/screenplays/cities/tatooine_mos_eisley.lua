@@ -301,7 +301,7 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
   spawnMobile("tatooine", "jawa",360,-15.1,1.0,-9.1,-90,1187873)
 
   --Guild Hall 3429 -4730
-  spawnMobile("tatooine", "trainer_artisan",0,-0.0585386,1.13306,-13.9039,0,1279964)
+  spawnMobile("tatooine", "trainer_droidengineer",0,-0.0585386,1.13306,-13.9039,0,1279964)
 
   --Guild Hall 3479 -4684
   spawnMobile("tatooine", "trainer_2hsword",0,11,1.1,-11,0,1189637)

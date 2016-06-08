@@ -1,26 +1,26 @@
-TatooineAnchorheadScreenPlay = ScreenPlay:new {
+TatooineBestineScreenPlay = ScreenPlay:new {
   numberOfActs = 1,
 
-  screenplayName = "TatooineAnchorheadScreenPlay"
+  screenplayName = "TatooineBestineScreenPlay"
 }
 
-registerScreenPlay("TatooineAnchorheadScreenPlay", true)
+registerScreenPlay("TatooineBestineScreenPlay", true)
 
-function TatooineAnchorheadScreenPlay:start()
+function TatooineBestineScreenPlay:start()
   if (isZoneEnabled("tatooine")) then
     self:spawnMobiles()
     self:spawnSceneObjects()
   end
 end
 
-function TatooineAnchorheadScreenPlay:spawnSceneObjects()
+function TatooineBestineScreenPlay:spawnSceneObjects()
 
   --Tavern
   spawnSceneObject("tatooine", "object/mobile/dressed_rebel_crewman_human_male_03.iff", -0.3, -4.0, -3.7, 1213349, math.rad(90) )
 
 end
 
-function TatooineAnchorheadScreenPlay:spawnMobiles()
+function TatooineBestineScreenPlay:spawnMobiles()
 
   --Atnything dashed out will need to be added here and removed from spawn manager once the spawnMobiles command is extended.
 

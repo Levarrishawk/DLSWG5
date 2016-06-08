@@ -125,8 +125,8 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "conversation")
   pNpc = spawnMobile("corellia", "mercenary",300,-62.7673,2.63942,41.7604,179.995,1855683)
   self:setMoodString(pNpc, "conversation")
-  pNpc = spawnMobile("corellia", "trainer_shipwright",60,-0.1,0.6,67.1,-179,1855675)
-  self:setMoodString(pNpc, "neutral")
+--  pNpc = spawnMobile("corellia", "trainer_shipwright",60,-0.1,0.6,67.1,-179,1855675)
+--  self:setMoodString(pNpc, "neutral")
 
   --Guild Hall -275 -4700
   pNpc = spawnMobile("corellia", "sullustan_male",300,-9.42234,1.75,-18.7259,180.005,1855484)

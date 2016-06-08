@@ -35,8 +35,8 @@ function NabooMoeniaScreenPlay:spawnMobiles()
   pNpc = spawnMobile("naboo", "medic",60,54.4,-0.5,42.7,-120,4215413)
   self:setMoodString(pNpc, "npc_consoling")
   --relocated sw trainer from originally bugged exterior placement
---  pNpc = spawnMobile("naboo", "trainer_shipwright",60,-0.4,0.6,67.1,-177,4215410)
-  --self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("naboo", "trainer_architect",60,-0.4,0.6,67.1,-177,4215410)
+  self:setMoodString(pNpc, "neutral")
 
   --Outside
   spawnMobile("naboo", "mummer_thug", 300, getRandomNumber(10) + 4856.8, 4.2, getRandomNumber(10) + -4701.5, getRandomNumber(360), 0)
