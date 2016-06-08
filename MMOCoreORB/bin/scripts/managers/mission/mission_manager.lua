@@ -18,7 +18,8 @@ bh_target_zones = {
 	"rori",
 	"talus",
 	"tatooine",
-	"yavin4"
+	"yavin4",
+	"chandrila"
 }
 
 bh_targets_at_mission_level = {
