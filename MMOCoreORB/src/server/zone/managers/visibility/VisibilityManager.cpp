@@ -123,11 +123,11 @@ void VisibilityManager::login(CreatureObject* creature) {
 
 	if (ghost != NULL) {
 
-		//You only gain visibility after completing the padawan trials
+	/*	//You only gain visibility after completing the padawan trials
 		if(!creature->hasSkill("force_title_jedi_rank_02")) {
 			//info("Player " + creature->getFirstName() + " does not qualify for visibility", true);
 			return;
-		}
+		} */
 
 		decreaseVisibility(creature);
 
