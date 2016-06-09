@@ -49,6 +49,7 @@ Melee2hSweep2Command = {
   actionCostMultiplier = 1.75,
   mindCostMultiplier = 0,
         accuracyBonus = 10,
+          visMod = 25,
         
 	animation = "lower_posture_2hmelee_6",
 

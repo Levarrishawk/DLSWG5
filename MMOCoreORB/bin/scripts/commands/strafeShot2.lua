@@ -49,7 +49,7 @@ StrafeShot2Command = {
   healthCostMultiplier = 0,
   actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
-  
+    visMod = 25,
   coneAngle = 30,
   coneAction = true,
 

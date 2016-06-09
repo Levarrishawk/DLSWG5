@@ -47,6 +47,7 @@ PolearmLunge2Command = {
 	damageMultiplier = 2.0,
 	speedMultiplier = 2.5,
 	accuracyBonus = 10,
+	 visMod = 25,
 	
 	healthCostMultiplier = 0.625,
 	actionCostMultiplier = 1.5,

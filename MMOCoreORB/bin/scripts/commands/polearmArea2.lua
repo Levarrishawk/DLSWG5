@@ -50,6 +50,7 @@ PolearmArea2Command = {
   actionCostMultiplier = 1,
   mindCostMultiplier = 0,
   accuracyBonus = 30,
+    visMod = 25,
 
 
 	areaRange = 16,

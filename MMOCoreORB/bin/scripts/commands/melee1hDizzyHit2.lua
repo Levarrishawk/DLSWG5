@@ -50,6 +50,7 @@ Melee1hDizzyHit2Command = {
   actionCostMultiplier = 1,
   mindCostMultiplier = 0,
         accuracyBonus = 25,
+          visMod = 25,
 
   areaRange = 16,
   areaAction = true,

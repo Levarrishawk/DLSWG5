@@ -47,6 +47,7 @@ UnarmedStun1Command = {
 	damageMultiplier = 1.25,
 	speedMultiplier = 2.0,
 	accuracyBonus = 15,
+	 visMod = 25,
 	
 	healthCostMultiplier = 1.5,
 	actionCostMultiplier = 1.5,

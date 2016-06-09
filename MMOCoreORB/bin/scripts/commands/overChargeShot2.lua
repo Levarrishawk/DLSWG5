@@ -50,6 +50,7 @@ OverChargeShot2Command = {
   actionCostMultiplier = 1,
   mindCostMultiplier = 0,
   accuracyBonus = 15,
+    visMod = 25,
   
   poolsToDamage = HEALTH_ATTRIBUTE,
 

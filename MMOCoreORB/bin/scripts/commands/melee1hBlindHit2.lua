@@ -50,6 +50,7 @@ Melee1hBlindHit2Command = {
   actionCostMultiplier = 2.5,
   mindCostMultiplier = 0,
         accuracyBonus = 25,
+          visMod = 25,
 
   areaRange = 7,
   areaAction = true,

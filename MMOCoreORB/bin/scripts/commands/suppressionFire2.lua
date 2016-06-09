@@ -50,7 +50,7 @@ SuppressionFire2Command = {
   actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
   accuracyBonus = 25,
-  
+    visMod = 25,
   coneAngle = 180,
   coneAction = true,
   

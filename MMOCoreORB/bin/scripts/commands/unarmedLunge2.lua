@@ -47,6 +47,7 @@ UnarmedLunge2Command = {
 	damageMultiplier = 3.0,
 	speedMultiplier = 2.0,
 	accuracyBonus = 15,
+	 visMod = 25,
 	
 	healthCostMultiplier = 1.5,
 	actionCostMultiplier = 1.5,

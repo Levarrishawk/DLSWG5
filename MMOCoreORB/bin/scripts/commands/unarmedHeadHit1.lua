@@ -49,6 +49,7 @@ UnarmedHeadHit1Command = {
 	healthCostMultiplier = 1.75,
 	actionCostMultiplier = 1.75,
 	mindCostMultiplier = 1.75,
+	 visMod = 25,
         accuracyBonus = 15,
 
 	poolsToDamage = MIND_ATTRIBUTE,

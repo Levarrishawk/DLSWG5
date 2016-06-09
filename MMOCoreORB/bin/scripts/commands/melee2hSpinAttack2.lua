@@ -48,6 +48,7 @@ Melee2hSpinAttack2Command = {
   healthCostMultiplier = 0,
   actionCostMultiplier = 4,
   mindCostMultiplier = 0,
+    visMod = 25,
         --accuracyBonus = 10,
         
   poolsToDamage = HEALTH_ATTRIBUTE,

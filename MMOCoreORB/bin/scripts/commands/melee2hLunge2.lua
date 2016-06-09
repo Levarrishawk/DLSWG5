@@ -47,7 +47,7 @@ Melee2hLunge2Command = {
 	damageMultiplier = 1.0,
   speedMultiplier = 2.5,
   accuracyBonus = 10,
-  
+    visMod = 25,
   healthCostMultiplier = 0,
   actionCostMultiplier = 3,
   mindCostMultiplier = 0,

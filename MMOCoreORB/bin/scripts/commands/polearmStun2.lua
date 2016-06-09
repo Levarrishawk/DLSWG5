@@ -53,6 +53,7 @@ PolearmStun2Command = {
   poolsToDamage = HEALTH_ATTRIBUTE,
   areaRange = 16,
   areaAction = true,
+    visMod = 25,
 
   stateEffects = {
     StateEffect( 

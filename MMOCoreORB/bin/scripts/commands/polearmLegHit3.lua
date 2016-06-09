@@ -50,6 +50,7 @@ PolearmLegHit3Command = {
 	actionCostMultiplier = 1.5,
 	mindCostMultiplier = 1.5,
 	accuracyBonus = 10,
+	 visMod = 25,
 
 	animation = "combo_3b", 
 	animType = GENERATE_INTENSITY,

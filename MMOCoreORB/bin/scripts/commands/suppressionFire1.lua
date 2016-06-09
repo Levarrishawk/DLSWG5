@@ -50,6 +50,7 @@ SuppressionFire1Command = {
   actionCostMultiplier = 3.5,
   mindCostMultiplier = 0,
   accuracyBonus = 25,
+    visMod = 25,
   stateEffects = {
     StateEffect( 
     POSTUREDOWN_EFFECT, 

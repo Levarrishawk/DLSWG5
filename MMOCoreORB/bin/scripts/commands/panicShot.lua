@@ -50,6 +50,7 @@ PanicShotCommand = {
   actionCostMultiplier = 2.25,
   mindCostMultiplier = 0,
   accuracyBonus = 50,
+    visMod = 25,
 
   stateEffects = {
     StateEffect( 

@@ -50,6 +50,7 @@ PolearmSweep2Command = {
 	actionCostMultiplier = 1.5,
 	mindCostMultiplier = 1.5,
 	accuracyBonus = 15,
+	 visMod = 25,
 
 	stateEffects = {
 	  StateEffect( 

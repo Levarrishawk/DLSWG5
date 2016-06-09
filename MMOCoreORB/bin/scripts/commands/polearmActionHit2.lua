@@ -49,6 +49,7 @@ PolearmActionHit2Command = {
   healthCostMultiplier = 0,
   actionCostMultiplier = 3,
   mindCostMultiplier = 0,
+    visMod = 25,
   --accuracyBonus = 30,
   
   poolsToDamage = HEALTH_ATTRIBUTE,

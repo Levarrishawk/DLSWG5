@@ -50,7 +50,7 @@ StartleShot2Command = {
   actionCostMultiplier = 2,
   mindCostMultiplier = 0,
   accuracyBonus = 5,
-  
+    visMod = 25,
   coneAngle = 60,
   coneAction = true,
 

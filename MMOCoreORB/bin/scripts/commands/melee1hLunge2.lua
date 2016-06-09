@@ -49,6 +49,7 @@ Melee1hLunge2Command = {
   healthCostMultiplier = 0,
   actionCostMultiplier = 2.5,
   mindCostMultiplier = 0,
+    visMod = 25,
   
   poolsToDamage = HEALTH_ATTRIBUTE,
 
