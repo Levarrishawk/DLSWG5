@@ -49,6 +49,7 @@ damageMultiplier = 1.5,
   healthCostMultiplier = 0,
   actionCostMultiplier = 1.75,
   mindCostMultiplier = 0,
+    visMod = 25,
 
   
   poolsToDamage = HEALTH_ATTRIBUTE,

@@ -50,6 +50,7 @@ FlameSingle2Command = {
   actionCostMultiplier = 1.0,
   mindCostMultiplier = 0,
   accuracyBonus = 0,
+    visMod = 25,
 
   poolsToDamage = HEALTH_ATTRIBUTE,
 

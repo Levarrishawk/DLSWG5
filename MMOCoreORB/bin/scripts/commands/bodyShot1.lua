@@ -50,6 +50,7 @@ BodyShot1Command = {
   actionCostMultiplier = 2,
   mindCostMultiplier = 0,
   accuracyBonus = 50,
+    visMod = 25,
 
 	poolsToDamage = HEALTH_ATTRIBUTE,
 

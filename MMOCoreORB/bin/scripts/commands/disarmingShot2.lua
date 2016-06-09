@@ -50,6 +50,7 @@ DisarmingShot2Command = {
   actionCostMultiplier = 1.0,
   mindCostMultiplier = 0.5,
         accuracyBonus = 50,
+          visMod = 25,
 
   coneAngle = 15,
   coneAction = true,

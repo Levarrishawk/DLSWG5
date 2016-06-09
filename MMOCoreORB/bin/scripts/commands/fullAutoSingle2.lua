@@ -50,6 +50,7 @@ FullAutoSingle2Command = {
   actionCostMultiplier = 3.5,
   mindCostMultiplier = 0,
   accuracyBonus = 25,
+    visMod = 25,
 
 	animation = "fire_7_single", 
 	animType = GENERATE_RANGED,

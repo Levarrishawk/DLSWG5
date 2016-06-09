@@ -50,6 +50,7 @@ HeadShot2Command = {
   actionCostMultiplier = 2.5,
   mindCostMultiplier = 0,
   accuracyBonus = 5,
+    visMod = 25,
 
 
 	animation = "fire_1_special_single", 

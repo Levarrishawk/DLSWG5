@@ -49,6 +49,7 @@ FullAutoSingle1Command = {
   healthCostMultiplier = 0,
   actionCostMultiplier = 3.5,
   mindCostMultiplier = 0,
+    visMod = 25,
 
 	animation = "fire_5_special_single", 
 	animType = GENERATE_RANGED,

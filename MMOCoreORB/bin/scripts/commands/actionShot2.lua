@@ -49,6 +49,7 @@ ActionShot2Command = {
   healthCostMultiplier = 0,
   actionCostMultiplier = 1,
   mindCostMultiplier = 0,
+  visMod = 25,
 
 	--[[coneAngle = 15,
 	coneAction = true,--]]

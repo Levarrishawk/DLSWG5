@@ -50,6 +50,7 @@ FlurryShot2Command = {
   actionCostMultiplier = 2,
   mindCostMultiplier = 0,
   accuracyBonus = 5,
+    visMod = 25,
 
   coneAngle = 45,
   coneAction = true,

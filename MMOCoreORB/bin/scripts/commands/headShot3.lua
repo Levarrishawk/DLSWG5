@@ -50,6 +50,7 @@ HeadShot3Command = {
   actionCostMultiplier = 2.5,
   mindCostMultiplier = 0,
   accuracyBonus = 5,
+    visMod = 25,
 
   poolsToDamage = HEALTH_ATTRIBUTE,
 

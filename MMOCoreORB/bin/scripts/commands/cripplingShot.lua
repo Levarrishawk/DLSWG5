@@ -50,6 +50,7 @@ CripplingShotCommand = {
   actionCostMultiplier = 5,
   mindCostMultiplier = 0,
   accuracyBonus = 25,
+    visMod = 25,
 
   poolsToDamage = HEALTH_ATTRIBUTE,
 

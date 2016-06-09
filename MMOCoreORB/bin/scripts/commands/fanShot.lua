@@ -49,6 +49,7 @@ FanShotCommand = {
   actionCostMultiplier = 1.25,
   mindCostMultiplier = 0,
         accuracyBonus = 50,
+          visMod = 25,
 
         --cone angle isn't strictly documented, leaving it alone
   coneAngle = 60,

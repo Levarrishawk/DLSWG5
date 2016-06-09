@@ -49,6 +49,7 @@ FlameCone2Command = {
   actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
   accuracyBonus = 0,
+    visMod = 25,
   
   coneAngle = 90,
   coneAction = true,

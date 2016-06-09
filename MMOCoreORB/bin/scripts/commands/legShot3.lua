@@ -50,7 +50,7 @@ LegShot3Command = {
   actionCostMultiplier = 1.25,
   mindCostMultiplier = 0,
   accuracyBonus = 25,
-  
+    visMod = 25,
 
 
   stateEffects = {

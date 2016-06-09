@@ -50,6 +50,7 @@ FullAutoArea2Command = {
   actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
   accuracyBonus = 25,
+    visMod = 25,
 
 	animation = "fire_area",
 	animType = GENERATE_INTENSITY,

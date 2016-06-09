@@ -50,6 +50,7 @@ ChargeShot1Command = {
 	actionCostMultiplier = 2.0,
 	mindCostMultiplier = 0.5,
 	accuracyBonus = 25,
+	 visMod = 25,
 
 	animation = "charge",
 

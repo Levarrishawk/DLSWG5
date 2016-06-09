@@ -49,6 +49,7 @@ ConfusionShotCommand = {
   healthCostMultiplier = 0,
   actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
+    visMod = 25,
 
   stateEffects = {
     StateEffect( 

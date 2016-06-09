@@ -50,6 +50,7 @@ DisarmingShot1Command = {
 	actionCostMultiplier = 0.75,
 	mindCostMultiplier = 0.5,
         accuracyBonus = 50,
+          visMod = 25,
 
 	animation = "fire_3_single", 
 	animType = GENERATE_RANGED,
