@@ -44,12 +44,12 @@
 FlushingShot1Command = {
         name = "flushingshot1",
 
-	damageMultiplier = 2.0,
-	speedMultiplier = 2.0,
-	healthCostMultiplier = 0.5,
-	actionCostMultiplier = 0.5,
-	mindCostMultiplier = 1.5,
+	damageMultiplier = 3.0,
+	healthCostMultiplier = 0,
+	actionCostMultiplier = 1,
+	mindCostMultiplier = 0,
 	accuracyBonus = 5,
+	visMod = 25,
 
 	stateEffects = {
 	  StateEffect( 
@@ -72,14 +72,14 @@ FlushingShot1Command = {
 	  )
 	},
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "fire_3_special_single", 
 	animType = GENERATE_RANGED,
 
 	combatSpam = "flushingshot",
 	
-	weaponType = RIFLEWEAPON,
+	weaponType = SPECIALHEAVYWEAPON,
 
 	range = -1
 }
