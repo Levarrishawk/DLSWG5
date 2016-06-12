@@ -995,6 +995,10 @@ int CreatureObjectImplementation::inflictDamage(TangibleObject* attacker, int da
 
 	int currentValue = hamList.get(damageType);
 
+	int action = getHAM(CreatureAttribute::ACTION);
+		if (action > 500)
+			setHAM(CreatureAttribute::ACTION, 1000);
+
 	int newValue = currentValue - (int) damage;
 
 	if (!destroy && newValue <= 0)
