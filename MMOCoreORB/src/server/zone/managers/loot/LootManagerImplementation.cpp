@@ -777,7 +777,7 @@ void LootManagerImplementation::addStaticDots(TangibleObject* object, LootItemTe
 						value = System::random(max - min) + min;
 
 					if (dotType != 2 && (value != 0 && value != 3 && value != 6)) {
-						int numbers[] = { 0, 3, 6 }; // The main pool attributes.
+						int numbers[] = { 0}; // The main pool attributes.
 						int choose = System::random(2);
 						value = numbers[choose];
 					}
@@ -841,7 +841,7 @@ void LootManagerImplementation::addRandomDots(TangibleObject* object, LootItemTe
 				att= System::random(attMax - attMin) + attMin;
 
 			if (dotType != 2 && (att != 0 && att != 3 && att != 6)) {
-				int numbers[] = { 0, 3}; // The main pool attributes.
+				int numbers[] = { 0}; // The main pool attributes.
 				int choose = System::random(2);
 				att = numbers[choose];
 			}
