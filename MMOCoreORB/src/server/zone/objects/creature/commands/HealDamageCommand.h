@@ -396,6 +396,7 @@ public:
 				creature->sendSystemMessage("You lack the medical knowledge to treat another player.");
 				return GENERALERROR;
 			}
+// Build Error correction needed.  I know this is not right.  -Lev
 		if (creature != targetCreature && !CollisionManager::checkLineOfSight(creature, targetCreature)) {
 			creature->sendSystemMessage("@container_error_message:container18");
 			return GENERALERROR;
