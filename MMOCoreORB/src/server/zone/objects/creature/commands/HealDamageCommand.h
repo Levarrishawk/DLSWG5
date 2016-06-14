@@ -389,10 +389,10 @@ public:
 		if (stimPack->isRangedStimPack())
 			rangeToCheck = (cast<RangedStimPack*>(stimPack.get()))->getRange();
 // TODO: Add a check for if has skill combat_medic_novice return TOOFAR;  else creature->sendSystemMessage("You lack the medical knowledge to treat another player.");
-		if (!creature->isInRange(targetCreature, rangeToCheck + targetCreature->getTemplateRadius() + creature->getTemplateRadius()))
-			if (creature->hasSkill("combat_medic_novice")){
+		if (!creature->isInRange(targetCreature, rangeToCheck + targetCreature->getTemplateRadius() + creature->getTemplateRadius()) && creature->hasSkill("combat_medic_novice")){
+			//if (creature->hasSkill("combat_medic_novice")){
 			return TOOFAR;
-			} else {
+			} else if (!creature->isInRange(targetCreature, rangeToCheck + targetCreature->getTemplateRadius() + creature->getTemplateRadius())){
 				creature->sendSystemMessage("You lack the medical knowledge to treat another player.");
 				return GENERALERROR;
 			}
