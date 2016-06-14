@@ -394,6 +394,7 @@ public:
 			return TOOFAR;
 			} else {
 				creature->sendSystemMessage("You lack the medical knowledge to treat another player.");
+				return GENERALERROR;
 			}
 		if (creature != targetCreature && !CollisionManager::checkLineOfSight(creature, targetCreature)) {
 			creature->sendSystemMessage("@container_error_message:container18");
