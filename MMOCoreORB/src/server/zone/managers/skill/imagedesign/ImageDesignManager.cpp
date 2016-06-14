@@ -222,11 +222,11 @@ void ImageDesignManager::updateColorCustomization(CreatureObject* imageDesigner,
 }
 
 int ImageDesignManager::getSkillLevel(CreatureObject* imageDesigner, const String& skillMod) {
-	if (imageDesigner->hasSkill("social_imagedesigner_master")) {
+	if (imageDesigner->hasSkill("secondary_entertainer_master")) {
 		return 5;
 	}
 
-	String skillName = "social_imagedesigner_";
+	String skillName = "secondary_entertainer_";
 
 	if (skillMod == "body")
 		skillName += "bodyform_0";
@@ -251,7 +251,7 @@ int ImageDesignManager::getSkillLevel(CreatureObject* imageDesigner, const Strin
 		}
 	}
 
-	if (imageDesigner->hasSkill("social_imagedesigner_novice")) {
+	if (imageDesigner->hasSkill("secondary_entertainer_novice")) {
 		return 0;
 	}
 
