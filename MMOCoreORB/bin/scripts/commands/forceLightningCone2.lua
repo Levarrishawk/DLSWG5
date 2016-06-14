@@ -66,7 +66,7 @@ ForceLightningCone2Command = {
 	},
 
 	animation = "force_knockdown_1_arc_particle_level_1",
-	animType = GENERATE_INTENSITY,
+--	animType = GENERATE_INTENSITY,
 
 	combatSpam = "forcelightningcone2",
 
