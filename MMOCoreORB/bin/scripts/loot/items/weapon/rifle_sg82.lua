@@ -6,9 +6,9 @@ rifle_sg82 = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/rifle/rifle_sg82.iff",
 	craftingValues = {
-		{"mindamage",64,97,0},
-		{"maxdamage",101,157,0},
-		{"attackspeed",8.1,5.7,0},
+		{"mindamage",59,90,0},
+		{"maxdamage",96,144,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",8,16,0},
 		{"hitpoints",750,750,0},
 		{"attackhealthcost",33,17,0},

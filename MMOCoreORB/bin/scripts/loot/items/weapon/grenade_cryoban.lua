@@ -4,9 +4,9 @@ grenade_cryoban = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/grenade/grenade_cryoban.iff",
 	craftingValues = {
-		{"mindamage",190,270,0},
-		{"maxdamage",320,650,0},
-		{"attackspeed",6.5,3,1},
+		{"mindamage",750,250,0},
+		{"maxdamage",285,580,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",7,13,0},
 		{"hitpoints",1000,1000,0},
 		{"zerorangemod",-14,16,0},

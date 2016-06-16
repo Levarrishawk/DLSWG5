@@ -6,9 +6,9 @@ knife_janta = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/knife/knife_janta.iff",
 	craftingValues = {
-		{"mindamage",14,26,0},
-		{"maxdamage",32,62,0},
-		{"attackspeed",3.9,2.7,1},
+		{"mindamage",11,22,0},
+		{"maxdamage",25,52,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",6,12,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",17,33,0},

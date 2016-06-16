@@ -6,9 +6,9 @@ corsec_cdef_pistol = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/pistol/pistol_cdef_corsec.iff",
 	craftingValues = {
-		{"mindamage",15,30,0},
-		{"maxdamage",32,61,0},
-		{"attackspeed",5.6,3.8,1},
+		{"mindamage",11,22,0},
+		{"maxdamage",25,51,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",2,4,0},
 		{"hitpoints",750,750,0},
 		{"attackhealthcost",17,11,0},

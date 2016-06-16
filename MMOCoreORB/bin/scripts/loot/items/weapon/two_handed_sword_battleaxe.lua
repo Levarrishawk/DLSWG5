@@ -6,9 +6,9 @@ two_handed_sword_battleaxe = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/2h_sword/2h_sword_battleaxe.iff",
 	craftingValues = {
-		{"mindamage",53,98,0},
-		{"maxdamage",88,163,0},
-		{"attackspeed",5.6,4.1,1},
+		{"mindamage",51,88,0},
+		{"maxdamage",89,153,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",12,22,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",0,10,0},

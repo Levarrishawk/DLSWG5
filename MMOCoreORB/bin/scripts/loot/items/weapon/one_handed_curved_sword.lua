@@ -5,9 +5,9 @@ one_handed_curved_sword = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/sword/sword_02.iff",
 	craftingValues = {
-		{"mindamage",18,33,0},
-		{"maxdamage",70,130,0},
-		{"attackspeed",4,2.8,1},
+		{"mindamage",16,28,0},
+		{"maxdamage",60,120,0},
+		{"attackspeed",1.1,1},
 		{"woundchance",12,24,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",-2,8,0},

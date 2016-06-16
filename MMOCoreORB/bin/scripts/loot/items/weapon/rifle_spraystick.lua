@@ -6,9 +6,9 @@ rifle_spraystick = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/rifle/rifle_spraystick.iff",
 	craftingValues = {
-		{"mindamage",6,12,0},
-		{"maxdamage",73,138,0},
-		{"attackspeed",3.6,2.4,0},
+		{"mindamage",5,11,0},
+		{"maxdamage",70,128,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",9,19,0},
 		{"hitpoints",750,750,0},
 		{"attackhealthcost",18,7,0},

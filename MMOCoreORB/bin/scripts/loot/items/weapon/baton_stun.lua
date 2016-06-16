@@ -6,8 +6,8 @@ baton_stun = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/baton/baton_stun.iff",
 	craftingValues = {
-		{"mindamage",28,52,0},
-		{"maxdamage",53,98,0},
+		{"mindamage",18,42,0},
+		{"maxdamage",33,84,0},
 		{"attackspeed",4.2,2.9,1},
 		{"woundchance",1,3,0},
 		{"hitpoints",750,1500,0},

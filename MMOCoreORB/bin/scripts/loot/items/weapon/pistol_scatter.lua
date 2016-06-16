@@ -6,9 +6,9 @@ pistol_scatter = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/pistol/pistol_scatter.iff",
 	craftingValues = {
-		{"mindamage",43,87,0},
-		{"maxdamage",59,102,0},
-		{"attackspeed",5.4,3.9,0},
+		{"mindamage",40,81,0},
+		{"maxdamage",52,94,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",10,24,0},
 		{"hitpoints",750,750,0},
 		{"attackhealthcost",24,12,0},

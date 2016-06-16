@@ -6,9 +6,9 @@ axe_vibroaxe = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/axe/axe_vibroaxe.iff",
 	craftingValues = {
-		{"mindamage",53,98,0},
-		{"maxdamage",123,228,0},
-		{"attackspeed",6.5,4.5,1},
+		{"mindamage",43,78,0},
+		{"maxdamage",99,198,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",6,14,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",-26,-14,0},

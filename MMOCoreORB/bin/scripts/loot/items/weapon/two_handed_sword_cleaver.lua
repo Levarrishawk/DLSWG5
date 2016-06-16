@@ -6,9 +6,9 @@ two_handed_sword_cleaver = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/2h_sword/2h_sword_cleaver.iff",
 	craftingValues = {
-		{"mindamage",35,65,0},
-		{"maxdamage",105,195,0},
-		{"attackspeed",5.3,3.7,1},
+		{"mindamage",30,60},
+		{"maxdamage",96,175,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",19,35,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",-20,-10,0},

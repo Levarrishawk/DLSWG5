@@ -6,9 +6,9 @@ carbine_dh17 = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/carbine/carbine_dh17.iff",
 	craftingValues = {
-		{"mindamage",28,52,0},
-		{"maxdamage",81,150,0},
-		{"attackspeed",4.5,3.1,1},
+		{"mindamage",21,40,0},
+		{"maxdamage",70,139,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",6,12,0},
 		{"roundsused",30,65,0},
 		{"hitpoints",750,1500,0},

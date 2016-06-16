@@ -4,9 +4,9 @@ grenade_glop = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/grenade/grenade_glop.iff",
 	craftingValues = {
-		{"mindamage",200,340,0},
-		{"maxdamage",460,1780,0},
-		{"attackspeed",5.8,3.4,1},
+		{"mindamage",150,280,0},
+		{"maxdamage",400,1185,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",7,13,0},
 		{"hitpoints",1000,1000,0},
 		{"zerorangemod",-16,14,0},

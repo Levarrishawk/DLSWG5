@@ -4,9 +4,9 @@ rifle_flame_thrower = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/rifle/rifle_flame_thrower.iff",
 	craftingValues = {
-		{"mindamage",24,476,0},
-		{"maxdamage",300,826,0},
-		{"attackspeed",7.2,4.9,1},
+		{"mindamage",22,456,0},
+		{"maxdamage",290,026,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",8.0,16.0,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",10,20,0},

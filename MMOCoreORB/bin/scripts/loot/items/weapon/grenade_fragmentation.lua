@@ -4,9 +4,9 @@ grenade_fragmentation = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/grenade/grenade_fragmentation.iff",
 	craftingValues = {
-		{"mindamage",200,296,0},
-		{"maxdamage",400,1450,0},
-		{"attackspeed",4.5,3.5,1},
+		{"mindamage",150,246,0},
+		{"maxdamage",360,1100,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",7,13,0},
 		{"hitpoints",1000,1000,0},
 		{"zerorangemod",-16,14,0},

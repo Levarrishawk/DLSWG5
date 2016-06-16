@@ -6,9 +6,9 @@ pistol_scout_trooper = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/pistol/pistol_scout_blaster.iff",
 	craftingValues = {
-		{"mindamage",20,41,0},
-		{"maxdamage",46,98,0},
-		{"attackspeed",5.6,3,0},
+		{"mindamage",20,40,0},
+		{"maxdamage",44,95,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",3.6,8.7,0},
 		{"hitpoints",750,750,0},
 		{"attackhealthcost",20,11,0},

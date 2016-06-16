@@ -6,9 +6,9 @@ nightsister_controllerfp_lance = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/polearm/lance_controllerfp_nightsister.iff",
 	craftingValues = {
-		{"mindamage",7,13,0},
-		{"maxdamage",133,246,0},
-		{"attackspeed",7.2,4.1,1},
+		{"mindamage",7,11,0},
+		{"maxdamage",123,233,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",9,18,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",5,15,0},

@@ -6,9 +6,9 @@ knife_survival = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/knife/knife_survival.iff",
 	craftingValues = {
-		{"mindamage",14,26,0},
-		{"maxdamage",28,52,0},
-		{"attackspeed",4.2,2.9,1},
+		{"mindamage",11,22,0},
+		{"maxdamage",22,47,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",5,11,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",21,39,0},

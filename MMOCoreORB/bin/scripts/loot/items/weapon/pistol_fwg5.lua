@@ -6,9 +6,9 @@ pistol_fwg5 = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/pistol/pistol_fwg5.iff",
 	craftingValues = {
-		{"mindamage",11,21,0},
-		{"maxdamage",58,112,0},
-		{"attackspeed",5.3,3.8,1},
+		{"mindamage",10,20,0},
+		{"maxdamage",54,101,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",5,11,0},
 		{"hitpoints",750,750,0},
 		{"attackhealthcost",17,8,0},

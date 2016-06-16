@@ -6,9 +6,9 @@ knife_dagger = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/knife/knife_dagger.iff",
 	craftingValues = {
-		{"mindamage",11,26,0},
-		{"maxdamage",14,26,0},
-		{"attackspeed",3.9,2.7,1},
+		{"mindamage",09,21,0},
+		{"maxdamage",11,22,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",6,12,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",17,33,0},

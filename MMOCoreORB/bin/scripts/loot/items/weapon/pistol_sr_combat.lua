@@ -6,9 +6,9 @@ pistol_sr_combat = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/pistol/pistol_srcombat.iff",
 	craftingValues = {
-		{"mindamage",28,55,0},
-		{"maxdamage",63,122,0},
-		{"attackspeed",5.7,4.3,0},
+		{"mindamage",26,52,0},
+		{"maxdamage",59,117,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",6,13,0},
 		{"hitpoints",750,750,0},
 		{"attackhealthcost",36,20,0},

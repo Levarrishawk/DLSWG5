@@ -4,9 +4,9 @@ grenade_imperial_detonator = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/grenade/grenade_imperial_detonator.iff",
 	craftingValues = {
-		{"mindamage",645,989,0},
-		{"maxdamage",1300,2000,0},
-		{"attackspeed",6,2.5,1},
+		{"mindamage",545,900,0},
+		{"maxdamage",1200,1600,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",7,13,0},
 		{"hitpoints",1000,1000,0},
 		{"zerorangemod",-16,14,0},

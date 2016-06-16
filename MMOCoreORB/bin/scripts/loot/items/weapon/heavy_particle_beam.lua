@@ -4,9 +4,9 @@ heavy_particle_beam = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/heavy/heavy_particle_beam.iff",
 	craftingValues = {
-		{"mindamage",1860,2000,0},
-		{"maxdamage",2700,3700,0},
-		{"attackspeed",9.1,4.0,1},
+		{"mindamage",1660,1580,0},
+		{"maxdamage",2450,2800,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",10,20,0},
 		{"hitpoints",1000,1000,0},
 		{"zerorangemod",-125,-95,0},

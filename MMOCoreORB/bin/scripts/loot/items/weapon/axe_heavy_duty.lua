@@ -6,9 +6,9 @@ axe_heavy_duty = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/axe/axe_heavy_duty.iff",
 	craftingValues = {
-		{"mindamage",25,46,0},
-		{"maxdamage",98,182,0},
-		{"attackspeed",6.5,4.5,1},
+		{"mindamage",20,35,0},
+		{"maxdamage",78,152,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",11,20,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",-5,5,0},

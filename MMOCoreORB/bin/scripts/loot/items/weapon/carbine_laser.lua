@@ -6,9 +6,9 @@ carbine_laser = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/carbine/carbine_laser.iff",
 	craftingValues = {
-		{"mindamage",7,13,0},
-		{"maxdamage",130,240,0},
-		{"attackspeed",6,4.1,1},
+		{"mindamage",6,11,0},
+		{"maxdamage",120,218,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",8,16,0},
 		{"roundsused",30,65,0},
 		{"hitpoints",750,1500,0},

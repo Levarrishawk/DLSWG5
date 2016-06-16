@@ -5,9 +5,9 @@ one_handed_sword = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/sword/sword_01.iff",
 	craftingValues = {
-		{"mindamage",14,26,0},
-		{"maxdamage",63,117,0},
-		{"attackspeed",4.6,3.2,1},
+		{"mindamage",13,22,0},
+		{"maxdamage",53,117,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",9,18,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",5,15,0},

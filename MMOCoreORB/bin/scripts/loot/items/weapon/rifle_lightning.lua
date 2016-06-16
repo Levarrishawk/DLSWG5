@@ -4,9 +4,9 @@ rifle_lightning = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/rifle/rifle_lightning.iff",
 	craftingValues = {
-		{"mindamage",27,410,0},
-		{"maxdamage",296,730,0},
-		{"attackspeed",6.3,4.7,1},
+		{"mindamage",22,390,0},
+		{"maxdamage",286,710,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",8.0,16.0,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",-10,20,0},

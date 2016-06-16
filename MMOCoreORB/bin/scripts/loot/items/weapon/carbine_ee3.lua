@@ -6,9 +6,9 @@ carbine_ee3 = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/carbine/carbine_ee3.iff",
 	craftingValues = {
-		{"mindamage",35,65,0},
-		{"maxdamage",91,169,0},
-		{"attackspeed",4.7,3.2,1},
+		{"mindamage",25,51,0},
+		{"maxdamage",71,148,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",5,9,0},
 		{"roundsused",30,65,0},
 		{"hitpoints",750,1500,0},

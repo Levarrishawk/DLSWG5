@@ -5,9 +5,9 @@ knife_vibroblade = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/knife/knife_vibroblade.iff",
 	craftingValues = {
-		{"mindamage",11,20,0},
-		{"maxdamage",60,111,0},
-		{"attackspeed",4.2,2.9,1},
+		{"mindamage",10,18,0},
+		{"maxdamage",49,102,0},
+		{"attackspeed",1,1,1},
 		{"woundchance",6,12,0},
 		{"hitpoints",750,1500,0},
 		{"zerorangemod",-2,8,0},
