@@ -1,6 +1,6 @@
 contractor2 = Creature:new {
 	objectName = "@mob/creature_names:crafting_contractor",
-	customName = "Sargeant Elstas",
+	customName = "Sergeant Elstas",
 	socialGroup = "townsperson",
 	faction = "townsperson",
 	level = 4,
