@@ -43,7 +43,7 @@ kaja_orzee_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_assassin", planetName = "naboo", npcName = "an Assassin" }
+				{ npcTemplate = "theme_park_imperial_assassin", planetName = "lok", npcName = "a New Republic Assassin" }
 			},
 			secondarySpawns =
 			{
@@ -51,7 +51,7 @@ kaja_orzee_missions =
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 225 }
+				{ rewardType = "credits", amount = 22500 }
 			}
 		},
 
@@ -59,8 +59,8 @@ kaja_orzee_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_assassin", planetName = "naboo", npcName = "a Droid Programmer" },
-				{ npcTemplate = "theme_park_imperial_assassin", planetName = "naboo", npcName = "a Droid Programmer" }
+				{ npcTemplate = "theme_park_imperial_assassin", planetName = "lok", npcName = "a Droid Programmer" },
+				{ npcTemplate = "theme_park_imperial_assassin", planetName = "lok", npcName = "a Droid Programmer" }
 			},
 			secondarySpawns =
 			{
@@ -78,7 +78,7 @@ kaja_orzee_missions =
 			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_escort_droid", planetName = "naboo", npcName = "RA-7" }
+				{ npcTemplate = "theme_park_imperial_escort_droid", planetName = "lok", npcName = "RA-7" }
 			},
 			secondarySpawns =
 			{
