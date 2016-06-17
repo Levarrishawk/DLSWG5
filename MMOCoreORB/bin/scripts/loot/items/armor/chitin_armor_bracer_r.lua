@@ -5,12 +5,12 @@ chitin_armor_bracer_r = {
 	directObjectTemplate = "object/tangible/wearables/armor/chitin/armor_chitin_s01_bracer_r.iff",
 	craftingValues = {
 		{"armor_rating",1,1,0},
-		{"kineticeffectiveness",10,40,10},
-		{"armor_effectiveness",4,29,10},
-		{"armor_integrity",15000, 25000,0},
-		{"armor_health_encumbrance",13,8,0},
-		{"armor_action_encumbrance",13,8,0},
-		{"armor_mind_encumbrance",16,9,0},
+    {"kineticeffectiveness",10,40,10},
+    {"armor_effectiveness",4,39,10},
+    {"armor_integrity",15000, 25000,0},
+    {"armor_health_encumbrance",0,0,0},
+    {"armor_action_encumbrance",0,0,0},
+    {"armor_mind_encumbrance",0,0,0},
 	},
 	skillMods = {
 

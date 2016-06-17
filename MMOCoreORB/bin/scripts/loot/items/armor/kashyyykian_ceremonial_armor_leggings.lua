@@ -5,12 +5,12 @@ kashyyykian_ceremonial_armor_leggings = {
 	directObjectTemplate = "object/tangible/wearables/armor/kashyyykian_ceremonial/armor_kashyyykian_ceremonial_leggings.iff",
 	craftingValues = {
 		{"armor_rating",1,1,0},
-		{"kineticeffectiveness",10,40,10},
-		{"armor_effectiveness",4,24,10},
-		{"armor_integrity",15000, 25000,0},
-		{"armor_health_encumbrance",49,33,0},
-		{"armor_action_encumbrance",110,70,0},
-		{"armor_mind_encumbrance",26,19,0},
+    {"kineticeffectiveness",10,40,10},
+    {"armor_effectiveness",4,24,10},
+    {"armor_integrity",15000, 25000,0},
+    {"armor_health_encumbrance",0,0,0},
+    {"armor_action_encumbrance",0,0,0},
+    {"armor_mind_encumbrance",0,0,0},
 	},
 	skillMods = {
 

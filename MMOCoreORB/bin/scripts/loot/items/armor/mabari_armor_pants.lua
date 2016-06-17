@@ -5,13 +5,13 @@ mabari_armor_pants = {
 	directObjectTemplate = "object/tangible/wearables/armor/zam/armor_zam_wesell_pants.iff",
 	craftingValues = {
 		{"armor_rating",1,1,0},
-		{"heateffectiveness",10,40,10},
-		{"blasteffectiveness",10,40,10},
-		{"armor_effectiveness",4,19,10},
-		{"armor_integrity",18750, 31250,0},
-		{"armor_health_encumbrance",23,14,0},
-		{"armor_action_encumbrance",30,18,0},
-		{"armor_mind_encumbrance",6,3,0},
+    {"heateffectiveness",10,40,10},
+    {"blasteffectiveness",10,40,10},
+    {"armor_effectiveness",4,19,10},
+    {"armor_integrity",18750, 31250,0},
+    {"armor_health_encumbrance",0,0,0},
+    {"armor_action_encumbrance",0,0,0},
+    {"armor_mind_encumbrance",0,0,0},
 	},
 	skillMods = {
 
