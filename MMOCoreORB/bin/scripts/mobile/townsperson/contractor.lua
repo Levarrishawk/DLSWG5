@@ -31,7 +31,7 @@ contractor = Creature:new {
 				
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "theme_park_valarian_mission_giver_convotemplate",
 	attacks = {
 	}
 }
