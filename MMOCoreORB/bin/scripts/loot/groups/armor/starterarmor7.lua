@@ -1,4 +1,4 @@
-chitin_armor = {
+starterarmor7 = {
 	description = "",
 	minimumLevel = 0,
 	maximumLevel = -1,
@@ -9,4 +9,4 @@ chitin_armor = {
 	}
 }
 
-addLootGroupTemplate("chitin_armor", chitin_armor)
+addLootGroupTemplate("starterarmor7", starterarmor7)
