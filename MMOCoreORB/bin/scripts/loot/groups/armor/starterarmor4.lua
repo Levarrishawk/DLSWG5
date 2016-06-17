@@ -4,7 +4,7 @@ starterarmor4 = {
 	maximumLevel = -1,
 	lootItems = {
 
-		{itemTemplate = "chitin_armor_boots", weight = 1100000}
+		{itemTemplate = "chitin_armor_boots", weight = 10000000}
 		
 	}
 }

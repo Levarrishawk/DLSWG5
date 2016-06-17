@@ -3,7 +3,7 @@ starterarmor2 = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	lootItems = {
-		{itemTemplate = "chitin_armor_chest_plate", weight = 1000000}
+		{itemTemplate = "chitin_armor_chest_plate", weight = 10000000}
 		}
 }
 
