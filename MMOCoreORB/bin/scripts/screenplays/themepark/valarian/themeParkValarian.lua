@@ -52,7 +52,7 @@ kavas_missions =
 			},
 			itemSpawns =
 			{
-				{ itemTemplate = "object/tangible/loot/misc/proclamation_s01.iff", itemName = "Talos Savior's Battle Plans" }
+				{}
 			},
 			rewards =
 			{
@@ -64,7 +64,7 @@ kavas_missions =
 			missionType = "retrieve",
 			primarySpawns =
 			{
-				{ npcTemplate = "kishai", planetName = "tatooine", npcName = "Ki'shai" }
+				{ npcTemplate = "ysho", planetName = "talus", npcName = "Bick" }
 			},
 			secondarySpawns =	{},
 			itemSpawns =
@@ -73,8 +73,8 @@ kavas_missions =
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 5000 },
-				{ rewardType = "faction", faction = "valarian", amount = 125 }
+				{ rewardType = "credits", amount = 7200 },
+				{ rewardType = "faction", faction = "townsperson", amount = 125 }
 			}
 		},
 		{
