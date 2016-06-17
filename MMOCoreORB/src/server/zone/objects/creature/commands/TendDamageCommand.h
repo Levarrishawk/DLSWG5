@@ -25,7 +25,7 @@ public:
 		int doQueueCommand(CreatureObject* creature, const uint64& target, const UnicodeString& arguments) const {
 		int duration = 45;
 		int healthHealed = 450;
-		int actionCost = 900;
+		int actionCost = 800;
 
 		uint32 buffcrc = BuffCRC::JEDI_RESIST_BLEEDING; //This is the temp. buff icon.
 
@@ -44,7 +44,7 @@ public:
 
 		//First check on having enough action to perform the ability, if not send message and return 0.
 		if (creature->getHAM(CreatureAttribute::ACTION) < 900) {
-			creature->sendSystemMessage("You don't have enough ACTION to complete this action.");
+			creature->sendSystemMessage("You don't have enough action to heal yourself at this time.");
 			return 0;
 		}
 
@@ -57,7 +57,7 @@ public:
 			creature->inflictDamage(creature, CreatureAttribute::ACTION, actionCost, false);
 			creature->playEffect("clienteffect/bacta_bomb.cef", "");
 		} else {
-			creature->sendSystemMessage("You're Still on cooldown");
+			creature->sendSystemMessage("You are not ready to heal yourself again yet.");
 		}
 		return SUCCESS;
 	}
