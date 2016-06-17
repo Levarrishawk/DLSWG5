@@ -353,7 +353,7 @@ ThemeParkValarian = ThemeParkLogic:new {
 	npcMap = npcMapThemeParkValarian,
 	className = "ThemeParkValarian",
 	screenPlayState = "theme_park_valarian",
-	requiresEliteCombat = true,
+	requiresEliteCombat = false,
 	distance = 800
 }
 
