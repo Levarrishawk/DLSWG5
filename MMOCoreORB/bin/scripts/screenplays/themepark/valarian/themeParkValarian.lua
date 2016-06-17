@@ -4,7 +4,7 @@ kavas_missions =
 			missionType = "confiscate",
 			primarySpawns =
 			{
-				{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Agent Maxus" }
+				{ npcTemplate = "agent_max", planetName = "talus", npcName = "Agent Max" }
 			},
 			secondarySpawns =	{},
 			itemSpawns =
