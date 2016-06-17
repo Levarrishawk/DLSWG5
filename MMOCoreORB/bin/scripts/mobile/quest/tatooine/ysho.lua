@@ -1,6 +1,6 @@
 ysho = Creature:new {
 	objectName = "",
-	customName = "Ysho",
+	customName = "Bick",
 	socialGroup = "townsperson",
 	faction = "townsperson",
 	level = 10,

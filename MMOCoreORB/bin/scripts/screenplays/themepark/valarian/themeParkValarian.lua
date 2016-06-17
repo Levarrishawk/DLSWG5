@@ -36,25 +36,28 @@ kavas_missions =
 			}
 		},
 		{
-			missionType = "deliver",
+			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "ysho", planetName = "tatooine", npcName = "Ysho" }
+				{ npcTemplate = "ysho", planetName = "talus", npcName = "Bick" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "jabba_thug", planetName = "tatooine", npcName = "Jabba's thug" },
-				{ npcTemplate = "jabba_thug", planetName = "tatooine", npcName = "Jabba's thug" },
-				{ npcTemplate = "jabba_thug", planetName = "tatooine", npcName = "Jabba's thug" }
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
 			},
 			itemSpawns =
 			{
-				{ itemTemplate = "object/tangible/loot/misc/proclamation_s01.iff", itemName = "An Official Proclamation" }
+				{ itemTemplate = "object/tangible/loot/misc/proclamation_s01.iff", itemName = "Talos Savior's Battle Plans" }
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 4000 },
-				{ rewardType = "faction", faction = "valarian", amount = 100 }
+				{ rewardType = "credits", amount = 7000 },
+				{ rewardType = "faction", faction = "townsperson", amount = 100 }
 			}
 		},
 		{
