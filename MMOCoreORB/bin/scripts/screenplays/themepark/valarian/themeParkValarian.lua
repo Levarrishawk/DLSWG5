@@ -340,7 +340,7 @@ npcMapThemeParkValarian =
 			missions = ind_missions
 		},
 		{
-			spawnData = { planetName = "talus", npcTemplate = "hunter", x = 329.8, z = 6.0, y = -2921, direction = 83, cellID = 0, position = STAND },
+			spawnData = { planetName = "talus", npcTemplate = "contractor", x = 329.8, z = 6.0, y = -2921, direction = 83, cellID = 0, position = STAND },
 			worldPosition = { x = 329, y = -2920 },
 			npcNumber = 1,
 			stfFile = "@spawning/static_npc/tato_valarian_kavas_urdano",
