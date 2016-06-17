@@ -1,9 +1,9 @@
 starterarmor1 = {
 	description = "",
 	minimumLevel = 0,
-	maximumLevel = -1,
+	maximumLevel = 0,
 	lootItems = {
-		{itemTemplate = "chitin_armor_helmet", weight = 1000000}
+		{itemTemplate = "chitin_armor_helmet", weight = 10000000}
 	}
 }
 
