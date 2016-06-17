@@ -62,9 +62,9 @@ function EmperorsRetreatScreenPlay:setMoodString(pNpc, mood)
 end
 
 function EmperorsRetreatScreenPlay:spawnMobiles()
-
+--[[
 	-- Inside
-	local pNpc = spawnMobile("naboo", "royal_imperial_guard", 120, 11.2, 0.2, -31.5, 0, 1418874)
+	 pNpc = spawnMobile("naboo", "royal_imperial_guard", 120, 11.2, 0.2, -31.5, 0, 1418874)
 	EmperorsRetreatScreenPlay:setMoodString(pNpc, "npc_imperial")
 	pNpc = spawnMobile("naboo", "royal_imperial_guard", 120, 14.8, 0.2, -31.5, 0, 1418874)
 	EmperorsRetreatScreenPlay:setMoodString(pNpc, "npc_imperial")
@@ -79,7 +79,7 @@ function EmperorsRetreatScreenPlay:spawnMobiles()
 	spawnMobile("naboo", "mouse_droid", 120, -8.6, 0.2, -14.2, -15, 1418879)
 	spawnMobile("naboo", "mouse_droid", 120, -39.9, 0.2, -12.4, -25, 1418879)
 
-	pNpc = spawnMobile("naboo", "stormtrooper", 120, -0.5, 0.2, -23.6, 76, 1418874)
+	local pNpc = spawnMobile("naboo", "stormtrooper", 120, -0.5, 0.2, -23.6, 76, 1418874)
 	EmperorsRetreatScreenPlay:setMoodString(pNpc, "conversation")
 	pNpc = spawnMobile("naboo", "stormtrooper", 120, 0.7, 0.2, -23.5, -20, 1418874)
 	EmperorsRetreatScreenPlay:setMoodString(pNpc, "conversation")
@@ -118,5 +118,6 @@ function EmperorsRetreatScreenPlay:spawnMobiles()
 	spawnMobile("naboo", "dark_trooper", 450, 2437.01, 292, -3947.8, 147, 0)
 	spawnMobile("naboo", "dark_trooper", 450, 2411.91, 292, -3986.99, -115, 0)
 	spawnMobile("naboo", "imperial_pilot", 450, 2432.33, 292, -3887.25, -131, 0)
+--]]
 
 end

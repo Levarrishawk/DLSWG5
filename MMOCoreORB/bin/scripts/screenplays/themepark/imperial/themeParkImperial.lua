@@ -7,7 +7,7 @@ kaja_orzee_missions =
 			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_escort_moff", planetName = "naboo", npcName = "an Imperial Moff" }
+				{ npcTemplate = "theme_park_imperial_escort_moff", planetName = "lok", npcName = "an Imperial Moff" }
 			},
 			secondarySpawns =
 			{
@@ -15,7 +15,7 @@ kaja_orzee_missions =
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 75 }
+				{ rewardType = "credits", amount = 7500 }
 			}
 		},
 		{
@@ -720,8 +720,8 @@ darth_vader_missions =
 npcMapImperial =
 	{
 		{
-			spawnData = { planetName = "naboo", npcTemplate = "kaja_orzee", x = 1.1, z = 0.2, y = -13.3, direction = 0, cellID = 1418872, position = STAND },
-			worldPosition = { x = 2407.8, y = -3944.5 },
+			spawnData = { planetName = "lok", npcTemplate = "kaja_orzee", x = 0.0, z = 1.0, y = 14.5, direction = 90, cellID = 8615419, position = STAND },
+			worldPosition = { x = -1856, y = -3084 },
 			npcNumber = 1,
 			stfFile = "@theme_park_imperial/kaja_orzee",
 			stfWarning = "not_imperial",
