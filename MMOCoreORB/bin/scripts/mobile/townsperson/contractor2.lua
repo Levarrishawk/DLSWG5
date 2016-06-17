@@ -1,4 +1,4 @@
-contractor = Creature:new {
+contractor2 = Creature:new {
 	objectName = "@mob/creature_names:crafting_contractor",
 	customName = "Sargeant Elstas",
 	socialGroup = "townsperson",
@@ -35,4 +35,4 @@ contractor = Creature:new {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(contractor, "contractor")
+CreatureTemplates:addCreatureTemplate(contractor2, "contractor2")
