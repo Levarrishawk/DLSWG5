@@ -9,7 +9,7 @@ kavas_missions =
 			secondarySpawns =	{},
 			itemSpawns =
 			{
-				{ itemTemplate = "object/tangible/loot/misc/toxic_rations.iff", itemName = "Transmitter" }
+				{},
 			},
 			rewards =
 			{
@@ -21,14 +21,18 @@ kavas_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Jabba's enforcer" }
+				{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "The Captain" }
 			},
-			secondarySpawns =	{},
+			secondarySpawns =	{
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Captains Guard" },
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Captains Guard" },
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Captains Guard" }
+			},
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 3000 },
-				{ rewardType = "faction", faction = "valarian", amount = 75 }
+				{ rewardType = "credits", amount = 6000 },
+				{ rewardType = "faction", faction = "townsperson", amount = 75 }
 			}
 		},
 		{
