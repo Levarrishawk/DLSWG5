@@ -1,7 +1,7 @@
 kavas_missions =
 	{
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
 				{ npcTemplate = "agent_max", planetName = "talus", npcName = "Agent Max" }
