@@ -4,17 +4,17 @@ kavas_missions =
 			missionType = "confiscate",
 			primarySpawns =
 			{
-				{ npcTemplate = "cie_vos", planetName = "tatooine", npcName = "Cie Vos" }
+				{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Agent Maxus" }
 			},
 			secondarySpawns =	{},
 			itemSpawns =
 			{
-				{ itemTemplate = "object/tangible/loot/misc/toxic_rations.iff", itemName = "Toxic Rations" }
+				{ itemTemplate = "object/tangible/loot/misc/toxic_rations.iff", itemName = "Transmitter" }
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 2000 },
-				{ rewardType = "faction", faction = "valarian", amount = 50 }
+				{ rewardType = "credits", amount = 5000 },
+				{ rewardType = "faction", faction = "townsperson", amount = 50 }
 			}
 		},
 		{
@@ -340,8 +340,8 @@ npcMapThemeParkValarian =
 			missions = ind_missions
 		},
 		{
-			spawnData = { planetName = "tatooine", npcTemplate = "kavas_urdano", x = -13.79, z = 7.01, y = -3.96, direction = 12, cellID = 1076943, position = STAND },
-			worldPosition = { x = 3374, y = -4607 },
+			spawnData = { planetName = "talus", npcTemplate = "hunter", x = 329.8, z = 6.0, y = -2921, direction = 83, cellID = 0, position = STAND },
+			worldPosition = { x = 329, y = -2920 },
 			npcNumber = 1,
 			stfFile = "@spawning/static_npc/tato_valarian_kavas_urdano",
 			missions = kavas_missions
