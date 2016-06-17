@@ -170,7 +170,8 @@ lok = {
   gcwEnabled = 1,
 
   planetTravelPoints = {
-    {name = "Nym's Stronghold", x = 478.92676, z = 9, y = 5511.9565, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1}
+    {name = "Nym's Stronghold", x = 478.92676, z = 9, y = 5511.9565, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    {name = "an Imperial Outpost", x = -1933.0, z = 12, y = -3209.0, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1}
   },
 
   badgeAreas = {
