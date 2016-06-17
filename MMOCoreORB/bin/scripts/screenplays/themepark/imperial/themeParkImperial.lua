@@ -19,10 +19,10 @@ kaja_orzee_missions =
 			}
 		},
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_rebel_sympathizer", planetName = "naboo", npcName = "a Rebel Sympathizer" }
+				{ npcTemplate = "theme_park_imperial_rebel_sympathizer", planetName = "lok", npcName = "a New Republic Sympathizer" }
 			},
 			secondarySpawns =
 			{
@@ -35,7 +35,7 @@ kaja_orzee_missions =
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 150 }
+				{ rewardType = "credits", amount = 15000 }
 			}
 		},
 
