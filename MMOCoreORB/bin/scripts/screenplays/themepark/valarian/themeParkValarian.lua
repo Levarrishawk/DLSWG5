@@ -145,20 +145,28 @@ kavas_missions =
 ind_missions =
 	{
 		{
-			missionType = "deliver",
+			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "valarian_chief_assassin", planetName = "tatooine", npcName = "Valarian's Chief Assassin" }
+				{ npcTemplate = "valarian_compound_guard_quest", planetName = "talus", npcName = "Tylo" }
 			},
 			secondarySpawns =	{},
 			itemSpawns =
 			{
-				{ itemTemplate = "object/tangible/loot/misc/ledger_s01.iff", itemName = "A Ledger" }
+				{}
 			},
 			rewards =
 			{
-				{ rewardType = "loot",  lootGroup = "task_reward_ind_q1" },
-				{ rewardType = "faction", faction = "valarian", amount = 50 }
+				{ rewardType = "loot",  lootGroup = "starterarmor1" },
+				{ rewardType = "loot",  lootGroup = "starterarmor2" },
+				{ rewardType = "loot",  lootGroup = "starterarmor3" },
+				{ rewardType = "loot",  lootGroup = "starterarmor4" },
+				{ rewardType = "loot",  lootGroup = "starterarmor5" },
+				{ rewardType = "loot",  lootGroup = "starterarmor6" },
+				{ rewardType = "loot",  lootGroup = "starterarmor7" },
+				{ rewardType = "loot",  lootGroup = "starterarmor8" },
+				{ rewardType = "loot",  lootGroup = "starterarmor9" },
+				{ rewardType = "faction", faction = "townsperson", amount = 50 }
 			}
 		},
 		{
