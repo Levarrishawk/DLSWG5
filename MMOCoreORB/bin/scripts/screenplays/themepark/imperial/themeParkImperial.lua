@@ -64,14 +64,14 @@ kaja_orzee_missions =
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "rebel_corporal", planetName = "naboo", npcName = "" },
-				{ npcTemplate = "rebel_corporal", planetName = "naboo", npcName = "" },
-				{ npcTemplate = "rebel_corporal", planetName = "naboo", npcName = "" }
+				{ npcTemplate = "rebel_corporal", planetName = "lok", npcName = "" },
+				{ npcTemplate = "rebel_corporal", planetName = "lok", npcName = "" },
+				{ npcTemplate = "rebel_corporal", planetName = "lok", npcName = "" }
 			},
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 300 }
+				{ rewardType = "credits", amount = 30000 }
 			}
 		},
 		{
@@ -720,7 +720,7 @@ darth_vader_missions =
 npcMapImperial =
 	{
 		{
-			spawnData = { planetName = "lok", npcTemplate = "kaja_orzee", x = 0.0, z = 1.0, y = 14.5, direction = 90, cellID = 8615419, position = STAND },
+			spawnData = { planetName = "lok", npcTemplate = "kaja_orzee", x = 0.0, z = 1.0, y = 14.5, direction = 0, cellID = 8615419, position = STAND },
 			worldPosition = { x = -1856, y = -3084 },
 			npcNumber = 1,
 			stfFile = "@theme_park_imperial/kaja_orzee",
