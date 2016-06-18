@@ -169,10 +169,10 @@ loam_redge_missions =
 lord_hethrir_missions =
 	{
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_counterfeiter", planetName = "naboo", npcName = "a Counterfeiter" }
+				{ npcTemplate = "theme_park_imperial_counterfeiter", planetName = "lok", npcName = "a Counterfeiter" }
 			},
 			secondarySpawns =
 			{
@@ -182,15 +182,15 @@ lord_hethrir_missions =
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 600 }
+				{ rewardType = "credits", amount = 6000 }
 			}
 		},
 
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_alderaanian_leader", planetName = "naboo", npcName = "random" }
+				{ npcTemplate = "theme_park_imperial_alderaanian_leader", planetName = "lok", npcName = "random" }
 			},
 			secondarySpawns =
 			{
@@ -200,14 +200,14 @@ lord_hethrir_missions =
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 675 }
+				{ rewardType = "credits", amount = 6750 }
 			}
 		},
 		{
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_rebels_father", planetName = "naboo", npcName = "random" }
+				{ npcTemplate = "theme_park_imperial_rebels_father", planetName = "lok", npcName = "random" }
 			},
 			secondarySpawns =
 			{
@@ -215,7 +215,7 @@ lord_hethrir_missions =
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 750 }
+				{ rewardType = "credits", amount = 7500 }
 			}
 		},
 
@@ -223,7 +223,7 @@ lord_hethrir_missions =
 			missionType = "deliver",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_escort", planetName = "naboo", npcName = "random" }
+				{ npcTemplate = "theme_park_imperial_escort", planetName = "lok", npcName = "random" }
 			},
 			secondarySpawns =
 			{
@@ -234,14 +234,14 @@ lord_hethrir_missions =
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 825 }
+				{ rewardType = "credits", amount = 8250 }
 			}
 		},
 		{
 			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_escort_rebel", planetName = "naboo", npcName = "random" }
+				{ npcTemplate = "theme_park_imperial_escort_rebel", planetName = "lok", npcName = "random" }
 			},
 			secondarySpawns =
 			{
@@ -249,7 +249,7 @@ lord_hethrir_missions =
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "faction", faction = "imperial", amount = 175 },
+				{ rewardType = "faction", faction = "imperial", amount = 1750 },
 				{ rewardType = "loot", lootGroup = "theme_park_reward_imperial_hethrir"}
 			}
 		},
@@ -736,8 +736,8 @@ npcMapImperial =
 			missions = loam_redge_missions
 		},
 		{
-			spawnData = { planetName = "naboo", npcTemplate = "lord_hethrir", x = 5.1, z = 0.2, y = -41.4, direction = -30, cellID = 1418876, position = STAND },
-			worldPosition = { x = 2380, y = -3952 },
+			spawnData = { planetName = "lok", npcTemplate = "lord_hethrir", x = 0.0, z = 2.0, y = 3.8, direction = 180, cellID = 8615420, position = STAND },
+			worldPosition = { x = -1867, y = -3084 },
 			npcNumber = 4,
 			stfFile = "@theme_park_imperial/lord_hethrir",
 			stfWarning = "loam_redge",
