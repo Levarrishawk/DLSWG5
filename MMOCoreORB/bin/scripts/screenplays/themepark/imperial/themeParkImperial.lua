@@ -361,7 +361,7 @@ darth_vader_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_kayderr", planetName = "lok", npcName = "Kayderr" }
+				{ npcTemplate = "theme_park_imperial_kayderr", planetName = "lok", npcName = "a Force Sensitive" }
 			},
 			secondarySpawns = {
 			},
