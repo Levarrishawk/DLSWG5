@@ -341,100 +341,24 @@ palpatine_missions =
 darth_vader_missions =
 	{
 		{
-			missionType = "confiscate",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_haro_whitesun", planetName = "lok", npcName = "Haro Whitesun" },
-			},
-			secondarySpawns = {
-			},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Information" }
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 2025 }
-			}
-		},
-
-		{
-			missionType = "retrieve",
-			primarySpawns =
-			{
-				{ npcTemplate = "mara_jade", planetName = "lok", npcName = "Mara Jade" }
-			},
-			secondarySpawns =
-			{
-			},
-			itemSpawns = {
-				{ itemTemplate = "object/tangible/loot/misc/damaged_datapad.iff", itemName = "Documents" }
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 2100 }
-			}
-		},
-
-		{
-			missionType = "confiscate",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_mellag_davin_lars", planetName = "lok", npcName = "Mellag Davin-Lars" }
-			},
-			secondarySpawns = {
-			},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Information" }
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 2175 }
-			}
-		},
-
-		{
-			missionType = "retrieve",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_mattias", planetName = "lok", npcName = "Mattias Ve'Shra" }
-			},
-			secondarySpawns =
-			{
-			},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Information" }
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 2250 }
-			}
-		},
-
-		{
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_mattias_aggro", planetName = "lok", npcName = "Mattias Ve'Shra" }
+				{ npcTemplate = "theme_park_imperial_haro_whitesun", planetName = "lok", npcName = "an Imperial Courier" },
 			},
 			secondarySpawns = {
-				{ npcTemplate = "brigand_assassin", planetName = "naboo", npcName = "an Assassin" },
-				{ npcTemplate = "brigand_assassin", planetName = "naboo", npcName = "an Assassin" },
-				{ npcTemplate = "brigand_assassin", planetName = "naboo", npcName = "an Assassin" },
 			},
 			itemSpawns =
 			{
+				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Information" }
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 2325 }
+				{ rewardType = "credits", amount = 20250 }
 			}
 		},
-
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
 				{ npcTemplate = "theme_park_imperial_kayderr", planetName = "lok", npcName = "Kayderr" }
