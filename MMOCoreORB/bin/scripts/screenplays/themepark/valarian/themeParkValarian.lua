@@ -173,16 +173,16 @@ ind_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
-				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
-				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
-				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
-				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
-				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
-				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
-				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
-				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
-				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" }
+				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" }
 			},
 			secondarySpawns =
 			{
