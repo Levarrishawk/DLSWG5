@@ -23,12 +23,13 @@ kavas_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "The Captain" }
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "The Captain" },
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Captains Guard" },
+      { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Captains Guard" },
+      { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Captains Guard" }
 			},
 			secondarySpawns =	{
-			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Captains Guard" },
-			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Captains Guard" },
-			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Captains Guard" }
+		
 			},
 			itemSpawns = {},
 			rewards =
