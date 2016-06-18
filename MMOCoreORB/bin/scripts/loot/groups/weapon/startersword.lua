@@ -12,4 +12,4 @@ startersword = {
 	}
 }
 
-addLootGroupTemplate("startesword", startesword)
+addLootGroupTemplate("startersword", startersword)
