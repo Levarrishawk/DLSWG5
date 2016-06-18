@@ -1,5 +1,6 @@
 palpatine = Creature:new {
 	objectName = "@theme_park_name:emperor_palpatine",
+	customName = "The Shadow",
 	socialGroup = "imperial",
 	faction = "imperial",
 	level = 100,
@@ -24,6 +25,7 @@ palpatine = Creature:new {
 	creatureBitmask = PACK,
 	optionsBitmask = INVULNERABLE + CONVERSABLE,
 	diet = HERBIVORE,
+	scale = 1.4,
 
 	templates = {"object/mobile/palpatine.iff"},
 	lootGroups = {},
