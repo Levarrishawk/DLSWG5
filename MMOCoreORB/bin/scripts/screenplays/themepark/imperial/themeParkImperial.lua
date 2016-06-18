@@ -422,7 +422,7 @@ npcMapImperial =
 		},
 		{
 			spawnData = { planetName = "lok", npcTemplate = "palpatine", x = -9.7, z = 1.0, y = -19.6, direction = -90, cellID = 8615426, position = STAND },
-			worldPosition = { x = 2387, y = -3889 },
+			worldPosition = { x = -1891, y = -3076 },
 			npcNumber = 32,
 			stfFile = "@theme_park_imperial/darth_vader",
 			stfWarning = "vader",
