@@ -1,4 +1,4 @@
-grenades_looted = {
+startergrenade = {
 	description = "",
 	minimumLevel = 0,
 	maximumLevel = -1,
@@ -8,4 +8,4 @@ grenades_looted = {
 	}
 }
 
-addLootGroupTemplate("grenades_looted", grenades_looted)
+addLootGroupTemplate("startergrenade", startergrenade)

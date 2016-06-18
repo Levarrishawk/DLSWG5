@@ -14,7 +14,9 @@ kavas_missions =
 			rewards =
 			{
 				{ rewardType = "credits", amount = 5000 },
-				{ rewardType = "faction", faction = "townsperson", amount = 50 }
+				{ rewardType = "faction", faction = "townsperson", amount = 50 },
+				{ rewardType = "loot",  lootGroup = "startergrenade" }
+				
 			}
 		},
 		{
@@ -32,7 +34,8 @@ kavas_missions =
 			rewards =
 			{
 				{ rewardType = "credits", amount = 6000 },
-				{ rewardType = "faction", faction = "townsperson", amount = 75 }
+				{ rewardType = "faction", faction = "townsperson", amount = 75 },
+				{ rewardType = "loot",  lootGroup = "startersword" }
 			}
 		},
 		{
@@ -57,7 +60,8 @@ kavas_missions =
 			rewards =
 			{
 				{ rewardType = "credits", amount = 7000 },
-				{ rewardType = "faction", faction = "townsperson", amount = 100 }
+				{ rewardType = "faction", faction = "townsperson", amount = 100 },
+				{ rewardType = "loot",  lootGroup = "starterpistol" }
 			}
 		},
 		{
@@ -74,7 +78,8 @@ kavas_missions =
 			rewards =
 			{
 				{ rewardType = "credits", amount = 7200 },
-				{ rewardType = "faction", faction = "townsperson", amount = 125 }
+				{ rewardType = "faction", faction = "townsperson", amount = 125 },
+				{ rewardType = "loot",  lootGroup = "startercarbine" }
 			}
 		},
 		{
@@ -88,7 +93,8 @@ kavas_missions =
 			rewards =
 			{
 				{ rewardType = "credits", amount = 6000 },
-				{ rewardType = "faction", faction = "valarian", amount = 150 }
+				{ rewardType = "faction", faction = "townsperson", amount = 150 },
+				{ rewardType = "loot",  lootGroup = "starterrifle" }
 			}
 		},
 		{
@@ -105,7 +111,8 @@ kavas_missions =
 			rewards =
 			{
 				{ rewardType = "credits", amount = 7000 },
-				{ rewardType = "faction", faction = "valarian", amount = 200 }
+				{ rewardType = "faction", faction = "townsperson", amount = 200 },
+				{ rewardType = "loot",  lootGroup = "starteraxe" }
 			}
 		}
 	}
