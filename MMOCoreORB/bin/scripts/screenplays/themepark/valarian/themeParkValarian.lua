@@ -170,20 +170,29 @@ ind_missions =
 			}
 		},
 		{
-			missionType = "escort",
+			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "valarian_compound_guard_quest", planetName = "tatooine", npcName = "Valarian's Compound Guard" }
+				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
+				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
+				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
+				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
+				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
+				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
+				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
+				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
+				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" },
+				{ npcTemplate = "rot_mite", planetName = "talus", npcName = "Rot Mite" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "jabba_henchman", planetName = "tatooine", npcName = "Jabba's henchman" }
+				{}
 			},
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 1000 },
-				{ rewardType = "faction", faction = "valarian", amount = 100 }
+				{ rewardType = "credits", amount = 8000 },
+				{ rewardType = "faction", faction = "townsperson", amount = 100 }
 			}
 		},
 		{
