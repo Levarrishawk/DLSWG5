@@ -338,3 +338,11 @@ includeFile("groups/armor/starterarmor6.lua")
 includeFile("groups/armor/starterarmor7.lua")
 includeFile("groups/armor/starterarmor8.lua")
 includeFile("groups/armor/starterarmor9.lua")
+
+-- starter weapons for starter quest
+includeFile("groups/weapon/starterpistol.lua")
+includeFile("groups/weapon/startercarbine.lua")
+includeFile("groups/weapon/starteraxe.lua")
+includeFile("groups/weapon/starterrifle.lua")
+includeFile("groups/weapon/startergrenade.lua")
+includeFile("groups/weapon/startersword.lua")
