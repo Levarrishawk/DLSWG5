@@ -173,16 +173,14 @@ ind_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "lost_aqualish_soldier", planetName = "talus", npcName = "Bank Robber" }
+				{ npcTemplate = "slooni_slavemaster", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "slooni_slavemaster", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "slooni_slavemaster", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "slooni_slavemaster", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "slooni_slavemaster", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "slooni_slavemaster", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "slooni_slavemaster", planetName = "talus", npcName = "Bank Robber" },
+				{ npcTemplate = "slooni_slavemaster", planetName = "talus", npcName = "Bank Robber" }
 			},
 			secondarySpawns =
 			{
