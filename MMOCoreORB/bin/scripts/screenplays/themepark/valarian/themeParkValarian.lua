@@ -92,12 +92,12 @@ kavas_missions =
 			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
 			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
 			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" }
+			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" }
 			               
 			},
 			itemSpawns = {},
@@ -109,19 +109,32 @@ kavas_missions =
 			}
 		},
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "kavas_jabba_assassin", planetName = "tatooine", npcName = "Jabba's assassin" }
+				{ npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+				 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+       { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+       { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+       { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
+       { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
+       { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
+       { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
+       { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
+       { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+       { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
+       { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" }
 			},
-			secondarySpawns = {},
+			secondarySpawns = {
+			
+			},
 			itemSpawns =
 			{
-				{ itemTemplate = "object/tangible/loot/misc/briefcase_s01.iff", itemName = "A Locked Briefcase" }
+				{}
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 7000 },
+				{ rewardType = "credits", amount = 7500 },
 				{ rewardType = "faction", faction = "townsperson", amount = 200 },
 				{ rewardType = "loot",  lootGroup = "starteraxe" }
 			}
