@@ -426,47 +426,6 @@ veers_missions =
 		},
   }
 
---[[
-		{
-			missionType = "assassinate",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_twilek", planetName = "lok", npcName = "Borvo the Twi'lek" }
-			},
-			secondarySpawns =
-			{
-				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
-			},
-			itemSpawns = {},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 1500 }
-			}
-		},
-
-		{
-			missionType = "assassinate",
-			primarySpawns =
-			{
-				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
-				{ npcTemplate = "theme_park_imperial_mercenary", planetName = "lok", npcName = "a Mercenary" },
-			},
-			secondarySpawns = {
-			},
-			itemSpawns =
-			{
-			},
-			rewards =
-			{
-				{ rewardType = "faction", faction = "imperial", amount = 275 },
-				{ rewardType = "loot", lootGroup = "theme_park_reward_imperial_veers"}
-			}
-		},
-	} --]]
-
 palpatine_missions =
 	{
 
@@ -747,14 +706,6 @@ npcMapImperial =
 			stfWarning = "loam_redge",
 			missions = lord_hethrir_missions
 		},
-		--[[
-		{
-			spawnData = { planetName = "naboo", npcTemplate = "thrawn", x = 2371.1, z = 291.9, y = -3923.8, direction = -132, cellID = 0, position = STAND, mood = "conversation" },
-			npcNumber = 8,
-			stfFile = "@theme_park_imperial/thrawn",
-			stfWarning = "lord_hethrir",
-			missions = thrawn_missions
-		}, --]]
 		{
 			spawnData = { planetName = "lok", npcTemplate = "veers", x = -1847.9, z = 19, y = -3095.1, direction = 88, cellID = 0, position = STAND, mood = "conversation" },
 			npcNumber = 8,
@@ -763,7 +714,7 @@ npcMapImperial =
 			missions = veers_missions
 		},
 		{
-			spawnData = { planetName = "naboo", npcTemplate = "palpatine", x = 13, z = 21, y = -25.5, direction = 180, cellID = 1418886, position = STAND },
+			spawnData = { planetName = "lok", npcTemplate = "randd", x = 3.0, z = 7.0, y = 1.3, direction = 180, cellID = 8615428, position = STAND },
 			worldPosition = { x = 2397, y = -3958 },
 			npcNumber = 16,
 			stfFile = "@theme_park_imperial/emperor",

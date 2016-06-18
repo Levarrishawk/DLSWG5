@@ -317,6 +317,7 @@ includeFile("quest/lok/theme_park_rebel_hyperdrive_seller.lua")
 includeFile("quest/lok/theme_park_rebel_nym_contact.lua")
 includeFile("quest/lok/theme_park_rebel_pirate.lua")
 includeFile("quest/lok/theme_park_rebel_pirate_holocron.lua")
+includeFile("quest/lok/randd.lua")
 
 -- Naboo
 includeFile("quest/naboo/alowi_fintz.lua")

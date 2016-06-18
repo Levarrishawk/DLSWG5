@@ -1,5 +1,6 @@
-palpatine = Creature:new {
-	objectName = "@theme_park_name:emperor_palpatine",
+randd = Creature:new {
+	objectName = "",
+	customName = "Grand Moff Randd",
 	socialGroup = "imperial",
 	faction = "imperial",
 	level = 100,
@@ -25,12 +26,12 @@ palpatine = Creature:new {
 	optionsBitmask = INVULNERABLE + CONVERSABLE,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/palpatine.iff"},
+	templates = {"object/mobile/prefect_talmont.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "theme_park_imperial_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(palpatine, "palpatine")
+CreatureTemplates:addCreatureTemplate(randd, "randd")
