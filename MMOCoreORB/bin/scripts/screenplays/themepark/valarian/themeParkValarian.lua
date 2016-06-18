@@ -372,8 +372,8 @@ npcMapThemeParkValarian =
 			missions = lady_valarian_missions
 		},
 		{
-			spawnData = { planetName = "tatooine", npcTemplate = "ind", x = -24.62, z = 9.01, y = -8.01, direction = 133.6, cellID = 1076944, position = STAND },
-			worldPosition = { x = 3366, y = -4615 },
+			spawnData = { planetName = "talus", npcTemplate = "ind", x = 389, z = 6.0, y = -2949, direction = -89, cellID = 0, position = STAND },
+			worldPosition = { x = 389, y = -2949 },
 			npcNumber = 2,
 			stfFile = "@spawning/static_npc/tato_valarian_ind",
 			missions = ind_missions

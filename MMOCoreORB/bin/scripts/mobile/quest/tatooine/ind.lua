@@ -1,6 +1,6 @@
 ind = Creature:new {
 	objectName = "@npc_name:gran_base_male",
-	customName = "Ind",
+	customName = "Major Ralor",
 	socialGroup = "valarian",
 	faction = "valarian",
 	level = 100,
@@ -26,7 +26,7 @@ ind = Creature:new {
 	optionsBitmask = AIENABLED + CONVERSABLE,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_ind.iff"},
+	templates = {"object/mobile/hunter.iff"},
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "theme_park_valarian_mission_giver_convotemplate",
