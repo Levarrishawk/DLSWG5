@@ -1,6 +1,6 @@
 veers = Creature:new {
 	objectName = "",
-	customName = "Colonel Veers",
+	customName = "General Maximilian Veers",
 	socialGroup = "imperial",
 	faction = "imperial",
 	level = 25,

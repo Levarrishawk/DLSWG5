@@ -87,9 +87,9 @@ kaja_orzee_missions =
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "faction", faction = "imperial", amount = 75 },
-				{ rewardType = "loot", lootGroup = "theme_park_reward_imperial_kaja"} ,
-				{ rewardType = "permission", permissionGroup = "emperors_retreat2" }
+				{ rewardType = "faction", faction = "imperial", amount = 750 },
+				{ rewardType = "credits", amount = 30000 },
+				{ rewardType = "loot", lootGroup = "theme_park_reward_imperial_kaja"} ,				
 			}
 		}
 	}
@@ -100,7 +100,7 @@ loam_redge_missions =
 			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_escort_noble", planetName = "naboo", npcName = "a Noble" }
+				{ npcTemplate = "theme_park_imperial_escort_noble", planetName = "lok", npcName = "a Noble" }
 			},
 			secondarySpawns =
 			{
@@ -108,7 +108,7 @@ loam_redge_missions =
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 375 }
+				{ rewardType = "credits", amount = 3750 }
 			}
 		},
 
@@ -116,18 +116,18 @@ loam_redge_missions =
 			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_escort_rebel_leader", planetName = "naboo", npcName = "random" }
+				{ npcTemplate = "theme_park_imperial_escort_rebel_leader", planetName = "lok", npcName = "random" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "rebel_resistance_dissident", planetName = "naboo", npcName = "" },
-				{ npcTemplate = "rebel_resistance_dissident", planetName = "naboo", npcName = "" },
-				{ npcTemplate = "rebel_resistance_dissident", planetName = "naboo", npcName = "" }
+				{ npcTemplate = "rebel_resistance_dissident", planetName = "lok", npcName = "" },
+				{ npcTemplate = "rebel_resistance_dissident", planetName = "lok", npcName = "" },
+				{ npcTemplate = "rebel_resistance_dissident", planetName = "lok", npcName = "" }
 			},
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 450 }
+				{ rewardType = "credits", amount = 4500 }
 			}
 		},
 		{
@@ -728,8 +728,8 @@ npcMapImperial =
 			missions = kaja_orzee_missions
 		},
 		{
-			spawnData = { planetName = "naboo", npcTemplate = "loam_redge", x = 19.8, z = 0.2, y = -41.9, direction = 54, cellID = 1418875, position = STAND },
-			worldPosition = { x = 2382, y = -3967 },
+			spawnData = { planetName = "lok", npcTemplate = "loam_redge", x = -19.2, z = 1.0, y = 17.9, direction = 180, cellID = 8615422, position = STAND },
+			worldPosition = { x = -1853, y = -3065 },
 			npcNumber = 2,
 			stfFile = "@theme_park_imperial/loam_redge",
 			stfWarning = "kaja_orzee",
