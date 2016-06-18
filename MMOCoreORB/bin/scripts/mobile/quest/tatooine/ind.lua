@@ -26,7 +26,7 @@ ind = Creature:new {
 	optionsBitmask = AIENABLED + CONVERSABLE,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/hunter.iff"},
+	templates = {"object/mobile/dressed_ind.iff"},
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "theme_park_valarian_mission_giver_convotemplate",
