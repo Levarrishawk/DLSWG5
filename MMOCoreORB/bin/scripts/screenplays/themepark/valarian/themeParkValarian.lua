@@ -86,18 +86,18 @@ kavas_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" }
+				{ npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" }
 			},
 			secondarySpawns =	{
-			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" }
+			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" }
 			               
 			},
 			itemSpawns = {},
