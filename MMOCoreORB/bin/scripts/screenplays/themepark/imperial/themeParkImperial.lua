@@ -490,7 +490,7 @@ npcMapImperial =
 		},
 		{
 			spawnData = { planetName = "lok", npcTemplate = "randd", x = 3.0, z = 7.0, y = 1.3, direction = 180, cellID = 8615428, position = STAND },
-			worldPosition = { x = 2397, y = -3958 },
+			worldPosition = { x = -1870, y = -3087 },
 			npcNumber = 16,
 			stfFile = "@theme_park_imperial/emperor",
 			stfWarning = "emperor",
