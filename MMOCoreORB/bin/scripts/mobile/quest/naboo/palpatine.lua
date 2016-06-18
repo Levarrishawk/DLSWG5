@@ -30,7 +30,7 @@ palpatine = Creature:new {
 	templates = {"object/mobile/palpatine.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "theme_park_imperial_mission_giver_convotemplate",
 	attacks = {
 	}
 }
