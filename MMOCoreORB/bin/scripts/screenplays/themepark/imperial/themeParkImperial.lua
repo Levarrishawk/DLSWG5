@@ -131,7 +131,7 @@ loam_redge_missions =
 			}
 		},
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
 				{ npcTemplate = "theme_park_imperial_slicer", planetName = "lok", npcName = "a Slicer" }
@@ -160,7 +160,7 @@ loam_redge_missions =
 			itemSpawns = {},
 			rewards =
 			{
-				{ rewardType = "faction", faction = "imperial", amount = 125 },
+				{ rewardType = "faction", faction = "imperial", amount = 1250 },
 				{ rewardType = "loot", lootGroup = "theme_park_reward_imperial_redge"}
 			}
 		}
