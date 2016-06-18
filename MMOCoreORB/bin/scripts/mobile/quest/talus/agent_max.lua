@@ -2,10 +2,10 @@ agent_max = Creature:new {
 	objectName = "",
 	socialGroup = "",
 	faction = "",
-	level = 13,
+	level = 10,
 	chanceHit = 0.3,
-	damageMin = 140,
-	damageMax = 150,
+	damageMin = 110,
+	damageMax = 130,
 	baseXp = 714,
 	baseHAM = 2000,
 	baseHAMmax = 2400,
@@ -36,7 +36,7 @@ agent_max = Creature:new {
 			groups = {
 				{group = "task_loot_toxic_rations", chance = 10000000}
 			},
-			lootChance = 10000000
+			lootChance = 1
 		}
 	},
 	weapons = {"pirate_weapons_light"},
