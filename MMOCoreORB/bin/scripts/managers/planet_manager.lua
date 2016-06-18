@@ -96,9 +96,9 @@ dantooine = {
   gcwEnabled = 1,
 
   planetTravelPoints = {
-    --{name = "Dantooine Mining Outpost", x = -635.96887, z = 3, y = 2507.0115, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
-    --{name = "Dantooine Imperial Outpost", x = -4208.6602, z = 3, y = -2350.24, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
-    --{name = "Dantooine Agro Outpost", x = 1569.66, z = 4, y = -6415.7598, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1}
+    {name = "Dantooine Mining Outpost", x = -635.96887, z = 3, y = 2507.0115, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    {name = "Dantooine Imperial Outpost", x = -4208.6602, z = 3, y = -2350.24, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    {name = "Dantooine Agro Outpost", x = 1569.66, z = 4, y = -6415.7598, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1}
   },
 
   badgeAreas = {
@@ -171,7 +171,7 @@ lok = {
 
   planetTravelPoints = {
     {name = "Nym's Stronghold", x = 478.92676, z = 9, y = 5511.9565, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
-    {name = "an Imperial Outpost", x = -1933.0, z = 12, y = -3209.0, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1}
+    {name = "Lok Imperial Outpost", x = -1933.0, z = 12, y = -3209.0, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1}
   },
 
   badgeAreas = {
