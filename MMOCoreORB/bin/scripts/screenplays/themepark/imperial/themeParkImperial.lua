@@ -134,7 +134,7 @@ loam_redge_missions =
 			missionType = "confiscate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_slicer", planetName = "naboo", npcName = "a Slicer" }
+				{ npcTemplate = "theme_park_imperial_slicer", planetName = "lok", npcName = "a Slicer" }
 			},
 			secondarySpawns =
 			{
@@ -144,7 +144,7 @@ loam_redge_missions =
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 525 }
+				{ rewardType = "credits", amount = 5250 }
 			}
 		},
 
@@ -152,7 +152,7 @@ loam_redge_missions =
 			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_escort", planetName = "naboo", npcName = "a Slicer" }
+				{ npcTemplate = "theme_park_imperial_escort", planetName = "lok", npcName = "a Slicer" }
 			},
 			secondarySpawns =
 			{
