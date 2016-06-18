@@ -51,7 +51,7 @@ kavas_missions =
 			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
 			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
 			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
-			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
+			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" }
 			},
 			itemSpawns =
 			{
@@ -86,9 +86,20 @@ kavas_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Jabba's enforcer" }
+				{ npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" }
 			},
-			secondarySpawns =	{},
+			secondarySpawns =	{
+			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" },
+			 { npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Talus Savior Thug" }
+			               
+			},
 			itemSpawns = {},
 			rewards =
 			{
