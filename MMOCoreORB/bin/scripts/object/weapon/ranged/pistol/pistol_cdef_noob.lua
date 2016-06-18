@@ -114,10 +114,10 @@ object_weapon_ranged_pistol_pistol_cdef_noob = object_weapon_ranged_pistol_share
 	maxRange = 64,
 	maxRangeAccuracy = -90,
 
-	minDamage = 50,
-	maxDamage = 80,
+	minDamage = 9,
+	maxDamage = 18,
 
-	attackSpeed = 4,
+	attackSpeed = 1,
 
 	woundsRatio = 7
 }
