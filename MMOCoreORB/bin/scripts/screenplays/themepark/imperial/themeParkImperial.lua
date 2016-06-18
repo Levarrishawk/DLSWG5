@@ -389,9 +389,9 @@ veers_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "rebel_trooper", planetName = "lok", npcName = "a Rebel Trooper" },
-				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
+				{ npcTemplate = "rebel_trooper", planetName = "lok", npcName = "a New Republic Lieutenant" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Militiaman" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Militiaman" },
 			},
 			secondarySpawns = {
 			},
@@ -404,25 +404,27 @@ veers_missions =
 			}
 		},
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_borvos_thug", planetName = "lok", npcName = "Borvo's Thug" },
+				{ npcTemplate = "theme_park_imperial_rebel_trooper", planetName = "lok", npcName = "a Senior New Republic Intelligence Agent"},
 			},
 			secondarySpawns = {
-				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Hired Thug" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Hired Thug" },
 			},
 			itemSpawns =
 			{
-				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Shipping Manifest" }
+				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Datadisk" }
 			},
 			rewards =
 			{
-				{ rewardType = "credits", amount = 1425 }
+				{ rewardType = "credits", amount = 14250 },
+				{ rewardType = "faction", faction = "imperial", amount = 275 },
+        { rewardType = "loot", lootGroup = "theme_park_reward_imperial_veers"}
 			}
 		},
-
+--[[
 		{
 			missionType = "assassinate",
 			primarySpawns =
@@ -461,7 +463,7 @@ veers_missions =
 				{ rewardType = "loot", lootGroup = "theme_park_reward_imperial_veers"}
 			}
 		},
-	}
+	} --]]
 
 palpatine_missions =
 	{
