@@ -367,12 +367,12 @@ veers_missions =
 	{
 
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_rebel_trooper", planetName = "naboo", npcName = "a Rebel Trooper" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "borvos_thug", planetName = "naboo", npcName = "Borvo's Thug" },
+				{ npcTemplate = "theme_park_imperial_rebel_trooper", planetName = "lok", npcName = "a Rebel Trooper" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
+				{ npcTemplate = "borvos_thug", planetName = "lok", npcName = "Borvo's Thug" },
 			},
 			secondarySpawns = {
 			},
@@ -389,9 +389,9 @@ veers_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "rebel_trooper", planetName = "naboo", npcName = "a Rebel Trooper" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
+				{ npcTemplate = "rebel_trooper", planetName = "lok", npcName = "a Rebel Trooper" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
 			},
 			secondarySpawns = {
 			},
@@ -407,11 +407,11 @@ veers_missions =
 			missionType = "confiscate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_borvos_thug", planetName = "naboo", npcName = "Borvo's Thug" },
+				{ npcTemplate = "theme_park_imperial_borvos_thug", planetName = "lok", npcName = "Borvo's Thug" },
 			},
 			secondarySpawns = {
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
 			},
 			itemSpawns =
 			{
@@ -427,12 +427,12 @@ veers_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_twilek", planetName = "naboo", npcName = "Borvo the Twi'lek" }
+				{ npcTemplate = "theme_park_imperial_twilek", planetName = "lok", npcName = "Borvo the Twi'lek" }
 			},
 			secondarySpawns =
 			{
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
 			},
 			itemSpawns = {},
 			rewards =
@@ -445,10 +445,10 @@ veers_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "theme_park_imperial_mercenary", planetName = "naboo", npcName = "a Mercenary" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
+				{ npcTemplate = "theme_park_imperial_mercenary", planetName = "lok", npcName = "a Mercenary" },
 			},
 			secondarySpawns = {
 			},
