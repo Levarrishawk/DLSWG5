@@ -424,6 +424,8 @@ veers_missions =
         { rewardType = "loot", lootGroup = "theme_park_reward_imperial_veers"}
 			}
 		},
+  }
+
 --[[
 		{
 			missionType = "assassinate",
