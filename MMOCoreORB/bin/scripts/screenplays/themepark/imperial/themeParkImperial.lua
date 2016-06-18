@@ -370,15 +370,15 @@ veers_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_rebel_trooper", planetName = "lok", npcName = "a Rebel Trooper" },
-				{ npcTemplate = "thug", planetName = "lok", npcName = "a Thug" },
-				{ npcTemplate = "borvos_thug", planetName = "lok", npcName = "Borvo's Thug" },
+				{ npcTemplate = "theme_park_imperial_rebel_trooper", planetName = "lok", npcName = "a New Republic Intelligence Agent" },
+				{ npcTemplate = "thug", planetName = "lok", npcName = "a Hired Thug" },
+				{ npcTemplate = "borvos_thug", planetName = "lok", npcName = "a Hired Thug" },
 			},
 			secondarySpawns = {
 			},
 			itemSpawns =
 			{
-				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Information" }
+				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Encrypted Infodisk" }
 			},
 			rewards =
 			{
@@ -752,7 +752,7 @@ npcMapImperial =
 			missions = thrawn_missions
 		}, --]]
 		{
-			spawnData = { planetName = "lok", npcTemplate = "veers", x = -1847, z = 19, y = -3095.1, direction = 88, cellID = 0, position = STAND, mood = "conversation" },
+			spawnData = { planetName = "lok", npcTemplate = "veers", x = -1847.9, z = 19, y = -3095.1, direction = 88, cellID = 0, position = STAND, mood = "conversation" },
 			npcNumber = 8,
 			stfFile = "@theme_park_imperial/veers",
 			stfWarning = "lord_hethrir",
