@@ -254,115 +254,7 @@ lord_hethrir_missions =
 			}
 		},
 	}
---[[
-thrawn_missions =
-	{
-		{
-			missionType = "escort",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_escort_commander", planetName = "naboo", npcName = "Commander Dolman" }
-			},
-			secondarySpawns =
-			{
-			},
-			itemSpawns = {},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 900 }
-			}
-		},
 
-		{
-			missionType = "confiscate",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_thug", planetName = "naboo", npcName = "a Thug" }
-			},
-			secondarySpawns = {},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/component/item/quest_item/directional_sensor.iff", itemName = "Transponder" }
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 975 }
-			}
-		},
-		{
-			missionType = "deliver",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_escort", planetName = "naboo", npcName = "Geg Winthasen" }
-			},
-			secondarySpawns =
-			{
-			},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Holodisc" }
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 1050 }
-			}
-		},
-
-		{
-			missionType = "confiscate",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_fambaa", planetName = "naboo", npcName = "a Fambaa" }
-			},
-			secondarySpawns = {
-			},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/container/jar/jar_guts_s01.iff", itemName = "Jar of Fambaa Blood" }
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 1125 }
-			}
-		},
-		{
-			missionType = "confiscate",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_seller", planetName = "naboo", npcName = "Seldair Keeloo" }
-			},
-			secondarySpawns = {},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/loot/misc/firework_dud_s1.iff", itemName = "Rocket Launcher" }
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 1200 }
-			}
-		},
-
-		{
-			missionType = "assassinate",
-			primarySpawns =
-			{
-				{ npcTemplate = "rebel_commando", planetName = "naboo", npcName = "a Rebel Commando" }
-			},
-			secondarySpawns = {
-				{ npcTemplate = "rebel_trooper", planetName = "naboo", npcName = "" },
-				{ npcTemplate = "rebel_trooper", planetName = "naboo", npcName = "" }
-			},
-			itemSpawns =
-			{
-			},
-			rewards =
-			{
-				{ rewardType = "faction", faction = "imperial", amount = 225 },
-				{ rewardType = "loot_set", lootGroup = "theme_park_reward_imperial_thrawn", setSize = 2}
-			}
-		},
-	}
---]]
 veers_missions =
 	{
 
@@ -433,7 +325,7 @@ palpatine_missions =
 			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_escort", planetName = "naboo", npcName = "a Thug Ringleader" }
+				{ npcTemplate = "theme_park_imperial_escort", planetName = "lok", npcName = "a Courier" }
 			},
 			secondarySpawns =
 			{
@@ -443,124 +335,7 @@ palpatine_missions =
 			{
 				{ rewardType = "credits", amount = 1575 }
 			}
-		},
-		{
-			missionType = "deliver",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_escort", planetName = "naboo", npcName = "a Thug Ringleader" }
-			},
-			secondarySpawns =
-			{
-			},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Plans" }
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 1650 }
-			}
-		},
-		{
-			missionType = "assassinate",
-			primarySpawns =
-			{
-				{ npcTemplate = "rsf_security_officer", planetName = "naboo", npcName = "a Security Officer" },
-			},
-			secondarySpawns = {
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" }
-			},
-			itemSpawns =
-			{
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 1725 }
-			}
-		},
-
-		{
-			missionType = "escort",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_escort_handmaiden", planetName = "naboo", npcName = "a Handmaiden" }
-			},
-			secondarySpawns =
-			{
-			},
-			itemSpawns = {},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 1800 }
-			}
-		},
-
-		{
-			missionType = "confiscate",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_thug_ringleader", planetName = "naboo", npcName = "a Thug Ringleader" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" },
-				{ npcTemplate = "thug", planetName = "naboo", npcName = "a Thug" }
-			},
-			secondarySpawns = {
-			},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Plans" }
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 1875 }
-			}
-		},
-
-		{
-			missionType = "deliver",
-			primarySpawns =
-			{
-				{ npcTemplate = "theme_park_imperial_escort", planetName = "naboo", npcName = "a Parliament Courier" }
-			},
-			secondarySpawns =
-			{
-			},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "a Holodisc" }
-			},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 1950 }
-			}
-		},
-
-		{
-			missionType = "assassinate",
-			primarySpawns =
-			{
-				{ npcTemplate = "rebel_general", planetName = "naboo", npcName = "a Rebel General" }
-			},
-			secondarySpawns = {
-				{ npcTemplate = "rebel_trooper", planetName = "naboo", npcName = "a Rebel Trooper" },
-				{ npcTemplate = "rebel_trooper", planetName = "naboo", npcName = "a Rebel Trooper" },
-				{ npcTemplate = "rebel_trooper", planetName = "naboo", npcName = "a Rebel Trooper" },
-				{ npcTemplate = "rebel_trooper", planetName = "naboo", npcName = "a Rebel Trooper" }
-			},
-			itemSpawns =
-			{
-			},
-			rewards =
-			{
-				{ rewardType = "faction", faction = "imperial", amount = 325 },
-				{ rewardType = "loot", lootGroup = "theme_park_reward_imperial_emperor"}
-			}
 		}
-
 	}
 
 darth_vader_missions =
@@ -569,7 +344,7 @@ darth_vader_missions =
 			missionType = "confiscate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_haro_whitesun", planetName = "naboo", npcName = "Haro Whitesun" },
+				{ npcTemplate = "theme_park_imperial_haro_whitesun", planetName = "lok", npcName = "Haro Whitesun" },
 			},
 			secondarySpawns = {
 			},
@@ -587,7 +362,7 @@ darth_vader_missions =
 			missionType = "retrieve",
 			primarySpawns =
 			{
-				{ npcTemplate = "mara_jade", planetName = "naboo", npcName = "Mara Jade" }
+				{ npcTemplate = "mara_jade", planetName = "lok", npcName = "Mara Jade" }
 			},
 			secondarySpawns =
 			{
@@ -605,7 +380,7 @@ darth_vader_missions =
 			missionType = "confiscate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_mellag_davin_lars", planetName = "naboo", npcName = "Mellag Davin-Lars" }
+				{ npcTemplate = "theme_park_imperial_mellag_davin_lars", planetName = "lok", npcName = "Mellag Davin-Lars" }
 			},
 			secondarySpawns = {
 			},
@@ -623,7 +398,7 @@ darth_vader_missions =
 			missionType = "retrieve",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_mattias", planetName = "naboo", npcName = "Mattias Ve'Shra" }
+				{ npcTemplate = "theme_park_imperial_mattias", planetName = "lok", npcName = "Mattias Ve'Shra" }
 			},
 			secondarySpawns =
 			{
@@ -642,7 +417,7 @@ darth_vader_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_mattias_aggro", planetName = "naboo", npcName = "Mattias Ve'Shra" }
+				{ npcTemplate = "theme_park_imperial_mattias_aggro", planetName = "lok", npcName = "Mattias Ve'Shra" }
 			},
 			secondarySpawns = {
 				{ npcTemplate = "brigand_assassin", planetName = "naboo", npcName = "an Assassin" },
@@ -662,7 +437,7 @@ darth_vader_missions =
 			missionType = "confiscate",
 			primarySpawns =
 			{
-				{ npcTemplate = "theme_park_imperial_kayderr", planetName = "naboo", npcName = "Kayderr" }
+				{ npcTemplate = "theme_park_imperial_kayderr", planetName = "lok", npcName = "Kayderr" }
 			},
 			secondarySpawns = {
 			},
