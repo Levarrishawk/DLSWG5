@@ -173,18 +173,19 @@ ind_missions =
 			missionType = "assassinate",
 			primarySpawns =
 			{
-				{ npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
-				{ npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" }
+				{ npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Bank Robber" }
+
 			},
 			secondarySpawns =
 			{
-				{}
+			       { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
+        { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
+        { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
+        { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
+        { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
+        { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
+        { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Bank Robber" }
+				
 			},
 			itemSpawns = {},
 			rewards =
