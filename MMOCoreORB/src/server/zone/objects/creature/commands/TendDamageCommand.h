@@ -57,7 +57,7 @@ public:
 			creature->inflictDamage(creature, CreatureAttribute::ACTION, actionCost, false);
 			creature->playEffect("clienteffect/bacta_bomb.cef", "");
 		} else {
-			creature->sendSystemMessage("You are not ready to heal yourself again yet.");
+			creature->sendSystemMessage("You are still under the effects of healing fatigue.  You can not Tend Damage right now.");
 		}
 		return SUCCESS;
 	}
