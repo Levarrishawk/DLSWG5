@@ -28,6 +28,7 @@ luke_skywalker = Creature:new {
 	templates = {"object/mobile/dressed_luke_skywalker.iff"},
 	lootGroups = {},
 	weapons = {"luke_skywalker_weapons"},
+	outfit = "luke_skywalker_outfit",
 	conversationTemplate = "theme_park_rebel_mission_giver_convotemplate",
 	attacks = {
 	}
