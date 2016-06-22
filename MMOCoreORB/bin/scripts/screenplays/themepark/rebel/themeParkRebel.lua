@@ -6,7 +6,7 @@ c3po_missions =
 		missionType = "deliver", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_selonian_female", planetName = "corellia", npcName = "random" } 
+			{ npcTemplate = "theme_park_rebel_selonian_female", planetName = "chandrila", npcName = "random" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = 
@@ -15,14 +15,14 @@ c3po_missions =
 		}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 50 } 
+			{ rewardType = "credits", amount = 5000 } 
 		}
 	},
 	{ 
 		missionType = "deliver", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_captain", planetName = "corellia", npcName = "Captain Montrasword" } 
+			{ npcTemplate = "theme_park_rebel_captain", planetName = "chandrila", npcName = "Captain Montrasword" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = 
@@ -31,27 +31,27 @@ c3po_missions =
 		}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 100 } 
+			{ rewardType = "credits", amount = 10000 } 
 		}
 	},
 	{ 
 		missionType = "escort", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_captain", planetName = "corellia", npcName = "Captain Taergle" } 
+			{ npcTemplate = "theme_park_rebel_captain", planetName = "chandrila", npcName = "Captain Taergle" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = {}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 150 } 
+			{ rewardType = "credits", amount = 15000 } 
 		} 
 	},
 	{ 
 		missionType = "deliver", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_captain", planetName = "corellia", npcName = "Captain Drexsler" } 
+			{ npcTemplate = "theme_park_rebel_captain", planetName = "chandrila", npcName = "Captain Drexsler" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = 
@@ -60,7 +60,7 @@ c3po_missions =
 		}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 200 }, 
+			{ rewardType = "credits", amount = 20000 }, 
 			{ rewardType = "faction", faction = "rebel", amount = 50 }, 
 			{ rewardType = "loot",  lootGroup = "theme_park_reward_rebel_c_3po" }
 		}
@@ -827,8 +827,8 @@ luke_missions =
 npcMapRebel = 
 { 
 	{ 
-		spawnData = { planetName = "corellia", npcTemplate = "c_3po", x = -2.3, z = 2.0, y = 4.0, direction = 150, cellID = 8555472, position = STAND }, 
-		worldPosition = { x = -6507.5, y = 5985.7 }, 
+		spawnData = { planetName = "chandrila", npcTemplate = "c_3po", x = -2.3, z = 2.0, y = 4.0, direction = 150, cellID = 35691629, position = STAND }, 
+		worldPosition = { x = 170, y = -3067 }, 
 		npcNumber = 1,   
 		stfFile = "@theme_park_rebel/c3po",
 		missions = c3po_missions
