@@ -827,7 +827,7 @@ luke_missions =
 npcMapRebel = 
 { 
 	{ 
-		spawnData = { planetName = "chandrila", npcTemplate = "c_3po", x = -2.3, z = 2.0, y = 4.0, direction = 150, cellID = 35691629, position = STAND }, 
+		spawnData = { planetName = "chandrila", npcTemplate = "c_3po", x = -2.3, z = 2.0, y = 4.0, direction = 150, cellID = 35791629, position = STAND }, 
 		worldPosition = { x = 170, y = -3067 }, 
 		npcNumber = 1,   
 		stfFile = "@theme_park_rebel/c3po",
