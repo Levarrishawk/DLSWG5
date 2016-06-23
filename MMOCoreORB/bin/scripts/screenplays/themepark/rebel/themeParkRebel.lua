@@ -73,7 +73,7 @@ qualdo_missions =
 		missionType = "deliver", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_ithorian", planetName = "corellia", npcName = "I'klee'trao" } 
+			{ npcTemplate = "theme_park_rebel_ithorian", planetName = "chandrila", npcName = "I'klee'trao" } 
 		}, 
 		secondarySpawns = {},
 		itemSpawns = 
@@ -82,18 +82,18 @@ qualdo_missions =
 		}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 200 } 
+			{ rewardType = "credits", amount = 2000 } 
 		} 
 	},
 	{ 
 		missionType = "confiscate",
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_imperial_sergeant_montage", planetName = "corellia", npcName = "Sergeant Montage" } 
+			{ npcTemplate = "theme_park_imperial_sergeant_montage", planetName = "chandrila", npcName = "Sergeant Montage" } 
 		}, 
 		secondarySpawns = 
 		{ 
-			{ npcTemplate = "stormtrooper", planetName = "corellia", npcName = "Stormtrooper" } 
+			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" } 
 		}, 
 		itemSpawns = 
 		{
@@ -101,37 +101,37 @@ qualdo_missions =
 		}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 250 } 
+			{ rewardType = "credits", amount = 2500 } 
 		}
 	},
 	{ 
 		missionType = "assassinate", 
 		primarySpawns = 
 		{
-			{ npcTemplate = "theme_park_imperial_captain_sargon", planetName = "corellia", npcName = "Captain Sargon" } 
+			{ npcTemplate = "theme_park_imperial_captain_sargon", planetName = "chandrila", npcName = "Captain Sargon" } 
 		}, 
 		secondarySpawns = 
 		{
-			{ npcTemplate = "stormtrooper", planetName = "corellia", npcName = "Stormtrooper" },
-			{ npcTemplate = "stormtrooper", planetName = "corellia", npcName = "Stormtrooper" }
+			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" },
+			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" }
 		}, 
 		itemSpawns = {}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 300 } 
+			{ rewardType = "credits", amount = 3000 } 
 		}
 	},
 	{ 
 		missionType = "escort", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_ithorian", planetName = "corellia", npcName = "I'klee'trao" } 
+			{ npcTemplate = "theme_park_rebel_ithorian", planetName = "chandrila", npcName = "I'klee'trao" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = {}, 
 		rewards = 
 		{ 
-			{ rewardType = "faction", faction = "rebel", amount = 75 }, 
+			{ rewardType = "faction", faction = "rebel", amount = 7500 }, 
 			{ rewardType = "loot", lootGroup = "theme_park_reward_rebel_qualdo_herm" } 
 		}
 	}
@@ -846,8 +846,8 @@ npcMapRebel =
 		missions = {} 
 	},
 	{ 
-		spawnData = { planetName = "corellia", npcTemplate = "qualdo_herm", x = 14.91, z = 1.01, y = -6.68, direction = 0, cellID = 8555475, position = STAND }, 
-		worldPosition = { x = -6512.3, y = 6005.2 }, 
+		spawnData = { planetName = "chandrila", npcTemplate = "qualdo_herm", x = 14.91, z = 1.01, y = -6.68, direction = 0, cellID = 35791632, position = STAND }, 
+		worldPosition = { x = 160, y = -3084 }, 
 		npcNumber = 2,   
 		stfFile = "@theme_park_rebel/qualdo_herm",    
 		missions = qualdo_missions 
