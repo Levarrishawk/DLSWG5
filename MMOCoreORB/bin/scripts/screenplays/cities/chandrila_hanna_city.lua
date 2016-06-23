@@ -293,8 +293,8 @@ function HannaCityScreenPlay:spawnMobiles()
   spawnMobile("chandrila", "trainer_1hsword",60,21.9,-24.0,84.1,-179,35791745)
   
   -- Senate Chamber
-  pNpc = spawnMobile("chandrila", "mon_mothma",60,-0.0,-26.6,0.8,0,35791722)
-  self:setMoodString(pNpc, "conversation")
+--  pNpc = spawnMobile("chandrila", "mon_mothma",60,-0.0,-26.6,0.8,0,35791722)
+--  self:setMoodString(pNpc, "conversation")
   pNpc = spawnMobile("chandrila", "senator",60,7.9,-26.1,2.0,-103,35791722)
   self:setMoodString(pNpc, "npc_sitting_chair")
   pNpc = spawnMobile("chandrila", "senator",60,7.5,-26.1,3.5,-110,35791722)

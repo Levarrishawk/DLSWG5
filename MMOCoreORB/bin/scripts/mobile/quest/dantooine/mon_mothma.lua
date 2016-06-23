@@ -1,5 +1,6 @@
 mon_mothma = Creature:new {
 	objectName = "@mob/creature_names:mon_mothma",
+	customName = "Chancellor Mon Mothma",
 	socialGroup = "rebel",
 	faction = "rebel",
 	level = 100,

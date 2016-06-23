@@ -399,7 +399,7 @@ mon_missions =
 		missionType = "deliver", 
 		primarySpawns = 
 		{
-			{ npcTemplate = "theme_park_rebel_bothan_spy", planetName = "dantooine", npcName = "Wala Am'kre" } 
+			{ npcTemplate = "theme_park_rebel_bothan_spy", planetName = "chandrila", npcName = "Wala Am'kre" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = 
@@ -408,96 +408,9 @@ mon_missions =
 		}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 1300 } 
+			{ rewardType = "credits", amount = 13000 } 
 		} 
-	},
-	{
-		missionType = "assassinate", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "stormtrooper_squad_leader", planetName = "dantooine", npcName = "Strike Team Leader" }
-		}, 
-		secondarySpawns = 
-		{
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-221" },
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-982" }
-		}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1350 } 
-		}
-	},
-	{
-		missionType = "escort", 
-		missionDescription = "MON MOTHMA needs you to ESCORT the CAPTAIN of the Corvette back to the REBEL BASE",
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "theme_park_rebel_altapi_tmman", planetName = "dantooine", npcName = "Altapi T'mman" } 
-		}, 
-		secondarySpawns = 
-		{
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-179" },
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-322" }
-		}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1400 } 
-		}
-	},
-	{
-		missionType = "assassinate", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "stormtrooper_squad_leader", planetName = "dantooine", npcName = "TK-1132" }
-		}, 
-		secondarySpawns = 
-		{
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-658" },
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-459" }
-		}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1450 } 
-		}
-	},
-	{
-		missionType = "escort", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "theme_park_imperial_engineer", planetName = "dantooine", npcName = "Engineer" } 
-		}, 
-		secondarySpawns = 
-		{
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-134" },
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-873" }
-		}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1500 } 
-		}
-	},
-	{
-		missionType = "assassinate", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "imperial_general", planetName = "dantooine", npcName = "Imperial General" }
-		}, 
-		secondarySpawns = 
-		{
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-297" },
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-447" }
-		}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "faction", faction = "rebel", amount = 225 }, 
-			{ rewardType = "loot",  lootGroup = "theme_park_reward_rebel_mon_mothma" }
-		}
-	},
+	}	
 }
 
 luke_missions = 
@@ -506,7 +419,7 @@ luke_missions =
 		missionType = "escort", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_supervisor", planetName = "yavin4", npcName = "Supervisor" } 
+			{ npcTemplate = "theme_park_rebel_supervisor", planetName = "dantooine", npcName = "Supervisor" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = {}, 
@@ -519,7 +432,7 @@ luke_missions =
 		missionType = "confiscate", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_big_creature", planetName = "yavin4", npcName = "Big Creature" }
+			{ npcTemplate = "theme_park_rebel_big_creature", planetName = "dantooine", npcName = "Big Creature" }
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = 
@@ -535,7 +448,7 @@ luke_missions =
 		missionType = "escort", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_supervisor", planetName = "yavin4", npcName = "Expidition Team Member" } 
+			{ npcTemplate = "theme_park_rebel_supervisor", planetName = "dantooine", npcName = "Expidition Team Member" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = {}, 
@@ -548,7 +461,7 @@ luke_missions =
 		missionType = "confiscate",  
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_big_creature_cage", planetName = "yavin4", npcName = "Big Creature" }
+			{ npcTemplate = "theme_park_rebel_big_creature_cage", planetName = "dantooine", npcName = "Big Creature" }
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = 
@@ -564,7 +477,7 @@ luke_missions =
 		missionType = "deliver", 
 		primarySpawns = 
 		{
-			{ npcTemplate = "theme_park_rebel_supervisor", planetName = "yavin4", npcName = "Tribesman" } 
+			{ npcTemplate = "theme_park_rebel_supervisor", planetName = "dantooine", npcName = "Tribesman" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = 
@@ -644,14 +557,14 @@ npcMapRebel =
 		missions = ackbar_missions 
 	},
 	{ 
-		spawnData = { planetName = "dantooine", npcTemplate = "mon_mothma", x = -3.4, z = 7.0, y = -12.2, direction = -34, cellID = 6555568, position = STAND }, 
-		worldPosition = { x = -6823.6, y = 5551.2 }, 
+		spawnData = { planetName = "chandrila", npcTemplate = "mon_mothma", x = -0.0, z = -26.6, y = -0.8, direction = 0, cellID = 35791722, position = STAND }, 
+		worldPosition = { x = 501, y = -2998 }, 
 		npcNumber = 64, 
 		stfFile = "@theme_park_rebel/mon_mothma",     
 		missions = mon_missions 
 	},
 	{ 
-		spawnData = { planetName = "yavin4", npcTemplate = "luke_skywalker", x = 1.2, z = -6.0, y = -26.8, direction = 180, cellID = 3465390, position = STAND }, 
+		spawnData = { planetName = "dantooine", npcTemplate = "luke_skywalker", x = 4194.5, z = 9.0, y = 5201.6, direction = 20, cellID = 0, position = STAND }, 
 		worldPosition = { x = 5029.9, y = 5536.6 }, 
 		npcNumber = 128, 
 		stfFile = "@theme_park_rebel/luke_skywalker", 
