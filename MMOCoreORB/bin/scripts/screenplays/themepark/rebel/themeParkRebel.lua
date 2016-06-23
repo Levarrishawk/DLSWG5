@@ -372,83 +372,23 @@ ackbar_missions =
 		{ 
 			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
 			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" }
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1100 } 
-		}
-	},
-	{
-		missionType = "confiscate", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "theme_park_rebel_disgruntled_citizen", planetName = "dantooine", npcName = "Disgruntled Citizen" }
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = 
-		{ 
-			{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Information" }
-		}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1150 } 
-		}
-	},
-	{ 
-		missionType = "deliver", 
-		primarySpawns = 
-		{
-			{ npcTemplate = "theme_park_rebel_teria_alessie", planetName = "dantooine", npcName = "Teria Alessie" } 
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = 
-		{ 
-	 		{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Corrupted Disk" }
-		}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1200 } 
-		} 
-	},
-	{ 
-		missionType = "deliver", 
-		primarySpawns = 
-		{
-			{ npcTemplate = "theme_park_rebel_jeremes_kelton", planetName = "dantooine", npcName = "Jeremes Kelton" } 
-		}, 
-		secondarySpawns = 
-		{
 			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
+      { npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
+      { npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
+      { npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
+      { npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
+      { npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
+      { npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
+      { npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
+      { npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
+      { npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" },
 			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" }
 		}, 
-		itemSpawns = 
-		{ 
-	 		{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Flight Paths" }
-		}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1250 } 
-		} 
-	},
-	{
-		missionType = "assassinate", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "Stormtrooper" }
-		}, 
-		secondarySpawns =  
-		{
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-437" },
-			{ npcTemplate = "stormtrooper", planetName = "dantooine", npcName = "TK-871" }
-		},  
+		secondarySpawns = {}, 
 		itemSpawns = {}, 
 		rewards = 
 		{ 
-			{ rewardType = "faction", faction = "rebel", amount = 200 }, 
-			{ rewardType = "loot",  lootGroup = "theme_park_reward_rebel_captain_ackbar" }
+			{ rewardType = "credits", amount = 10000 } 
 		}
 	}
 }
