@@ -148,7 +148,7 @@ wedge_missions =
 		missionType = "deliver",
 	 	primarySpawns = 
 	 	{ 
-	 		{ npcTemplate = "theme_park_rebel_officer", planetName = "corellia", npcName = "Officer Devlin" } 
+	 		{ npcTemplate = "theme_park_rebel_officer", planetName = "rori", npcName = "Officer Devlin" } 
 	 	}, 
 	 	secondarySpawns = {}, 
 	 	itemSpawns = 
@@ -157,51 +157,51 @@ wedge_missions =
 	 	}, 
 	 	rewards = 
 	 	{ 
-	 		{ rewardType = "credits", amount = 350 } 
+	 		{ rewardType = "credits", amount = 3500 } 
 	 	}
 	},
 	{ 
 		missionType = "assassinate",
 		primarySpawns =  
 		{ 
-			{ npcTemplate = "theme_park_rebel_iris", planetName = "corellia", npcName = "Iris" } 
+			{ npcTemplate = "theme_park_rebel_iris", planetName = "rori", npcName = "Iris" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = {}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 400 } 
+			{ rewardType = "credits", amount = 4000 } 
 		}
 	},
 	{ 
 		missionType = "assassinate",
 	 	primarySpawns = 
 	 	{ 
-	 		{ npcTemplate = "theme_park_imperial_general_graise", planetName = "corellia", npcName = "General Graise" } 
+	 		{ npcTemplate = "theme_park_imperial_general_graise", planetName = "rori", npcName = "General Graise" } 
 	 	}, 
 	 	secondarySpawns = 
 	 	{
-			{ npcTemplate = "imperial_first_lieutenant", planetName = "corellia", npcName = "Imperial First Lieutenant" },
-			{ npcTemplate = "imperial_staff_corporal", planetName = "corellia", npcName = "Imperial Staff Corporal" }
+			{ npcTemplate = "imperial_first_lieutenant", planetName = "rori", npcName = "Imperial First Lieutenant" },
+			{ npcTemplate = "imperial_staff_corporal", planetName = "rori", npcName = "Imperial Staff Corporal" }
 		}, 
 	 	itemSpawns = {}, 
 	 	rewards = 
 	 	{ 
-	 		{ rewardType = "credits", amount = 450 } 
+	 		{ rewardType = "credits", amount = 4500 } 
 	 	}
 	},
 	{ 
 		missionType = "confiscate",
 	 	primarySpawns = 
 	 	{ 
-	 		{ npcTemplate = "theme_park_imperial_general_boize", planetName = "corellia", npcName = "General Boize" } 
+	 		{ npcTemplate = "theme_park_imperial_general_boize", planetName = "rori", npcName = "General Boize" } 
 	 	}, 
 	 	secondarySpawns = 
 	 	{
-			{ npcTemplate = "stormtrooper", planetName = "corellia", npcName = "Stormtrooper" },
-			{ npcTemplate = "stormtrooper", planetName = "corellia", npcName = "Stormtrooper" },
-			{ npcTemplate = "stormtrooper", planetName = "corellia", npcName = "Stormtrooper" },
-			{ npcTemplate = "stormtrooper", planetName = "corellia", npcName = "Stormtrooper" }
+			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" },
+			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" },
+			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" },
+			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" }
 		}, 
 	 	itemSpawns = 
 	 	{
@@ -209,19 +209,19 @@ wedge_missions =
 	 	},  
 	 	rewards = 
 	 	{
-	 		{ rewardType = "credits", amount = 500 } 
+	 		{ rewardType = "credits", amount = 5000 } 
 	 	}
 	},
 	{ 
 		missionType = "confiscate",
 	 	primarySpawns = 
 	 	{ 
-	 		{ npcTemplate = "theme_park_imperial_officer_emil", planetName = "corellia", npcName = "Officer Emil" } 
+	 		{ npcTemplate = "theme_park_imperial_officer_emil", planetName = "rori", npcName = "Officer Emil" } 
 	 	}, 
 	 	secondarySpawns = 
 	 	{
-			{ npcTemplate = "stormtrooper", planetName = "corellia", npcName = "Stormtrooper" },
-			{ npcTemplate = "stormtrooper", planetName = "corellia", npcName = "Stormtrooper" }
+			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" },
+			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" }
 		}, 
 	 	itemSpawns = 
 	 	{
@@ -858,8 +858,8 @@ npcMapRebel =
 		missions = qualdo_missions 
 	},
 	{ 
-		spawnData = { planetName = "corellia", npcTemplate = "wedge_antilles", x = 0.01, z = 1.01, y = -22.01, direction = 0, cellID = 8555477, position = SIT }, 
-		worldPosition = { x = -6491.1, y = 6005.6 }, 
+		spawnData = { planetName = "rori", npcTemplate = "wedge_antilles", x = 3682.8, z = 103.0, y = -6489.9, direction = -58, cellID = 0, position = STAND }, 
+		worldPosition = { x = 3682, y = -6489 }, 
 		npcNumber = 4,   
 		stfFile = "@theme_park_rebel/wedge_antilles", 
 		missions = wedge_missions 
