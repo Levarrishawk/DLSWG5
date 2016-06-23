@@ -181,56 +181,13 @@ wedge_missions =
 	 	}, 
 	 	secondarySpawns = 
 	 	{
-			{ npcTemplate = "imperial_first_lieutenant", planetName = "rori", npcName = "Imperial First Lieutenant" },
-			{ npcTemplate = "imperial_staff_corporal", planetName = "rori", npcName = "Imperial Staff Corporal" }
+			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" },
+			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" }
 		}, 
 	 	itemSpawns = {}, 
 	 	rewards = 
 	 	{ 
 	 		{ rewardType = "credits", amount = 4500 } 
-	 	}
-	},
-	{ 
-		missionType = "confiscate",
-	 	primarySpawns = 
-	 	{ 
-	 		{ npcTemplate = "theme_park_imperial_general_boize", planetName = "rori", npcName = "General Boize" } 
-	 	}, 
-	 	secondarySpawns = 
-	 	{
-			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" },
-			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" },
-			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" },
-			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" }
-		}, 
-	 	itemSpawns = 
-	 	{
-	 		{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Documents" }
-	 	},  
-	 	rewards = 
-	 	{
-	 		{ rewardType = "credits", amount = 5000 } 
-	 	}
-	},
-	{ 
-		missionType = "confiscate",
-	 	primarySpawns = 
-	 	{ 
-	 		{ npcTemplate = "theme_park_imperial_officer_emil", planetName = "rori", npcName = "Officer Emil" } 
-	 	}, 
-	 	secondarySpawns = 
-	 	{
-			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" },
-			{ npcTemplate = "stormtrooper", planetName = "rori", npcName = "Stormtrooper" }
-		}, 
-	 	itemSpawns = 
-	 	{
-	 		{ itemTemplate = "object/tangible/loot/misc/key_electronic_s01.iff", itemName = "Code Cylinder" }
-	 	}, 
-	 	rewards = 
-	 	{ 
-	 		{ rewardType = "faction", faction = "rebel", amount = 100 }, 
-	 		{ rewardType = "loot", lootGroup = "theme_park_reward_rebel_wedge_antilles" } 
 	 	}
 	}
 }
