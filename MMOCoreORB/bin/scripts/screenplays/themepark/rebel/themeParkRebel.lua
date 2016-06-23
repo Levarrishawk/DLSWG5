@@ -174,10 +174,10 @@ wedge_missions =
 		}
 	},
 	{ 
-		missionType = "assassinate",
+		missionType = "escort",
 	 	primarySpawns = 
 	 	{ 
-	 		{ npcTemplate = "theme_park_imperial_general_graise", planetName = "rori", npcName = "General Graise" } 
+	 		{ npcTemplate = "theme_park_rebel_captain", planetName = "rori", npcName = "General Graise" } 
 	 	}, 
 	 	secondarySpawns = 
 	 	{
