@@ -469,7 +469,7 @@ npcMapRebel =
 		missions = c3po_missions
 	},
 	{ 
-		spawnData = { planetName = "corellia", npcTemplate = "r2d2", x = -3.98, z = 1.01, y = -0.67, direction = 58, cellID = 8555472, position = STAND }, 
+		spawnData = { planetName = "dantooine", npcTemplate = "r2d2", x = 4197.5, z = 9.0, y = 5204.6, direction = -30, cellID = 0, position = STAND }, 
 		npcNumber = -1,  
 		stfFile = "",               
 		missions = {} 
