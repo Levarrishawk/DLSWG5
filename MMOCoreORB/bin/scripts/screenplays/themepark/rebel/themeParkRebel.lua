@@ -207,7 +207,7 @@ leia_missions =
 		itemSpawns = {}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 550 } 
+			{ rewardType = "credits", amount = 5500 } 
 		}
 	},
 	{ 
@@ -220,7 +220,7 @@ leia_missions =
 		itemSpawns = { }, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 600 } 
+			{ rewardType = "credits", amount = 6000 } 
 		} 
 	},
 	{
@@ -237,7 +237,7 @@ leia_missions =
 		itemSpawns = {}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 650 } 
+			{ rewardType = "credits", amount = 6500 } 
 		}
 	},
 	{ 
@@ -253,7 +253,7 @@ leia_missions =
 		}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 700 } 
+			{ rewardType = "credits", amount = 7000 } 
 		} 
 	},
 	{ 
@@ -270,71 +270,12 @@ leia_missions =
 		itemSpawns = {}, 
 		rewards = 
 		{ 
-			{ rewardType = "faction", faction = "rebel", amount = 125 },
+			{ rewardType = "faction", faction = "rebel", amount = 12500 },
 			{ rewardType = "loot", lootGroup = "theme_park_reward_rebel_leia_organa" }
 		}
 	}
 }
 
-nien_missions = 
-{
-	{
-		missionType = "escort", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "theme_park_rebel_engineer", planetName = "lok", npcName = "Engineer" } 
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 750 } 
-		}
-	},
-	{
-		missionType = "assassinate", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "theme_park_rebel_bounty_hunter", planetName = "lok", npcName = "Bounty Hunter" } 
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 800 } 
-		}
-	},
-	{
-		missionType = "assassinate", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "theme_park_rebel_pirate", planetName = "lok", npcName = "Pirate" } 
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 850 } 
-		}
-	},
-	{
-		missionType = "retrieve", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "theme_park_rebel_hyperdrive_seller", planetName = "lok", npcName = "Pirate" } 
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = 
-		{
-			{ itemTemplate = "object/tangible/loot/misc/hyperdrive_part_s01.iff", itemName = "Hyperdrive" }
-		}, 
-		rewards = 
-		{ 
-			{ rewardType = "faction", faction = "rebel", amount = 150 },
-			{ rewardType = "loot", lootGroup = "theme_park_reward_rebel_nien_nunb" }
-		}
-	}
-}
 
 han_missions = 
 {
@@ -619,92 +560,6 @@ mon_missions =
 	},
 }
 
-jan_missions = 
-{
-	{
-		missionType = "assassinate", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "stormtrooper_squad_leader", planetName = "yavin4", npcName = "TK-419" }
-		}, 
-		secondarySpawns = 
-		{
-			{ npcTemplate = "stormtrooper", planetName = "yavin4", npcName = "TK-447" },
-			{ npcTemplate = "stormtrooper", planetName = "yavin4", npcName = "TK-428" }
-		}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1550 } 
-		}
-	},
-	{
-		missionType = "escort", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "theme_park_imperial_engineer", planetName = "yavin4", npcName = "Rebel Contact" } 
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1600 } 
-		}
-	},
-	{
-		missionType = "assassinate", 
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "stormtrooper_squad_leader", planetName = "yavin4", npcName = "TK-770" }
-		}, 
-		secondarySpawns = 
-		{
-			{ npcTemplate = "stormtrooper", planetName = "yavin4", npcName = "TK-400" },
-			{ npcTemplate = "stormtrooper", planetName = "yavin4", npcName = "TK-105" }
-		}, 
-		itemSpawns = {}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1650 } 
-		}
-	},
-	{ 
-		missionType = "deliver", 
-		primarySpawns = 
-		{
-			{ npcTemplate = "theme_park_rebel_bothan_spy", planetName = "yavin4", npcName = "Nateba Kurr" } 
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = 
-		{ 
-	 		{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Information" }
-		}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1700 } 
-		} 
-	},
-	{ 
-		missionType = "deliver", 
-		missionDescription = "GENERAL DODONNA needs you to DELIVER the INFORMATION to REBEL PILOT",
-		primarySpawns = 
-		{
-			{ npcTemplate = "theme_park_rebel_bothan_spy", planetName = "yavin4", npcName = "Pilot" } 
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = 
-		{ 
-	 		{ itemTemplate = "object/tangible/mission/mission_datadisk.iff", itemName = "Information" }
-		}, 
-		rewards = 
-		{ 
-			{ rewardType = "faction", faction = "rebel", amount = 250 }, 
-			{ rewardType = "loot",  lootGroup = "theme_park_reward_rebel_jan_dodonna" },
-			{ rewardType = "permission", permissionGroup = "temple_of_exar_kun2" }
-		} 
-	},
-}
-
 luke_missions = 
 {
 	{
@@ -829,13 +684,6 @@ npcMapRebel =
 		missions = leia_missions 
 	},
 	{ 
-		spawnData = { planetName = "lok", npcTemplate = "nien_nunb", x = -12.12, z = -0.894992, y = 23.08, direction = 80.0024, cellID = 8145384, position = SIT }, 
-		worldPosition = { x = 476.2, y = 5075.7 }, 
-		npcNumber = 16,  
-		stfFile = "@theme_park_rebel/nien_nunb",      
-		missions = nien_missions 
-	},
-	{ 
 		spawnData = { planetName = "lok", npcTemplate = "chewbacca", x = -28.48, z = -0.519991, y = 5.87, direction = 12.0003, cellID = 8145388, position = STAND }, 
 		npcNumber = -1,  
 		stfFile = "",               
@@ -844,35 +692,28 @@ npcMapRebel =
 	{ 
 		spawnData = { planetName = "lok", npcTemplate = "han_solo", x = -30.2, z = -0.519991, y = 7.24, direction = 45.0013, cellID = 8145388, position = STAND }, 
 		worldPosition = { x = 471.5, y = 5052.1 }, 
-		npcNumber = 32,  
+		npcNumber = 16,  
 		stfFile = "@theme_park_rebel/han_solo",       
 		missions = han_missions 
 	},
 	{ 
 		spawnData = { planetName = "dantooine", npcTemplate = "ackbar", x = -14.4, z = 1.0, y = -21.7, direction = 0, cellID = 6555566, position = STAND }, 
 		worldPosition = { x = -6812.5, y = 5560.7 }, 
-		npcNumber = 64,  
+		npcNumber = 32,  
 		stfFile = "@theme_park_rebel/captain_ackbar", 
 		missions = ackbar_missions 
 	},
 	{ 
 		spawnData = { planetName = "dantooine", npcTemplate = "mon_mothma", x = -3.4, z = 7.0, y = -12.2, direction = -34, cellID = 6555568, position = STAND }, 
 		worldPosition = { x = -6823.6, y = 5551.2 }, 
-		npcNumber = 128, 
+		npcNumber = 64, 
 		stfFile = "@theme_park_rebel/mon_mothma",     
 		missions = mon_missions 
 	},
 	{ 
-		spawnData = { planetName = "yavin4", npcTemplate = "jan_dodonna", x = 0, z = 0, y = -41.9, direction = 0, cellID = 3465388, position = STAND }, 
-		worldPosition = { x = 5014.8, y = 5537.8 }, 
-		npcNumber = 256, 
-		stfFile = "@theme_park_rebel/jan_dodonna",    
-		missions = jan_missions 
-	},
-	{ 
 		spawnData = { planetName = "yavin4", npcTemplate = "luke_skywalker", x = 1.2, z = -6.0, y = -26.8, direction = 180, cellID = 3465390, position = STAND }, 
 		worldPosition = { x = 5029.9, y = 5536.6 }, 
-		npcNumber = 512, 
+		npcNumber = 128, 
 		stfFile = "@theme_park_rebel/luke_skywalker", 
 		missions = luke_missions 
 	}
