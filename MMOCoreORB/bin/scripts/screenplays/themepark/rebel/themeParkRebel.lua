@@ -557,7 +557,7 @@ npcMapRebel =
 		missions = ackbar_missions 
 	},
 	{ 
-		spawnData = { planetName = "chandrila", npcTemplate = "mon_mothma", x = -0.0, z = -26.6, y = -0.8, direction = 0, cellID = 35791722, position = STAND }, 
+		spawnData = { planetName = "chandrila", npcTemplate = "mon_mothma", x = -0.0, z = -26.6, y = 0.8, direction = 0, cellID = 35791722, position = STAND }, 
 		worldPosition = { x = 501, y = -2998 }, 
 		npcNumber = 64, 
 		stfFile = "@theme_park_rebel/mon_mothma",     
