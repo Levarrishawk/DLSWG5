@@ -86,14 +86,17 @@ qualdo_missions =
 		} 
 	},
 	{ 
-		missionType = "confiscate",
+		missionType = "assassinate",
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_imperial_sergeant_montage", planetName = "chandrila", npcName = "Sergeant Montage" } 
+			{ npcTemplate = "theme_park_imperial_sergeant_montage", planetName = "chandrila", npcName = "a Chandriltech Security Guard" } 
 		}, 
 		secondarySpawns = 
 		{ 
-			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" } 
+			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" },
+			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" },
+			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" }, 
+			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" }  
 		}, 
 		itemSpawns = 
 		{
@@ -112,6 +115,8 @@ qualdo_missions =
 		}, 
 		secondarySpawns = 
 		{
+			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" },
+			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" },
 			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" },
 			{ npcTemplate = "stormtrooper", planetName = "chandrila", npcName = "Stormtrooper" }
 		}, 
