@@ -26,14 +26,9 @@ theme_park_rebel_supervisor = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {
-		"object/mobile/dressed_rebel_brigadier_general_bith_male.iff",
-		"object/mobile/dressed_rebel_brigadier_general_human_female_01.iff",
-		"object/mobile/dressed_rebel_brigadier_general_moncal_female.iff",
-		"object/mobile/dressed_rebel_brigadier_general_rodian_female_01.iff",
-		"object/mobile/dressed_rebel_brigadier_general_sullustan_male.iff",
-		"object/mobile/dressed_rebel_brigadier_general_trandoshan_female.iff"},
+		"object/mobile/dressed_noble_human_male_01.iff"},
 	lootGroups = {},
-	weapons = {"rebel_weapons_heavy"},
+	weapons = {},
 	conversationTemplate = "theme_park_rebel_mission_target_convotemplate",
 	attacks = merge(marksmanmaster,brawlermaster)
 }
