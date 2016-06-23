@@ -419,79 +419,44 @@ luke_missions =
 		missionType = "escort", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_supervisor", planetName = "dantooine", npcName = "Supervisor" } 
+			{ npcTemplate = "theme_park_rebel_supervisor", planetName = "dantooine", npcName = "a Force Sensitive Wanderer" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = {}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 1750 } 
+			{ rewardType = "credits", amount = 17500 } 
 		}
 	},
 	{
-		missionType = "confiscate", 
+		missionType = "assassinate", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_big_creature", planetName = "dantooine", npcName = "Big Creature" }
+			{ npcTemplate = "force_sensitive_renegade", planetName = "dantooine", npcName = "a Dark Touched Force Sensitive " }
 		}, 
 		secondarySpawns = {}, 
-		itemSpawns = 
-		{
-	 		{ itemTemplate = "object/tangible/loot/tool/recording_rod_broken.iff", itemName = "R2 Motivator Unit" }
-		}, 
+		itemSpawns = {},	 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 1800 } 
+			{ rewardType = "credits", amount = 18000 } 
 		}
 	},
 	{
 		missionType = "escort", 
 		primarySpawns = 
 		{ 
-			{ npcTemplate = "theme_park_rebel_supervisor", planetName = "dantooine", npcName = "Expidition Team Member" } 
+			{ npcTemplate = "theme_park_rebel_supervisor", planetName = "dantooine", npcName = "Lor San Tekka" } 
 		}, 
 		secondarySpawns = {}, 
 		itemSpawns = {}, 
 		rewards = 
 		{ 
-			{ rewardType = "credits", amount = 1850 } 
-		}
-	},
-	{
-		missionType = "confiscate",  
-		primarySpawns = 
-		{ 
-			{ npcTemplate = "theme_park_rebel_big_creature_cage", planetName = "dantooine", npcName = "Big Creature" }
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = 
-		{
-	 		{ itemTemplate = "object/tangible/loot/misc/cage_s01.iff", itemName = "" }
-		}, 
-		rewards = 
-		{ 
-			{ rewardType = "credits", amount = 1900 } 
-		}
-	},
-	{ 
-		missionType = "deliver", 
-		primarySpawns = 
-		{
-			{ npcTemplate = "theme_park_rebel_supervisor", planetName = "dantooine", npcName = "Tribesman" } 
-		}, 
-		secondarySpawns = {}, 
-		itemSpawns = 
-		{ 
-	 		{ itemTemplate = "object/tangible/loot/misc/cage_s01.iff", itemName = "An Empty Cage" }
-		}, 
-		rewards = 
-		{ 
 			{ rewardType = "faction", faction = "rebel", amount = 300 }, 
-			{ rewardType = "credits", amount = 1950 },
-			{ rewardType = "loot",  lootGroup = "theme_park_reward_rebel_luke_skywalker" },
-			{ rewardType = "badge", badge = THEME_PARK_REBEL_BADGE }			
-		} 
-	},
+      { rewardType = "credits", amount = 19500 },
+      { rewardType = "loot",  lootGroup = "theme_park_reward_rebel_luke_skywalker" },
+      { rewardType = "badge", badge = THEME_PARK_REBEL_BADGE }
+		}
+	}
 }
 
 npcMapRebel = 
