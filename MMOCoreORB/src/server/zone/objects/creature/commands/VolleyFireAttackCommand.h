@@ -6,7 +6,9 @@
 #define VOLLEYFIREATTACKCOMMAND_H_
 
 #include "server/zone/objects/scene/SceneObject.h"
+#include "server/zone/managers/combat/CombatManager.h"
 #include "CombatQueueCommand.h"
+#include "server/zone/objects/player/events/setNormalTask.h"
 
 class VolleyFireAttackCommand : public CombatQueueCommand {
 public:
@@ -25,7 +27,7 @@ public:
 
 		//@TODO: SkillMod 'volleyfire' has no effect atm. Description implies increased chance of volleyfire working, yet volleyfire is not reported to have had a fail chance
 		// Possible solution: Increased to-hit-chance through skill mod. Extend if proof is brought.
-
+		creature->playEffect("clienteffect/off_superior_firepower.cef", "");
 		return doCombatAction(creature, target);
 	}
 
