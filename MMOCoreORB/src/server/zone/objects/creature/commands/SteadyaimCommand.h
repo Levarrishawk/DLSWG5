@@ -65,7 +65,7 @@ public:
 			UnicodeString shout(ghost->getCommandMessageString(STRING_HASHCODE("steadyaim")));
  	 	 	server->getChatManager()->broadcastChatMessage(player, shout, 0, 0, 80, ghost->getLanguageID());
  	 	 	creature->updateCooldownTimer("command_message", 30 * 1000);
- 	 	 	creature->playEffect("clienteffect/off_inspiration.cef", "");
+ 	 	 	creature->playEffect("clienteffect/off_tactics.cef", "");
 		}
 
 		return SUCCESS;
@@ -93,7 +93,7 @@ public:
 			if (!weapon->isRangedWeapon())
 				continue;
 
-			member->playEffect("clienteffect/off_inspiration.cef", "");
+			member->playEffect("clienteffect/off_tactics.cef", "");
 
 			int duration = 60;
 
