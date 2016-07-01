@@ -457,8 +457,8 @@ chandrila = {
     },
     
     badgeAreas = {
-    {"chandrila_mon_mothma_house",2469,2307,30,20},
-    {"chandrila_jedi_tomb",4339,-4287,30,81},
-    {"chandrila_state_park",-5013,4089,30,78},
+    {"chandrila_mon_mothma_house",2469,2307,30,140},
+    {"chandrila_jedi_tomb",4339,-4287,30,141},
+    {"chandrila_state_park",-5013,4089,30,142},
   },
 }
