@@ -7,6 +7,9 @@
 
 #include "server/zone/objects/scene/SceneObject.h"
 #include "SquadLeaderCommand.h"
+#include "server/zone/managers/combat/CombatManager.h"
+#include "CombatQueueCommand.h"
+#include "server/zone/objects/player/events/setNormalTask.h"
 
 class RetreatCommand : public SquadLeaderCommand {
 public:
@@ -106,6 +109,7 @@ public:
 			UnicodeString shout(ghost->getCommandMessageString(STRING_HASHCODE("retreat")));
  	 	 	server->getChatManager()->broadcastChatMessage(player, shout, 0, 0, 80, ghost->getLanguageID());
  	 	 	creature->updateCooldownTimer("command_message", 30 * 1000);
+ 	 	 	creature->playEffect("clienteffect/off_charge.cef", "");
 		}
 
 		return SUCCESS;
@@ -133,6 +137,8 @@ public:
 		StringIdChatParameter startStringId("cbt_spam", "burstrun_start_single");
 		StringIdChatParameter endStringId("cbt_spam", "burstrun_stop_single");
 
+		player->playEffect("clienteffect/off_charge.cef", "");
+
 		int duration = 30;
 
 		ManagedReference<Buff*> buff = new Buff(player, actionCRC, duration, BuffType::SKILL);
@@ -145,7 +151,7 @@ public:
 		buff->setEndMessage(endStringId);
 
 		player->addBuff(buff);
-		player->playEffect("clienteffect/off_charge.cef", "");
+
 
 		player->updateCooldownTimer("retreat", 30000);
 
