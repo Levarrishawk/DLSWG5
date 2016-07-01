@@ -145,6 +145,7 @@ public:
 		buff->setEndMessage(endStringId);
 
 		player->addBuff(buff);
+		player->playEffect("clienteffect/off_charge.cef", "");
 
 		player->updateCooldownTimer("retreat", 30000);
 
