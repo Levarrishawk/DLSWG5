@@ -455,4 +455,10 @@ chandrila = {
     {name = "Hanna City Spaceport", x = 164, z = 6, y = -2937, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
     {name = "Nayli Outpost", x = -5272, z = 18, y = 264, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
     },
+    
+    badgeAreas = {
+    {"chandrila_mon_mothma_house",2469,2307,30,20},
+    {"chandrila_jedi_tomb",4339,-4287,30,81},
+    {"chandrila_state_park",-5013,4089,30,78},
+  },
 }
