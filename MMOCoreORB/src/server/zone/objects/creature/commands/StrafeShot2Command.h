@@ -91,7 +91,7 @@ public:
 							//Send messages, and effect
 							creature->sendSystemMessage("You root your target!");
 							creatureTarget->sendSystemMessage("You've been rooted!");
-							creatureTarget->playEffect("clienteffect/combat_trap_sonic_pulse.cef", "");
+							creatureTarget->playEffect("clienteffect/combat_trap_webber.cef", "");
 						}
 
 		return doCombatAction(creature, target);
