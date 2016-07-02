@@ -1,7 +1,6 @@
 chandrila_world = {
 
-	lairSpawns = {
-		
+	lairSpawns = {	
 		{
 			lairTemplateName = "talus_fynock_youth_lair_neutral_small",
 			spawnLimit = -1,
