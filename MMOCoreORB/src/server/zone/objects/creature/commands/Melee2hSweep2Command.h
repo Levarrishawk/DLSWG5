@@ -92,7 +92,7 @@ public:
 							//Send messages, and effect
 							creature->sendSystemMessage("You root your target!");
 							creatureTarget->sendSystemMessage("You've been rooted!");
-							creatureTarget->playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "");
+							creatureTarget->playEffect("clienteffect/space_command/shp_shocked_flash_01.cef", "");
 						}
 		return doCombatAction(creature, target);
 	}
