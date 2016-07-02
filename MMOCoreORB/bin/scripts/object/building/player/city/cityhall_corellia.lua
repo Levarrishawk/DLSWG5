@@ -44,7 +44,7 @@
 object_building_player_city_cityhall_corellia = object_building_player_city_shared_cityhall_corellia:new {
 	lotSize = 0,
 	baseMaintenanceRate = 0,
-	allowedZones = {"corellia", "talus"},
+	allowedZones = {"corellia", "talus", "chandrila"},
 	zoneComponent = "CityHallZoneComponent",
 	cityRankRequired = 0,
 	uniqueStructure = true,

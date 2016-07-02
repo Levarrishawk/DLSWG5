@@ -70,7 +70,7 @@ NewCityGracePeriod = 1440
 OldCityGracePeriod = 4320
 
 --Whether or not to allow the use of the command, /cityWarn to give players a TEF while in the city limits.
-EnableCityWarn = false
+EnableCityWarn = true
 
 --The number of citizens required to achieve each city rank. (Outpost, Village, Township, City, Metropolis)
 CitizensPerRank = {2, 4, 6, 8, 10}
@@ -104,7 +104,8 @@ CitiesAllowed = {
 	{"rori", {50, 50, 30, 20, 20}},
 	{"talus", {50, 50, 30, 20, 20}},
 	{"tatooine", {20, 20, 15, 10, 10}},
-	{"yavin4", {0, 0, 0, 0, 0}}
+	{"yavin4", {0, 0, 0, 0, 0}},
+	{"chandrila", {15, 15, 10, 10, 6}}
 }
 
 
