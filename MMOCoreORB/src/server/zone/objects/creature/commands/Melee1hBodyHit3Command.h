@@ -92,7 +92,7 @@ public:
 					//Send messages, and effect
 					creature->sendSystemMessage("You root your target!");
 					creatureTarget->sendSystemMessage("You've been rooted!");
-					creatureTarget->playEffect("clienteffect/combat_pt_electricalfield.cef.cef", "");
+					creatureTarget->playEffect("clienteffect/combat_pt_electricalfield.cef", "");
 				}
 
 		return doCombatAction(creature, target);
