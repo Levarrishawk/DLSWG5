@@ -91,7 +91,7 @@ public:
 					//Send messages, and effect
 					creature->sendSystemMessage("You snare your target!");
 					creatureTarget->sendSystemMessage("You've been snared!");
-					creatureTarget->playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "");
+					creatureTarget->playEffect("clienteffect/combat_pt_electricalfield.cef", "");
 
 				}
 
