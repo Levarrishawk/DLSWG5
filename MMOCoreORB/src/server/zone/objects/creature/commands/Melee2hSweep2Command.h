@@ -92,7 +92,9 @@ public:
 							//Send messages, and effect
 							creature->sendSystemMessage("You root your target!");
 							creatureTarget->sendSystemMessage("You've been rooted!");
-							creatureTarget->playEffect("clienteffect/space_command/shp_shocked_flash_01.cef", "");
+							if (creature->hasSkill("combat_mando_novice")){
+								creatureTarget->playEffect("clienteffect/lava_player_burning.cef", "");
+							} else creatureTarget->playEffect("clienteffect/space_command/shp_shocked_flash_01.cef", "");
 						}
 		return doCombatAction(creature, target);
 	}
