@@ -7,7 +7,6 @@
 #include "server/zone/objects/player/PlayerObject.h"
 #include "server/zone/managers/visibility/tasks/VisibilityDecayTask.h"
 #include "server/zone/Zone.h"
-#include "server/zone/managers/skill/SkillManager.h"
 
 const String VisibilityManager::factionStringRebel = "rebel";
 const String VisibilityManager::factionStringImperial = "imperial";
@@ -124,11 +123,11 @@ void VisibilityManager::login(CreatureObject* creature) {
 
 	if (ghost != NULL) {
 
-		//You only gain visibility after completing the padawan trials
-		if(!creature->hasSkill(getSkillName().indexOf("combat"))) {
-			info("Player " + creature->getFirstName() + " does not qualify for visibility", true);
+	/*	//You only gain visibility after completing the padawan trials
+		if(!creature->hasSkill("force_title_jedi_rank_02")) {
+			//info("Player " + creature->getFirstName() + " does not qualify for visibility", true);
 			return;
-		}
+		} */
 
 		decreaseVisibility(creature);
 

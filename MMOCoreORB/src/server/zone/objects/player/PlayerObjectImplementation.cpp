@@ -2410,7 +2410,7 @@ int PlayerObjectImplementation::getSpentJediSkillPoints() {
 		Skill* jediSkill = skillList->get(i);
 
 		if (jediSkill->getSkillName().indexOf("combat") != -1)
-			jediSkillPoints += jediSkill->getSkillPointsRequired();
+			jediSkillPoints = 250;
 	}
 
 	return jediSkillPoints;
