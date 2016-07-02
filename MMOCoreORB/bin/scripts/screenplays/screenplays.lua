@@ -481,6 +481,7 @@ includeFile("tests/tests.lua")
 
 -- DLSWG Cities
 includeFile("cities/chandrila_hanna_city.lua")
+includeFile("cities/chandrila_nayli_outpost.lua")
 
 --Deactivate until AT-XT mobile is fixed.
 --[[
