@@ -916,4 +916,4 @@ chandrila_world = {
 	}
 }
 
-addSpawnGroup("talus_world", talus_world);
+addSpawnGroup("chandrila_world", chandrila_world);
