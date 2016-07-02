@@ -944,8 +944,9 @@ void MissionManagerImplementation::randomizeGenericBountyMission(CreatureObject*
 			String name = "";
 
 			if (creature != NULL) {
-				name = creature->getFirstName() + " " + creature->getLastName();
-				name = name.trim();
+				name = "Player Target";
+				/*name = creature->getFirstName() + " " + creature->getLastName();
+				name = name.trim();*/
 
 				int difficulty = 250;
 				level = difficulty;

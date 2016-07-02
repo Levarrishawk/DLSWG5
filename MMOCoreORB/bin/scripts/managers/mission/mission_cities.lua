@@ -33,5 +33,6 @@ cities = {
 	{ "tatooine", "Anchorhead", 40, -5348, 330 },
 	{ "tatooine", "Wayfar", -5176, -6574, 165 },
 	{ "yavin4", "Yavin IV Mining Outpost", -312, 4865, 100 },
-	{ "yavin4", "Yavin IV Labor Outpost", -6925, -5707, 130 }
+	{ "yavin4", "Yavin IV Labor Outpost", -6925, -5707, 130 },
+	{ "chandrila", "Hanna City", 292, -2938, 800 },
 }
