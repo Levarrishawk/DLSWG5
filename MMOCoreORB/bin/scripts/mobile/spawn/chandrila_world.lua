@@ -1,4 +1,4 @@
-talus_world = {
+chandrila_world = {
 
 	lairSpawns = {
 		
