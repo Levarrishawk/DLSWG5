@@ -65,11 +65,11 @@ float VisibilityManager::calculateVisibilityIncrease(CreatureObject* creature) {
 				ManagedReference<CreatureObject*> c = cast<CreatureObject*>(obj);
 				if (c->isNonPlayerCreatureObject() || c->isPlayerCreature()) {
 					if (creature->getFaction() == 0 || (c->getFaction() != factionImperial && c->getFaction() != factionRebel)) {
-						visibilityIncrease += 0.5;
+						visibilityIncrease += 1;
 						//info(c->getCreatureName().toString() + " generating a 0.5 visibility modifier", true);
 					} else {
 						if (creature->getFaction() == c->getFaction()) {
-							visibilityIncrease += 0.25;
+							visibilityIncrease += 1;
 							//info(c->getCreatureName().toString() + " generating a 0.25 visibility modifier", true);
 						} else {
 							visibilityIncrease += 1;
@@ -123,11 +123,11 @@ void VisibilityManager::login(CreatureObject* creature) {
 
 	if (ghost != NULL) {
 
-	/*	//You only gain visibility after completing the padawan trials
-		if(!creature->hasSkill("force_title_jedi_rank_02")) {
-			//info("Player " + creature->getFirstName() + " does not qualify for visibility", true);
+		//You only gain visibility after completing the padawan trials
+		if(!creature->hasSkill(getSkillName().indexOf("combat"))) {
+			info("Player " + creature->getFirstName() + " does not qualify for visibility", true);
 			return;
-		} */
+		}
 
 		decreaseVisibility(creature);
 
