@@ -92,7 +92,7 @@ public:
 							//Send messages, and effect
 							creature->sendSystemMessage("You snare your target!");
 							creatureTarget->sendSystemMessage("You've been snared!");
-							creatureTarget->playEffect("clienteffect/space_command/scram_reactor_sparking.cef", "");
+							creatureTarget->playEffect("clienteffect/space_command/cbt_impact_emp_lght_noshake.cef", "");
 
 						}
 
