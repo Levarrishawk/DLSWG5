@@ -597,7 +597,7 @@ void PlanetManagerImplementation::loadClientRegions() {
 				int strongholdFaction = gcwManager->isStrongholdCity(regionName);
 
 				if (strongholdFaction == Factions::FACTIONIMPERIAL || regionName.contains("imperial")) {
-					scenery = zone->getZoneServer()->createObject(STRING_HASHCODE("object/static/particle/particle_distant_ships_imperial.iff"), 0);
+					scenery = zone->getZoneServer()->createObject(STRING_HASHCODE("object/static/particle/particle_distant_ships.iff"), 0);
 				} else if (strongholdFaction == Factions::FACTIONREBEL || regionName.contains("rebel")) {
 					scenery = zone->getZoneServer()->createObject(STRING_HASHCODE("object/static/particle/particle_distant_ships_rebel.iff"), 0);
 				} else {
