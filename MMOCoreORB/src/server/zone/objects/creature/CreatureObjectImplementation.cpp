@@ -2655,7 +2655,7 @@ void CreatureObjectImplementation::activateHAMRegeneration(int latency) {
 	if (isKneeling())
 		modifier *= 1.25f;
 	else if (isSitting())
-		modifier *= 5.5f;
+		modifier *= 25.5f;
 
 	// this formula gives the amount of regen per second
 	uint32 healthTick = (uint32) ceil((float) MAX(0, getHAM(
