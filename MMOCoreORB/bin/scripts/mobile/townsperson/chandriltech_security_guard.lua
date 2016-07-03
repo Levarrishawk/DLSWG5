@@ -1,7 +1,7 @@
 chandriltech_security_guard = Creature:new {
 	objectName = "@mob/creature_names:detention_security_guard",
 	customName = "a ChandrilTech Security Guard",
-	socialGroup = "death_watch",
+	socialGroup = "geonosian",
 	level = 150,
 	chanceHit = 0.31,
 	damageMin = 160,
