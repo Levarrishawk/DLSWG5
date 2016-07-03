@@ -13,7 +13,34 @@ yavin4_world = {
 		{
       lairTemplateName = "yavin4_acklay_pack_neutral_none",
       spawnLimit = -1,
-      minDifficulty = 21,
+      minDifficulty = 140,
+      maxDifficulty = 157,
+      numberToSpawn = 0,
+      weighting = 15,
+      size = 20
+    },
+    {
+      lairTemplateName = "yavin4_acklay_pack_neutral_none",
+      spawnLimit = -1,
+      minDifficulty = 140,
+      maxDifficulty = 157,
+      numberToSpawn = 0,
+      weighting = 15,
+      size = 20
+    },
+    {
+      lairTemplateName = "yavin4_acklay_pack_neutral_none",
+      spawnLimit = -1,
+      minDifficulty = 140,
+      maxDifficulty = 157,
+      numberToSpawn = 0,
+      weighting = 15,
+      size = 20
+    },
+    {
+      lairTemplateName = "yavin4_acklay_pack_neutral_none",
+      spawnLimit = -1,
+      minDifficulty = 140,
       maxDifficulty = 157,
       numberToSpawn = 0,
       weighting = 15,
