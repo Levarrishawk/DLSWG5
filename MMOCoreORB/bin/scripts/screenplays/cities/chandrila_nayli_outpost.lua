@@ -42,7 +42,24 @@ function NayliOutpostScreenPlay:spawnMobiles()
 	pNpc = spawnMobile("chandrila", "chandrila_park_ranger",60,-5254.0,23.0,343.0,-18,0)
 	self:setMoodString(pNpc, "conversation")
 	
+	pNpc = spawnMobile("chandrila", "chandrila_park_ranger",60,-5271.7,18.2,268.9,-123,0)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("chandrila", "chandrila_park_ranger",60,-5214.4,20.1,312.0,-90,0)
+  self:setMoodString(pNpc, "conversation")
 	
+	pNpc = spawnMobile("chandrila", "commoner",60,4.4,0.6,2.2,-42,35792086)
+  self:setMoodString(pNpc, "conversation")
+	
+	pNpc = spawnMobile("chandrila", "commoner",60,1.3,0.6,4.2,133,35792086)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("chandrila", "commoner",60,-5243.8,19.7,317.5,-140,0)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("chandrila", "noble",60,-5246.7,19.6,313.4,29,0)
+  self:setMoodString(pNpc, "conversation")
+  
   -- Squalls
   spawnMobile("chandrila", "squall",60,-5263.9,19.2,296.1,165,0)
   spawnMobile("chandrila", "squall",60,-5249.3,19.2,299,120,0)
