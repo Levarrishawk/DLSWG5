@@ -28,6 +28,8 @@ function NayliOutpostScreenPlay:spawnSceneObjects()
 	spawnSceneObject("chandrila", "object/tangible/furniture/cheap/couch_s01.iff", 3.0, 0.6, 6.2, 35792086, math.rad(180) )
   spawnSceneObject("chandrila", "object/tangible/item/lytus_family_artefact.iff", 3.0, 0.6, 6.2, 35792086, math.rad(180) )
   
+  spawnSceneObject("chandrila", "object/tangible/terminal/terminal_mission.iff", -5249.1, 19.9, 341.8, 0, math.rad(90) )
+  
 end
 
 function NayliOutpostScreenPlay:spawnMobiles()
