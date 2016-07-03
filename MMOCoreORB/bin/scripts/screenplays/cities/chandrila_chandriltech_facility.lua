@@ -6,7 +6,7 @@ ChandrilTechScreenPlay = ScreenPlay:new {
 
 registerScreenPlay("ChandrilTechScreenPlay", true)
 
-function NayliOutpostScreenPlay:start()
+function ChandrilTechScreenPlay:start()
 	if (isZoneEnabled("chandrila")) then
 		self:spawnMobiles()
 		self:spawnSceneObjects()
