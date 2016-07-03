@@ -15,7 +15,7 @@ end
 
 function NayliOutpostScreenPlay:spawnSceneObjects()
 
---t	spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_green_style_01_on.iff", 27.1, -0.9, 12.0, 35791444, math.rad(0) )
+	spawnSceneObject("chandrila", "object/tangible/furniture/cheap/couch_s01.iff", 9.9, 0.6, 3.5, 35792086, math.rad(-97) )
 
 end
 
