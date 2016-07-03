@@ -15,7 +15,8 @@ end
 
 function NayliOutpostScreenPlay:spawnSceneObjects()
 
-	spawnSceneObject("chandrila", "object/tangible/furniture/cheap/couch_s01.iff", 9.9, 0.6, 3.5, 35792086, math.rad(-97) )
+	spawnSceneObject("chandrila", "object/tangible/furniture/cheap/couch_s01.iff", 9.9, 0.6, 3.5, 35792086, math.rad(-90) )
+	spawnSceneObject("chandrila", "object/tangible/furniture/cheap/coffee_table_s01.iff", 8.8, 0.6, 3.3, 35792086, math.rad(0) )
 
 end
 
