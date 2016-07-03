@@ -70,6 +70,14 @@ function NayliOutpostScreenPlay:spawnMobiles()
   
 
   
-	
+	-- Gladean Park Ranger OP POI
+	pNpc = spawnMobile("chandrila", "chandrila_park_ranger",60,-5013.6,9.1,4091.8,45,0)
+  self:setMoodString(pNpc, "conversation") 
+  pNpc = spawnMobile("chandrila", "chandrila_park_ranger",60,-5013.1,9.3,4079.6,124,0)
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile("chandrila", "chandrila_park_ranger",60,-5025.9,9.8,4078.8,-134,0)
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile("chandrila", "chandrila_park_ranger",60,-5026.1,10.0,4092.0,-47,0)
+  self:setMoodString(pNpc, "conversation")
 
 end
