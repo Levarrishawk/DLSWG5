@@ -114,15 +114,15 @@ function RecruiterConvoHandler:runScreenHandlers(conversationTemplate, conversin
 				player:setFactionRank(rank)
 			end
 
-		elseif screenID == "confirm_bribe" and player:hasSkill("combat_smuggler_underworld_04") and (player:getCashCredits() >= 100000)
+		elseif screenID == "confirm_bribe" and player:hasSkill("secondary_scoundrel_master") and (player:getCashCredits() >= 100000)
 			and (getFactionPointsCap(player:getFactionRank()) >= playerObject:getFactionStanding(recruiterScreenplay:getRecruiterFaction(conversingNPC)) + 1250) then
 			self:add100kBribeOption(conversingNPC, clonedConversation)
 
-		elseif (screenID == "accepted_bribe_20k") and player:hasSkill("combat_smuggler_underworld_04") and (player:getCashCredits() >= 20000)
+		elseif (screenID == "accepted_bribe_20k") and player:hasSkill("secondary_scoundrel_master") and (player:getCashCredits() >= 20000)
 			and (getFactionPointsCap(player:getFactionRank()) >= playerObject:getFactionStanding(recruiterScreenplay:getRecruiterFaction(conversingNPC)) + 250) then
 			recruiterScreenplay:grantBribe(conversingNPC, conversingPlayer, 20000, 250)
 
-		elseif (screenID == "accepted_bribe_100k") and player:hasSkill("combat_smuggler_underworld_04") and (player:getCashCredits() >= 100000)
+		elseif (screenID == "accepted_bribe_100k") and player:hasSkill("secondary_scoundrel_master") and (player:getCashCredits() >= 100000)
 			and (getFactionPointsCap(player:getFactionRank()) >= playerObject:getFactionStanding(recruiterScreenplay:getRecruiterFaction(conversingNPC)) + 1250) then
 			recruiterScreenplay:grantBribe(conversingNPC, conversingPlayer, 100000, 1250)
 			
@@ -228,7 +228,7 @@ function RecruiterConvoHandler:updateScreenWithBribe(pPlayer, pNpc, conversation
 	ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
 		local screenObject = LuaConversationScreen(screen)
 
-		if (player:hasSkill("combat_smuggler_underworld_04") and (player:getCashCredits() >= 20000)
+		if (player:hasSkill("secondary_scoundrel_master") and (player:getCashCredits() >= 20000)
 			and (getFactionPointsCap(player:getFactionRank()) >= playerObject:getFactionStanding(faction) + 250)) then
 			self:addBribeOption(pNpc, screenObject)
 		end

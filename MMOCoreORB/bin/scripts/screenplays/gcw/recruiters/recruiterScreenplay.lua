@@ -574,9 +574,9 @@ function recruiterScreenplay:getItemListTable(faction, screenID)
 end
 
 function recruiterScreenplay:getSmugglerDiscount(pPlayer)
-	if CreatureObject(pPlayer):hasSkill("combat_smuggler_master") then
+	if CreatureObject(pPlayer):hasSkill("secondary_scoundrel_master") then
 		return .75
-	elseif CreatureObject(pPlayer):hasSkill("combat_smuggler_underworld_01") then
+	elseif CreatureObject(pPlayer):hasSkill("secondary_scoundrel_novice") then
 		return .90
 	end
 	return 1.0
@@ -592,7 +592,7 @@ end
 function recruiterScreenplay:handleGoCovert(pPlayer)
 	ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
 		deleteData(player:getObjectID() .. ":changingFactionStatus")
-		playerObject:setFactionStatus(1)
+		playerObject:setFactionStatus(2)  -- Covert = 1  This should force everyone to be SF or Onleave Only.
 	end)
 end
 
