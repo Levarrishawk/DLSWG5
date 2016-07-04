@@ -95,7 +95,7 @@ void StructureTerminalMenuComponent::fillObjectMenuResponse(SceneObject* sceneOb
 			menuResponse->addRadialMenuItemToRadialID(118, 127, 3, "@player_structure:management_residence"); //Declare Residence
 			menuResponse->addRadialMenuItemToRadialID(118, 125, 3, "@player_structure:management_privacy"); //Privacy
 
-			if (creature->hasSkill("crafting_artisan_business_01") && structureObject->isOnAdminList(creature)) {
+			if (creature->hasSkill("secondary_merchant_novice") && structureObject->isOnAdminList(creature)) {
 				BuildingObject* building = cast<BuildingObject*>(structureObject.get());
 				if(!building->hasAccessFee())
 					menuResponse->addRadialMenuItemToRadialID(118, 68, 3, "@player_structure:management_add_turnstile"); //Set Access Fee
@@ -104,7 +104,7 @@ void StructureTerminalMenuComponent::fillObjectMenuResponse(SceneObject* sceneOb
 
 			}
 
-			if (creature->hasSkill("crafting_artisan_business_03"))
+			if (creature->hasSkill("secondary_merchant_novice"))
 				menuResponse->addRadialMenuItemToRadialID(118, 130, 3, "@player_structure:create_vendor"); //Create Vendor
 
 
@@ -122,7 +122,7 @@ void StructureTerminalMenuComponent::fillObjectMenuResponse(SceneObject* sceneOb
 			menuResponse->addRadialMenuItemToRadialID(117, 122, 3, "@player_structure:permission_vendor"); //Vendor List
 		}
 	} else if(structureObject->isOnPermissionList("VENDOR", creature)) {
-		if (creature->hasSkill("crafting_artisan_business_03")) {
+		if (creature->hasSkill("secondary_merchant_novice")) {
 			menuResponse->addRadialMenuItem(118, 3, "@player_structure:management"); //Structure Management
 			menuResponse->addRadialMenuItemToRadialID(118, 130, 3, "@player_structure:create_vendor"); //Create Vendor
 		}
@@ -263,7 +263,7 @@ int StructureTerminalMenuComponent::handleObjectMenuSelect(SceneObject* sceneObj
 	}
 
 	if(selectedID == 130 && (structureObject->isOnAdminList(creature) || structureObject->isOnPermissionList("VENDOR", creature))) {
-		if (creature->hasSkill("crafting_artisan_business_03")) {
+		if (creature->hasSkill("secondary_merchant_novice")) {
 			creature->executeObjectControllerAction(STRING_HASHCODE("createvendor")); // Create Vendor
 		}
 	}
