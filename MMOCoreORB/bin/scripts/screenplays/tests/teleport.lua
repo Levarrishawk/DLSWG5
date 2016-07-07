@@ -27,7 +27,7 @@ function teleportTest:functionCall(creatureObject, playerObject)
 	local statementVariable = screenplayState() or conversationScreen()
 	
 	if (statementVariable == true) then
-			local creo = LuaSceneObject(creatureObject)
-			creo:switchZone("planet", 10, 0, -10, 0) -- x, z, y, cell
+		local creo = LuaSceneObject(creatureObject)
+		creo:switchZone("planet", 10, 0, -10, 0) -- x, z, y, cell
 	end	
 end
