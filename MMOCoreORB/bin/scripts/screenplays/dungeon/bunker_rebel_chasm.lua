@@ -16,9 +16,9 @@ end
 function BunkerRebelChasmScreenPlay:spawnSceneObjects()
   --instance1 begin
 	spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", 1.6, -31.0, -25.0, 410000026, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", 1.6, -30.0, -25.0, 410000026, math.rad(90) )
   spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", 1.6, -29.0, -25.0, 410000026, math.rad(90) )
-  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", 1.6, -27.0, -25.0, 410000026, math.rad(90) )
-  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", 1.6, -25.0, -25.0, 410000026, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", 1.6, -28.0, -25.0, 410000026, math.rad(90) )
   
   --instance1 end
   
