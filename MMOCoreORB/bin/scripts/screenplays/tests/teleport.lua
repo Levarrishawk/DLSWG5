@@ -12,7 +12,7 @@ registerScreenPlay("teleportTest", true)
 
 --Some of these calls may be old, and will need updated. Basically will still be the same.
 
-function force_sensitive:mellichae_damage(creatureObject, playerObject, damage)
+function teleportTest:functionCall(creatureObject, playerObject)
 
   --Basics
 	if creatureObject == nil or playerObject == nil then
