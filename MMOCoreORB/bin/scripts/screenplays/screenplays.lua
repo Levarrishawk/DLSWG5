@@ -484,10 +484,5 @@ includeFile("cities/chandrila_hanna_city.lua")
 includeFile("cities/chandrila_nayli_outpost.lua")
 includeFile("cities/chandrila_chandriltech_facility.lua")
 
---Deactivate until AT-XT mobile is fixed.
---[[
-includeFile("cities/chandrila_hanna_city_mobs.lua")
-includeFile("cities/chandrila_hanna_city_patrol1.lua")
-includeFile("cities/chandrila_hanna_city_patrol2.lua")
-includeFile("cities/chandrila_hanna_city_patrol3.lua")
---]]
+--DLSWG Rebel Bunker dungeon
+includeFile("dungeon/bunker_rebel_chasm.lua")
