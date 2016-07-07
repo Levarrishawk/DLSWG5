@@ -13,6 +13,13 @@ function BunkerRebelChasmScreenPlay:start()
 	end
 end
 
+--[[   Teleporting inside each instance
+Instance 1:  /teleport -5.7 -12.1 dungeon2 -5.2 410000010
+Instance 2:  /teleport -5.7 -12.1 dungeon2 -5.2 410000047
+Instance 3:  /teleport -5.7 -12.1 dungeon2 -5.2 410000084
+Instance 4:  /teleport -5.7 -12.1 dungeon2 -5.2 410000121
+--]]
+
 function BunkerRebelChasmScreenPlay:spawnSceneObjects()
  --instance1 begin
  
