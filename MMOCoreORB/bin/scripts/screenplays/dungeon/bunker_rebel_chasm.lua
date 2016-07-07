@@ -109,6 +109,16 @@ function BunkerRebelChasmScreenPlay:spawnSceneObjects()
   spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.2, -53.0, 19.6, 410000077, math.rad(0) )
   spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.2, -52.0, 19.6, 410000077, math.rad(0) )  
   
+   --Entry Door Block
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -5.2, -15.4, 410000046, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -4.2, -15.4, 410000046, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -3.2, -15.4, 410000046, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -2.2, -15.4, 410000046, math.rad(90) ) 
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -5.2, -15.4, 410000046, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -4.2, -15.4, 410000046, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -3.2, -15.4, 410000046, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -2.2, -15.4, 410000046, math.rad(90) )
+  
 --instance2 end
 
  --instance3 begin
@@ -153,6 +163,16 @@ function BunkerRebelChasmScreenPlay:spawnSceneObjects()
   spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.2, -53.0, 19.6, 410000114, math.rad(0) )
   spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.2, -52.0, 19.6, 410000114, math.rad(0) )  
   
+   --Entry Door Block
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -5.2, -15.4, 410000083, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -4.2, -15.4, 410000083, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -3.2, -15.4, 410000083, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -2.2, -15.4, 410000083, math.rad(90) ) 
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -5.2, -15.4, 410000083, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -4.2, -15.4, 410000083, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -3.2, -15.4, 410000083, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -2.2, -15.4, 410000083, math.rad(90) )
+  
 --instance3 end
   
  --instance4 begin
@@ -196,6 +216,15 @@ function BunkerRebelChasmScreenPlay:spawnSceneObjects()
   spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.2, -54.0, 19.6, 410000151, math.rad(0) )
   spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.2, -53.0, 19.6, 410000151, math.rad(0) )
   spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.2, -52.0, 19.6, 410000151, math.rad(0) )  
+   --Entry Door Block
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -5.2, -15.4, 410000120, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -4.2, -15.4, 410000120, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -3.2, -15.4, 410000120, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -6.4, -2.2, -15.4, 410000120, math.rad(90) ) 
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -5.2, -15.4, 410000120, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -4.2, -15.4, 410000120, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -3.2, -15.4, 410000120, math.rad(90) )
+  spawnSceneObject("dungeon2", "object/tangible/dungeon/coal_bin_container.iff", -4.5, -2.2, -15.4, 410000120, math.rad(90) )
   
 --instance4 end  
   
