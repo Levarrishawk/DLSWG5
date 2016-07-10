@@ -87,10 +87,9 @@ CorelliaCoronetScreenPlay = CityScreenPlay:new {
 registerScreenPlay("CorelliaCoronetScreenPlay", true)
 
 function CorelliaCoronetScreenPlay:start()
-  if (isZoneEnabled(corellia)) then
+  if (isZoneEnabled("corellia")) then
     self:spawnMobiles()
     self:spawnSceneObjects()
-    self:spawnGcwMobiles()
   end
 end
 
