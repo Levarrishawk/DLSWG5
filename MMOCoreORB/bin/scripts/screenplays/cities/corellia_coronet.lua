@@ -649,7 +649,9 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 
   -- Chassis dealer.
   spawnMobile("corellia", "chassis_dealer", 0, 0.1, 0.6, 72.9, -4, 1855672)
-  
+ 
+ 
+ --[[ 
   -- Coronet City GCW Battle Lines
     -- Imperial Lines
   spawnMobile("corellia", "stormtrooper", 1, -131, 28, -4671, -111, 0)
@@ -721,5 +723,5 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
   spawnMobile("corellia", "rebel_trooper", 1, -174.7, 28, -4724.2, -125, 0)
   spawnMobile("corellia", "rebel_trooper", 1, -173.6, 28, -4728.7, -113, 0)
   spawnMobile("corellia", "rebel_trooper", 1, -173.5, 28, -4734.1, -103, 0)
-  
+  --]]
 end
