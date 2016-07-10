@@ -1,5 +1,12 @@
 //This is temp
 
+
+
+/*
+
+
+
+
 #include "HolocronMenuComponent.h"
 
 #include "server/zone/objects/creature/CreatureObject.h"
@@ -204,3 +211,190 @@ void ForceShrineMenuComponent::findTrainerObject(CreatureObject* player, PlayerO
 
 	ghost->setTrainerCoordinates(coords);
 ghost->setTrainerZoneName(zoneName); // For the waypoint.
+
+
+//Calculate the player's chance to find an item.
+	int chance;
+	int skillMod;
+
+	switch(forageType) {
+	case ForageManager::SCOUT:
+	case ForageManager::LAIR:
+		skillMod = player->getSkillMod("foraging");
+		chance = (int)(15 + (skillMod * 0.8));
+		break;
+	case ForageManager::MEDICAL:
+		skillMod = player->getSkillMod("medical_foraging");
+		chance = (int)(15 + (skillMod * 0.6));
+		break;
+	default:
+		skillMod = 20;
+		chance = (int)(15 + (skillMod * 0.6));
+		break;
+	}
+
+	//Determine if player finds an item.
+	if (chance > 100) //There could possibly be +foraging skill tapes.
+		chance = 100;
+
+	if (System::random(80) > chance) {
+		if (forageType == ForageManager::SHELLFISH)
+			player->sendSystemMessage("@harvesting:found_nothing");
+		else if (forageType == ForageManager::LAIR)
+			player->sendSystemMessage("@lair_n:found_nothing");
+		else
+			player->sendSystemMessage("@skl_use:sys_forage_fail"); //"You failed to find anything worth foraging."
+
+	} else {
+
+		forageGiveItems(player, forageType, forageX, forageY, zoneName);
+
+	}
+
+	return;
+
+}
+
+bool ForageManagerImplementation::forageGiveItems(CreatureObject* player, int forageType, float forageX, float forageY, const String& planet) {
+	if (player == NULL)
+		return false;
+
+	Locker playerLocker(player);
+
+	ManagedReference<LootManager*> lootManager = player->getZoneServer()->getLootManager();
+	ManagedReference<SceneObject*> inventory = player->getSlottedObject("inventory");
+
+	if (lootManager == NULL || inventory == NULL) {
+		player->sendSystemMessage("@skl_use:sys_forage_fail");
+		return false;
+	}
+
+	//Check if inventory is full.
+	if (inventory->isContainerFullRecursive()) {
+		player->sendSystemMessage("@skl_use:sys_forage_noroom"); //"Some foraged items were discarded, because your inventory is full."
+		return false;
+	}
+
+	int itemCount = 1;
+	//Determine how many items the player finds.
+	if (forageType == ForageManager::SCOUT) {
+		if (player->hasSkill("outdoors_scout_camp_03") && System::random(5) == 1)
+			itemCount += 1;
+		if (player->hasSkill("outdoors_scout_master") && System::random(5) == 1)
+			itemCount += 1;
+	}
+
+	//Discard items if player's inventory does not have enough space.
+	int inventorySpace = inventory->getContainerVolumeLimit() - inventory->getCountableObjectsRecursive();
+	if (itemCount > inventorySpace) {
+		itemCount = inventorySpace;
+		player->sendSystemMessage("@skl_use:sys_forage_noroom"); //"Some foraged items were discarded, because your inventory is full."
+	}
+
+	//Determine what the player finds.
+	int dice;
+	int level = 1;
+	String lootGroup = "";
+	String resName = "";
+
+	if (forageType == ForageManager::SHELLFISH){
+		bool mullosks = false;
+		if (System::random(100) > 50) {
+			resName = "seafood_mollusk";
+			mullosks = true;
+		}
+		else
+			resName = "seafood_crustacean";
+
+		if(forageGiveResource(player, forageX, forageY, planet, resName)) {
+			if (mullosks)
+				player->sendSystemMessage("@harvesting:found_mollusks");
+			else
+				player->sendSystemMessage("@harvesting:found_crustaceans");
+			return true;
+		}
+		else {
+			player->sendSystemMessage("@harvesting:found_nothing");
+			return false;
+		}
+
+	}
+
+
+	if (forageType == ForageManager::SCOUT) {
+
+		for (int i = 0; i < itemCount; i++) {
+			dice = System::random(200);
+			level = 1;
+
+			if (dice >= 0 && dice < 160) {
+				lootGroup = "forage_food";
+			} else if (dice > 159 && dice < 200) {
+				lootGroup = "forage_bait";
+			} else {
+				lootGroup = "forage_rare";
+			}
+
+			lootManager->createLoot(inventory, lootGroup, level);
+		}
+
+	} else if (forageType == ForageManager::MEDICAL) { //Medical Forage
+		dice = System::random(200);
+		level = 1;
+
+		if (dice >= 0 && dice < 40) { //Forage food.
+			lootGroup = "forage_food";
+
+		} else if (dice > 39 && dice < 110) { //Resources.
+			if(forageGiveResource(player, forageX, forageY, planet, resName)) {
+				player->sendSystemMessage("@skl_use:sys_forage_success");
+				return true;
+			} else {
+				player->sendSystemMessage("@skl_use:sys_forage_fail");
+				return false;
+			}
+		} else if (dice > 109 && dice < 170) { //Average components.
+			lootGroup = "forage_medical_component";
+			level = 1;
+		} else if (dice > 169 && dice < 200) { //Good components.
+			lootGroup = "forage_medical_component";
+			level = 60;
+		} else { //Exceptional Components
+			lootGroup = "forage_medical_component";
+			level = 200;
+		}
+
+		lootManager->createLoot(inventory, lootGroup, level);
+
+	} else if (forageType == ForageManager::LAIR) { //Lair Search
+		dice = System::random(109);
+		level = 1;
+
+		if (dice >= 0 && dice < 40) { // Live Creatures
+			lootGroup = "forage_live_creatures";
+		}
+		else if (dice > 39 && dice < 110) { // Eggs
+			resName = "meat_egg";
+			if(forageGiveResource(player, forageX, forageY, planet, resName)) {
+				player->sendSystemMessage("@lair_n:found_eggs");
+				return true;
+			} else {
+				player->sendSystemMessage("@lair_n:found_nothing");
+				return false;
+			}
+		}
+
+		if(!lootManager->createLoot(inventory, lootGroup, level)) {
+			player->sendSystemMessage("Unable to create loot for lootgroup " + lootGroup);
+			return false;
+		}
+
+		player->sendSystemMessage("@lair_n:found_bugs");
+		return true;
+	}
+
+	player->sendSystemMessage("@skl_use:sys_forage_success");
+	return true;
+}
+
+*/
