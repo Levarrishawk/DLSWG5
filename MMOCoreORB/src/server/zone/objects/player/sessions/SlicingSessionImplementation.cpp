@@ -242,12 +242,12 @@ void SlicingSessionImplementation::endSlicing() {
 
 int SlicingSessionImplementation::getSlicingSkill(CreatureObject* slicer) {
 
-	String skill0 = "combat_smuggler_novice";
-	String skill1 = "combat_smuggler_slicing_01";
-	String skill2 = "combat_smuggler_slicing_02";
-	String skill3 = "combat_smuggler_slicing_03";
-	String skill4 = "combat_smuggler_slicing_04";
-	String skill5 = "combat_smuggler_master";
+	String skill0 = "secondary_scoundrel_novice";
+	String skill1 = "secondary_scoundrel_slice_01";
+	String skill2 = "secondary_scoundrel_spice_02";
+	String skill3 = "secondary_scoundrel_slice_03";
+	String skill4 = "secondary_scoundrel_spice_04";
+	String skill5 = "secondary_scoundrel_master";
 
 	if (slicer->hasSkill(skill5))
 		return 5;
@@ -552,7 +552,7 @@ void SlicingSessionImplementation::handleWeaponSlice() {
 		handleSliceDamage(percentage);
 		break;
 	case 1:
-		handleSliceSpeed(percentage);
+		handleSliceDamage(percentage);
 		break;
 	}
 }
@@ -638,7 +638,7 @@ void SlicingSessionImplementation::handleArmorSlice() {
 		handleSliceEffectiveness(percent);
 		break;
 	case 1:
-		handleSliceEncumbrance(percent);
+		handleSliceEffectiveness(percent);
 		break;
 	}
 }
