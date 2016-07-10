@@ -8,7 +8,6 @@ nightsister_layer = {
 	craftingValues = {
 		{"armor_special_type",0,0,0},
 		{"armor_effectiveness",3,7,10},
-		{"armor_action_encumbrance",-4,-8,0},
 		{"useCount",1,10,0},
 	},
 	customizationStringNames = {},
