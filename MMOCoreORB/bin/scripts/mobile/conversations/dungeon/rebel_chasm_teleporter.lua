@@ -40,7 +40,7 @@ rebel_chasm_teleporter:addScreen(deny);
 mayor2 = ConvoScreen:new {
   id = "mayor2",
   leftDialog = "",
-  customDialogText = "Yes. My...debt. My next payment, a speeder deed, was stolen from me. I can't divert...er...raise the money with all the problems in the city. If you do some things for me, it might...free up some funds I need.",
+  customDialogText = "Right, off you go then!",
   stopConversation = "true",
   options = {
   --   {"I see. What would I have to do?","mayor3"},
@@ -51,7 +51,7 @@ rebel_chasm_teleporter:addScreen(mayor2);
 mayor3 = ConvoScreen:new {
   id = "mayor3",
   leftDialog = "",
-  customDialogText = "Mos Eisley suffers from Tusken Raiders, wild vermin, and menacing hooligans. I don't have the staff to handle these problems. I need you to go out there. You want to help the city, don't you?",
+   customDialogText = "Right, off you go then!",
   stopConversation = "true",
   options = {
  --    {"Tell me about the wild vermin.","mayor4"},
@@ -62,7 +62,7 @@ rebel_chasm_teleporter:addScreen(mayor4);
 mayor4 = ConvoScreen:new {
   id = "mayor4",
   leftDialog = "",
-  customDialogText = "Mos Eisley suffers from Tusken Raiders, wild vermin, and menacing hooligans. I don't have the staff to handle these problems. I need you to go out there. You want to help the city, don't you?",
+  customDialogText = "Right, off you go then!",
   stopConversation = "true",
   options = {
   --   {"I'll help her.","mayorvermin"},
@@ -73,7 +73,7 @@ mayor4 = ConvoScreen:new {
 mayor5 = ConvoScreen:new {
   id = "mayor5",
   leftDialog = "",
-  customDialogText = "Mos Eisley suffers from Tusken Raiders, wild vermin, and menacing hooligans. I don't have the staff to handle these problems. I need you to go out there. You want to help the city, don't you?",
+  customDialogText = "Right, off you go then!",
   stopConversation = "true",
   options = {
    --  {"I'll help her.","mayorvermin"},
@@ -81,18 +81,9 @@ mayor5 = ConvoScreen:new {
   }
 }
 
-rebel_chasm_teleporter:addScreen(mayor4);
+rebel_chasm_teleporter:addScreen(mayor5);
 
-mayorvermin = ConvoScreen:new {
-  id = "mayorvermin",
-  leftDialog = "",
-  customDialogText = "Good.",
-  stopConversation = "true",
-  options = {
-    
-  }
-}
-rebel_chasm_teleporter:addScreen(mayorvermin);
+
 
 addConversationTemplate("rebel_chasm_teleporter", rebel_chasm_teleporter);
 
