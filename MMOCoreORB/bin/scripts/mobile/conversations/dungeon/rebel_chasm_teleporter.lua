@@ -1,7 +1,7 @@
 rebel_chasm_teleporter = ConvoTemplate:new {
   initialScreen = "first_conv",
   templateType = "Lua",
-  luaClassHandler = "rebel_chasm_teleporter",
+  luaClassHandler = "rebel_chasm_teleporter_convo_handler",
   screens = {}
 }
 
