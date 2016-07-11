@@ -41,7 +41,7 @@ function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(conversa
 		if ( lastConversationScreen == nil ) then
 			--print("Last conversation is null.  let's try to get the first screen")
 				nextConversationScreen = conversation:getScreen("first_conv")--First convo screen to pull.
-	  end	
+	  	end	
 	--print("returning screen")		
 	return nextConversationScreen	
 end
