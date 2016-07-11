@@ -1,3 +1,25 @@
+rebel_chasm_teleporter = ScreenPlay:new {
+  numberOfActs = 1,
+  
+  screenplayName = "rebel_chasm_teleporter"
+}
+
+registerScreenPlay("rebel_chasm_teleporter", true)
+
+function rebel_chasm_teleporter:start()
+  if (isZoneEnabled("jakku")) then
+    self:spawnMobiles()
+  end
+end
+
+function rebel_chasm_teleporter:spawnMobiles()
+
+  --In The Guild Hall
+  spawnMobile("jakku", "rebel_chasm_teleporter", 1, -5705, 52, 5989, 0, 0)
+  end
+
+
+
 function rebel_chasm_teleporter:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
   local creature = LuaCreatureObject(conversingPlayer)
   local convosession = creature:getConversationSession()
