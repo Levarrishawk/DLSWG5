@@ -12,7 +12,7 @@ rebel_chasm_teleporter = ScreenPlay:new {
 registerScreenPlay("rebel_chasm_teleporter", true) --Initialize the screenplay IAW the screenplay include
 
 --Simply spawns the NPC
-function rebel_chasm_teleporter:spawnMobiles()
+function rebel_chasm_teleporter:start()
    spawnMobile("jakku", "reb_chasm_dungeon_teleporter", 1, -5705, 52, 5989, 0, 0)
 end
 
@@ -40,7 +40,7 @@ function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(conversa
 	end
 		if ( lastConversationScreen == nil ) then
 			--print("Last conversation is null.  let's try to get the first screen")
-				nextConversationScreen = conversation:getScreen("first_conv")--First convo screen to pull.
+			nextConversationScreen = conversation:getScreen("first_conv")--First convo screen to pull.
 	  	end	
 	--print("returning screen")		
 	return nextConversationScreen	
