@@ -31,11 +31,14 @@ function rebel_chasm_teleporter:getNextConversationScreen(conversationTemplate, 
       
       local luaLastConversationScreen = LuaConversationScreen(lastConversationScreen)
       local player = LuaCreatureObject(conversingPlayer)
-      player:switchZone("planet", 10, 0, -10, 0) -- x, z, y, cell
-      local optionLink = luaLastConversationScreen:getOptionLink(selectedOption)    
+      local optionLink = luaLastConversationScreen:getOptionLink(selectedOption)  
+      if ( optionlink = "mayor2" )   then
+        player:switchZone("tatooine", 10, 0, -10, 0) -- x, z, y, cell
       --print("optionLink fromn the last screen is .. " .. optionLink)    
       --local thiscreen = conversation:getScreen(optionLink)
       nextConversationScreen = conversation:getScreen(optionLink)     
+        else
+        nextConversationScreen = conversation:getScreen("complete")--End of the road.
     end     
   end 
   --print("returning screen")   
