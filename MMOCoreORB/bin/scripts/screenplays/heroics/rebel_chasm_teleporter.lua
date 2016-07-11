@@ -54,8 +54,9 @@ function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemp
 	--local player = LuaCreatureObject(conversingPlayer)
 	
 	local player = LuaSceneObject(creatureObject)--This should work, if not we'd have to look at the core functions for LUA handlers.
-
-	if ( screenID == "mayor2" ) then
+ local optionLink = luaLastConversationScreen:getOptionLink(selectedOption)  
+      if ( optionlink = "mayor2" )   then
+	
 		 player:switchZone("dungeon2", -5.7, 12.1, -5.2, 410000010) -- x, z, y, cell
 	end
 	
