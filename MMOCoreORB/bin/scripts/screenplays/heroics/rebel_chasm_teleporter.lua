@@ -40,8 +40,16 @@ function rebel_chasm_teleporter:getNextConversationScreen(conversationTemplate, 
       --print("Last conversation is null.  let's try to get the first screen")
       
       local creature = LuaCreatureObject(conversingPlayer)
-  
-   
+      local hasAccepted = creature:hasScreenPlayState(force_sensitive.states.quest.intro, force_sensitive.questString)
+      --print("hasAccepted() is " .. hasAccepted)   
+      
+      if ( hasAccepted == 0 ) then
+        nextConversationScreen = conversation:getScreen("intro_first_screen")--First convo screen to pull.
+
+      else
+        nextConversationScreen = conversation:getScreen("complete")--End of the road.
+      end
+    else
       
       local luaLastConversationScreen = LuaConversationScreen(lastConversationScreen)
       local player = LuaCreatureObject(conversingPlayer)
