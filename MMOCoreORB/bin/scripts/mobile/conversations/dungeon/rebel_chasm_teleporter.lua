@@ -10,11 +10,14 @@ rebel_chasm_teleporter = ConvoTemplate:new {
 first_conv = ConvoScreen:new {
   id = "first_conv",
   leftDialog = "",
-  customDialogText = "Welcome to Mos Eisley! I'm Mayor Guh'rantt. Do you know the history of Mos Eisley? It's a beautiful city, full of life and character and one of the best cantinas in the known galaxy.",
+  customDialogText = "Where do you want to Teleport to?",
   stopConversation = "false",
   options = {
-    {"I hear you need some help with a debt owed to Jabba.", "mayor2"},
-    {"I'm very busy.  I'll come back later.","deny"}
+    {"Instance 1", "mayor2"},
+    {"Instance 2", "mayor3"},
+    {"Instance 3", "mayor4"},
+    {"Instance 4", "mayor5"},
+    {"No where.","deny"}
   
   }
 }
@@ -24,7 +27,7 @@ rebel_chasm_teleporter:addScreen(first_conv);
 deny = ConvoScreen:new {
   id = "deny",
   leftDialog = "",
-  customDialogText = "Oh, I see.  Well take care!",
+  customDialogText = "Ok, piss off then!",
   stopConversation = "true",
   options = {
   }
@@ -58,6 +61,17 @@ rebel_chasm_teleporter:addScreen(mayor4);
 
 mayor4 = ConvoScreen:new {
   id = "mayor4",
+  leftDialog = "",
+  customDialogText = "Mos Eisley suffers from Tusken Raiders, wild vermin, and menacing hooligans. I don't have the staff to handle these problems. I need you to go out there. You want to help the city, don't you?",
+  stopConversation = "false",
+  options = {
+     {"I'll help her.","mayorvermin"},
+     {"I can't help right now.","deny"}
+  }
+}
+
+mayor5 = ConvoScreen:new {
+  id = "mayor5",
   leftDialog = "",
   customDialogText = "Mos Eisley suffers from Tusken Raiders, wild vermin, and menacing hooligans. I don't have the staff to handle these problems. I need you to go out there. You want to help the city, don't you?",
   stopConversation = "false",
