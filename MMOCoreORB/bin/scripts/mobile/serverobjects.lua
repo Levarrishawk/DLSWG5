@@ -42,3 +42,6 @@ includeFile("lair/serverobjects.lua")
 
 -- Outfits
 includeFile("outfits/serverobjects.lua")
+
+-- dlswg custom
+includeFile("custom-dlswg/serverobjects.lua")
