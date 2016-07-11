@@ -487,3 +487,4 @@ includeFile("cities/chandrila_chandriltech_facility.lua")
 --DLSWG Rebel Bunker dungeon
 includeFile("dungeon/bunker_rebel_chasm.lua")
 includeFile("heroics/teleportplayer.lua")
+includeFile("heroics/rebel_chasm_teleporter.lua")
