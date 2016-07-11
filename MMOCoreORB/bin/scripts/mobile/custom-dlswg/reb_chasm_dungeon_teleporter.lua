@@ -77,7 +77,7 @@ reb_chasm_dungeon_teleporter = Creature:new {
 	},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "rebel_chasm_teleporter_convo_handler",
+	conversationTemplate = "rebel_chasm_teleporter",
 	attacks = {}
 }
 

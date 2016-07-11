@@ -32,8 +32,8 @@ function rebel_chasm_teleporter:getNextConversationScreen(conversationTemplate, 
       local luaLastConversationScreen = LuaConversationScreen(lastConversationScreen)
       local player = LuaCreatureObject(conversingPlayer)
       local optionLink = luaLastConversationScreen:getOptionLink(selectedOption)  
-      if ( optionlink = "mayor2" )   then
-        player:switchZone("tatooine", 10, 0, -10, 0) -- x, z, y, cell
+      if ( optionlink == "mayor2" )   then
+        player:switchZone("dungeon2", -5.7, 12.1, -5.2, 410000010) -- x, z, y, cell
       --print("optionLink fromn the last screen is .. " .. optionLink)    
       --local thiscreen = conversation:getScreen(optionLink)
       nextConversationScreen = conversation:getScreen(optionLink)     
@@ -43,4 +43,6 @@ function rebel_chasm_teleporter:getNextConversationScreen(conversationTemplate, 
   end 
   --print("returning screen")   
   return nextConversationScreen 
+end
+
 end
