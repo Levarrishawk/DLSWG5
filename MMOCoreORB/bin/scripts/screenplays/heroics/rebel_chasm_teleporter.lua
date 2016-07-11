@@ -46,14 +46,14 @@ function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(conversa
 	return nextConversationScreen	
 end
 
-function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)	
+function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen, creatureObject)	
 	--print("\ntest_convo_handler:runScreenHandlers() called\n")
 	local screen = LuaConversationScreen(conversationScreen)	
 	local screenID = screen:getScreenID()	
 	--print("screenID is " .. screenID	)
 	--local player = LuaCreatureObject(conversingPlayer)
 	
-	local player = LuaSceneObject(conversingPlayer)--This should work, if not we'd have to look at the core functions for LUA handlers.
+	local player = LuaSceneObject(creatureObject)--This should work, if not we'd have to look at the core functions for LUA handlers.
 
 	if ( screenID == "mayor2" ) then
 		 player:switchZone("dungeon2", -5.7, 12.1, -5.2, 410000010) -- x, z, y, cell
