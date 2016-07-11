@@ -15,7 +15,7 @@ end
 function rebel_chasm_teleporter:spawnMobiles()
 
   --In The Guild Hall
-  spawnMobile("jakku", "rebel_chasm_dungeon_teleporter", 1, -5705, 52, 5989, 0, 0)
+  spawnMobile("jakku", "reb_chasm_dungeon_teleporter", 1, -5705, 52, 5989, 0, 0)
   end
 
 
