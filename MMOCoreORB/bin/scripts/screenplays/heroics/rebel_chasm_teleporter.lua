@@ -48,10 +48,11 @@ end
 
 function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	local screen = LuaConversationScreen(conversationScreen)	
-	local screenID = screen:getScreenID()	
+	local screenID = screen:getScreenID()
+	local player = LuaSceneObject(conversingPlayer)
 
 	if ( screenID == "mayor2" ) then print("Selected mayor2")
-		SceneObject(conversingPlayer):switchZone("dungeon2", -5.7, 12.1, -5.2, 410000010) print("Teleporting")
+		SceneObject(player):switchZone("dungeon2", -5.7, 12.1, -5.2, 410000010) print("Teleporting")
 	end
 
 	return conversationScreen
