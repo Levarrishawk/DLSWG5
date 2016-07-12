@@ -16,16 +16,6 @@ function rebel_chasm_teleporter:start()
    spawnMobile("jakku", "reb_chasm_dungeon_teleporter", 1, -5705, 52, 5989, 0, 0)
 end
 
---Teleport function
-function rebel_chasm_teleporter:teleportPlayer(creatureObject)
-	local creo = LuaSceneObject(creatureObject)
-	if (readData("rebel_chasm_teleporter:teleportPlayer") == 1 ) then
-		writeData("rebel_chasm_teleporter:teleportPlayer",0) --resets the verify, can be removed later
-		creo:switchZone("dungeon2", -5.7, 12.1, -5.2, 410000010) -- x, z, y, cell
-	end
-end
-
-
 --The actual conversation handler
 rebel_chasm_teleporter_convo_handler = Object:new {
 	
@@ -60,12 +50,9 @@ function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemp
 	local screen = LuaConversationScreen(conversationScreen)	
 	local screenID = screen:getScreenID()	
 
-	if ( screenID == "mayor2" ) then
-		writeData("rebel_chasm_teleporter:teleportPlayer", 1) --Verifying step, can be removed later.
-		createEvent(500, "rebel_chasm_teleporter", "teleportPlayer", conversingPlayer) --Activates the function
+	if ( screenID == "mayor2" ) then print("Selected mayor2")
+		SceneObject(conversingPlayer):switchZone("dungeon2", -5.7, 12.1, -5.2, 410000010) print("Teleporting")
 	end
-	
-	
-	--print("returning convosvreen")
+
 	return conversationScreen
 end
