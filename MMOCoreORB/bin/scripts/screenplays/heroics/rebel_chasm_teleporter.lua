@@ -28,7 +28,15 @@ end
 --The actual conversation handler
 rebel_chasm_teleporter_convo_handler = Object:new {
 	
- }
+}
+
+function CorvetteTicketGiverConvoHandler:getInitialScreen(pPlayer, pNpc, pConversationTemplate)
+	local convoTemplate = LuaConversationTemplate(pConversationTemplate)
+	local player = CreatureObject(pPlayer)
+
+	return convoTemplate:getScreen("first_conv")
+
+end
 
 function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(pConversationTemplate, pPlayer, selectedOption, pConversingNpc)
 	local pConversationSession = CreatureObject(pPlayer):getConversationSession()
