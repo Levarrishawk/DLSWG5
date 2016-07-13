@@ -30,29 +30,26 @@ rebel_chasm_teleporter_convo_handler = Object:new {
 	
  }
 
-function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
-	local creature = LuaCreatureObject(conversingPlayer)
-	local convosession = creature:getConversationSession()
-	lastConversation = nil
-	--print("getNextConversation() called")
-	local conversation = LuaConversationTemplate(conversationTemplate)
-	local nextConversationScreen 
-	if ( conversation ~= nil ) then
-		-- checking to see if we have a next screen
-		if ( convosession ~= nil ) then
-			 local session = LuaConversationSession(convosession)
-			 if ( session ~= nil ) then
-			 	--print("casting getlastconversationsreen()")
-			 	lastConversationScreen = session:getLastConversationScreen()
-			 end
-		end
+function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(pConversationTemplate, pPlayer, selectedOption, pConversingNpc)
+	local pConversationSession = CreatureObject(pPlayer):getConversationSession()
+
+	local pLastConversationScreen = nil
+
+	if (pConversationSession ~= nil) then
+		local conversationSession = LuaConversationSession(pConversationSession)
+		pLastConversationScreen = conversationSession:getLastConversationScreen()
 	end
-		if ( lastConversationScreen == nil ) then
-			--print("Last conversation is null.  let's try to get the first screen")
-			nextConversationScreen = conversation:getScreen("first_conv")--First convo screen to pull.
-	  	end	
-	--print("returning screen")		
-	return nextConversationScreen	
+
+	local conversationTemplate = LuaConversationTemplate(pConversationTemplate)
+
+	if (pLastConversationScreen ~= nil) then
+		local lastConversationScreen = LuaConversationScreen(pLastConversationScreen)
+		local optionLink = lastConversationScreen:getOptionLink(selectedOption)
+
+		return conversationTemplate:getScreen(optionLink)
+	end
+
+	return self:getInitialScreen(pPlayer, pConversingNpc, pConversationTemplate)
 end
 
 function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen, pPlayer)
