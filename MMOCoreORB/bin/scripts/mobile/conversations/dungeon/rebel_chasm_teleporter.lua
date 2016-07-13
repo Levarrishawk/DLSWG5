@@ -15,7 +15,7 @@ first_conv = ConvoScreen:new {
 	stopConversation = "false",
 	options = {"
 		 {"Instance 1!","instance_1"},
-		 {"Nevermind.","deny"}"
+		 {"Nevermind.","deny"}
 	 }
  }
 rebel_chasm_convoTemplate:addScreen("first_conv");
