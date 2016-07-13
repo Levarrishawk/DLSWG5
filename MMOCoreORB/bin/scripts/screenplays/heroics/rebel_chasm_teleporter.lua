@@ -55,12 +55,12 @@ function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(conversa
 	return nextConversationScreen	
 end
 
-function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
+function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen, pPlayer)
 	local screen = LuaConversationScreen(conversationScreen)	
 	local screenID = screen:getScreenID()
 
-	if ( screenID == "mayor2" ) then print("Selected mayor2")
-		createEvent(500, "rebel_chasm_teleporter", "teleportPlayer", conversingPlayer, "") print ("Creating the event to trig function")
+	if ( screenID == "instance_1" ) then print("Selected instance_1")
+		createEvent(500, "rebel_chasm_teleporter", "teleportPlayer", pPlayer, "") print ("Creating the event to trig function")
 	end
 
 	return conversationScreen
