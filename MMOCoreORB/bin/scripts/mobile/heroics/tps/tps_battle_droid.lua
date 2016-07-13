@@ -1,14 +1,14 @@
-tps_battle_droid = Creature:new {
+death_watch_battle_droid = Creature:new {
 	objectName = "@mob/creature_names:mand_bunker_battle_droid",
 	socialGroup = "death_watch",
 	faction = "",
-	level = 145,
+	level = 134,
 	chanceHit = 5.5,
-	damageMin = 995,
-	damageMax = 1600,
+	damageMin = 795,
+	damageMax = 1300,
 	baseXp = 12612,
-	baseHAM = 67000,
-	baseHAMmax = 88000,
+	baseHAM = 56000,
+	baseHAMmax = 68000,
 	armor = 2,
 	resists = {75,75,100,60,100,25,40,85,-1},
 	meatType = "",
@@ -33,7 +33,7 @@ tps_battle_droid = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{}
+				{group = "death_watch_bunker_commoners", chance = 10000000}
 			},
 			lootChance = 500000
 		}
@@ -43,4 +43,4 @@ tps_battle_droid = Creature:new {
 	attacks = merge(pistoleermaster,carbineermaster,marksmanmaster)
 }
 
-CreatureTemplates:addCreatureTemplate(tps_battle_droid, "tps_battle_droid")
+CreatureTemplates:addCreatureTemplate(death_watch_battle_droid, "death_watch_battle_droid")

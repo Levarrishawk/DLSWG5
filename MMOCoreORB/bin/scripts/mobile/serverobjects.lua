@@ -45,3 +45,4 @@ includeFile("outfits/serverobjects.lua")
 
 -- dlswg custom
 includeFile("custom-dlswg/serverobjects.lua")
+includeFile("heroics/serverobjects.lua")
