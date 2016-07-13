@@ -24,7 +24,7 @@ reb_chasm_dungeon_teleporter = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = HERD,
-	optionsBitmask = AIENABLED + CONVERSABLE + INTERESTING,
+	optionsBitmask = AIENABLED + CONVERSABLE,
 	diet = HERBIVORE,
 
 
@@ -77,7 +77,7 @@ reb_chasm_dungeon_teleporter = Creature:new {
 	},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "rebel_chasm_teleporter",
+	conversationTemplate = "rebel_chasm_convoTemplate",
 	attacks = {}
 }
 
