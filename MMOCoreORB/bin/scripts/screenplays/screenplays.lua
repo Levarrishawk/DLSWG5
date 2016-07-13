@@ -488,3 +488,6 @@ includeFile("cities/chandrila_chandriltech_facility.lua")
 includeFile("dungeon/bunker_rebel_chasm.lua")
 includeFile("heroics/teleportplayer.lua")
 includeFile("heroics/rebel_chasm_teleporter.lua")
+
+--DLSWG Heroics
+includeFile("heroics/tps/the_power_station.lua")
