@@ -13,7 +13,7 @@ first_conv = ConvoScreen:new {
 	leftDialog = "",
 	customDialogText = "Where would you like to travel?",
 	stopConversation = "false",
-	options = {"
+	options = {
 		 {"Instance 1!","instance_1"},
 		 {"Nevermind.","deny"}
 	 }
