@@ -16,6 +16,15 @@ function rebel_chasm_teleporter:start()
    spawnMobile("jakku", "reb_chasm_dungeon_teleporter", 1, -5705, 52, 5989, 0, 0)
 end
 
+--Teleport function
+function rebel_chasm_teleporter:teleportPlayer(pPlayer)
+	if pPlayer == nil then
+		return
+	end
+	
+	SceneObject(pPlayer):switchZone("dungeon2", -5.7, 12.1, -5.2, 410000010) print("Teleporting")
+end
+
 --The actual conversation handler
 rebel_chasm_teleporter_convo_handler = Object:new {
 	
@@ -49,10 +58,9 @@ end
 function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	local screen = LuaConversationScreen(conversationScreen)	
 	local screenID = screen:getScreenID()
-	local player = LuaSceneObject(conversingPlayer)
 
 	if ( screenID == "mayor2" ) then print("Selected mayor2")
-		SceneObject(player):switchZone("dungeon2", -5.7, 12.1, -5.2, 410000010) print("Teleporting")
+		createEvent(500, "rebel_chasm_teleporter", "teleportPlayer", conversingPlayer, "") print ("Creating the event to trig function")
 	end
 
 	return conversationScreen
