@@ -12,6 +12,6 @@ function ThePowerStationScreenPlay:start()
 end
 
 function ThePowerStationScreenPlay:spawnMobiles()
-	spawnMobile("dungeon2", "tps_battle_droid", 300, -21.8, 7.0, 12.1, 97, 410000011)
+	spawnMobile("dungeon2", "tps_battle_droid", 300, -21.8, -7.0, -12.1, 97, 410000011)
 
 end
