@@ -18,6 +18,6 @@ function ThePowerStationScreenPlay:spawnMobiles()
   spawnMobile("dungeon2", "tps_battle_droid", 300, -22.0, -7.0, -30.1, 2, 410000021)
   spawnMobile("dungeon2", "tps_battle_droid", 300, -22.0, -7.0, -25.5, -1, 410000014)
   spawnMobile("dungeon2", "tps_battle_droid", 300, -22.0, -7.0, -19.7, -1, 410000014)
-  --spawnMobile("dungeon2", "tps_battle_droid", 300, -21.6, -7.0, -14.3, 56, 410000011)
-  --spawnMobile("dungeon2", "tps_battle_droid", 300, -21.3, -7.0, -9.5, 137, 410000011)
+  spawnMobile("dungeon2", "tps_battle_droid", 300, -21.9, -7.0, -4.8, 178, 410000012)
+  spawnMobile("dungeon2", "tps_battle_droid", 300, -16.8, -7.0, 0.3, -85, 410000012)
 end
