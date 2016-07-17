@@ -31,17 +31,19 @@ end
 --checks if player enters the zone, and what to do with them.
 function jakkuBattleBoundaryScreenPlay:notifySpawnArea(pActiveArea, pMovingObject)
   
-  if SceneObject(pMovingObject):isCreatureObject() then
+  if (pMovingObject == nil or pActiveArea == nil or not SceneObject(pMovingObject):isCreatureObject()) then
     return 0
   end
---[[  
+
+  if (CreatureObject(pMovingObject):isAiAgent() and not AiAgent(pMovingObject):isPet()) then
+    return 0
+  end
+ 
   return ObjectManager.withCreatureObject(pMovingObject, function(player)
 
-    if (player:isImperial() or player:isRebel()) then
       CreatureObject(pPlayer):sendSystemMessage("You have entered The Battle of Jakku.")
-    end
-    return 0
-  end)--]]
+    
+  end)
 end
 
 function jakkuBattleBoundaryScreenPlay:notifySpawnAreaLeave(pActiveArea, pMovingObject)
