@@ -17,21 +17,21 @@ function jakkuBattleBoundaryScreenPlay:start()
 end
   
 function jakkuBattleBoundaryScreenPlay:spawnActiveAreas()
-  local pSpawnArea = spawnActiveArea("jakku", "object/active_area.iff", -5945, 20, 5774, 0, 0)
+  local pActiveArea = spawnActiveArea("jakku", "object/active_area.iff", -5945, 20, 5774, 0, 0)
     
-  if (pSpawnArea ~= nil) then
-    local activeArea = LuaActiveArea(pSpawnArea)
+  if (pActiveArea ~= nil) then
+    local activeArea = LuaActiveArea(pActiveArea)
           activeArea:setCellObjectID(0)
           activeArea:setRadius(1000)
-          createObserver(ENTEREDAREA, "jakku_battle", "notifySpawnArea", pSpawnArea)
-          createObserver(EXITEDAREA, "jakku_battle", "notifySpawnAreaLeave", pSpawnArea)
+          createObserver(ENTEREDAREA, "jakku_battle", "notifySpawnArea", pActiveArea)
+          createObserver(EXITEDAREA, "jakku_battle", "notifySpawnAreaLeave", pActiveArea)
       end
 end
  
 --checks if player enters the zone, and what to do with them.
 function jakkuBattleBoundaryScreenPlay:notifySpawnArea(pActiveArea, pMovingObject)
   
-  if (not SceneObject(pMovingObject):isCreatureObject()) then
+  if (pMovingObject == nil or pActiveArea == nil or not SceneObject(pMovingObject):isCreatureObject()) then
     return 0
   end
   
@@ -46,7 +46,7 @@ end
 
 function jakkuBattleBoundaryScreenPlay:notifySpawnAreaLeave(pActiveArea, pMovingObject)
   
-  if (not SceneObject(pMovingObject):isCreatureObject()) then
+  if (pMovingObject == nil or pActiveArea == nil or not SceneObject(pMovingObject):isCreatureObject()) then
     return 0
   end
   
