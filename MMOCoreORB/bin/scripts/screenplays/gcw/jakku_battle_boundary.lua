@@ -36,15 +36,15 @@ function jakkuBattleBoundaryScreenPlay:notifySpawnArea(pActiveArea, pMovingObjec
   end
   
   return ObjectManager.withCreatureObject(pMovingObject, function(player)
-    if (player:isAiAgent()) then
+    if (PlayerObject:isAiAgent()) then
       return 0
     end
     
     if (player:isImperial() or player:isRebel()) then
       createEvent(1, "jakku_battle", "handlePvpZone", pMovingObject)
-      player:sendSystemMessage("You have entered The Battle of Jakku.")
+      PlayerObject:sendSystemMessage("You have entered The Battle of Jakku.")
     else
-      player:sendSystemMessage("You have entered The Battle of Jakku.")
+      PlayerObject:sendSystemMessage("You have entered The Battle of Jakku.")
    --   player:teleport(jakku, -5945, 20, 5774, 0)
     end
     return 0
@@ -73,13 +73,13 @@ function jakkuBattleBoundaryScreenPlay:notifySpawnAreaLeave(pActiveArea, pMoving
   end
   
   return ObjectManager.withCreatureObject(pMovingObject, function(player)
-    if (player:isAiAgent()) then
+    if (PlayerObject:isAiAgent()) then
       return 0
     end
     
     if (player:isImperial() or player:isRebel()) then
-      player:sendSystemMessage("You are not authorized to leave the Battle Area!")
-      player:teleport(jakku, -5945, 20, 5774, 0)
+      PlayerObject:sendSystemMessage("You are not authorized to leave the Battle Area!")
+      PlayerObject:teleport(jakku, -5945, 20, 5774, 0)
     end
     return 0
   end)
