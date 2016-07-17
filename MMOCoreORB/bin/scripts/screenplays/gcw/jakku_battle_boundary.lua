@@ -1,41 +1,88 @@
-JakkuBoundaryScreenPlay = ScreenPlay:new {
-	numberOfActs = 1,
 
-	screenplayName = "JakkuBoundaryScreenPlay"
+local ObjectManager = require("managers.object.object_manager")
+
+jakkuBattleBoundaryScreenPlay = ScreenPlay:new {
+  numberOfActs = 1,
+    questString = "jakku_battle",
+    states = {onleave = 1, overt = 2},
+    questdata = Object:new {
+      activePlayerName = "initial",
+      }
 }
-
-registerScreenPlay("JakkuBoundaryScreenPlay", true)
-
-function JakkuBoundaryScreenPlay:start()
-	if (isZoneEnabled("jakku")) then
-		self:spawnMobiles()
-		self:spawnSceneObjects()
-	end
+  
+registerScreenPlay("jakkuBattleBoundaryScreenPlay", true)
+  
+function jakkuBattleBoundaryScreenPlay:start()
+      self:spawnActiveAreas()
+end
+  
+function jakkuBattleBoundaryScreenPlay:spawnActiveAreas()
+  local pSpawnArea = spawnSceneObject("jakku", "object/active_area.iff", -5945, 20, 5774, 0, math.rad(0))
+    
+  if (pSpawnArea ~= nil) then
+    local activeArea = LuaActiveArea(pSpawnArea)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(1000)
+          createObserver(ENTEREDAREA, "jakku_battle", "notifySpawnArea", pSpawnArea)
+          createObserver(EXITEDAREA, "jakku_battle", "notifySpawnAreaLeave", pSpawnArea)
+      end
+end
+ 
+--checks if player enters the zone, and what to do with them.
+function jakkuBattleBoundaryScreenPlay:notifySpawnArea(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end
+    
+    if (player:isImperial() or player:isRebel()) then
+      createEvent(1, "jakku_battle", "handlePvpZone", pMovingObject)
+      player:sendSystemMessage("You have entered The Battle of Jakku.")
+    else
+      player:sendSystemMessage("You have entered The Battle of Jakku.")
+   --   player:teleport(jakku, -5945, 20, 5774, 0)
+    end
+    return 0
+  end)
 end
 
-function JakkuBoundaryScreenPlay:spawnSceneObjects()
-
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5983, 28, 6757, 0, math.rad(-57) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5870, 21, 6678, 0, math.rad(-57) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5763, 18, 6593, 0, math.rad(-57) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5659, 24, 6505, 0, math.rad(-57) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5552, 31, 6421, 0, math.rad(-57) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5447, 35, 6335, 0, math.rad(-57) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5341, 40, 6232, 0, math.rad(-57) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5247, 46, 6133, 0, math.rad(-57) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5153, 48, 6033, 0, math.rad(-57) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5063, 39, 5930, 0, math.rad(-57) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -4970, 25, 5829, 0, math.rad(-57) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -4945, 22, 5804, 0, math.rad(-57) )
+--Handles the setting of factional status
+--[[
+function jakkuBattleBoundaryScreenPlay:handlePvpZone(pPlayer)
+  ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
+    deleteData(player:getObjectID() .. ":changingFactionStatus")
+    if (playerObject:isCovert() or playerObject:isOnLeave()) then
+      playerObject:setFactionStatus(2)
+    end
+  end)
 
 end
-
-function JakkuBoundaryScreenPlay:spawnMobiles()
-
-	--Outdoors
-	--local pNpc = spawnMobile("chandrila", "surgical_droid_21b",60,3.1,0.1,11.5,0,0)
-	--self:setMoodString(pNpc, "neutral")
+--]]
 
 
-
+--Simply sends a system message
+function jakkuBattleBoundaryScreenPlay:notifySpawnAreaLeave(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end
+    
+    if (player:isImperial() or player:isRebel()) then
+      player:sendSystemMessage("You are not authorized to leave the Battle Area!")
+      player:teleport(jakku, -5945, 20, 5774, 0)
+    end
+    return 0
+  end)
 end
+
+
