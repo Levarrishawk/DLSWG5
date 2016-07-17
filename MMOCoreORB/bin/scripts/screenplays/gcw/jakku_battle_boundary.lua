@@ -36,7 +36,7 @@ function jakkuBattleBoundaryScreenPlay:notifySpawnArea(pActiveArea, pMovingObjec
   end
   
   return ObjectManager.withCreatureObject(pMovingObject, function(player)
-    if (PlayerObject:isAiAgent()) then
+    if (CreatureObject:isAiAgent()) then
       return 0
     end
     
@@ -54,7 +54,7 @@ function jakkuBattleBoundaryScreenPlay:notifySpawnAreaLeave(pActiveArea, pMoving
   end
   
   return ObjectManager.withCreatureObject(pMovingObject, function(player)
-    if (PlayerObject:isAiAgent()) then
+    if (CreatureObject:isAiAgent()) then
       return 0
     end
     
