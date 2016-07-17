@@ -41,7 +41,7 @@ function jakkuBattleBoundaryScreenPlay:notifySpawnArea(pActiveArea, pMovingObjec
     end
     
     if (player:isImperial() or player:isRebel()) then
-      PlayerObject:sendSystemMessage("You have entered The Battle of Jakku.")
+      CreatureObject(pPlayer):sendSystemMessage("You have entered The Battle of Jakku.")
     end
     return 0
   end)
@@ -59,8 +59,8 @@ function jakkuBattleBoundaryScreenPlay:notifySpawnAreaLeave(pActiveArea, pMoving
     end
     
     if (player:isImperial() or player:isRebel()) then
-      PlayerObject:sendSystemMessage("You are not authorized to leave the Battle Area!")
-      PlayerObject:teleport(jakku, -5945, 20, 5774, 0)
+      CreatureObject(pPlayer):sendSystemMessage("You are not authorized to leave the Battle Area!")
+      CreatureObject(pPlayer):teleport(jakku, -5945, 20, 5774, 0)
     end
     return 0
   end)
