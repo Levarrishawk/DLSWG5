@@ -15,8 +15,8 @@ end
 
 function JakkuBoundaryScreenPlay:spawnSceneObjects()
 
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5983, 28, 6757, 0, math.rad(123) )
-	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5870, 21, 6678, 0, math.rad(123) )
+	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5983, 28, 6757, 0, math.rad(-33) )
+	spawnSceneObject("jakku", "object/static/terrain/tatooine/rock_spire_fin_tatooine.iff", -5870, 21, 6678, 0, math.rad(-33) )
 
 end
 
