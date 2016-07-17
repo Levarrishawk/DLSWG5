@@ -491,3 +491,6 @@ includeFile("heroics/rebel_chasm_teleporter.lua")
 
 --DLSWG Heroics
 includeFile("heroics/tps/the_power_station.lua")
+
+--DLSWG Jakku
+includeFile("gcw/jakku_battle_boundary.lua")
