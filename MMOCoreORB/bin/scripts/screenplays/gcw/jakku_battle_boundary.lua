@@ -36,10 +36,7 @@ function jakkuBattleBoundaryScreenPlay:notifySpawnArea(pActiveArea, pMovingObjec
   end
   
   return ObjectManager.withCreatureObject(pMovingObject, function(player)
-    if (CreatureObject:isAiAgent()) then
-      return 0
-    end
-    
+
     if (player:isImperial() or player:isRebel()) then
       CreatureObject(pPlayer):sendSystemMessage("You have entered The Battle of Jakku.")
     end
