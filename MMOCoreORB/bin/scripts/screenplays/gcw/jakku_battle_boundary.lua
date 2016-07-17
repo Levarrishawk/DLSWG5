@@ -63,7 +63,7 @@ function pvp:notifySpawnAreaLeave(pActiveArea, pMovingObject)
     if (player:isAiAgent()) then
       return 0
     end
-    
+ -- Could separate out by faction and deliver alternate exit points.   
     if (player:isImperial() or player:isRebel()) then
       player:sendSystemMessage("You are not authorized to leave the Jakku Battle Area!")
       player:teleport(-5945, 20, 5774, 0)
