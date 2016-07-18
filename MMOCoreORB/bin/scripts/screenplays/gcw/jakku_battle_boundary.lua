@@ -76,20 +76,16 @@ function pvp:notifySpawnAreaLeave(pActiveArea, pMovingObject)
     end
     
  -- Could separate out by faction and deliver alternate exit points.  
-    if (player:isInCombat() and player:isImperial()) then
+    if (player:isInCombat()) then
       player:sendSystemMessage("You have deserted in the heat of battle. You will be detained for your crime.")
       player:teleport(4.0, 0.1, -3.7, 610000044)
-    end 
-    
-    if (player:isInCombat() and player:isRebel()) then
-      player:sendSystemMessage("You have deserted in the heat of battle. You will be detained for your crime.")
-      player:teleport(4.0, 0.1, -3.7, 610000044)
-    end   
-  
-    if (player:isImperial() or player:isRebel()) then
+    end
+       
+    if not(player:isInCombat()) then
       player:sendSystemMessage("You are now leaving the battle area!")
       player:teleport(4331, 9.1, -5130, 0)
     end
+    
     return 0
   end)
 end
