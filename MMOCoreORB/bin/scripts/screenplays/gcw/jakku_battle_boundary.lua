@@ -18,12 +18,12 @@ function pvp:start()
 end
 
 function pvp:spawnSceneObjects()
-  spawnSceneObject("jakku", "object/battlefield_marker/battlefield_marker_512m.iff", -5945, 20, 5774, 0, math.rad(0) )
-  spawnSceneObject("jakku", "object/static/structure/general/landing_pad_shuttle.iff", 4325, 7.8, -5097, 0, math.rad(0) )
+--  spawnSceneObject("jakku", "object/battlefield_marker/battlefield_marker_512m.iff", -5945, 20, 5774, 0, math.rad(0) )
+--  spawnSceneObject("jakku", "object/static/structure/general/landing_pad_shuttle.iff", 4325, 7.8, -5097, 0, math.rad(0) )
 end
 
 function pvp:spawnMobiles()
-    spawnMobile("jakku", "dark_jedi_sentinel",1, 4325,7,-5097,0,0)
+ --   spawnMobile("jakku", "dark_jedi_sentinel",1, 4325,7,-5097,0,0)
 end
   
 function pvp:spawnActiveAreas()
