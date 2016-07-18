@@ -13,6 +13,11 @@ registerScreenPlay("pvp", true)
   
 function pvp:start()
       self:spawnActiveAreas()
+      self:spawnSceneObjects()
+end
+
+function pvp:spawnSceneObjects()
+  spawnSceneObject("jakku", "object/battlefield_marker/battlefield_marker_512m.iff", -5945, 20, 5774, 0, math.rad(0) )
 end
   
 function pvp:spawnActiveAreas()
