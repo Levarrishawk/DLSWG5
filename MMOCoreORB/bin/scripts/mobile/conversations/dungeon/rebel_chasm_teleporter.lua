@@ -13,11 +13,11 @@ first_conv = ConvoScreen:new {
   customDialogText = "Where do you want to Teleport to?",
   stopConversation = "false",
   options = {
-    {"Instance 1", "mayor2"},
-    {"Instance 2", "mayor3"},
-    {"Instance 3", "mayor4"},
-    {"Instance 4", "mayor5"},
-    {"No where.","deny"}
+    {"Battle of Jakku", "mayor2"},
+  --  {"Instance 2", "mayor3"},
+ --   {"Instance 3", "mayor4"},
+  --  {"Instance 4", "mayor5"},
+    {"No where.", "deny"}
   
   }
 }
