@@ -1,3 +1,5 @@
+local ObjectManager = require("managers.object.object_manager")
+
 rebel_chasm_teleporter = ScreenPlay:new { 
   numberOfActs = 1, 
   questString = "rebel_chasm_teleporter_queststring", --This needs to be unique! If not unique you will not pull the proper conversation.
