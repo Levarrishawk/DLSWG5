@@ -79,13 +79,10 @@ function pvp:notifySpawnAreaLeave(pActiveArea, pMovingObject)
     if (player:isInCombat()) then
       player:sendSystemMessage("You have deserted in the heat of battle. You will be detained for your crime.")
       player:teleport(4.0, 0.1, -3.7, 610000044)
-    end
-       
-    if not(player:isInCombat()) then
-      player:sendSystemMessage("You are now leaving the battle area!")
-      player:teleport(4331, 9.1, -5130, 0)
-    end
-    
+      else
+        player:sendSystemMessage("You are now leaving the battle area!")
+        player:teleport(4331, 9.1, -5130, 0)
+      end           
     return 0
   end)
 end
