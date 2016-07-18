@@ -32,6 +32,8 @@ function ThePowerStationScreenPlay:spawnMobiles()
   spawnMobile("dungeon2", "tps_black_sun_assassin", 900, 20.8, -7.0, 5.2, -171, 410000020)
   spawnMobile("dungeon2", "tps_black_sun_assassin", 900, 23.2, -7.0, 5.2, -171, 410000020)
   
+  spawnMobile("dungeon2", "tps_boss1", 5, 15.0, -7.0, 16.2, 92, 410000016) -- gladiator pit test
+  
  -- local boss = LuaCreatureObject(pBoss)
 end
 
