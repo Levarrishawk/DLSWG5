@@ -1,6 +1,6 @@
 tps_boss1_add = Creature:new {
 	objectName = "@mob/creature_names:mand_bunker_battle_droid",
-	customName = "The Guardian's Overwatch"
+	customName = "The Guardian's Overwatch",
 	socialGroup = "death_watch",
 	faction = "",
 	level = 114,
