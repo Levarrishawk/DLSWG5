@@ -88,7 +88,7 @@ function rebel_chasm_teleporter_convo_handler:runScreenHandlers(pConversationTem
   local screenID = screen:getScreenID() 
 
   
-  local player = LuaSceneObject(pCreatureObject)
+  local player = LuaSceneObject(pConversingPlayer)
 
   if ( screenID == "mayor2" ) then
  --  pConversationScreen = self:handleScreenMayor2(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
