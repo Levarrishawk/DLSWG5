@@ -57,7 +57,7 @@ function pvp:notifySpawnArea(pActiveArea, pMovingObject)
     
     if (player:isNeutral()) then
       player:sendSystemMessage("You must be a member of a faction to join the Battle of Jakku!")
-      player:teleport(-5945, 20, 5774, 0)
+      player:teleport(4331, 9.1, -5130, 0)
       end
     return 0    
   end)
@@ -87,8 +87,8 @@ function pvp:notifySpawnAreaLeave(pActiveArea, pMovingObject)
     end   
   
     if (player:isImperial() or player:isRebel()) then
-      player:sendSystemMessage("You are not authorized to leave the Jakku Battle Area!")
-      player:teleport(-5945, 20, 5774, 0)
+      player:sendSystemMessage("You are now leaving the battle area!")
+      player:teleport(4331, 9.1, -5130, 0)
     end
     return 0
   end)
