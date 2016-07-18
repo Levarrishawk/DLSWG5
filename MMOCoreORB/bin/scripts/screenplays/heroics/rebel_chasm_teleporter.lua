@@ -57,7 +57,7 @@ function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemp
   
   local player = LuaSceneObject(creatureObject)--This should work, if not we'd have to look at the core functions for LUA handlers.
 
-  if ( screenID == "mayor2" ) then
+  if screenID == "mayor2" then
      player:teleport("dungeon2", -5945, 20, -5774, 0) -- x, z, y, cell
   end
   
