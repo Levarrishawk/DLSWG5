@@ -1,6 +1,6 @@
 dark_jedi_sentinel = Creature:new {
 	objectName = "@mob/creature_names:dark_jedi_sentinel",
-	customName = "The Rape Master",
+	customName = "The Bringer of Atonement",
 	--randomNameType = NAME_GENERIC,
 	--randomNameTag = true,
 	socialGroup = "self",
@@ -23,7 +23,7 @@ dark_jedi_sentinel = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = AGGRESSIVE + ENEMY + INVULNERABLE,
+	pvpBitmask = AGGRESSIVE + INVULNERABLE,
 	creatureBitmask = PACK + HERD + KILLER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
@@ -34,7 +34,7 @@ dark_jedi_sentinel = Creature:new {
 	lootGroups = {},
 	weapons = {"dark_jedi_weapons_gen4"},
 	conversationTemplate = "",
-	attacks = merge(lightsabermaster,forcepowermaster)
+	attacks = merge(lightsabermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(dark_jedi_sentinel, "dark_jedi_sentinel")
