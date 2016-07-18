@@ -22,7 +22,7 @@ end
 rebel_chasm_teleporter_convo_handler = Object:new {
   
  }
---[[  -- Commented out old function for test.
+
 function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
   local creature = LuaCreatureObject(conversingPlayer)
   local convosession = creature:getConversationSession()
@@ -46,8 +46,9 @@ function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(conversa
       end 
   --print("returning screen")   
   return nextConversationScreen 
-end --]]
+end 
 
+--[[
 function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(pConversationTemplate, pConversingPlayer, selectedOption)
   local convosession = CreatureObject(pConversingPlayer):getConversationSession()
 
@@ -80,13 +81,14 @@ function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(pConvers
   end
   return nextConversationScreen
 end
+--]]
 
-function rebel_chasm_teleporter_convo_handler:runScreenHandlers(pConversationTemplate, pConversingPlayer, pConversingNPC, selectedOption, pConversationScreen, pCreatureObject)  
+function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen, creatureObject)  
   local screen = LuaConversationScreen(conversationScreen)  
   local screenID = screen:getScreenID() 
 
   
-  local player = LuaSceneObject(pCreatureObject)
+  local player = LuaSceneObject(creatureObject)
 
   if ( screenID == "mayor2" ) then
      player:teleport(-5945, 20, -5774, 0) -- x, z, y, cell
