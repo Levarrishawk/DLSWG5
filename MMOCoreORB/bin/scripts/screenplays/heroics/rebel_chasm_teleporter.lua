@@ -1,72 +1,65 @@
 rebel_chasm_teleporter = ScreenPlay:new { 
-	numberOfActs = 1, 
-	questString = "rebel_chasm_teleporter_queststring", --This needs to be unique! If not unique you will not pull the proper conversation.
-	states = {}, --Blank, as we don't need screenplay states to teleport someone. It remains in-case we need to add it though.
-	
-	--This is basic quest related, doesn't harm and doesn't really do anything (I keep it for goodluck :P)
-	questdata = Object:new {
-		activePlayerName = "initial",
-	}
+  numberOfActs = 1, 
+  questString = "rebel_chasm_teleporter_queststring", --This needs to be unique! If not unique you will not pull the proper conversation.
+  states = {}, --Blank, as we don't need screenplay states to teleport someone. It remains in-case we need to add it though.
+  
+  --This is basic quest related, doesn't harm and doesn't really do anything (I keep it for goodluck :P)
+  questdata = Object:new {
+    activePlayerName = "initial",
+  }
 }
 
 registerScreenPlay("rebel_chasm_teleporter", true) --Initialize the screenplay IAW the screenplay include
 
 --Simply spawns the NPC
 function rebel_chasm_teleporter:start()
-   spawnMobile("jakku", "reb_chasm_dungeon_teleporter", 1, -5705, 52, 5989, 0, 0)
-end
-
---Teleport function
-function rebel_chasm_teleporter:teleportPlayer(pPlayer)
-	if pPlayer == nil then
-		return
-	end
-	
-	SceneObject(pPlayer):switchZone("dungeon2", -5.7, 12.1, -5.2, 410000010) print("Teleporting")
+   spawnMobile("jakku", "reb_chasm_dungeon_teleporter", 1, 4326, 7, -5106, 0, 0)
 end
 
 --The actual conversation handler
 rebel_chasm_teleporter_convo_handler = Object:new {
-	
-}
+  
+ }
 
-function rebel_chasm_teleporter_convo_handler:getInitialScreen(pPlayer, pNpc, pConversationTemplate)
-	local convoTemplate = LuaConversationTemplate(pConversationTemplate)
-	local player = CreatureObject(pPlayer)
-
-	return convoTemplate:getScreen("first_conv")
-
+function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+  local creature = LuaCreatureObject(conversingPlayer)
+  local convosession = creature:getConversationSession()
+  lastConversation = nil
+  --print("getNextConversation() called")
+  local conversation = LuaConversationTemplate(conversationTemplate)
+  local nextConversationScreen 
+  if ( conversation ~= nil ) then
+    -- checking to see if we have a next screen
+    if ( convosession ~= nil ) then
+       local session = LuaConversationSession(convosession)
+       if ( session ~= nil ) then
+        --print("casting getlastconversationsreen()")
+        lastConversationScreen = session:getLastConversationScreen()
+       end
+    end
+  end
+    if ( lastConversationScreen == nil ) then
+      --print("Last conversation is null.  let's try to get the first screen")
+      nextConversationScreen = conversation:getScreen("first_conv")--First convo screen to pull.
+      end 
+  --print("returning screen")   
+  return nextConversationScreen 
 end
 
-function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(pConversationTemplate, pPlayer, selectedOption, pConversingNpc)
-	local pConversationSession = CreatureObject(pPlayer):getConversationSession()
+function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen, creatureObject)  
+  --print("\ntest_convo_handler:runScreenHandlers() called\n")
+  local screen = LuaConversationScreen(conversationScreen)  
+  local screenID = screen:getScreenID() 
+  --print("screenID is " .. screenID  )
+  --local player = LuaCreatureObject(conversingPlayer)
+  
+  local player = LuaSceneObject(creatureObject)--This should work, if not we'd have to look at the core functions for LUA handlers.
 
-	local pLastConversationScreen = nil
-
-	if (pConversationSession ~= nil) then
-		local conversationSession = LuaConversationSession(pConversationSession)
-		pLastConversationScreen = conversationSession:getLastConversationScreen()
-	end
-
-	local conversationTemplate = LuaConversationTemplate(pConversationTemplate)
-
-	if (pLastConversationScreen ~= nil) then
-		local lastConversationScreen = LuaConversationScreen(pLastConversationScreen)
-		local optionLink = lastConversationScreen:getOptionLink(selectedOption)
-
-		return conversationTemplate:getScreen(optionLink)
-	end
-
-	return self:getInitialScreen(pPlayer, pConversingNpc, pConversationTemplate)
-end
-
-function rebel_chasm_teleporter_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen, pPlayer)
-	local screen = LuaConversationScreen(conversationScreen)	
-	local screenID = screen:getScreenID()
-
-	if ( screenID == "instance_1" ) then print("Selected instance_1")
-		createEvent(500, "rebel_chasm_teleporter", "teleportPlayer", pPlayer, "") print ("Creating the event to trig function")
-	end
-
-	return conversationScreen
+  if ( screenID == "mayor2" ) then
+     player:teleport("dungeon2", -5945, 20, -5774, 0) -- x, z, y, cell
+  end
+  
+  
+  --print("returning convosvreen")
+  return conversationScreen
 end
