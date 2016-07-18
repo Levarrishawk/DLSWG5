@@ -32,18 +32,18 @@ function ThePowerStationScreenPlay:spawnMobiles()
   spawnMobile("dungeon2", "tps_black_sun_assassin", 900, 20.8, -7.0, 5.2, -171, 410000020)
   spawnMobile("dungeon2", "tps_black_sun_assassin", 900, 23.2, -7.0, 5.2, -171, 410000020)
   
-  local boss = LuaCreatureObject(pBoss)
+ -- local boss = LuaCreatureObject(pBoss)
 end
 
 
-function the_power_station:bossfight1(pBoss)
+--function the_power_station:bossfight1(pBoss)
 
-  local player = LuaCreatureObject(player)
+  --local player = LuaCreatureObject(player)
   
-  if (player:getParentID() == 410000018) then
-    spawnMobile("dungeon2", "tps_boss1", 1800, 15.0, -7.0, 16.2, 92, 410000016)
-   end
+  --if (player:getParentID() == 410000018) then
+    --spawnMobile("dungeon2", "tps_boss1", 1800, 15.0, -7.0, 16.2, 92, 410000016)
+   --end
       
- end
+ --end
     
 
