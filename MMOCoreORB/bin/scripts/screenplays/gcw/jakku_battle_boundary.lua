@@ -46,7 +46,7 @@ function pvp:notifySpawnArea(pActiveArea, pMovingObject)
     
     if (player:isNeutral()) then
       player:sendSystemMessage("You must be a member of a faction to join the Battle of Jakku!")
-      player:switchZone("tatooine", -5945, 20, 5774, 0)
+      player:teleport(-5945, 20, 5774, 0)
       end
     return 0    
   end)
