@@ -25,7 +25,7 @@ punishment_acklay = Creature:new {
 	creatureBitmask = PACK + KILLER,
 	optionsBitmask = AIENABLED,
 	diet = CARNIVORE,
-	 scale = 6.50,
+	 scale = 3.0,
 
 	templates = {"object/mobile/acklay_hue.iff"},
 	lootGroups = {
