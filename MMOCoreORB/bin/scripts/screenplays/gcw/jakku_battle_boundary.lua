@@ -18,8 +18,7 @@ function pvp:start()
 end
 
 function pvp:spawnSceneObjects()
---  spawnSceneObject("jakku", "object/battlefield_marker/battlefield_marker_512m.iff", -5945, 20, 5774, 0, math.rad(0) )
---  spawnSceneObject("jakku", "object/static/structure/general/landing_pad_shuttle.iff", 4325, 7.8, -5097, 0, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/particle/particle_distant_ships_dogfight_tb_vs_bw_2.iff", -6021, 75, 5514, 0, math.rad(30) )
 end
 
 function pvp:spawnMobiles()
