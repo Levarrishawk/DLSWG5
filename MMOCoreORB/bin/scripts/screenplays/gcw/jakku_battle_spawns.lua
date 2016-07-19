@@ -7,7 +7,7 @@ JakkuBattleScreenPlay = ScreenPlay:new {
 
 registerScreenPlay("JakkuBattleScreenPlay", true)
 
-function ThePowerStationScreenPlay:start()
+function JakkuBattleScreenPlay:start()
 	if (isZoneEnabled("jakku")) then
 		self:spawnMobiles()
 	end
