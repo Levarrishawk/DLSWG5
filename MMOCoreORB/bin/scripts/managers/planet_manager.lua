@@ -457,7 +457,7 @@ jakku = {
   gcwEnabled = 0,
   
   badgeAreas = {
-    {"jakku_arena",4447,-5166,10,10},
+    {"jakku_arena",4447,-5166,10,143},
   },
 }
 
