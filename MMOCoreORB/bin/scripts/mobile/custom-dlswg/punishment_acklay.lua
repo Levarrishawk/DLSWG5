@@ -1,6 +1,6 @@
 punishment_acklay = Creature:new {
 	objectName = "@mob/creature_names:geonosian_acklay_bunker_boss",
-	customName = "Acklay",
+	customName = "Acklay of Atonement",
 	socialGroup = "geonosian_creature",
 	faction = "",
 	level = 157,
