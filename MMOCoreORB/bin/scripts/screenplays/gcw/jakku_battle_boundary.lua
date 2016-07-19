@@ -76,10 +76,9 @@ function pvp:notifySpawnAreaLeave(pActiveArea, pMovingObject)
     end
     
  -- Could separate out by faction and deliver alternate exit points.  
- local playerCoward = LuaSceneObject(pMovingObject)
     if (player:isInCombat()) then
-      playerCoward:sendSystemMessage("You have deserted in the heat of battle. You will be detained for your crime.")
-      playerCoward:switchZone("jakku", 4.0, 0.1, -3.7, 610000044)
+      player:sendSystemMessage("You have deserted in the heat of battle. For this you will be sent to the Arena of Atonement.")
+      player:teleport(4444, 7, -5168, 0)
       else
         player:sendSystemMessage("You are now leaving the battle area!")
         player:teleport(4331, 9.1, -5130, 0)

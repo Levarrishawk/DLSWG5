@@ -455,6 +455,10 @@ dungeon2 = {
 jakku = {
   weatherEnabled = 1,
   gcwEnabled = 0,
+  
+  badgeAreas = {
+    {"jakku_arena",4447,-5166,10,10},
+  },
 }
 
 chandrila = {
