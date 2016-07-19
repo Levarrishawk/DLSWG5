@@ -28,8 +28,12 @@ function pvp:spawnSceneObjects()
   spawnSceneObject("jakku", "object/static/particle/particle_distant_ships_dogfight_ti_vs_aw_3.iff", -6324, 60, 6008, 0, math.rad(102) )
   spawnSceneObject("jakku", "object/static/particle/particle_distant_ships_dogfight_ti_vs_aw_2.iff", -6114, 76, 6065, 0, math.rad(-170) )
   spawnSceneObject("jakku", "object/static/particle/particle_distant_ships_dogfight_ti_vs_aw.iff", -5804, 80, 5720, 0, math.rad(-70) )
-
-
+  spawnSceneObject("jakku", "object/static/particle/particle_distant_ships_dogfight_ti_vs_aw.iff", -5812, 80, 5914, 0, math.rad(-118) )
+  spawnSceneObject("jakku", "object/static/particle/particle_distant_ships_dogfight_tb_vs_bw_3.iff", -5573, 75, 5981, 0, math.rad(140) )
+  spawnSceneObject("jakku", "object/static/particle/particle_distant_ships_dogfight_tb_vs_bw_3.iff", -5592, 75, 5755, 0, math.rad(90) )
+  spawnSceneObject("jakku", "object/static/particle/particle_distant_ships_dogfight_tb_vs_bw_3.iff", -5848, 75, 5367, 0, math.rad(-78) )
+  spawnSceneObject("jakku", "object/static/particle/particle_distant_ships_dogfight_tb_vs_bw_3.iff", -6008, 75, 5350, 0, math.rad(-40) )
+  spawnSceneObject("jakku", "object/static/particle/particle_distant_ships_dogfight_tb_vs_bw_3.iff", -6127, 75, 5597, 0, math.rad(42) )
 end
 
 function pvp:spawnMobiles()
