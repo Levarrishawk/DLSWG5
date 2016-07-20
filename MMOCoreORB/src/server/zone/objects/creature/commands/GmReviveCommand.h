@@ -52,6 +52,7 @@ public:
 				String modName = "";
 				bool buff = false;
 				bool skillmod = false;
+				bool overt = false;
 				args.getStringToken(firstArg);
 
 				if (firstArg.toLowerCase() == "buff") { // First argument is buff, get second argument
@@ -65,7 +66,9 @@ public:
 						args.getStringToken(modName);
 					else
 						return GENERALERROR;
-				} else { // First argument is not buff, must be a name or area
+				} else if (firstArg.toLowerCase() == "overt") { //First argument is overt, therefor set the user overt.
+					overt = true;
+				}else { // First argument is not buff, must be a name or area
 					firstName = firstArg;
 				}
 
@@ -234,6 +237,15 @@ public:
 			creature->sendSystemMessage(patient->getFirstName() + " has been restored.");
 		} else {
 			creature->sendSystemMessage(patient->getDisplayedName() + " has been restored.");
+		}
+	}
+	
+	//New function
+	
+	void setOverCommand(PlayerObject* player) const {
+		//Simple set overt, no matter neutral/imperial/rebel
+		if (player->getFactionStatus() != FactionStatus::OVERT) {
+			player->setFactionStatus(FactionStatus::OVERT);
 		}
 	}
 };
