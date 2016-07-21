@@ -23,14 +23,14 @@ public:
 		if (!checkInvalidLocomotions(creature))
 			return INVALIDLOCOMOTION;
 
-		ManagedReference<CreatureObject*> ghost = creature->getCreatureObject();
+		ManagedReference<PlayerObject*> ghost = creature->getCreatureObject();
 
 		if (ghost->getFactionStatus() == 0 && (ghost->getFaction()== "rebel" || ghost->getFaction()== "imperial"))
 			ghost->setFactionStatus(2);  // Check to see if player is rebel or imperial and onleave then make them overt.
 		else if (ghost->getFactionStatus() == 2 && (ghost->getFaction()== "rebel" || ghost->getFaction()== "imperial"))
 			ghost->setFactionStatus(0); // check to see if player is rebel or imperial and overt and make them on leave.
 		else
-			ghost->sendSystemMessage("You must be a member of a faction to use this command.");
+			creature->sendSystemMessage("You must be a member of a faction to use this command.");
 
 
 		return SUCCESS;
