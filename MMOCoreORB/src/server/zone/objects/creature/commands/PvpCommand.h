@@ -25,7 +25,7 @@ public:
 
 		PlayerObject* ghost = creature->getPlayerObject();
 
-		if (ghost->getFactionStatus() == 0 && (ghost->isRebel() || ghost->isImperial()) )
+		if (ghost->getFactionStatus() == 0 && (ghost->getFaction()== "rebel"() || ghost->getFaction()== "imperial") )
 			ghost->setFactionStatus(2);  // Check to see if player is rebel or imperial and onleave then make them overt.
 		else if (ghost->getFactionStatus() == 2 && (ghost->isRebel() || ghost->isImperial()))
 			ghost->setFactionStatus(0); // check to see if player is rebel or imperial and overt and make them on leave.
