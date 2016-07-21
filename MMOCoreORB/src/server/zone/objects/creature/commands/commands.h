@@ -841,6 +841,7 @@
 /*#include "VaapaadStrikeCommand.h"
 #include "JungMaStrikeCommand.h"
 #include "ForceRunCommand.h" */
+#include "PvpCommand.h"
 
 
 #endif /* COMMANDSNEW_H_ */

@@ -1624,4 +1624,5 @@ void CommandConfigManager::registerCommands() {
 	/*commandFactory.registerCommand<VaapaadStrikeCommand>(String("vaapaadStrike").toLowerCase());
 	commandFactory.registerCommand<JungMaStrikeCommand>(String("jungMaStrike").toLowerCase());
 	commandFactory.registerCommand<ForceRunCommand>(String("forceRun").toLowerCase());*/
+	commandFactory.registerCommand<PvpCommand>(String("pvp").toLowerCase());
 }
