@@ -23,7 +23,7 @@ public:
 		if (!checkInvalidLocomotions(creature))
 			return INVALIDLOCOMOTION;
 
-		PlayerObject* ghost = creature->getPlayerObject();
+		ManagedReference<CreatureObject*> ghost = creature->getCreatureObject();
 
 		if (ghost->getFactionStatus() == 0 && (ghost->getFaction()== "rebel" || ghost->getFaction()== "imperial"))
 			ghost->setFactionStatus(2);  // Check to see if player is rebel or imperial and onleave then make them overt.
