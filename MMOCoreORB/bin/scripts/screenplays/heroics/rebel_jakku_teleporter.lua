@@ -51,10 +51,10 @@ function rebel_jakku_teleporter_convo_handler:getNextConversationScreen(pConvers
     if nextConversationScreen ~= nil and player:isRebel() then
       local nextLuaConversationScreen = LuaConversationScreen(nextConversationScreen)
     else 
-      nextConversationScreen = conversation:getScreen("first_conv")
+      nextConversationScreen = conversation:getScreen("greet_enemy")
     end
     else
-      nextConversationScreen = conversation:getScreen("greet_enemy")
+      nextConversationScreen = conversation:getScreen("first_conv")
     end
   return nextConversationScreen
 end
