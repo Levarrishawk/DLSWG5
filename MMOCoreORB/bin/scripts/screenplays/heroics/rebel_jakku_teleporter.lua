@@ -69,7 +69,7 @@ function rebel_jakku_teleporter_convo_handler:runScreenHandlers(pConversationTem
 
   if ( screenID == "mayor2" ) then
    
-     player:switchZone("jakku", -5559, 45, 5937, 0) -- x, z, y, cell
+     player:switchZone("corellia", -66, 28, -4711, 0) -- x, z, y, cell
 
   end
   
