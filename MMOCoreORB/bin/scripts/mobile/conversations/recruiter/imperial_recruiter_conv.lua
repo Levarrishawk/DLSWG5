@@ -531,6 +531,6 @@ imp_tp = ConvoScreen:new {
   --   {"I see. What would I have to do?","mayor3"},
   }
 }
-imperialRecruiterConvoTemplate:addScreen(reb_tp);
+imperialRecruiterConvoTemplate:addScreen(imp_tp);
 
 addConversationTemplate("imperialRecruiterConvoTemplate", imperialRecruiterConvoTemplate);
