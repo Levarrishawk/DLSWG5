@@ -28,6 +28,8 @@ function RecruiterConvoHandler:runScreenHandlers(conversationTemplate, conversin
 	return ObjectManager.withCreatureAndPlayerObject(conversingPlayer, function(player, playerObject)
 		local screen = LuaConversationScreen(conversationScreen)
 		local screenID = screen:getScreenID()
+		
+		local player = LuaSceneObject(conversingPlayer)
 
 		local conversationScreen = screen:cloneScreen()
 		local clonedConversation = LuaConversationScreen(conversationScreen)
