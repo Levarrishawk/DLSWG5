@@ -495,3 +495,4 @@ includeFile("heroics/tps/the_power_station.lua")
 --DLSWG Jakku
 includeFile("gcw/jakku_battle_boundary.lua")
 includeFile("gcw/jakku_battle_spawns.lua")
+includeFile("heroics/rebel_jakku_teleporter.lua")

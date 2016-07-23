@@ -197,3 +197,4 @@ includeFile("conversations/pet/pets_conv.lua")
 
 --DLSWG New
 includeFile("conversations/dungeon/rebel_chasm_teleporter.lua")
+includeFile("conversations/dungeon/rebel_jakku_teleporter.lua")

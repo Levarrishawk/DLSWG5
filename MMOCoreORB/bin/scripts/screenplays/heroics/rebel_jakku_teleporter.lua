@@ -1,6 +1,6 @@
 local ObjectManager = require("managers.object.object_manager")
 
-rebel_chasm_teleporter = ScreenPlay:new { 
+rebel_jakku_teleporter = ScreenPlay:new { 
   numberOfActs = 1, 
   questString = "rebel_chasm_teleporter_queststring", --This needs to be unique! If not unique you will not pull the proper conversation.
   states = {}, --Blank, as we don't need screenplay states to teleport someone. It remains in-case we need to add it though.
@@ -11,20 +11,20 @@ rebel_chasm_teleporter = ScreenPlay:new {
   }
 }
 
-registerScreenPlay("rebel_chasm_teleporter", true) --Initialize the screenplay IAW the screenplay include
+registerScreenPlay("rebel_jakku_teleporter", true) --Initialize the screenplay IAW the screenplay include
 
 --Simply spawns the NPC
-function rebel_chasm_teleporter:start()
-   spawnMobile("tatooine", "reb_chasm_dungeon_teleporter", 1, 4326, 180, -5106, 0, 0)
+function rebel_jakku_teleporter:start()
+   spawnMobile("chandrila", "rebel_jakku_teleporter", 1, 192.2, 6, -3047, 33, 0)
 end
 
 --The actual conversation handler
-rebel_chasm_teleporter_convo_handler = Object:new {
+rebel_jakku_teleporter_convo_handler = Object:new {
   
  }
 
 
-function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(pConversationTemplate, pConversingPlayer, selectedOption)
+function rebel_jakku_teleporter_convo_handler:getNextConversationScreen(pConversationTemplate, pConversingPlayer, selectedOption)
   local convosession = CreatureObject(pConversingPlayer):getConversationSession()
 
   local lastConversationScreen = nil
@@ -58,7 +58,7 @@ function rebel_chasm_teleporter_convo_handler:getNextConversationScreen(pConvers
 end
 
 
-function rebel_chasm_teleporter_convo_handler:runScreenHandlers(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
+function rebel_jakku_teleporter_convo_handler:runScreenHandlers(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
   local screen = LuaConversationScreen(pConversationScreen)
   local screenID = screen:getScreenID() 
 
