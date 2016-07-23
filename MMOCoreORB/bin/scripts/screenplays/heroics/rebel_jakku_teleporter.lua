@@ -15,7 +15,7 @@ registerScreenPlay("rebel_jakku_teleporter", true) --Initialize the screenplay I
 
 --Simply spawns the NPC
 function rebel_jakku_teleporter:start()
-   spawnMobile("chandrila", "rebel_jakku_teleporter", 1, 192.2, 6, -3047, 33, 0)
+ --  spawnMobile("chandrila", "rebel_jakku_teleporter", 1, 192.2, 6, -3047, 33, 0)
 end
 
 --The actual conversation handler
