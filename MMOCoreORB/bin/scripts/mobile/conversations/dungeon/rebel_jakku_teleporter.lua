@@ -83,6 +83,16 @@ mayor5 = ConvoScreen:new {
 
 rebel_jakku_teleporter:addScreen(mayor5);
 
+greet_enemy = ConvoScreen:new {
+  id = "greet_enemy",
+  leftDialog = "@conversation/faction_recruiter_rebel:s_464", -- What are you doing talking to me? People like you are destroying the galaxy.
+  stopConversation = "true",
+  options = {
+  }
+}
+
+rebel_jakku_teleporter:addScreen(greet_enemy);
+
 
 
 addConversationTemplate("rebel_jakku_teleporter", rebel_jakku_teleporter);
