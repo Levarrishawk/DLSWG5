@@ -54,7 +54,7 @@ function RecruiterConvoHandler:runScreenHandlers(conversationTemplate, conversin
 		elseif (screenID == "accepted_go_overt") then
 			player:setPvpStatusBit(CHANGEFACTIONSTATUS)
 			writeData(player:getObjectID() .. ":changingFactionStatus", 1)
-			createEvent(30000, "recruiterScreenplay", "handleGoOvert", conversingPlayer, "")
+			createEvent(10000, "recruiterScreenplay", "handleGoOvert", conversingPlayer, "")
 
 		elseif (screenID == "accepted_go_covert") then
 			if (player:hasSkill("force_title_jedi_rank_03")) then
@@ -62,7 +62,7 @@ function RecruiterConvoHandler:runScreenHandlers(conversationTemplate, conversin
 			end
 			player:setPvpStatusBit(CHANGEFACTIONSTATUS)
 			writeData(player:getObjectID() .. ":changingFactionStatus", 1)
-			createEvent(300000, "recruiterScreenplay", "handleGoCovert", conversingPlayer, "")
+			createEvent(60000, "recruiterScreenplay", "handleGoCovert", conversingPlayer, "")
 
 		elseif (screenID == "accepted_go_on_leave") then
 
@@ -71,7 +71,7 @@ function RecruiterConvoHandler:runScreenHandlers(conversationTemplate, conversin
 			end
 			player:setPvpStatusBit(CHANGEFACTIONSTATUS)
 			writeData(player:getObjectID() .. ":changingFactionStatus", 1)
-			createEvent(300000, "recruiterScreenplay", "handleGoOnLeave", conversingPlayer, "")
+			createEvent(60000, "recruiterScreenplay", "handleGoOnLeave", conversingPlayer, "")
 
 		elseif (screenID == "accepted_resign") then
 			if (player:hasSkill("force_title_jedi_rank_03")) then
@@ -81,14 +81,14 @@ function RecruiterConvoHandler:runScreenHandlers(conversationTemplate, conversin
 			if (playerObject:isOvert()) then
 				player:setPvpStatusBit(CHANGEFACTIONSTATUS)
 				writeData(player:getObjectID() .. ":changingFactionStatus", 1)
-				createEvent(300000, "recruiterScreenplay", "handleResign", conversingPlayer, "")
+				createEvent(60000, "recruiterScreenplay", "handleResign", conversingPlayer, "")
 				return conversationScreen
 			end
 			recruiterScreenplay:handleResign(conversingPlayer)
 
 		elseif (screenID == "accepted_resume_duties") then
 			player:setPvpStatusBit(CHANGEFACTIONSTATUS)
-			createEvent(30000, "recruiterScreenplay", "handleGoCovert", conversingPlayer, "")
+			createEvent(10000, "recruiterScreenplay", "handleGoCovert", conversingPlayer, "")
 			writeData(player:getObjectID() .. ":changingFactionStatus", 1)
 
 		elseif (screenID == "confirm_promotion") then
@@ -136,6 +136,9 @@ function RecruiterConvoHandler:runScreenHandlers(conversationTemplate, conversin
 			local zoneName = SceneObject(conversingNPC):getZoneName()
 			clonedConversation:setDialogTextDI(getImperialScore(zoneName))
 			clonedConversation:setDialogTextTO(getRebelScore(zoneName))
+			
+		elseif ( screenID == "reb_tp" ) then   
+     player:switchZone("jakku", 2.0, -20.8, 22.1, 610000100) -- x, z, y, cell
 
 		end
 

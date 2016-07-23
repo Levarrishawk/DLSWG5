@@ -28,8 +28,6 @@ function rebel_jakku_teleporter_convo_handler:getNextConversationScreen(pConvers
   local convosession = CreatureObject(pConversingPlayer):getConversationSession()
 
   local lastConversationScreen = nil
-  
-  local player = LuaSceneObject(pConversingPlayer)
 
   if (convosession ~= nil) then
     local session = LuaConversationSession(convosession)
@@ -47,15 +45,15 @@ function rebel_jakku_teleporter_convo_handler:getNextConversationScreen(pConvers
     local optionLink = luaLastConversationScreen:getOptionLink(selectedOption)
 
     nextConversationScreen = conversation:getScreen(optionLink)
-    
-    if nextConversationScreen ~= nil and player:isRebel() then
+
+    if nextConversationScreen ~= nil then
       local nextLuaConversationScreen = LuaConversationScreen(nextConversationScreen)
-    else 
-      nextConversationScreen = conversation:getScreen("first_conv")
-    end
     else
       nextConversationScreen = conversation:getScreen("first_conv")
     end
+  else
+    nextConversationScreen = conversation:getScreen("first_conv")
+  end
   return nextConversationScreen
 end
 
@@ -67,12 +65,10 @@ function rebel_jakku_teleporter_convo_handler:runScreenHandlers(pConversationTem
   
   local player = LuaSceneObject(pConversingPlayer)
 
-  if ( screenID == "mayor2" and player:isRebel() ) then
- --  pConversationScreen = self:handleScreenMayor2(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen) 
+  if ( screenID == "mayor2" ) then
+   
      player:switchZone("jakku", 2.0, -20.8, 22.1, 610000100) -- x, z, y, cell
-     else if (player:isImperial()) then
-      player:switchZone("jakku", 2.0, -20.8, 22.1, 610000111) -- x, z, y, cell
-    end
+
   end
   
   
