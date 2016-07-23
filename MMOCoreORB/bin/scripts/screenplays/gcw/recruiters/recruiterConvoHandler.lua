@@ -28,8 +28,6 @@ function RecruiterConvoHandler:runScreenHandlers(conversationTemplate, conversin
 	return ObjectManager.withCreatureAndPlayerObject(conversingPlayer, function(player, playerObject)
 		local screen = LuaConversationScreen(conversationScreen)
 		local screenID = screen:getScreenID()
-		
-		local player = LuaSceneObject(conversingPlayer)
 
 		local conversationScreen = screen:cloneScreen()
 		local clonedConversation = LuaConversationScreen(conversationScreen)
@@ -140,7 +138,7 @@ function RecruiterConvoHandler:runScreenHandlers(conversationTemplate, conversin
 			clonedConversation:setDialogTextTO(getRebelScore(zoneName))
 			
 		elseif ( screenID == "reb_tp" ) then   
-     player:switchZone("jakku", 2.0, -20.8, 22.1, 610000100) -- x, z, y, cell
+     conversingPlayer:switchZone("jakku", 2.0, -20.8, 22.1, 610000100) -- x, z, y, cell
 
 		end
 
