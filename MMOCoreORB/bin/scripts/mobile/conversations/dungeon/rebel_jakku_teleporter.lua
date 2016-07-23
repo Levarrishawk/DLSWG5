@@ -10,14 +10,14 @@ rebel_jakku_teleporter = ConvoTemplate:new {
 first_conv = ConvoScreen:new {
   id = "first_conv",
   leftDialog = "",
-  customDialogText = "The battle lines are drawn! Our forces are attacking a key Imperial Research Facility on Jakku, all able bodied personnel are needed to join the battle at once!  Are you prepared?",
+  customDialogText = "You look like you want to get off of this rock.  I am heading to Corellia, but you'll have to ride in the cargo hold.  Sorry for the smell.",
   stopConversation = "false",
   options = {
-    {"I am ready to join the Battle of Jakku!", "mayor2"},
+    {"Whatever, just get me out of this place.", "mayor2"},
   --  {"Instance 2", "mayor3"},
  --   {"Instance 3", "mayor4"},
   --  {"Instance 4", "mayor5"},
-    {"Not yet, I need more time to prepare.", "deny"}
+    {"On second thought, I'll pass.", "deny"}
   
   }
 }
@@ -27,7 +27,7 @@ rebel_jakku_teleporter:addScreen(first_conv);
 deny = ConvoScreen:new {
   id = "deny",
   leftDialog = "",
-  customDialogText = "Alright, come back when you are ready to fight!",
+  customDialogText = "Suit yourself pal.",
   stopConversation = "true",
   options = {
   }
@@ -40,7 +40,7 @@ rebel_jakku_teleporter:addScreen(deny);
 mayor2 = ConvoScreen:new {
   id = "mayor2",
   leftDialog = "",
-  customDialogText = "May the force be with you then!",
+  customDialogText = "Next stop, Coronet City.",
   stopConversation = "true",
   options = {
   --   {"I see. What would I have to do?","mayor3"},

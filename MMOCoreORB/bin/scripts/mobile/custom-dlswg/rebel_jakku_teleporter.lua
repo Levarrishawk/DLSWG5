@@ -1,10 +1,10 @@
 rebel_jakku_teleporter = Creature:new {
 	objectName = "@mob/creature_names:noble",
-	customName ="a New Republic Battle Coordinator",
+	customName = "a Smuggler Shuttle Pilot",
 	--randomNameType = NAME_GENERIC,
 	--randomNameTag = true,
-	socialGroup = "rebel",
-	faction = "rebel",
+	socialGroup = "townsperson",
+	faction = "townsperson",
 	level = 6,
 	chanceHit = 0.250000,
 	damageMin = 50,

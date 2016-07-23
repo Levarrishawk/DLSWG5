@@ -15,7 +15,9 @@ registerScreenPlay("rebel_jakku_teleporter", true) --Initialize the screenplay I
 
 --Simply spawns the NPC
 function rebel_jakku_teleporter:start()
- --  spawnMobile("chandrila", "rebel_jakku_teleporter", 1, 192.2, 6, -3047, 33, 0)
+   spawnMobile("jakku", "rebel_jakku_teleporter", 1, 4352.2, 8.9, -5122.6, -105, 0)
+   spawnMobile("jakku", "rebel_recruiter", 1, 4311, 7, -5100, 145, 0)
+   spawnMobile("jakku", "imperial_recruiter", 1, 4315, 10, -5148, 31, 0)
 end
 
 --The actual conversation handler
@@ -67,7 +69,7 @@ function rebel_jakku_teleporter_convo_handler:runScreenHandlers(pConversationTem
 
   if ( screenID == "mayor2" ) then
    
-     player:switchZone("jakku", 2.0, -20.8, 22.1, 610000100) -- x, z, y, cell
+     player:switchZone("jakku", -5559, 45, 5937, 0) -- x, z, y, cell
 
   end
   
