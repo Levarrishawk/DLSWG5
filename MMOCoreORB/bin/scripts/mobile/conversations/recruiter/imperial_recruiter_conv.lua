@@ -498,7 +498,7 @@ imperialRecruiterConvoTemplate:addScreen(show_gcw_score);
 first_conv = ConvoScreen:new {
   id = "first_conv",
   leftDialog = "",
-  customDialogText = "Grand Moff Randd has rallied our the bulk forces at Jakku.  Even now the New Republic is assaulting the planet, we need all able bodied troops to get to the fight as soon as possible.  The future of the Empire is at stake!  Are you prepared?",
+  customDialogText = "Grand Moff Randd has rallied the bulk of our forces at Jakku in defense of a key weapons research facility.  Even now the New Republic is assaulting the planet, we need all able bodied troops to get to the fight as soon as possible.  The future of the Empire is at stake it is instrumental that we ensure that the facility does not fall under Republic hands at any cost!  Are you prepared?",
   stopConversation = "false",
   options = {
     {"I am ready to join the Battle of Jakku!", "imp_tp"},
