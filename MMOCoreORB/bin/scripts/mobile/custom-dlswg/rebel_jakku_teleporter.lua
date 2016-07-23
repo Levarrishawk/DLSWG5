@@ -1,4 +1,4 @@
-reb_chasm_dungeon_teleporter = Creature:new {
+rebel_jakku_teleporter = Creature:new {
 	objectName = "@mob/creature_names:noble",
 	customName ="a New Republic Battle Coordinator",
 	--randomNameType = NAME_GENERIC,
@@ -37,8 +37,8 @@ templates = {
     },   
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "rebel_chasm_teleporter",
+	conversationTemplate = "rebel_jakku_teleporter",
 	attacks = {}
 }
 
-CreatureTemplates:addCreatureTemplate(reb_chasm_dungeon_teleporter, "reb_chasm_dungeon_teleporter")
+CreatureTemplates:addCreatureTemplate(rebel_jakku_teleporter, "rebel_jakku_teleporter")
