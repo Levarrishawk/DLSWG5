@@ -23,7 +23,7 @@ niima_the_hutt = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = NONE,
-	optionsBitmask = AIENABLED + CONVERSABLE,
+	optionsBitmask = AIENABLED, -- + CONVERSABLE,
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/borvo.iff"},
