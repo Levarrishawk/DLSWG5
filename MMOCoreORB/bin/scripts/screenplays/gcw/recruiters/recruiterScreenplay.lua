@@ -617,7 +617,7 @@ end
 
 function recruiterScreenplay:handleRebelTp(pPlayer)
   ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
-
+    local player = LuaSceneObject(pPlayer)
     player:switchZone("jakku", 2.0, -20.8, 22.1, 610000100)
   end)
 end
