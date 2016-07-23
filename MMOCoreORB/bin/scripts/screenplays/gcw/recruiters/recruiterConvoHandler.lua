@@ -137,8 +137,9 @@ function RecruiterConvoHandler:runScreenHandlers(conversationTemplate, conversin
 			clonedConversation:setDialogTextDI(getImperialScore(zoneName))
 			clonedConversation:setDialogTextTO(getRebelScore(zoneName))
 			
-		elseif ( screenID == "reb_tp" ) then   
-     conversingPlayer:switchZone("jakku", 2.0, -20.8, 22.1, 610000100) -- x, z, y, cell
+		elseif ( screenID == "reb_tp" ) then  
+		  createEvent(3000, "recruiterScreenplay", "handleRebelTp", conversingPlayer, "") 
+    -- conversingPlayer:switchZone("jakku", 2.0, -20.8, 22.1, 610000100) -- x, z, y, cell
 
 		end
 

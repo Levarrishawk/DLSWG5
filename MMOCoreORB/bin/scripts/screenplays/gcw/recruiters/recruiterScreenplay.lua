@@ -614,3 +614,19 @@ function recruiterScreenplay:handleResign(pPlayer)
 		playerObject:decreaseFactionStanding(oldFactionName, 0)
 	end)
 end
+
+function recruiterScreenplay:handleRebelTp(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
+  local screen = LuaConversationScreen(pConversationScreen)
+  local screenID = screen:getScreenID() 
+
+  
+  local player = LuaSceneObject(pConversingPlayer)
+
+  if ( screenID == "reb_tp" ) then
+   
+     player:switchZone("jakku", 2.0, -20.8, 22.1, 610000100) -- x, z, y, cell
+
+  end
+  --print("returning convosvreen")
+  return pConversationScreen
+end
