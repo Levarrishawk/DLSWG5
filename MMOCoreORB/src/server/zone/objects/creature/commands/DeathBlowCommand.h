@@ -51,7 +51,7 @@ public:
 				return GENERALERROR;
 			}
 
-			if (player->isAttackableBy(creature) && checkDistance(player, creature, 10) && player->getFaction() == Factions::FACTIONIMPERIAL) {
+			if (player->isAttackableBy(creature) && checkDistance(player, creature, 10) && player->getFaction() == Factions::FACTIONREBEL) {
 				PlayerManager* playerManager = server->getPlayerManager();
 
 				creature->playEffect("clienteffect/holoemote_imperial.cef" "head");
@@ -59,7 +59,7 @@ public:
 				playerManager->killPlayer(creature, player, 1);
 			}
 
-			if (player->isAttackableBy(creature) && checkDistance(player, creature, 10) && player->getFaction() == Factions::FACTIONREBEL) {
+			if (player->isAttackableBy(creature) && checkDistance(player, creature, 10) && player->getFaction() == Factions::FACTIONIMPERIAL) {
 				PlayerManager* playerManager = server->getPlayerManager();
 
 				creature->playEffect("clienteffect/holoemote_rebel.cef" "head");
