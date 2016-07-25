@@ -54,7 +54,7 @@ public:
 			if (player->isAttackableBy(creature) && checkDistance(player, creature, 10) && player->getFaction() == Factions::FACTIONREBEL) {
 				PlayerManager* playerManager = server->getPlayerManager();
 
-				creature->playEffect("clienteffect/holoemote_imperial.cef" "head");
+				creature->playEffect("clienteffect/holoemote_imperial.cef", "head");
 				creature->playMusicMessage("sound/music_themequest_victory_imperial.snd");
 				playerManager->killPlayer(creature, player, 1);
 			}
@@ -62,7 +62,7 @@ public:
 			if (player->isAttackableBy(creature) && checkDistance(player, creature, 10) && player->getFaction() == Factions::FACTIONIMPERIAL) {
 				PlayerManager* playerManager = server->getPlayerManager();
 
-				creature->playEffect("clienteffect/holoemote_rebel.cef" "head");
+				creature->playEffect("clienteffect/holoemote_rebel.cef", "head");
 				creature->playMusicMessage("sound/music_themequest_victory_rebel.snd");
 				playerManager->killPlayer(creature, player, 1);
 			}
