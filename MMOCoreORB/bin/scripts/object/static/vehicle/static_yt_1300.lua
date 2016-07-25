@@ -41,16 +41,8 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_static_vehicle_static_yt_1300 = object_static_vehicle_shared_static_yt_1300:new {
 
---Children folder includes
-includeFile("static/vehicle/e3/serverobjects.lua")
+}
 
--- Server Objects
-includeFile("static/vehicle/player_shuttle.lua")
-includeFile("static/vehicle/static_lambda_shuttle.lua")
-includeFile("static/vehicle/static_sandcrawler.lua")
-includeFile("static/vehicle/static_speeder_bike.lua")
-includeFile("static/vehicle/static_swoop_bike.lua")
-includeFile("static/vehicle/static_tie_bomber.lua")
-includeFile("static/vehicle/static_tie_fighter.lua")
-includeFile("static/vehicle/static_yt_1300.lua")
+ObjectTemplates:addTemplate(object_static_vehicle_static_yt_1300, "object/static/vehicle/static_yt_1300.iff")
