@@ -382,4 +382,13 @@ object_static_vehicle_shared_static_tie_fighter = SharedStaticObjectTemplate:new
 ]]
 }
 
-ObjectTemplates:addClientTemplate(object_static_vehicle_shared_static_tie_fighter, "object/static/vehicle/shared_static_tie_fighter.iff")
+ObjectTemplates:addClientTemplate(object_static_vehicle_shared_static_yt_1300, "object/static/vehicle/shared_static_yt_1300.iff")
+
+ObjectTemplates:addClientTemplate(object_static_vehicle_shared_static_yt_1300, "object/static/vehicle/shared_static_yt_1300.iff")
+
+object_static_vehicle_shared_static_yt_1300 = SharedStaticObjectTemplate:new {
+  clientTemplateFileName = "object/static/vehicle/shared_static_yt_1300.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_static_vehicle_shared_static_yt_1300, "object/static/vehicle/shared_static_yt_1300.iff")
