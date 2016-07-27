@@ -1,7 +1,7 @@
 object_building_player_atat_house = object_building_player_shared_atat_house:new {
 	lotSize = 2,
 	baseMaintenanceRate = 10,
-	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "dathomir", "kaas", "taanab", "ghomrassen"},
+	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "chandrila"},
 	publicStructure = 0,
 	length = 1,
 	width = 1,

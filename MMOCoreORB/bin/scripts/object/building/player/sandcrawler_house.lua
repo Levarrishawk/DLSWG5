@@ -1,7 +1,7 @@
 object_building_player_sandcrawler_house = object_building_player_shared_sandcrawler_house:new {
 	lotSize = 2,
 	baseMaintenanceRate = 10,
-	allowedZones = {"tatooine", "ghomrassen", "lok"},
+	allowedZones = {"tatooine", "lok"},
 	publicStructure = 0,
 	constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
 	length = 1,

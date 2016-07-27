@@ -1,7 +1,7 @@
 object_building_player_sith_house = object_building_player_shared_sith_house:new {
 	lotSize = 1,
 	baseMaintenanceRate = 10,
-	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "yavin4", "dathomir", "kaas", "taanab", "ghomrassen"},
+	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "chandrila"},
 	constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
 	length = 1,
 	width = 1,

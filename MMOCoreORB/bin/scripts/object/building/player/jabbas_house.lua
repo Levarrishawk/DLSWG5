@@ -1,7 +1,7 @@
 object_building_player_jabbas_house = object_building_player_shared_jabbas_house:new {
 	lotSize = 2,
 	baseMaintenanceRate = 10,
-	allowedZones = {"corellia", "dantooine", "ghomrassen", "lok", "naboo", "rori", "talus", "tatooine", "dathomir", "kaas", "taanab", "ghomrassen"},
+	allowedZones = {"lok", "tatooine"},
 	constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
 	length = 1,
 	width = 1,
