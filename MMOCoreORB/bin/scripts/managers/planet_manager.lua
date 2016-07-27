@@ -476,3 +476,15 @@ chandrila = {
     {"chandrila_state_park",-5013,4089,30,142},
   },
 }
+
+kaas = {
+  weatherEnabled = 1,
+  gcwEnabled = 1,
+  
+  planetTravelPoints = {
+    --{name = "Hanna City Spaceport", x = 164, z = 6, y = -2937, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    },
+    
+    badgeAreas = {   
+  },
+}

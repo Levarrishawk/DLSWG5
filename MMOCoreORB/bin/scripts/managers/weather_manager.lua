@@ -255,4 +255,15 @@ jakku = {
 
   sandstormDamage = 70, -- 40 = Annoying, 100 = deadly
 }
+--------
+-- Dromund Kaas
+---------
+kaas = {
+
+  defaultWeather = 0, -- Sunny
+
+  averageWeatherDuration = 1800, -- In seconds
+
+  weatherStability = 30, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+}
 
