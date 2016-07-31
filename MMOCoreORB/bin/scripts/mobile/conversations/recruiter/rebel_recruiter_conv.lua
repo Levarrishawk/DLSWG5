@@ -162,7 +162,7 @@ stay_special_forces = ConvoScreen:new {
 		{"@conversation/faction_recruiter_rebel:s_526", "leave_time_overt"}, -- I need to go on leave for a time.
 		{"@conversation/faction_recruiter_rebel:s_538", "resign_overt"}, -- This is all too much for me. I would like to resign completely.
 		{"@conversation/faction_recruiter_rebel:s_562", "show_gcw_score"}, -- How are we doing in the war against the Imperial tyrants?
-    {"Where is our war effort concentrated right now?", "first_conv"},	
+    {"Where is our war effort concentrated right now?", "first_conv"}	
 	}
 }
 
@@ -209,7 +209,7 @@ stay_covert = ConvoScreen:new {
 		{"@conversation/faction_recruiter_rebel:s_526", "leave_time_covert"}, -- I need to go on leave for a time.
 		{"@conversation/faction_recruiter_rebel:s_538", "resign_covert"}, -- This is all too much for me. I would like to resign completely.
 		{"@conversation/faction_recruiter_rebel:s_562", "show_gcw_score"}, -- How are we doing in the war against the Imperial tyrants?
-    {"Where is our war effort concentrated right now?", "first_conv"},
+    {"Where is our war effort concentrated right now?", "first_conv"}
 	}
 }
 
@@ -236,7 +236,7 @@ stay_overt = ConvoScreen:new {
 		{"@conversation/faction_recruiter_rebel:s_526", "leave_time_covert"}, -- I need to go on leave for a time.
 		{"@conversation/faction_recruiter_rebel:s_538", "resign_covert"}, -- This is all too much for me. I would like to resign completely.
 		{"@conversation/faction_recruiter_rebel:s_562", "show_gcw_score"}, -- How are we doing in the war against the Imperial tyrants?
-    {"Where is our war effort concentrated right now?", "first_conv"},
+    {"Where is our war effort concentrated right now?", "first_conv"}
 	}
 }
 
@@ -273,7 +273,7 @@ dont_resign_covert = ConvoScreen:new {
 		{"@conversation/faction_recruiter_rebel:s_526", "leave_time_covert"}, -- I need to go on leave for a time.
 		{"@conversation/faction_recruiter_rebel:s_538", "resign_covert"}, -- This is all too much for me. I would like to resign completely.
 		{"@conversation/faction_recruiter_rebel:s_562", "show_gcw_score"}, -- How are we doing in the war against the Imperial tyrants?
-    {"Where is our war effort concentrated right now?", "first_conv"},
+    {"Where is our war effort concentrated right now?", "first_conv"}
 	}
 }
 
@@ -300,7 +300,7 @@ dont_resign_overt = ConvoScreen:new {
 		{"@conversation/faction_recruiter_rebel:s_526", "leave_time_covert"}, -- I need to go on leave for a time.
 		{"@conversation/faction_recruiter_rebel:s_538", "resign_covert"}, -- This is all too much for me. I would like to resign completely.
 		{"@conversation/faction_recruiter_rebel:s_562", "show_gcw_score"}, -- How are we doing in the war against the Imperial tyrants?
-    {"Where is our war effort concentrated right now?", "first_conv"},
+    {"Where is our war effort concentrated right now?", "first_conv"}
 	}
 }
 
