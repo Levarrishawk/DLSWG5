@@ -26,7 +26,7 @@ void VehicleControlDeviceImplementation::generateObject(CreatureObject* player) 
 	if (!isASubChildOf(player))
 		return;
 
-	if (player->getParent() != NULL || player->isInCombat()) {
+	if (player->getParent() != NULL || player->isInCombat() || player->getZone == "Jakku"()) {
 		player->sendSystemMessage("@pet/pet_menu:cant_call_vehicle"); // You can only unpack vehicles while Outside and not in Combat.
 		return;
 	}
