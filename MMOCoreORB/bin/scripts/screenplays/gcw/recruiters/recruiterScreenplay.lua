@@ -167,7 +167,7 @@ function recruiterScreenplay:getInstallationsOptions(faction, gcwDiscount, smugg
 	local factionRewardData = self:getFactionDataTable(faction)
 	for k,v in pairs(factionRewardData.installationsList) do
 		if ( factionRewardData.installations[v] ~= nil and factionRewardData.installations[v].display ~= nil and factionRewardData.installations[v].cost ~= nil ) then
-			table.insert(optionsTable, self:generateSuiString(factionRewardData.installations[v].display, math.ceil(factionRewardData.installations[v].cost * gcwDiscount * smugglerDiscount)))
+			table.insert(optionsTable, self:generateSuiString(factionRewardData.installations[v].display, math.ceil(factionRewardData.installations[v].cost)))-- * gcwDiscount * smugglerDiscount)))
 		end
 	end
 	return optionsTable
