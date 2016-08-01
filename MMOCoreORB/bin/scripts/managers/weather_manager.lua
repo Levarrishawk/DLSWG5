@@ -249,11 +249,11 @@ jakku = {
 
   averageWeatherDuration = 3600, -- In seconds
 
-  weatherStability = 70, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
+  weatherStability = 80, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 
-  hasDamagingSandstorms = 0,
+  hasDamagingSandstorms = 1,
 
-  sandstormDamage = 70, -- 40 = Annoying, 100 = deadly
+  sandstormDamage = 100, -- 40 = Annoying, 100 = deadly
 }
 --------
 -- Dromund Kaas
