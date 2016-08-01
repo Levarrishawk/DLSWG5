@@ -133,7 +133,47 @@ function JakkuBattleScreenPlay:spawnMobiles()
   spawnMobile("jakku", "fbase_rebel_soldier_hard", 60, -5644.3, 41.3, 5567.9, 29, 0)
   spawnMobile("jakku", "fbase_rebel_soldier_hard", 60, -5606.3, 39.3, 5557.3, 39, 0)
   
+   -- Imperial Encampment (exterior) 
+   
+  pMobile = spawnMobile("jakku", "at_at", 60, -5928.6, 41.9, 6110.3, -177, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
   
+  pMobile = spawnMobile("jakku", "at_at", 60, -6051.5, 38.1, 6118.2, -172, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pMobile = spawnMobile("jakku", "at_st", 60, -6177.5, 54.5, 6134.8, -136, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pMobile = spawnMobile("jakku", "at_st", 60, -6154.6, 52.1, 6094.1, -136, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pMobile = spawnMobile("jakku", "at_st", 60, -6115.1, 53.3, 6047.7, -156, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pMobile = spawnMobile("jakku", "at_st", 60, -6057.8, 54.6, 6008.1, -154, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pMobile = spawnMobile("jakku", "at_st", 60, -5990.7, 50.4, 5984.9, 172, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pMobile = spawnMobile("jakku", "at_st", 60, -5917.2, 53.6, 5988.7, 158, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pMobile = spawnMobile("jakku", "at_st", 60, -5848.6, 54.7, 6020.6, 141, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pMobile = spawnMobile("jakku", "at_st", 60, -5792.2, 52.5, 6087.9, 111, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
 
 end
 
