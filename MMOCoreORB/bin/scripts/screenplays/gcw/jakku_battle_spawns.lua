@@ -243,6 +243,8 @@ function JakkuBattleScreenPlay:spawnMobiles()
   spawnMobile("jakku", "stormtrooper", 45, -6123.8, 24.3, 5813.5, -169, 0)
   spawnMobile("jakku", "stormtrooper", 45, -6127.7, 24.7, 5814.8, -169, 0)
   
+  spawnMobile("jakku", "at_st", 120, -6030.9, 36.0, 5906.8, 150, 0)
+  
     -- republic lines
     
   spawnMobile("jakku", "at_xt", 120, -5905, 29.6, 5829.3, -9, 0)
@@ -293,6 +295,12 @@ function JakkuBattleScreenPlay:spawnMobiles()
   spawnMobile("jakku", "rebel_trooper", 45, -6120.4, 28.8, 5794.2, 12, 0)
   spawnMobile("jakku", "rebel_trooper", 45, -6117.2, 28.6, 5791.9, 12, 0)
   spawnMobile("jakku", "rebel_trooper", 45, -6113.5, 28.2, 5790.4, 12, 0)
+  
+  spawnMobile("jakku", "rebel_commando", 35, -6031.0, 27.7, 5886.4, -11, 0)
+  spawnMobile("jakku", "rebel_commando", 35, -6029.0, 27.7, 5887.0, -11, 0)
+  spawnMobile("jakku", "rebel_commando", 35, -6027.0, 27.7, 5888.4, -11, 0)
+  spawnMobile("jakku", "rebel_commando", 35, -6025.0, 27.7, 5889.0, -11, 0)
+  spawnMobile("jakku", "rebel_commando", 35, -6023.0, 27.7, 5890.4, -11, 0)
   
   
 
