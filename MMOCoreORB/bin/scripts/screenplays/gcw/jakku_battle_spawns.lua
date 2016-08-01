@@ -29,7 +29,10 @@ function JakkuBattleScreenPlay:spawnMobiles()
   spawnMobile("jakku", "fbase_rebel_heavy_trooper_extreme", 60, -5709.5, 48, 5503, -42, 0)
   spawnMobile("jakku", "fbase_rebel_heavy_trooper_extreme", 60, -5705, 48, 5507, -42, 0)
   spawnMobile("jakku", "fbase_rebel_commando_hard", 60, -5783, 58, 5549, -64, 0)
-  spawnMobile("jakku", "fbase_rebel_colonel_hard", 60, -5780, 58, 5545, 116, 0)
+ 
+  local pMobile = spawnMobile("jakku", "fbase_rebel_colonel_hard", 60, -5763, 45, 5505, -116, 0)
+        self:setMoodString(pMobile, "neutral")
+        AiAgent(pMobile):setAiTemplate("idlewander")
   
 
 end
