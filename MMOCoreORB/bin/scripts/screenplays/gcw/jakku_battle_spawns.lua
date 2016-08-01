@@ -143,6 +143,10 @@ function JakkuBattleScreenPlay:spawnMobiles()
   self:setMoodString(pMobile, "neutral")
   AiAgent(pMobile):setAiTemplate("idlewander")
   
+  pMobile = spawnMobile("jakku", "at_at", 60, -5990.3, 36.0, 6189.2, -172, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
   pMobile = spawnMobile("jakku", "at_st", 60, -6177.5, 54.5, 6134.8, -136, 0)
   self:setMoodString(pMobile, "neutral")
   AiAgent(pMobile):setAiTemplate("idlewander")
@@ -174,6 +178,40 @@ function JakkuBattleScreenPlay:spawnMobiles()
   pMobile = spawnMobile("jakku", "at_st", 60, -5792.2, 52.5, 6087.9, 111, 0)
   self:setMoodString(pMobile, "neutral")
   AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -6044, 56.6, 6013, -150, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -6065, 56.4, 6022, -152, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -6003.4, 55.6, 5999, -154, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -5994.4, 56.1, 5996.4, 177, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -5984.7, 56.7, 5999.4, 159, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -5974.3, 56.1, 5999.5, 176, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -5931.7, 56.5, 6002.0, 173, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -5918.5, 55.9, 6001.7, 143, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -5906, 54.4, 6007.1, 150, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -5871.1, 53.4, 6024, 160, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -5861.3, 55, 6027.6, 140, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -5848.2, 52.9, 6035.9, 119, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_hard", 60, -5817.9, 56.0, 6076.8, 131, 0)
+  
+  spawnMobile("jakku", "fbase_stormtrooper_extreme", 60, -5994.4, 35.7, 6135.6, 2, 0)
+  spawnMobile("jakku", "fbase_stormtrooper_extreme", 60, -5988.7, 35.8, 6135.6, 2, 0)
+  
+ -- Front Lines (npc)
+    --imperial lines
+ pMobile = spawnMobile("jakku", "stormtrooper", 45, -5913.8, 30.4, 5851.2, 159, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  
+    -- republic lines
+ pMobile = spawnMobile("jakku", "rebel_trooper", 45, -5900, 29.6, 5821.3, -31, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander") 
+  
+  
+
+
+  
 
 end
 
