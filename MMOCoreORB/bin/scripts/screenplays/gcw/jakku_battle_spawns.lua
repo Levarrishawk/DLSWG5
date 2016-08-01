@@ -2,6 +2,15 @@ local ObjectManager = require("managers.object.object_manager")
 
 JakkuBattleScreenPlay = ScreenPlay:new {
 	numberOfActs = 1,
+	
+	turrets = {
+    { template = "object/installation/turret/turret_tower_large.iff", x = -5767.9, z = 55.5, y = 5575.1 },
+    { template = "object/installation/turret/turret_tower_large.iff", x = -5809.5, z = 55, y = 5513.6 },
+    { template = "object/installation/turret/turret_tower_large.iff", x = -5778.3, z = 53, y = 5443.3 },
+    { template = "object/installation/turret/turret_tower_large.iff", x = -5691.4, z = 44, y = 5599.2 },
+    { template = "object/installation/turret/turret_tower_large.iff", x = -5629.3, z = 41, y = 5550.7 },
+    { template = "object/installation/turret/turret_tower_large.iff", x = -5737.9, z = 50, y = 5620.0 },
+  },
 
 }
 
@@ -10,7 +19,47 @@ registerScreenPlay("JakkuBattleScreenPlay", true)
 function JakkuBattleScreenPlay:start()
 	if (isZoneEnabled("jakku")) then
 		self:spawnMobiles()
+		self:spawnSceneObjects()
 	end
+end
+
+function JakkuBattleScreenPlay:spawnSceneObjects()
+  for i = 1, 6, 1 do
+    local turretData = self.turrets[i]
+    local pTurret = spawnSceneObject("jakku", turretData.template, turretData.x, turretData.z, turretData.y, 0, 0.707107, 0, 0.707107, 0)
+
+    if pTurret ~= nil then
+      local turret = TangibleObject(pTurret)
+      turret:setFaction(FACTIONREBEL)
+      turret:setPvpStatusBitmask(1)
+    end
+
+    writeData(SceneObject(pTurret):getObjectID() .. ":rebel_hideout:turret_index", i)
+    createObserver(OBJECTDESTRUCTION, "JakkuBattleScreenPlay", "notifyTurretDestroyed", pTurret)
+  end
+  
+end
+
+function JakkuBattleScreenPlay:notifyTurretDestroyed(pTurret, pPlayer)
+  ObjectManager.withSceneObject(pTurret, function(turret)
+    local turretData = self.turrets[readData(turret:getObjectID() .. ":rebel_hideout:turret_index")]
+    turret:destroyObjectFromWorld()
+    createEvent(1800000, "JakkuBattleScreenPlay", "respawnTurret", pTurret, "")
+  end)
+  CreatureObject(pPlayer):clearCombatState(1)
+  return 0
+end
+
+function JakkuBattleScreenPlay:respawnTurret(pTurret)
+  if pTurret == nil then return end
+
+  TangibleObject(pTurret):setConditionDamage(0, false)
+  local turretData = self.turrets[readData(SceneObject(pTurret):getObjectID() .. ":rebel_hideout:turret_index")]
+  local pZone = getZoneByName("jakku")
+
+  if pZone == nil then return end
+
+  SceneObject(pZone):transferObject(pTurret, -1, true)
 end
 
 function JakkuBattleScreenPlay:spawnMobiles()
