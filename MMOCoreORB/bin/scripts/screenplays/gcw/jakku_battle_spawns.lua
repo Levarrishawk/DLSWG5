@@ -204,7 +204,7 @@ function JakkuBattleScreenPlay:spawnMobiles()
   
   
     -- republic lines
- pMobile = spawnMobile("jakku", "rebel_trooper", 45, -5900, 29.6, 5821.3, -31, 0)
+ pMobile = spawnMobile("jakku", "rebel_trooper", 45, -5905, 29.6, 5829.3, -31, 0)
   self:setMoodString(pMobile, "neutral")
   AiAgent(pMobile):setAiTemplate("idlewander") 
   
