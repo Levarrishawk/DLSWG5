@@ -278,6 +278,15 @@ function JakkuBattleScreenPlay:spawnMobiles()
   spawnMobile("jakku", "rebel_commando", 35, -6062.0, 26.5, 5714.5, -11, 0)
   spawnMobile("jakku", "rebel_commando", 35, -6064.0, 26.1, 5714.8, -11, 0)
   
+  spawnMobile("jakku", "rebel_trooper", 45, -6132.5, 29.3, 5800.0, 2, 0)
+  spawnMobile("jakku", "rebel_trooper", 45, -6129.2, 28.9, 5798.9, 12, 0)
+  spawnMobile("jakku", "rebel_trooper", 45, -6125.9, 28.9, 5797.5, 10, 0)
+  spawnMobile("jakku", "rebel_trooper", 45, -6123.0, 28.8, 5796.2, 12, 0)
+  spawnMobile("jakku", "rebel_trooper", 45, -6120.4, 28.8, 5794.2, 12, 0)
+  spawnMobile("jakku", "rebel_trooper", 45, -6117.2, 28.6, 5791.9, 12, 0)
+  spawnMobile("jakku", "rebel_trooper", 45, -6113.5, 28.2, 5790.4, 12, 0)
+  
+  
 
 end
 
