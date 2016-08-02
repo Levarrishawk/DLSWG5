@@ -302,7 +302,33 @@ function JakkuBattleScreenPlay:spawnMobiles()
   spawnMobile("jakku", "rebel_commando", 35, -6025.0, 27.7, 5889.0, -11, 0)
   spawnMobile("jakku", "rebel_commando", 35, -6023.0, 27.7, 5890.4, -11, 0)
   
+  -- Republic Bunker Interior
   
-
+  spawnMobile("jakku", "fbase_rebel_soldier_hard", 60, -3.8, 0.3, 3.5, 172, 610000092)
+  spawnMobile("jakku", "fbase_rebel_soldier_hard", 60, -3.9, 0.3, -4.5, 1, 610000092)
+  spawnMobile("jakku", "fbase_rebel_soldier_hard", 60, 4.0, 0.3, -4.2, -133, 610000093)
+  spawnMobile("jakku", "fbase_rebel_soldier_extreme", 60, -4.7, -6.8, 4.8, 90, 610000094)
+  spawnMobile("jakku", "fbase_rebel_soldier_extreme", 60, 3.2, -13.8, 0.8, 133, 610000096)
+  spawnMobile("jakku", "fbase_rebel_grenadier_hard", 60, 4.8, -13.8, 8.3, -109, 610000097)
+  spawnMobile("jakku", "fbase_rebel_medic_hard", 60, -1.9, -13.8, 5.7, -4, 610000097)
+  spawnMobile("jakku", "fbase_rebel_grenadier_hard", 60, -8.7, -13.8, 7.0, 94, 610000097)
+  spawnMobile("jakku", "fbase_rebel_heavy_trooper_hard", 60, -1.1, -20.7, 4.7, 77, 610000099)
+  spawnMobile("jakku", "fbase_rebel_heavy_trooper_hard", 60, 2.9, -20.7, 8.5, -140, 610000099)
+  spawnMobile("jakku", "fbase_rebel_heavy_trooper_hard", 60, -0.2, -20.7, 8.7, 131, 610000099)
+  
+  -- Imperial Bunker Interior
+  
+  spawnMobile("jakku", "fbase_dark_trooper_hard", 60, -3.7, 0.3, -0.7, 2, 610000103)
+  spawnMobile("jakku", "fbase_dark_trooper_hard", 60, -0.4, 0.3, -4.0, -94, 610000104)
+  spawnMobile("jakku", "fbase_dark_trooper_hard", 60, 3.7, 0.3, -4.0, -94, 610000104)
+  spawnMobile("jakku", "fbase_dark_trooper_extreme", 60, -4.8, -6.8, 4.6, 94, 610000105)
+  spawnMobile("jakku", "fbase_dark_trooper_extreme", 60, 3.2, -13.8, -2.5, 179, 610000106)
+  spawnMobile("jakku", "fbase_stormtrooper_captain_extreme", 60, 6.4, -13.8, 7.4, -94, 610000108)
+  spawnMobile("jakku", "fbase_imperial_colonel_hard", 60, -1.4, -13.8, 6.0, 175, 610000108)
+  spawnMobile("jakku", "fbase_storm_commando_hard", 60, -8.9, -13.8, 7.9, 92, 610000108)
+  spawnMobile("jakku", "fbase_stormtrooper_medic_hard", 60, 4.0, -20.7, 6.0, 101, 610000110)
+  spawnMobile("jakku", "fbase_stormtrooper_medic_hard", 60, 1.2, -20.7, 5.7, -128, 610000110)
+  spawnMobile("jakku", "fbase_stormtrooper_medic_hard", 60, 1.6, -20.7, 10.3, 171, 610000110)
+  
 end
 
