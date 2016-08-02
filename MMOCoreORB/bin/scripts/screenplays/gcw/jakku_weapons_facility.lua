@@ -65,7 +65,7 @@ function JakkuWeaponsFacilityScreenPlay:spawnSceneObjects()
   spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 29.6, -48, -31.1, 610000145, math.rad(0) )
   spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 41.4, -48, -31.1, 610000145, math.rad(0) )
 
-  spawnSceneObject("jakku", "object/static/structure/general/allum_mine_pipes_s02.iff", 11.3, -48, -31.1, 610000144, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/general/allum_mine_pipes_s02.iff", 11.3, -48, -19.0, 610000144, math.rad(0) )
   spawnSceneObject("jakku", "object/static/structure/general/allum_mine_pipes_s02.iff", 17.6, -48, -13.4, 610000144, math.rad(90) )
   spawnSceneObject("jakku", "object/static/structure/general/allum_mine_pipes_s02.iff", 17.6, -48, -25.7, 610000144, math.rad(-90) )
   
