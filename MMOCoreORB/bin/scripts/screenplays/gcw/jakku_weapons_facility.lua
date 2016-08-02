@@ -24,6 +24,8 @@ function JakkuWeaponsFacilityScreenPlay:spawnSceneObjects()
   spawnSceneObject("jakku", "object/tangible/veteran_reward/frn_tech_console_sectional_d.iff", -38.4, -28, -28.9, 610000119, math.rad(90) )
   spawnSceneObject("jakku", "object/static/structure/general/allum_mine_wall_lamp_s01.iff", 43.5, -46, 47.0, 610000143, math.rad(-90) )
   spawnSceneObject("jakku", "object/static/structure/general/allum_mine_wall_lamp_s01.iff", 27.5, -46, 47.0, 610000143, math.rad(90) )
+  spawnSceneObject("jakku", "object/static/structure/general/allum_mine_wall_lamp_s01.iff", 35.5, -46, 54.8, 610000143, math.rad(180) )
+  spawnSceneObject("jakku", "object/static/structure/general/allum_mine_device_s01.iff", 35.4, -48, 52.7, 610000143, math.rad(0) )
   
 end
 
