@@ -46,6 +46,9 @@ function JakkuWeaponsFacilityScreenPlay:spawnSceneObjects()
   
   spawnSceneObject("jakku", "object/static/structure/general/ins_shield_generator.iff", 101.4, -49, 29.1, 610000141, math.rad(45) )
   
+  spawnSceneObject("jakku", "object/tangible/furniture/all/frn_all_technical_console_s02.iff", 83.5, -48, -36.9, 610000146, math.rad(45) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", 83.5, -48, -36.9, 610000146, math.rad(45) )
+  
 end
 
 
