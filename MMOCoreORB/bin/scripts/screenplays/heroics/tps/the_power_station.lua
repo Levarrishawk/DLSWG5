@@ -56,3 +56,16 @@ createEvent(1800000, "ThePowerStationScreenPlay", "despawnBoss", pBoss)
 end)
 return 0
 end
+
+function kaas_imperial_garison:notifyBossDead(pBoss, pPlayer)
+writeData("kaas_imperial_garison:spawnState", 0)
+return 0
+end
+ 
+ 
+function ThePowerStationScreenPlay:despawnBoss(pBoss, pPlayer)
+forcePeace(pBoss)
+spHelper.destroy(readData("tpsboss1"),true)
+writeData("ThePowerStationScreenPlay:spawnState", 0)
+return 0
+end
