@@ -33,7 +33,7 @@ function ThePowerStationScreenPlay:spawnMobiles()
   spawnMobile("dungeon2", "tps_black_sun_assassin", 900, 23.2, -7.0, 5.2, -171, 410000020)
   
   --Boss Fight 1
-  spawnMobile("dungeon2", "tps_battle_droid", 9000, 15.0, -7.0, 16.2, 92, 410000016)
+  
   
     
  local pTrigger = spawnMobile("dungeon2", "tps_battle_droid", 9000, 15.0, -7.0, 16.2, 92, 410000016)
