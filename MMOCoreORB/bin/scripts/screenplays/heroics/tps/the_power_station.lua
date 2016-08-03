@@ -32,20 +32,27 @@ function ThePowerStationScreenPlay:spawnMobiles()
   spawnMobile("dungeon2", "tps_black_sun_assassin", 900, 20.8, -7.0, 5.2, -171, 410000020)
   spawnMobile("dungeon2", "tps_black_sun_assassin", 900, 23.2, -7.0, 5.2, -171, 410000020)
   
-  spawnMobile("dungeon2", "tps_boss1", 1, 15.0, -7.0, 16.2, 92, 410000016) -- gladiator pit test
-  
- -- local boss = LuaCreatureObject(pBoss)
-end
-
-
---function the_power_station:bossfight1(pBoss)
-
-  --local player = LuaCreatureObject(player)
-  
-  --if (player:getParentID() == 410000018) then
-    --spawnMobile("dungeon2", "tps_boss1", 1800, 15.0, -7.0, 16.2, 92, 410000016)
-   --end
-      
- --end
     
-
+ local pTrigger = spawnMobile("dungeon2", "tps_battle_droid", 9000, -16.8, -7.0, 0.3, -85, 410000012)
+if (pTrigger ~= nil ) then
+        createObserver(OBJECTDESTRUCTION, "ThePowerStationScreenPlay", "notifyTriggerDead", pTrigger)
+end
+ 
+writeData("ThePowerStationScreenPlay:spawnState",0)
+        return 0
+end
+ 
+function ThePowerStationScreenPlay:notifyTriggerDead(pTrigger, pPlayer)
+ 
+        local pBoss = spawnMobile("dungeon2", "tps_boss1", 0, 15.0, -7.0, 16.2, 92, 410000016)
+ObjectManager.withCreatureObject(pBoss, function(oBoss)
+writeData("ThePowerStationScreenPlay:spawnState", 1)
+writeData("tpsboss1", oBoss:getObjectID())
+spatialChat(pBoss, "Intruders!  Droids, attack!  Do not let the intruders escape!")
+          createObserver(DAMAGERECEIVED,"ThePowerStationScreenPlay","boss_damage", pBoss)
+createObserver(OBJECTDESTRUCTION, "ThePowerStationScreenPlay", "notifyBossDead", pBoss)
+createEvent(1800000, "ThePowerStationScreenPlay", "despawnBoss", pBoss)
+ 
+end)
+return 0
+end
