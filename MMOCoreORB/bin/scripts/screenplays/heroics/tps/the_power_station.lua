@@ -36,7 +36,7 @@ function ThePowerStationScreenPlay:spawnMobiles()
   
   
     
- local pTrigger = spawnMobile("dungeon2", "tps_battle_droid", 10, 15.0, -7.0, 16.2, 92, 410000016)
+ local pTrigger = spawnMobile("dungeon2", "tps_battle_droid", 35, 15.0, -7.0, 16.2, 92, 410000016)
 if (pTrigger ~= nil ) then
         createObserver(OBJECTDESTRUCTION, "ThePowerStationScreenPlay", "notifyTriggerDead", pTrigger)
 end
@@ -54,7 +54,7 @@ writeData("tpsboss1", oBoss:getObjectID())
 spatialChat(pBoss, "Intruders!  Droids, attack!  Do not let the intruders escape!")
           createObserver(DAMAGERECEIVED,"ThePowerStationScreenPlay","boss_damage", pBoss)
 createObserver(OBJECTDESTRUCTION, "ThePowerStationScreenPlay", "notifyBossDead", pBoss)
-createEvent(1800000, "ThePowerStationScreenPlay", "despawnBoss", pBoss)
+createEvent(30, "ThePowerStationScreenPlay", "despawnBoss", pBoss)
  
 end)
 return 0
