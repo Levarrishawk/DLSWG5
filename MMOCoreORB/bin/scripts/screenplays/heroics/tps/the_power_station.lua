@@ -46,12 +46,11 @@ writeData("ThePowerStationScreenPlay:spawnState",0)
 end
  
 function ThePowerStationScreenPlay:notifyTriggerDead(pTrigger, pPlayer)
- 
-        local pBoss = spawnMobile("dungeon2", "tps_boss1", 0, 15.0, -7.0, 16.2, 92, 410000016)
+           local pBoss = spawnMobile("dungeon2", "tps_boss1", 0, 15.0, -7.0, 16.2, 92, 410000016)
 ObjectManager.withCreatureObject(pBoss, function(oBoss)
 writeData("ThePowerStationScreenPlay:spawnState", 1)
 writeData("tpsboss1", oBoss:getObjectID())
-spatialChat(pBoss, "Intruders!  Droids, attack!  Do not let the intruders escape!")
+spatialChat(pBoss, "Intruders!  Droids, attack!  Do not let them shut down the force fields!")
           createObserver(DAMAGERECEIVED,"ThePowerStationScreenPlay","boss_damage", pBoss)
 createObserver(OBJECTDESTRUCTION, "ThePowerStationScreenPlay", "notifyBossDead", pBoss)
 createEvent(30, "ThePowerStationScreenPlay", "despawnBoss", pBoss)
@@ -71,4 +70,37 @@ forcePeace(pBoss)
 spHelper.destroy(readData("tpsboss1"),true)
 writeData("ThePowerStationScreenPlay:spawnState", 0)
 return 0
+end
+
+function ThePowerStationScreenPlay:boss_damage(pBoss, pPlayer)
+ 
+local player = LuaCreatureObject(pPlayer)
+local boss = LuaCreatureObject(pBoss)
+if ( boss ~= nil ) then
+local bossHealth = boss:getHAM(0)
+local bossAction = boss:getHAM(3)
+local bossMind = boss:getHAM(6)
+local bossMaxHealth = boss:getMaxHAM(0)
+local bossMaxAction = boss:getMaxHAM(3)
+local bossMaxMind = boss:getMaxHAM(6)
+ 
+local x1 = 0.2
+local y1 = -24.2
+local x2 = boss:getPositionX()
+local y2 = boss:getPositionY()
+ 
+local distance = ((x2 - x1)*(x2 - x1)) + ((y2 - y1)*(y2 - y1))
+local maxDistance = 45
+ 
+if distance > (maxDistance * maxDistance) then
+spatialChat(pBoss, "Thats right you better run.  Droids, return to your normal duties, the cowards have fled!")
+ 
+boss:healDamage(pBoss, 0, 2000000)
+boss:healDamage(pBoss, 3, 2000000)
+boss:healDamage(pBoss, 6, 2000000)
+-- boss:setPvpStatusBitmask(0)
+forcePeace(pBoss)
+-- boss:setOptionsBitmask(128)
+ 
+createEvent(3500, "ThePowerStationScreenPlay", "resetScreenplayStatus", pPlayer)
 end
