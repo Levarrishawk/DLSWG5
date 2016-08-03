@@ -104,3 +104,11 @@ forcePeace(pBoss)
  
 createEvent(3500, "ThePowerStationScreenPlay", "resetScreenplayStatus", pPlayer)
 end
+end
+ 
+return 0
+ 
+ 
+ 
+ 
+end
