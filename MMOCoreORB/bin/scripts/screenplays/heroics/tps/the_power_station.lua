@@ -4,7 +4,7 @@ ThePowerStationScreenPlay = ScreenPlay:new {
 	numberOfActs = 1,
 
 }
-
+spHelper = require("screenplayHelper")
 registerScreenPlay("ThePowerStationScreenPlay", true)
 
 function ThePowerStationScreenPlay:start()
