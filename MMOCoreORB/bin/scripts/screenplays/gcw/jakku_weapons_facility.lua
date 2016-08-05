@@ -186,7 +186,12 @@ function JakkuWeaponsFacilityScreenPlay:spawnSceneObjects()
   spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -8.5, -64, 30.9, 610000138, math.rad(90) )
   spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -8.5, -64, 39.1, 610000138, math.rad(90) )
   spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -8.5, -64, 46.9, 610000138, math.rad(90) )
-
+  
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", -4.5, -64, 16.9, 610000138, math.rad(90) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", -28.5, -64, 16.9, 610000138, math.rad(90) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", -4.5, -64, -6.9, 610000138, math.rad(90) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", -28.5, -64, -6.9, 610000138, math.rad(90) )
+  
 end
 
 
