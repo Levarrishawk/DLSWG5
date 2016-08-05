@@ -35,8 +35,8 @@ function ThePowerStationScreenPlay:spawnMobiles()
   --Boss Fight 1
   
   
-    
- local pTrigger = spawnMobile("dungeon2", "tps_battle_droid", 35, 15.0, -7.0, 16.2, 92, 410000016)
+   
+ local pTrigger = spawnMobile("dungeon2", "tps_battle_droid", 9000, 15.0, -7.0, 16.2, 92, 410000016)
 if (pTrigger ~= nil ) then
         createObserver(OBJECTDESTRUCTION, "ThePowerStationScreenPlay", "notifyTriggerDead", pTrigger)
 end
