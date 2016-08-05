@@ -117,13 +117,15 @@ ObjectManager.withCreatureObject(add3, function(thirdTime)
 local add4 = spawnMobile("dungeon2", "tps_boss1_add", 0, 20.1, 7.0, 16.1, 05, 410000016)
 ObjectManager.withCreatureObject(add4, function(fourthTime)
 firstTime:engageCombat(pPlayer)
-end)
 secondTime:engageCombat(pPlayer)
-end)
 thirdTime:engageCombat(pPlayer)
-end)
 fourthTime:engageCombat(pPlayer)
 end)
+end)
+end)
+end)
+
+
 spatialChat(add1, "roger roger!")
  
 end
