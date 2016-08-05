@@ -129,6 +129,7 @@ function JakkuWeaponsFacilityScreenPlay:spawnSceneObjects()
   spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 128.5, -64, 71, 610000126, math.rad(0) )
   spawnSceneObject("jakku", "object/static/installation/mockup_power_generator_fusion_style_1.iff", 123.6, -64, 57, 610000126, math.rad(0) )
       
+  spawnSceneObject("jakku", "object/tangible/furniture/all/frn_all_command_console.iff", 83.5, -72, 50.2, 610000128, math.rad(0) )
   
 
 
