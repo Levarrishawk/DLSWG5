@@ -1,4 +1,4 @@
-death_watch_battle_droid = Creature:new {
+tps_battle_droid = Creature:new {
 	objectName = "@mob/creature_names:mand_bunker_battle_droid",
 	socialGroup = "death_watch",
 	faction = "",
@@ -43,4 +43,4 @@ death_watch_battle_droid = Creature:new {
 	attacks = merge(pistoleermaster,carbineermaster,marksmanmaster)
 }
 
-CreatureTemplates:addCreatureTemplate(death_watch_battle_droid, "death_watch_battle_droid")
+CreatureTemplates:addCreatureTemplate(tps_battle_droid, "tps_battle_droid")
