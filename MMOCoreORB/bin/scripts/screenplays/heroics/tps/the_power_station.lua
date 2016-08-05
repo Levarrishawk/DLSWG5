@@ -111,17 +111,22 @@ writeData("kaas_imperial_garison:spawnState",2)
 local add1 = spawnMobile("dungeon2", "tps_boss1_add", 0, 21.7, 7.0, 20.0, 169, 410000016)
 ObjectManager.withCreatureObject(add1, function(firstTime)
 local add2 = spawnMobile("dungeon2", "tps_boss1_add", 0, 21.7, 7.0, 10.5, 1, 410000016)
-ObjectManager.withCreatureObject(add2, function(firstTime)
+ObjectManager.withCreatureObject(add2, function(secondTime)
 local add3 = spawnMobile("dungeon2", "tps_boss1_add", 0, 26.4, 7.0, 15.0, -09, 410000016)
-ObjectManager.withCreatureObject(add3, function(firstTime)
+ObjectManager.withCreatureObject(add3, function(thirdTime)
 local add4 = spawnMobile("dungeon2", "tps_boss1_add", 0, 20.1, 7.0, 16.1, 05, 410000016)
-ObjectManager.withCreatureObject(add4, function(firstTime)
+ObjectManager.withCreatureObject(add4, function(fourthTime)
 firstTime:engageCombat(pPlayer)
+end)
+secondTime:engageCombat(pPlayer)
+end)
+thirdTime:engageCombat(pPlayer)
+end)
+fourthTime:engageCombat(pPlayer)
 end)
 spatialChat(add1, "roger roger!")
  
 end
-
 
 end
  
