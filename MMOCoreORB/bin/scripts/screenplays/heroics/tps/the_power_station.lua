@@ -45,7 +45,7 @@ function ThePowerStationScreenPlay:spawnMobiles()
   
   --second floor platform 
   spawnMobile("dungeon2", "tps_black_sun_guard", 300, 9.3, -31.0, -27.9, 91, 410000019)
-  spawnMobile("dungeon2", "tps_black_sun_guard", 300, 11.9, -31.0, -34.2, 124, 410000019) 
+  spawnMobile("dungeon2", "tps_black_sun_guard", 300, 12.1, -31.0, -24.4, 124, 410000019) 
   spawnMobile("dungeon2", "tps_battle_droid", 300, 13.4, -31.0, -28.0, -33, 410000019)   
   
   
