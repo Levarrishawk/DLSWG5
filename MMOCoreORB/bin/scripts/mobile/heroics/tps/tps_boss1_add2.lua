@@ -1,9 +1,9 @@
-tps_boss1_add = Creature:new {
+tps_boss1_add2 = Creature:new {
 	objectName = "@mob/creature_names:mand_bunker_battle_droid",
-	customName = "The Guardian's Overwatch",
+	customName = "Upgraded Guardian's Overwatch",
 	socialGroup = "death_watch",
 	faction = "",
-	level = 117,
+	level = 119,
 	chanceHit = 5.5,
 	damageMin = 595,
 	damageMax = 1000,
@@ -44,4 +44,4 @@ tps_boss1_add = Creature:new {
 	attacks = merge(pistoleermaster,carbineermaster,marksmanmaster)
 }
 
-CreatureTemplates:addCreatureTemplate(tps_boss1_add, "tps_boss1_add")
+CreatureTemplates:addCreatureTemplate(tps_boss1_add2, "tps_boss1_add2")
