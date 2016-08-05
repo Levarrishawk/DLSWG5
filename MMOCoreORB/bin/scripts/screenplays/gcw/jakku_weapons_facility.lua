@@ -138,6 +138,12 @@ function JakkuWeaponsFacilityScreenPlay:spawnSceneObjects()
   
   spawnSceneObject("jakku", "object/static/structure/military/bunker_crate_style_01.iff", 88.4, -74, -77.9, 610000131, math.rad(0) )
   spawnSceneObject("jakku", "object/static/structure/military/bunker_crate_style_01.iff", 88.4, -74, -84.9, 610000131, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_crate_style_01.iff", 78.4, -74, -77.9, 610000131, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_crate_style_01.iff", 78.4, -74, -84.9, 610000131, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", 88.4, -74, -77.9, 610000131, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", 88.4, -74, -84.9, 610000131, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", 78.4, -74, -77.9, 610000131, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", 78.4, -74, -84.9, 610000131, math.rad(0) )
   
 
 end
