@@ -124,11 +124,31 @@ end)
 end)
 end)
 end)
-
-
-spatialChat(add1, "roger roger!")
- 
+spatialChat(add1, "roger roger!") 
 end
+
+if (((bossHealth <= (bossMaxHealth *0.6))) and readData("ThePowerStationScreenPlay:spawnState") == 2) then
+spatialChat(pBoss, "I will not tolerate any further interruptions, overwatch guards get in here and destroy them!")
+writeData("kaas_imperial_garison:spawnState",3)
+local add5 = spawnMobile("dungeon2", "tps_boss1_add", 0, 21.7, 7.0, 20.0, 169, 410000016)
+ObjectManager.withCreatureObject(add5, function(fifthTime)
+local add6 = spawnMobile("dungeon2", "tps_boss1_add", 0, 21.7, 7.0, 10.5, 1, 410000016)
+ObjectManager.withCreatureObject(add6, function(sixthTime)
+local add7 = spawnMobile("dungeon2", "tps_boss1_add", 0, 26.4, 7.0, 15.0, -09, 410000016)
+ObjectManager.withCreatureObject(add7, function(seventhTime)
+local add8 = spawnMobile("dungeon2", "tps_boss1_add", 0, 20.1, 7.0, 16.1, 05, 410000016)
+ObjectManager.withCreatureObject(add8, function(eighthTime)
+fifthTime:engageCombat(pPlayer)
+sixthTime:engageCombat(pPlayer)
+seventhTime:engageCombat(pPlayer)
+eighthTime:engageCombat(pPlayer)
+end)
+end)
+end)
+end)
+spatialChat(add5, "Time to die, scum!") 
+end
+
 
 end
  
