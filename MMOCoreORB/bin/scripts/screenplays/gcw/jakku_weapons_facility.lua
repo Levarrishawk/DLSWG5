@@ -260,5 +260,60 @@ function JakkuWeaponsFacilityScreenPlay:spawnMobiles()
   spawnMobile("jakku", "jakku_battle_droid", 60, 67.6, -48, 36.4, 180, 610000147)
   spawnMobile("jakku", "jakku_battle_droid", 60, 75.4, -48, 36.4, 180, 610000147)
   
+  -- Lower corridors
+  
+  spawnMobile("jakku", "jakku_battle_droid", 60, 123.4, -56, -23.9, 0, 610000122)
+  
+  spawnMobile("jakku", "jakku_battle_droid", 60, 120.4, -56, -9.4, 90, 610000123)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 128.4, -56, -8.8, -90, 610000123)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 124, -56, -11.6, 180, 610000123)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 116.5, -56, 16.0, -90, 610000123)
+  
+  spawnMobile("jakku", "jakku_battle_droid", 60, 106.3, -56, 11.9, 44, 610000125)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 127.5, -64, 42.8, 180, 610000125)
+  
+  spawnMobile("jakku", "jakku_battle_droid", 60, 123.2, -64, 43.5, 90, 610000126)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 123.7, -64, 69.7, 180, 610000126)
+  
+  spawnMobile("jakku", "jakku_battle_droid", 60, 82.3, -72, 66.3, 119, 610000127)
+  
+  spawnMobile("jakku", "jakku_battle_droid", 60, 83.4, -72, 49, 0, 610000128)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 74.2, -72, 48.9, 90, 610000128)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 92.5, -72, 49, 48.9, 610000128)
+  
+  spawnMobile("jakku", "jakku_battle_droid", 60, 75.4, -74, -45.1, 180, 610000130)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 69.5, -74, -45.1, 180, 610000130)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 65.6, -74, -45.1, 180, 610000130)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 59.6, -74, -45.1, 180, 610000130)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 75.4, -74, -65.9, 0, 610000130)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 69.5, -74, -65.9, 0, 610000130)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 65.6, -74, -65.9, 0, 610000130)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 59.6, -74, -65.9, 0, 610000130)
+  
+  spawnMobile("jakku", "jakku_battle_droid", 60, 18.4, -74, -64.1, 50, 610000133)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 19.5, -74, -651.4, 180, 610000133)
+  
+  spawnMobile("jakku", "jakku_battle_droid", 60, 20.5, -72, -35.7, -90, 610000134)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 11.6, -72, -35.7, 90, 610000134)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 19.6, -72, -27, 180, 610000134)
+  
+  spawnMobile("jakku", "jakku_battle_droid", 60, 36.7, -72, -36.1, -71, 610000135)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 39.0, -72, 40.3, -50, 610000136)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 35.4, -72, 50.4, 180, 610000136)
+  
+  -- Gauntlet Room
+  spawnMobile("jakku", "jakku_fast_battle_droid", 1, -28.5, -63.5, 30.9, 180, 610000138)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 1, -28.5, -63.5, 39.1, 180, 610000138)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 1, -28.5, -63.5, 46.9, 180, 610000138)
+  
+  spawnMobile("jakku", "jakku_fast_battle_droid", 1, -16.5, -63.5, 30.9, 180, 610000138)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 1, -16.5, -63.5, 39.1, 180, 610000138)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 1, -16.5, -63.5, 46.9, 180, 610000138)
+  
+  spawnMobile("jakku", "jakku_fast_battle_droid", 1, -8.5, -63.5, 30.9, 180, 610000138)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 1, -8.5, -63.5, 39.1, 180, 610000138)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 1, -8.5, -63.5, 46.9, 180, 610000138)
+
+  
 end
 
