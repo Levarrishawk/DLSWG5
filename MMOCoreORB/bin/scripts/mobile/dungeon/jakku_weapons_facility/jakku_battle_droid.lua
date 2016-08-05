@@ -1,5 +1,6 @@
 jakku_battle_droid = Creature:new {
 	objectName = "@mob/creature_names:mand_bunker_battle_droid",
+	customName = "Imperial Protocol-77 Battle Droid",
 	socialGroup = "death_watch",
 	faction = "",
 	level = 145,
