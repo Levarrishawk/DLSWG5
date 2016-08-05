@@ -111,6 +111,28 @@ function JakkuWeaponsFacilityScreenPlay:spawnSceneObjects()
  
   spawnSceneObject("jakku", "object/tangible/veteran_reward/frn_tech_console_sectional_a.iff", 98, -56, -3.0, 610000124, math.rad(90) )
  
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 118.5, -64, 43, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 128.5, -64, 43, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 118.5, -64, 47, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 128.5, -64, 47, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 118.5, -64, 51, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 128.5, -64, 51, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 118.5, -64, 55, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 128.5, -64, 55, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 118.5, -64, 59, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 128.5, -64, 59, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 118.5, -64, 63, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 128.5, -64, 63, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 118.5, -64, 67, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 128.5, -64, 67, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 118.5, -64, 71, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 128.5, -64, 71, 610000126, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/installation/mockup_power_generator_fusion_style_1.iff", 123.6, -64, 57, 610000126, math.rad(90) )
+      
+  
+
+
+
 end
 
 
