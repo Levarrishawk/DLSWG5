@@ -212,10 +212,10 @@ end
 
 if (((bossHealth <= (bossMaxHealth *0.001))) and readData("ThePowerStationScreenPlay:spawnState") == 5) then
 spatialChat(pBoss, "SYSTEMS SHUTTING DOWN....")
-writeData("ThePowerStationScreenPlay:spawnState",6)
-local pTrigger2 = spawnMobile("dungeon2", "tps_trash_mob", 9000, 15.0, -7.0, 16.2, 92, 410000016)
+local pTrigger2 = spawnMobile("dungeon2", "tps_trash_mob", 0, 15.0, -7.0, 16.2, 92, 410000016)
 if (pTrigger2 ~= nil ) then
         createObserver(OBJECTDESTRUCTION, "ThePowerStationScreenPlay", "notifyTriggerDead", pTrigger2)
+        writeData("ThePowerStationScreenPlay:spawnState",6)
 
 end
 
