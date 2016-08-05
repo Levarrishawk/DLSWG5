@@ -69,6 +69,14 @@ function JakkuWeaponsFacilityScreenPlay:spawnSceneObjects()
   spawnSceneObject("jakku", "object/static/structure/general/allum_mine_pipes_s02.iff", 17.6, -48, -13.4, 610000144, math.rad(90) )
   spawnSceneObject("jakku", "object/static/structure/general/allum_mine_pipes_s02.iff", 17.6, -48, -25.7, 610000144, math.rad(-90) )
   
+  spawnSceneObject("jakku", "object/static/item/item_medic_bacta_tank_large.iff", 128.4, -56, -6.1, 610000123, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 128.4, -56, -6.1, 610000123, math.rad(0) )
+  
+  spawnSceneObject("jakku", "object/static/item/item_medic_bacta_tank_large.iff", 119.5, -56, -6.1, 610000123, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 119.5, -56, -6.1, 610000123, math.rad(0) )
+  
+
+
 
 end
 
