@@ -104,7 +104,13 @@ function JakkuWeaponsFacilityScreenPlay:spawnSceneObjects()
   spawnSceneObject("jakku", "object/static/item/item_medic_bacta_tank_large.iff", 119.5, -56, 18.1, 610000123, math.rad(0) )
   spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 119.5, -56, 18.1, 610000123, math.rad(0) )
  
-
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 111.5, -56, -9.0, 610000124, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 111.5, -56, 3.0, 610000124, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 99.5, -56, -9.0, 610000124, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/military/bunker_pillar_style_02.iff", 99.5, -56, 3.0, 610000124, math.rad(0) )
+ 
+  spawnSceneObject("jakku", "object/tangible/veteran_reward/frn_tech_console_sectional_a.iff", 98, -56, -3.0, 610000124, math.rad(90) )
+ 
 end
 
 
