@@ -175,6 +175,17 @@ function JakkuWeaponsFacilityScreenPlay:spawnSceneObjects()
   
   spawnSceneObject("jakku", "object/tangible/veteran_reward/frn_tech_console_sectional_d.iff", 28.1, -72, 39.7, 610000136, math.rad(90) )
   
+  spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -28.5, -64, 30.9, 610000138, math.rad(90) )
+  spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -28.5, -64, 39.1, 610000138, math.rad(90) )
+  spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -28.5, -64, 46.9, 610000138, math.rad(90) )
+  
+  spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -16.5, -64, 30.9, 610000138, math.rad(90) )
+  spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -16.5, -64, 39.1, 610000138, math.rad(90) )
+  spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -16.5, -64, 46.9, 610000138, math.rad(90) )
+  
+  spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -8.5, -64, 30.9, 610000138, math.rad(90) )
+  spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -8.5, -64, 39.1, 610000138, math.rad(90) )
+  spawnSceneObject("jakku", "object/static/structure/general/cloning_tube.iff", -8.5, -64, 46.9, 610000138, math.rad(90) )
 
 end
 
