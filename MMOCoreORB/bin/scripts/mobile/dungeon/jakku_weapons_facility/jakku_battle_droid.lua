@@ -28,9 +28,10 @@ jakku_battle_droid = Creature:new {
 	scale = 1.15,
 
 	templates = {
-		"object/mobile/death_watch_battle_droid.iff",
-		"object/mobile/death_watch_battle_droid_02.iff",
-		"object/mobile/death_watch_battle_droid_03.iff"},
+	--	"object/mobile/death_watch_battle_droid.iff",
+		"object/mobile/death_watch_battle_droid_02.iff"
+	--	"object/mobile/death_watch_battle_droid_03.iff"
+	},
 	lootGroups = {
 		{
 			groups = {

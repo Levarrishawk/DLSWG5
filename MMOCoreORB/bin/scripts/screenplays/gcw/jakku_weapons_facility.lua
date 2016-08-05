@@ -254,11 +254,11 @@ function JakkuWeaponsFacilityScreenPlay:spawnMobiles()
   
   spawnMobile("jakku", "jakku_battle_droid", 60, 89.5, -48, 34.5, -137, 610000147)
   
-  spawnMobile("jakku", "jakku_battle_droid", 60, 43.6, -48, 36.4, 0, 610000147)
-  spawnMobile("jakku", "jakku_battle_droid", 60, 51.4, -48, 36.4, 0, 610000147)
-  spawnMobile("jakku", "jakku_battle_droid", 60, 59.5, -48, 36.4, 0, 610000147)
-  spawnMobile("jakku", "jakku_battle_droid", 60, 67.6, -48, 36.4, 0, 610000147)
-  spawnMobile("jakku", "jakku_battle_droid", 60, 75.4, -48, 36.4, 0, 610000147)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 43.6, -48, 36.4, 180, 610000147)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 51.4, -48, 36.4, 180, 610000147)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 59.5, -48, 36.4, 180, 610000147)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 67.6, -48, 36.4, 180, 610000147)
+  spawnMobile("jakku", "jakku_battle_droid", 60, 75.4, -48, 36.4, 180, 610000147)
   
 end
 
