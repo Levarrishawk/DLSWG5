@@ -190,7 +190,7 @@ end)
 end)
 end)
 end)
-spatialChat(adda1, "This is your final warning, DROP YOUR WEAPONS SCUM!") 
+spatialChat(adda5, "This is your final warning, DROP YOUR WEAPONS SCUM!") 
 end
 
 end
