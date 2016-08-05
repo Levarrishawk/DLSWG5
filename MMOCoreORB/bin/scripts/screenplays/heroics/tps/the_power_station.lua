@@ -32,7 +32,24 @@ function ThePowerStationScreenPlay:spawnMobiles()
   spawnMobile("dungeon2", "tps_black_sun_assassin", 900, 20.8, -7.0, 5.2, -171, 410000020)
   spawnMobile("dungeon2", "tps_black_sun_assassin", 900, 23.2, -7.0, 5.2, -171, 410000020)
   
-  --Boss Fight 1
+  --Curved Hallway to the left 
+  spawnMobile("dungeon2", "tps_battle_droid", 300, -1.7, -7.0, -33.7, -82, 410000013)
+  spawnMobile("dungeon2", "tps_battle_droid", 300, -0.0, -7.0, -26.6, 174, 410000015)
+  spawnMobile("dungeon2", "tps_battle_droid", 300, 0.5, -7.0, -21.7, 174, 410000015)
+  spawnMobile("dungeon2", "tps_battle_droid", 300, 5.0, -7.0, -21.0, -100, 410000015)
+  
+  --second floor platform going down
+  spawnMobile("dungeon2", "tps_black_sun_assassin", 300, 37.2, -18.0, -23.0, -83, 410000019)  
+  spawnMobile("dungeon2", "tps_black_sun_assassin", 300, 36.5, -18.0, -27.7, -91, 410000019)  
+  spawnMobile("dungeon2", "tps_battle_droid", 300, 33.5, -18.0, -24.4, -87, 410000019)
+  
+  --second floor platform 
+  spawnMobile("dungeon2", "tps_black_sun_guard", 300, 9.3, -31.0, -27.9, 91, 410000019)
+  spawnMobile("dungeon2", "tps_black_sun_guard", 300, 11.9, -31.0, -34.2, 124, 410000019) 
+  spawnMobile("dungeon2", "tps_battle_droid", 300, 13.4, -31.0, -28.0, -33, 410000019)   
+  
+  
+  
   
   
    
