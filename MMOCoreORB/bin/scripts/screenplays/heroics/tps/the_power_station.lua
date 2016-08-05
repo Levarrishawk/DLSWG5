@@ -171,9 +171,9 @@ end)
 spatialChat(adda1, "Targets acquired, BLAST THEM!") 
 end
 
-if (((bossHealth <= (bossMaxHealth *0.1))) and readData("ThePowerStationScreenPlay:spawnState") == 3) then
+if (((bossHealth <= (bossMaxHealth *0.1))) and readData("ThePowerStationScreenPlay:spawnState") == 4) then
 spatialChat(pBoss, "Systems failing, droids!  DESTROY THEM NOW!")
-writeData("ThePowerStationScreenPlay:spawnState",4)
+writeData("ThePowerStationScreenPlay:spawnState",5)
 local adda5 = spawnMobile("dungeon2", "tps_boss1_add2", 0, 21.7, 7.0, 20.0, 169, 410000016)
 ObjectManager.withCreatureObject(adda5, function(a5Time)
 local adda6 = spawnMobile("dungeon2", "tps_boss1_add2", 0, 21.7, 7.0, 10.5, 1, 410000016)
