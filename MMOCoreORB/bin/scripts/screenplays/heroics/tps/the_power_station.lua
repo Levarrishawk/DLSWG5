@@ -149,6 +149,49 @@ end)
 spatialChat(add5, "Time to die, scum!") 
 end
 
+if (((bossHealth <= (bossMaxHealth *0.3))) and readData("ThePowerStationScreenPlay:spawnState") == 3) then
+spatialChat(pBoss, "I CANNOT allow you to continue, calling for heavier firepower!")
+writeData("ThePowerStationScreenPlay:spawnState",4)
+local adda1 = spawnMobile("dungeon2", "tps_boss1_add2", 0, 21.7, 7.0, 20.0, 169, 410000016)
+ObjectManager.withCreatureObject(adda1, function(a1Time)
+local adda2 = spawnMobile("dungeon2", "tps_boss1_add2", 0, 21.7, 7.0, 10.5, 1, 410000016)
+ObjectManager.withCreatureObject(adda2, function(a2Time)
+local adda3 = spawnMobile("dungeon2", "tps_boss1_add2", 0, 26.4, 7.0, 15.0, -09, 410000016)
+ObjectManager.withCreatureObject(adda3, function(a3Time)
+local adda4 = spawnMobile("dungeon2", "tps_boss1_add2", 0, 20.1, 7.0, 16.1, 05, 410000016)
+ObjectManager.withCreatureObject(adda4, function(a4Time)
+a1Time:engageCombat(pPlayer)
+a2Time:engageCombat(pPlayer)
+a3Time:engageCombat(pPlayer)
+a4Time:engageCombat(pPlayer)
+end)
+end)
+end)
+end)
+spatialChat(adda1, "Targets acquired, BLAST THEM!") 
+end
+
+if (((bossHealth <= (bossMaxHealth *0.1))) and readData("ThePowerStationScreenPlay:spawnState") == 3) then
+spatialChat(pBoss, "Systems failing, droids!  DESTROY THEM NOW!")
+writeData("ThePowerStationScreenPlay:spawnState",4)
+local adda5 = spawnMobile("dungeon2", "tps_boss1_add2", 0, 21.7, 7.0, 20.0, 169, 410000016)
+ObjectManager.withCreatureObject(adda5, function(a5Time)
+local adda6 = spawnMobile("dungeon2", "tps_boss1_add2", 0, 21.7, 7.0, 10.5, 1, 410000016)
+ObjectManager.withCreatureObject(adda6, function(a6Time)
+local adda7 = spawnMobile("dungeon2", "tps_boss1_add2", 0, 26.4, 7.0, 15.0, -09, 410000016)
+ObjectManager.withCreatureObject(adda7, function(a7Time)
+local adda8 = spawnMobile("dungeon2", "tps_boss1_add2", 0, 20.1, 7.0, 16.1, 05, 410000016)
+ObjectManager.withCreatureObject(adda8, function(a8Time)
+a5Time:engageCombat(pPlayer)
+a6Time:engageCombat(pPlayer)
+a7Time:engageCombat(pPlayer)
+a8Time:engageCombat(pPlayer)
+end)
+end)
+end)
+end)
+spatialChat(adda1, "This is your final warning, DROP YOUR WEAPONS SCUM!") 
+end
 
 end
  
