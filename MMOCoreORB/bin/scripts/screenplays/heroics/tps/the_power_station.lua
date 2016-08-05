@@ -107,7 +107,7 @@ end
 
 if (((bossHealth <= (bossMaxHealth *0.9))) and readData("ThePowerStationScreenPlay:spawnState") == 1) then
 spatialChat(pBoss, "Calling in reinforcements!  Blast them!")
-writeData("kaas_imperial_garison:spawnState",2)
+writeData("ThePowerStationScreenPlay:spawnState",2)
 local add1 = spawnMobile("dungeon2", "tps_boss1_add", 0, 21.7, 7.0, 20.0, 169, 410000016)
 ObjectManager.withCreatureObject(add1, function(firstTime)
 local add2 = spawnMobile("dungeon2", "tps_boss1_add", 0, 21.7, 7.0, 10.5, 1, 410000016)
@@ -129,7 +129,7 @@ end
 
 if (((bossHealth <= (bossMaxHealth *0.6))) and readData("ThePowerStationScreenPlay:spawnState") == 2) then
 spatialChat(pBoss, "I will not tolerate any further interruptions, overwatch guards get in here and destroy them!")
-writeData("kaas_imperial_garison:spawnState",3)
+writeData("ThePowerStationScreenPlay:spawnState",3)
 local add5 = spawnMobile("dungeon2", "tps_boss1_add", 0, 21.7, 7.0, 20.0, 169, 410000016)
 ObjectManager.withCreatureObject(add5, function(fifthTime)
 local add6 = spawnMobile("dungeon2", "tps_boss1_add", 0, 21.7, 7.0, 10.5, 1, 410000016)
