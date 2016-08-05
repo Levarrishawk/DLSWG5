@@ -192,6 +192,16 @@ function JakkuWeaponsFacilityScreenPlay:spawnSceneObjects()
   spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", -4.5, -64, -6.9, 610000138, math.rad(90) )
   spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_red_style_01_on.iff", -28.5, -64, -6.9, 610000138, math.rad(90) )
   
+  spawnSceneObject("jakku", "object/static/item/item_medic_bacta_tank_large.iff", 10.1, -60, -10.3, 610000140, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 10.1, -60, -10.3, 610000140, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/item/item_medic_bacta_tank_large.iff", 10.1, -60, 4.4, 610000140, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 10.1, -60, 4.4, 610000140, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/item/item_medic_bacta_tank_large.iff", 24.9, -60, -10.3, 610000140, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 24.9, -60, -10.3, 610000140, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/item/item_medic_bacta_tank_large.iff", 24.9, -60, 4.4, 610000140, math.rad(0) )
+  spawnSceneObject("jakku", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 24.9, -60, 4.4, 610000140, math.rad(0) )
+ 
+  
 end
 
 
