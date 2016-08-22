@@ -277,7 +277,8 @@ function JakkuWeaponsFacilityScreenPlay:spawnMobiles()
   
   spawnMobile("jakku", "jakku_battle_droid", 60, 82.3, -72, 66.3, 119, 610000127)
   
-  spawnMobile("jakku", "jakku_battle_droid", 60, 83.4, -72, 49, 0, 610000128)
+ -- spawnMobile("jakku", "jakku_battle_droid", 60, 83.4, -72, 49, 0, 610000128)
+  
   spawnMobile("jakku", "jakku_battle_droid", 60, 74.2, -72, 48.9, 90, 610000128)
   spawnMobile("jakku", "jakku_battle_droid", 60, 92.5, -72, 49, 48.9, 610000128)
   
