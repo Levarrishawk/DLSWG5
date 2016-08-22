@@ -28,9 +28,9 @@ end
  
 function jakku_weapons_facility_boss_2:notifyTriggerDead(pTrigger, pPlayer)
         local pBoss = spawnMobile("jakku", "jakku_black_trooper_1", 0, 23.6, -48, -19, -90, 610000144)
-        ObjectManager.withCreatureObject(pBoss, function(oBoss)
+        ObjectManager.withCreatureObject(pBoss, function(nBoss)
         writeData("jakku_weapons_facility_boss_2:spawnState", 1)
-        writeData("facilityboss2", oBoss:getObjectID())
+        writeData("facilityboss2", nBoss:getObjectID())
           spatialChat(pBoss, "WARNING Protocol-77 has been breached.  This unit has been directed to terminate all sentients within the facility.")
             createObserver(DAMAGERECEIVED,"jakku_weapons_facility_boss_2","boss_damage", pBoss)
             createObserver(OBJECTDESTRUCTION, "jakku_weapons_facility_boss_2", "notifyBossDead", pBoss)
