@@ -88,7 +88,7 @@ end
  
 if (((bossHealth <= (bossMaxHealth *0.9))) and readData("jakku_weapons_facility_boss_2:spawnState") == 1) then
   spatialChat(pBoss, "Sentient resistance exceeding tolerance levels.")
-    writeData("jakku_weapons_facility_boss_2:spawnState",2)
+    writeData("jakku_weapons_facility_boss_2:spawnState", 2)
     local pJos = spawnMobile("jakku", "jakku_fast_battle_droid", 0, 23.5, -48.0, -21, -90, 610000144)
     ObjectManager.withCreatureObject(pJos, function(firstTime)
     firstTime:engageCombat(pPlayer)
