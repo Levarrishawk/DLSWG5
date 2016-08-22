@@ -1,8 +1,8 @@
 jakku_black_trooper_1 = Creature:new {
 	objectName = "@mob/creature_names:fbase_dark_trooper_extreme",
 	customName = "Protocol-77 Dark Trooper",
-	socialGroup = "imperial",
-	faction = "imperial",
+	socialGroup = "death_watch",
+	faction = "",
 	level = 200,
 	chanceHit = 11.0,
 	damageMin = 1145,
