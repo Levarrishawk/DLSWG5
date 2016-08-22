@@ -29,8 +29,9 @@ jakku_assassin_droid = Creature:new {
 
 	templates = {"object/mobile/ig_88.iff"},
 	lootGroups = {},
-	defaultWeapon = "object/weapon/ranged/droid/droid_droideka_ranged.iff",
-  defaultAttack = "attack"
+	weapons = {"battle_droid_weapons"},
+  conversationTemplate = "",
+  attacks = merge(pistoleermaster,carbineermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(jakku_assassin_droid, "jakku_assassin_droid")
