@@ -1,0 +1,36 @@
+jakku_assassin_droid = Creature:new {
+	objectName = "@mob/creature_names:ig_88",
+	customName = "a Protocol-77 Assassin Droid",
+	socialGroup = "mercenary",
+	faction = "",
+	level = 100,
+	chanceHit = 10,
+	damageMin = 1645,
+	damageMax = 2000,
+	baseXp = 9429,
+	baseHAM = 300000,
+	baseHAMmax = 300000,
+	armor = 0,
+	resists = {30,30,30,30,30,30,30,30,-1},
+	meatType = "",
+	meatAmount = 0,
+	hideType = "",
+	hideAmount = 0,
+	boneType = "",
+	boneAmount = 0,
+	milk = 0,
+	tamingChance = 0,
+	ferocity = 0,
+	pvpBitmask = NONE,
+	creatureBitmask = PACK,
+	optionsBitmask = AIENABLED,
+	diet = HERBIVORE,
+	scale = 1.35,
+
+	templates = {"object/mobile/ig_88.iff"},
+	lootGroups = {},
+	defaultWeapon = "object/weapon/ranged/droid/droid_droideka_ranged.iff",
+  defaultAttack = "attack"
+}
+
+CreatureTemplates:addCreatureTemplate(jakku_assassin_droid, "jakku_assassin_droid")
