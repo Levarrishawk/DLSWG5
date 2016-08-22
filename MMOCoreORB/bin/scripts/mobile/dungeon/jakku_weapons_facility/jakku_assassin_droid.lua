@@ -1,7 +1,7 @@
 jakku_assassin_droid = Creature:new {
 	objectName = "@mob/creature_names:ig_88",
 	customName = "a Protocol-77 Assassin Droid",
-	socialGroup = "mercenary",
+	socialGroup = "death_watch",
 	faction = "",
 	level = 100,
 	chanceHit = 10,
