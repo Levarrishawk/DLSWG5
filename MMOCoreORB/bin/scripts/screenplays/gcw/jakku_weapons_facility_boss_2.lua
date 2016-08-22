@@ -97,7 +97,7 @@ if (((bossHealth <= (bossMaxHealth *0.9))) and readData("jakku_weapons_facility_
  
 end
  
-if (((bossHealth <= (bossMaxHealth *0.89))) and readData("jakku_weapons_facility_boss_1:spawnState") == 2) then
+if (((bossHealth <= (bossMaxHealth *0.89))) and readData("jakku_weapons_facility_boss_2:spawnState") == 2) then
  -- spatialChat(pBoss, "Once again, to my side!")
     writeData("jakku_weapons_facility_boss_2:spawnState", 3)
     local pJosTwo = spawnMobile("jakku", "jakku_fast_battle_droid", 0, 23.5, -48, -17, -90, 610000144)
