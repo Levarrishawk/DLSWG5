@@ -49,7 +49,7 @@ function jakku_weapons_facility_boss_1:boss_damage(pBoss, pPlayer)
 		local distance = ((x2 - x1)*(x2 - x1)) + ((y2 - y1)*(y2 - y1))
 		local maxDistance = 45				
 
-		if (((bossHealth <= (bossMaxHealth *0.9)) or (bossAction <= (bossMaxAction * 0.9)) or (bossMind <= (bossMaxMind *0.9))) and readData("jakku_weapons_facility_boss_1:spawnAdd") == 0) then
+		if (((bossHealth <= (bossMaxHealth *0.9))) and readData("jakku_weapons_facility_boss_1:spawnAdd") == 0) then
 			spatialChat(pBoss, "Resistance levels exceeding maximum acceptable value. Reinforcement required.")
 			writeData("jakku_weapons_facility_boss_1:spawnAdd", 1)
 			if (readData("jakku_weapons_facility_boss_1:spawnAdd") == 1) then
@@ -60,7 +60,7 @@ function jakku_weapons_facility_boss_1:boss_damage(pBoss, pPlayer)
 			end
 
 		end
-		if (((bossHealth <= (bossMaxHealth *0.89)) or (bossAction <= (bossMaxAction * 0.89)) or (bossMind <= (bossMaxMind *0.89))) and readData("jakku_weapons_facility_boss_1:spawnAdd1") == 0) then
+		if (((bossHealth <= (bossMaxHealth *0.89))) and readData("jakku_weapons_facility_boss_1:spawnAdd1") == 0) then
 			--spatialChat(pBoss, "I sense your presence")
 			writeData("jakku_weapons_facility_boss_1:spawnAdd1", 1)
 			if (readData("jakku_weapons_facility_boss_1:spawnAdd1") == 1) then
@@ -71,7 +71,7 @@ function jakku_weapons_facility_boss_1:boss_damage(pBoss, pPlayer)
 			end
 
 		end
-		if (((bossHealth <= (bossMaxHealth *0.85)) or (bossAction <= (bossMaxAction * 0.85)) or (bossMind <= (bossMaxMind *0.85))) and readData("jakku_weapons_facility_boss_1:spawnAdd2") == 0) then
+		if (((bossHealth <= (bossMaxHealth *0.85))) and readData("jakku_weapons_facility_boss_1:spawnAdd2") == 0) then
 			--spatialChat(pBoss, "")
 			writeData("jakku_weapons_facility_boss_1:spawnAdd2", 1)
 			if (readData("jakku_weapons_facility_boss_1:spawnAdd2") == 1) then
@@ -82,7 +82,7 @@ function jakku_weapons_facility_boss_1:boss_damage(pBoss, pPlayer)
 			end
 
 		end		
-		if (((bossHealth <= (bossMaxHealth *0.84)) or (bossAction <= (bossMaxAction * 0.84)) or (bossMind <= (bossMaxMind *0.84))) and readData("jakku_weapons_facility_boss_1:spawnAdd3") == 0) then
+		if (((bossHealth <= (bossMaxHealth *0.84))) and readData("jakku_weapons_facility_boss_1:spawnAdd3") == 0) then
 			spatialChat(pBoss, "WARNING, facility now under a level two incursion.  Requesting additional droid reinforcement.")
 			writeData("jakku_weapons_facility_boss_1:spawnAdd3", 1)
 			if (readData("jakku_weapons_facility_boss_1:spawnAdd3") == 1) then
@@ -93,7 +93,7 @@ function jakku_weapons_facility_boss_1:boss_damage(pBoss, pPlayer)
 			end
 
 		end		
-		if (((bossHealth <= (bossMaxHealth * 0.5)) or (bossAction <= (bossMaxAction * 0.5)) or (bossMind <= (bossMaxMind * 0.5))) and readData("jakku_weapons_facility_boss_1:spawnAddOne") == 0) then
+		if (((bossHealth <= (bossMaxHealth * 0.5))) and readData("jakku_weapons_facility_boss_1:spawnAddOne") == 0) then
 			spatialChat(pBoss,"WARNING, this incursion must not be allowed to succeed.  By special decree of Emperor Palpatine this facility will be destroyed if Protocol-77 is breached.")
 			writeData("jakku_weapons_facility_boss_1:spawnAddOne", 1)
 			if (readData("jakku_weapons_facility_boss_1:spawnAddOne") == 1) then
@@ -104,7 +104,7 @@ function jakku_weapons_facility_boss_1:boss_damage(pBoss, pPlayer)
 			end
 
 		end
-		if (((bossHealth <= (bossMaxHealth * 0.4)) or (bossAction <= (bossMaxAction * 0.4)) or (bossMind <= (bossMaxMind * 0.4))) and readData("jakku_weapons_facility_boss_1:spawnAddTwo") == 0) then
+		if (((bossHealth <= (bossMaxHealth * 0.4))) and readData("jakku_weapons_facility_boss_1:spawnAddTwo") == 0) then
 			spatialChat(pBoss,"WARNING, Protocol-77 nearing compromise.  Incursion on facility level 1.   Intruders, this facility has been programmed to self destruct if Protocol-77 is breached.  Cease hostilities and submit at once.")
 			writeData("jakku_weapons_facility_boss_1:spawnAddTwo", 1)
 			if (readData("jakku_weapons_facility_boss_1:spawnAddTwo") == 1) then
@@ -116,7 +116,7 @@ function jakku_weapons_facility_boss_1:boss_damage(pBoss, pPlayer)
 
 		end		
 		
-		if (((bossHealth <= (bossMaxHealth * 0.02)) or (bossAction <= (bossMaxAction * 0.02)) or (bossMind <= (bossMaxMind * 0.02))) and readData("jakku_weapons_facility_boss_1:spawnAddFour") == 0) then
+		if (((bossHealth <= (bossMaxHealth * 0.02))) and readData("jakku_weapons_facility_boss_1:spawnAddFour") == 0) then
 			spatialChat(pBoss, "WARNING, intruders.  Protocol-77 has been breached.  Facility self destruct has been initiated.  Catastrophic reactor overload will occur in 4 hours.  This facility must not be comprimised.  You are advised to vacate the area.  Reactor overload will destroy this planet.")
 			writeData("jakku_weapons_facility_boss_1:spawnAddFour", 1)
 		end
