@@ -1,6 +1,6 @@
-technician = Creature:new {
+jakku_technician = Creature:new {
 	objectName = "@mob/creature_names:technician",
-	socialGroup = "death_watch",
+	socialGroup = "thug",
 	faction = "",
 	level = 34,
 	chanceHit = 0.41,
@@ -41,4 +41,4 @@ technician = Creature:new {
 	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
-CreatureTemplates:addCreatureTemplate(technician, "technician")
+CreatureTemplates:addCreatureTemplate(jakku_technician, "jakku_technician")

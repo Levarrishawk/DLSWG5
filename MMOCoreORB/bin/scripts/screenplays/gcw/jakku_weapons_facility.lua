@@ -313,6 +313,30 @@ function JakkuWeaponsFacilityScreenPlay:spawnMobiles()
   spawnMobile("jakku", "jakku_fast_battle_droid", 1, -8.5, -63.5, 30.9, 180, 610000138)
   spawnMobile("jakku", "jakku_fast_battle_droid", 1, -8.5, -63.5, 39.1, 180, 610000138)
   spawnMobile("jakku", "jakku_fast_battle_droid", 1, -8.5, -63.5, 46.9, 180, 610000138)
+  
+  spawnMobile("jakku", "jakku_technician", 60, 35.4, -48, 48.6, 0, 610000143)
+  spawnMobile("jakku", "jakku_technician", 60, 39.1, -48, 49.5, 41, 610000143)
+  spawnMobile("jakku", "jakku_technician", 60, 32.2, -48, 49.5, -49, 610000143)
+  
+  spawnMobile("jakku", "jakku_fast_battle_droid", 15, 33.8, -48, 42.1, 0, 610000143)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 15, 37.4, -48, 42.1, 0, 610000143)
+  
+  spawnMobile("jakku", "jakku_technician", 60, 82.0, -48, 50.3, -59, 610000142)
+  spawnMobile("jakku", "jakku_technician", 60, 85.8, -48, 49.9, -40, 610000142)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 15, 85.5, -48, 42.3, 0, 610000142)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 15, 82.5, -48, 42.3, 0, 610000142)
+  
+  spawnMobile("jakku", "jakku_technician", 60, 80.9, -48, -39.6, -134, 610000146)
+  spawnMobile("jakku", "jakku_technician", 60, 84.7, -48, -35.6, -134, 610000146)  
+  spawnMobile("jakku", "jakku_fast_battle_droid", 15, 88.6, -48, -37, -90, 610000146)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 15, 78, -48, -37, 90, 610000146)
+  
+  spawnMobile("jakku", "jakku_technician", 15, 35.5, -48, -37.6, 0, 610000145)
+  
+  spawnMobile("jakku", "jakku_fast_battle_droid", 15, 30.9, -48, -41.8, 33, 610000145)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 15, 30.9, -48, -31.9, 106, 610000145)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 15, 40.3, -48, -32.4, -141, 610000145)
+  spawnMobile("jakku", "jakku_fast_battle_droid", 15, 40.2, -48, -41.8, -51, 610000145)
 
   
 end
