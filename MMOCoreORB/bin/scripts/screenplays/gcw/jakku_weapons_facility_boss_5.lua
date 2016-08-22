@@ -65,8 +65,8 @@ function jakku_weapons_facility_boss_5:boss_damage(pBoss, pPlayer)
   local bossMaxAction = boss:getMaxHAM(3)
   local bossMaxMind = boss:getMaxHAM(6)
    
-  local x1 = 83.4
-  local y1 = 49
+  local x1 = 82.8
+  local y1 = -57.7
   local x2 = boss:getPositionX()
   local y2 = boss:getPositionY()
    
