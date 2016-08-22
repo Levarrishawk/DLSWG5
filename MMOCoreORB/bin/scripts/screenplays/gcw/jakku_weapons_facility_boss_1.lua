@@ -1,4 +1,4 @@
-
+local ObjectManager = require("managers.object.object_manager")
 
 
 
@@ -31,7 +31,7 @@ function jakku_weapons_facility_boss_1:notifyTriggerDead(pTrigger, pPlayer)
         ObjectManager.withCreatureObject(pBoss, function(oBoss)
         writeData("jakku_weapons_facility_boss_1:spawnState", 1)
         writeData("facilityboss1", oBoss:getObjectID())
-          spatialChat(pBoss, "I have murdered thousands, and do you know that my only regret is that I could not see their blood?")
+          spatialChat(pBoss, "WARNING, this facility is under a protocol 77 emergency evacuation lockdown. You are not authorized and will be terminated.")
             createObserver(DAMAGERECEIVED,"jakku_weapons_facility_boss_1","boss_damage", pBoss)
             createObserver(OBJECTDESTRUCTION, "jakku_weapons_facility_boss_1", "notifyBossDead", pBoss)
           createEvent(1800000, "jakku_weapons_facility_boss_1", "despawnBoss", pBoss)
