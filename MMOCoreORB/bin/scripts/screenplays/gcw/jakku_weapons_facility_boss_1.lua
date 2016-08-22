@@ -160,8 +160,8 @@ if (((bossHealth <= (bossMaxHealth * 0.02))) and readData("jakku_weapons_facilit
   return 0
 end
  
-function kaas_imperial_garison:resetScreenplayStatus(pPlayer)
-  writeData("kaas_imperial_garison:spawnState", 1)
+function jakku_weapons_facility_boss_1:resetScreenplayStatus(pPlayer)
+  writeData("jakku_weapons_facility_boss_1:spawnState", 1)
 end
  
 
