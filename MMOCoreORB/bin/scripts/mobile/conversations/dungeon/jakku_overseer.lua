@@ -1,5 +1,5 @@
 jakku_overseer = ConvoTemplate:new {
-  initialScreen = "first_conv",
+  initialScreen = "first_convo",
   templateType = "Lua",
   luaClassHandler = "jakku_overseer_convo_handler",
   screens = {}
@@ -8,7 +8,7 @@ jakku_overseer = ConvoTemplate:new {
 
 --Intro First
 jakku_overseer = ConvoScreen:new {
-  id = "first_conv",
+  id = "first_convo",
   leftDialog = "",
   customDialogText = "So, you are the intruders that breached the facility.  No matter.  You are too late, the data has been transmitted and all databanks in the facility have been wiped.  I will surrender to you if I must, I assume you have questions.",
   stopConversation = "false",
@@ -17,22 +17,22 @@ jakku_overseer = ConvoScreen:new {
     {"What is the purpose of this facility?", "opt2"},
     {"Why would the Empire place such priority on defending Jakku?", "opt3"},
   --  {"Instance 4", "opt4"},
-    {"Remain here until security forces arrive to apprehend you.", "deny"}
+    {"Remain here until security forces arrive to apprehend you.", "deny1"},
   
   }
 }
-jakku_overseer:addScreen(first_conv);
+jakku_overseer:addScreen(first_convo);
 
 --deny
-deny = ConvoScreen:new {
-  id = "deny",
+deny1 = ConvoScreen:new {
+  id = "deny1",
   leftDialog = "",
   customDialogText = "Fine.",
   stopConversation = "true",
   options = {
   }
 }
-jakku_overseer:addScreen(deny);
+jakku_overseer:addScreen(deny1);
 
 
 
@@ -144,7 +144,7 @@ opt2g = ConvoScreen:new {
   options = {
     {"What is Protocol-77.","opt1"},
     {"Why would the Empire place so much priority on defending Jakku?","opt3"},
-     {"Remain here until security forces arrive to apprehend you.", "deny"}
+    {"Remain here until security forces arrive to apprehend you.", "deny1"},
   }
 }
 jakku_overseer:addScreen(opt2g);
@@ -157,7 +157,7 @@ opt3 = ConvoScreen:new {
   options = {
     {"What is Protocol-77.","opt1"},
     {"What is the purpose of this facility?","opt2"},
-    {"Remain here until security forces arrive to apprehend you.", "deny"}
+    {"Remain here until security forces arrive to apprehend you.", "deny1"},
   }
 }
 jakku_overseer:addScreen(opt3);

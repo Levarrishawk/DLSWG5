@@ -2,7 +2,7 @@ local ObjectManager = require("managers.object.object_manager")
 
 jakku_overseer = ScreenPlay:new { 
   numberOfActs = 1, 
-  questString = "jakku_overseer_queststring", --This needs to be unique! If not unique you will not pull the proper conversation.
+  questString = "jakku_overseer_convo_queststring", --This needs to be unique! If not unique you will not pull the proper conversation.
   states = {}, --Blank, as we don't need screenplay states to teleport someone. It remains in-case we need to add it though.
   
   --This is basic quest related, doesn't harm and doesn't really do anything (I keep it for goodluck :P)
