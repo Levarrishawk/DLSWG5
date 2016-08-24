@@ -58,3 +58,20 @@ function jakku_overseer_convo_handler:getNextConversationScreen(pConversationTem
 end
 
 
+function jakku_overseer_convo_handler:runScreenHandlers(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
+  local screen = LuaConversationScreen(pConversationScreen)
+  local screenID = screen:getScreenID() 
+
+  
+  local player = LuaSceneObject(pConversingPlayer)
+
+  --if ( screenID == "mayor2" ) then
+   
+   --  player:switchZone("corellia", -66, 28, -4711, 0) -- x, z, y, cell
+
+  end
+  
+  
+  --print("returning convosvreen")
+  return pConversationScreen
+end
