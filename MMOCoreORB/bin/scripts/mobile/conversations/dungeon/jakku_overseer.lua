@@ -160,7 +160,7 @@ opt3 = ConvoScreen:new {
     {"Remain here until security forces arrive to apprehend you.", "deny"}
   }
 }
-jakku_overseer:addScreen(opt2g);
+jakku_overseer:addScreen(opt3);
 
 
 
