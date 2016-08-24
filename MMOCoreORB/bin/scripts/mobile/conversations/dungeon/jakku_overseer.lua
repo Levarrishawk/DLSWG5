@@ -7,7 +7,7 @@ jakku_overseer = ConvoTemplate:new {
 
 
 --Intro First
-jakku_overseer = ConvoScreen:new {
+overseer_start = ConvoScreen:new {
   id = "overseer_start",
   leftDialog = "",
   customDialogText = "So, you are the intruders that breached the facility.  No matter.  You are too late, the data has been transmitted and all databanks in the facility have been wiped.  I will surrender to you if I must, I assume you have questions.",
@@ -16,8 +16,7 @@ jakku_overseer = ConvoScreen:new {
     {"What is Protocol 77?", "opt1"},
     {"What is the purpose of this facility?", "opt2"},
     {"Why would the Empire place such priority on defending Jakku?", "opt3"},
-  --  {"Instance 4", "opt4"},
-    {"Remain here until security forces arrive to apprehend you.", "deny1"},
+    {"Remain here until security forces arrive to apprehend you.", "deny1"}
   
   }
 }
@@ -144,7 +143,7 @@ opt2g = ConvoScreen:new {
   options = {
     {"What is Protocol-77.","opt1"},
     {"Why would the Empire place so much priority on defending Jakku?","opt3"},
-    {"Remain here until security forces arrive to apprehend you.", "deny1"},
+    {"Remain here until security forces arrive to apprehend you.", "deny1"}
   }
 }
 jakku_overseer:addScreen(opt2g);
@@ -157,7 +156,7 @@ opt3 = ConvoScreen:new {
   options = {
     {"What is Protocol-77.","opt1"},
     {"What is the purpose of this facility?","opt2"},
-    {"Remain here until security forces arrive to apprehend you.", "deny1"},
+    {"Remain here until security forces arrive to apprehend you.", "deny1"}
   }
 }
 jakku_overseer:addScreen(opt3);
