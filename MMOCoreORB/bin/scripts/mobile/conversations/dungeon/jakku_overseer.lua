@@ -1,5 +1,5 @@
 jakku_overseer = ConvoTemplate:new {
-  initialScreen = "first_convo",
+  initialScreen = "overseer_start",
   templateType = "Lua",
   luaClassHandler = "jakku_overseer_convo_handler",
   screens = {}
@@ -8,7 +8,7 @@ jakku_overseer = ConvoTemplate:new {
 
 --Intro First
 jakku_overseer = ConvoScreen:new {
-  id = "first_convo",
+  id = "overseer_start",
   leftDialog = "",
   customDialogText = "So, you are the intruders that breached the facility.  No matter.  You are too late, the data has been transmitted and all databanks in the facility have been wiped.  I will surrender to you if I must, I assume you have questions.",
   stopConversation = "false",
@@ -21,7 +21,7 @@ jakku_overseer = ConvoScreen:new {
   
   }
 }
-jakku_overseer:addScreen(first_convo);
+jakku_overseer:addScreen(overseer_start);
 
 --deny
 deny1 = ConvoScreen:new {
