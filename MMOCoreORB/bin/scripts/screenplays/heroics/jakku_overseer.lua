@@ -49,10 +49,10 @@ function jakku_overseer_convo_handler:getNextConversationScreen(pConversationTem
     if nextConversationScreen ~= nil then
       local nextLuaConversationScreen = LuaConversationScreen(nextConversationScreen)
     else
-      nextConversationScreen = conversation:getScreen("first_conv")
+      nextConversationScreen = conversation:getScreen("first_convo")
     end
   else
-    nextConversationScreen = conversation:getScreen("first_conv")
+    nextConversationScreen = conversation:getScreen("first_convo")
   end
   return nextConversationScreen
 end
