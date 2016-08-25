@@ -25,6 +25,7 @@ jakku_imperial_general = Creature:new {
 	creatureBitmask = PACK + KILLER,
 	optionsBitmask = AIENABLED + CONVERSABLE,
 	diet = HERBIVORE,
+	scale = 2,
 
 	templates = {"object/mobile/dressed_imperial_general_m.iff"},
 	lootGroups = {

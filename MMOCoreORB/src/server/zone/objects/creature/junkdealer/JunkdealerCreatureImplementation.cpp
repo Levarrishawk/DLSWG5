@@ -29,7 +29,7 @@ bool JunkdealerCreatureImplementation::sendConversationStartTo(SceneObject* obj)
 	CreatureObject* player = cast<CreatureObject*>( obj);
 	int dealerType = _this.getReferenceUnsafeStaticCast()->getJunkDealerConversationType();
 	if (dealerType == JUNKCONVJAWAARMS || dealerType == JUNKCONVJAWAFINARY || dealerType == JUNKCONVJAWAGENERIC || dealerType == JUNKCONVJAWATUSKEN){
-		if (player->hasSkill("combat_smuggler_underworld_01")){
+		if (player->hasSkill("secondary_scoundrel_novice")){
 			StringIdChatParameter msg;
 			msg.setStringId("@jawa_trader:understand");
 			player->sendSystemMessage(msg);

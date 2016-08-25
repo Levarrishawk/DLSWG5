@@ -27,6 +27,7 @@ jakku_rebel_general = Creature:new {
 	creatureBitmask = PACK + KILLER,
 	optionsBitmask = AIENABLED + CONVERSABLE,
 	diet = HERBIVORE,
+	scale = 2,
 
 	templates = {
 		"object/mobile/dressed_rebel_high_general_human_female_01.iff",
