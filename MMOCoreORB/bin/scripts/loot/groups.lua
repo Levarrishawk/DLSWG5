@@ -349,4 +349,4 @@ includeFile("groups/weapon/startersword.lua")
 
 
 -- NGE House Tables
-includeFile("groups/deed/structure/nge_housing_all.lua")
+includeFile("groups/deeds/structure/nge_housing_all.lua")
