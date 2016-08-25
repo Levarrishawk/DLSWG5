@@ -98,7 +98,7 @@ rebelRewardData = {
 		specforce_technician = { type=factionRewardType.hireling, display="@mob/creature_names:specforce_technician", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="specforce_technician", cost=375},
 		specforce_wilderness_operative = { type=factionRewardType.hireling, display="@mob/creature_names:specforce_wilderness_operative", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="specforce_wilderness_operative", cost=375},
 		rebel_specforce_guerrilla = { type=factionRewardType.hireling, display="@mob/creature_names:rebel_specforce_guerrilla", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="rebel_specforce_urban_guerrilla", cost=375},
-	  at_xt = { type=factionRewardType.hireling, display="@mob/creature_names:at_xt", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="at_xt", cost=9450},
+	  at_xt = { type=factionRewardType.hireling, display="an AT-XT", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="at_xt", cost=9450},
 	}
 }
 
