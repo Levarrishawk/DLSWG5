@@ -315,6 +315,7 @@ function JakkuBattleScreenPlay:spawnMobiles()
   spawnMobile("jakku", "fbase_rebel_heavy_trooper_hard", 60, -1.1, -20.7, 4.7, 77, 610000099)
   spawnMobile("jakku", "fbase_rebel_heavy_trooper_hard", 60, 2.9, -20.7, 8.5, -140, 610000099)
   spawnMobile("jakku", "fbase_rebel_heavy_trooper_hard", 60, -0.2, -20.7, 8.7, 131, 610000099)
+  spawnMobile("jakku", "jakku_rebel_general", 21600, 1.5, -20.8, 32.6, 180, 610000100)
   
   -- Imperial Bunker Interior
   
@@ -329,6 +330,7 @@ function JakkuBattleScreenPlay:spawnMobiles()
   spawnMobile("jakku", "fbase_stormtrooper_medic_hard", 60, 4.0, -20.7, 6.0, 101, 610000110)
   spawnMobile("jakku", "fbase_stormtrooper_medic_hard", 60, 1.2, -20.7, 5.7, -128, 610000110)
   spawnMobile("jakku", "fbase_stormtrooper_medic_hard", 60, 1.6, -20.7, 10.3, 171, 610000110)
+  spawnMobile("jakku", "jakku_imperial_general", 21600, 1.5, -20.8, 32.6, 180, 610000111)
   
 end
 
