@@ -86,6 +86,34 @@ function HannaCityScreenPlay:spawnMobiles()
 	--Outdoors
 	local pNpc = spawnMobile("chandrila", "surgical_droid_21b",60,3.1,0.1,11.5,0,0)
 	self:setMoodString(pNpc, "neutral")
+	
+  pNpc = spawnMobile("chandrila", "at_xt", 60, 443, 6, -2928, 0, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("chandrila", "at_xt", 60, 443, 6, -2946, 0, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("chandrila", "at_xt", 60, 388, 6, -2935, 0, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("chandrila", "at_xt", 60, 325, 6, -2935, 0, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("chandrila", "at_xt", 60, 282, 6, -2936, 0, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("chandrila", "at_xt", 60, 262, 6, -2918, 0, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("chandrila", "at_xt", 60, 262, 6, -2955, 0, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")
 
 	pNpc = spawnMobile("chandrila", "commoner",60,247.0,6.0,-2898.4,20,0)
 	self:setMoodString(pNpc, "conversation")
