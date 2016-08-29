@@ -97,4 +97,4 @@ object_tangible_wearables_armor_clone_trooper_imperial_s01_belt = object_tangibl
 
 }
 
-ObjectTemplates:addTemplate(object_tangible_wearables_armor_clone_trooper_armor_clone_trooper_imperial_s01_belt, "object/tangible/wearables/armor/clone_trooper/armor_clone_trooper_imperial_s01.iff")
+ObjectTemplates:addTemplate(object_tangible_wearables_armor_clone_trooper_armor_clone_trooper_imperial_s01_belt, "object/tangible/wearables/armor/clone_trooper/armor_clone_trooper_imperial_s01_belt.iff")

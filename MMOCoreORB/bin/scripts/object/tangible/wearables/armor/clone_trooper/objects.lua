@@ -69,7 +69,7 @@ ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_clone_trooper_
 --
 
 object_tangible_wearables_armor_clone_trooper_shared_armor_clone_trooper_imperial_s01_boots = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/wearables/armor/clone_trooper/shared_armor_clone_trooper_boots.iff"
+	clientTemplateFileName = "object/tangible/wearables/armor/clone_trooper/shared_armor_clone_trooper_imperial_s01_boots.iff"
 	
 }
 
@@ -87,7 +87,7 @@ ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_clone_trooper_
 --
 
 object_tangible_wearables_armor_clone_trooper_shared_armor_clone_trooper_imperial_s01_bracer_r = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/wearables/armor/stormtrooper/shared_armor_clone_trooper_imperial_s01_bracer_r.iff"
+	clientTemplateFileName = "object/tangible/wearables/armor/clone_trooper/shared_armor_clone_trooper_imperial_s01_bracer_r.iff"
 	
 }
 
