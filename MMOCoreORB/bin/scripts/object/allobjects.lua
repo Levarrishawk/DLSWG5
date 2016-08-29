@@ -836,3 +836,6 @@ includeFile("weapon/ranged/objects.lua")
 includeFile("weapon/trap/objects.lua")
 includeFile("weapon/objects.lua")
 
+--DLSWG New
+includeFile("tangible/wearables/armor/clone_trooper/objects.lua")
+
