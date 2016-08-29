@@ -41,7 +41,7 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_tangible_wearables_armor_clone_trooper_imperial_s01_belt = object_tangible_wearables_armor_clone_trooper_armor_clone_trooper_imperial_s01_belt:new {
+object_tangible_wearables_armor_clone_trooper_imperial_s01_belt = object_tangible_wearables_armor_clone_trooper_shared_armor_clone_trooper_imperial_s01_belt:new {
 	templateType = CLOTHINGOBJECT,
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
