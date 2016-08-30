@@ -572,6 +572,15 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 					"Backpack 01", "object/tangible/wearables/backpack/backpack_s01.iff"
 				}
 			},
+			"Jedi Robes",
+      {
+        "Jedi Robes",
+        {
+          "Dark Jedi Oppressor Robe", "object/tangible/wearables/robe/robe_jedi_dark_s04.iff",
+          "Light Jedi Arbiter Robe", "object/tangible/wearables/robe/robe_jedi_light_s04.iff",   
+        },
+       
+      },
 			"Consumables",
 			{
 				"Desserts",
