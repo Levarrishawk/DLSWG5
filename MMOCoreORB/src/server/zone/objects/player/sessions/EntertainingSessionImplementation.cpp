@@ -909,7 +909,7 @@ void EntertainingSessionImplementation::activateEntertainerBuff(CreatureObject* 
 		int campModTemp = 100;
 
 
-		float buffStrength = 0.25;
+		float buffStrength = 0.75;
 
 		if(buffStrength == 0)
 			return;
