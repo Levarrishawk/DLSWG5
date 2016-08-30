@@ -15,7 +15,7 @@ registerScreenPlay("rebel_chasm_teleporter", true) --Initialize the screenplay I
 
 --Simply spawns the NPC
 function rebel_chasm_teleporter:start()
-   spawnMobile("tatooine", "reb_chasm_dungeon_teleporter", 1, 4326, 180, -5106, 0, 0)
+--   spawnMobile("tatooine", "reb_chasm_dungeon_teleporter", 1, 4326, 180, -5106, 0, 0)
 end
 
 --The actual conversation handler
