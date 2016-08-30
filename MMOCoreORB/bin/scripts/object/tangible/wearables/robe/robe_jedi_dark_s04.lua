@@ -64,9 +64,10 @@ object_tangible_wearables_robe_robe_jedi_dark_s04 = object_tangible_wearables_ro
 				"object/creature/player/zabrak_female.iff" },
 				
 				skillMods = {
-				   {"saber_block", 25},
-				   {"jedi_toughness", 10},
-				   {"forcelightning_accuracy", 20}
+				   {"saber_block", 35},
+				   {"jedi_toughness", 20},
+				   {"forcelightning_accuracy", 20},
+				   {"force_power_dark", 15}
 				},
 
 				noTrade = 0,
