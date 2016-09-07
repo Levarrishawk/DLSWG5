@@ -439,11 +439,11 @@ bool PlayerCreationManager::createCharacter(ClientCreateCharacterCallback* callb
 	addHair(playerCreature, hairTemplate, hairCustomization);
 	if (!doTutorial) {
 		addProfessionStartingItems(playerCreature, profession, clientTemplate,
-				false);
-		addStartingItems(playerCreature, clientTemplate, false);
+				true);
+		addStartingItems(playerCreature, clientTemplate, true);
 		addRacialMods(playerCreature, fileName,
 				playerTemplate->getStartingSkills(),
-				playerTemplate->getStartingItems(), false);
+				playerTemplate->getStartingItems(), true);
 	} else {
 		addProfessionStartingItems(playerCreature, profession, clientTemplate,
 				true);
