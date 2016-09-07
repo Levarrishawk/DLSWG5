@@ -1694,6 +1694,11 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 					"Laser Carbine", "object/weapon/ranged/carbine/carbine_laser.iff",
 					"Nym's Slug-thrower Carbine", "object/weapon/ranged/carbine/carbine_nym_slugthrower.iff"
 				},
+				"Grenades",
+        {
+          "Proton Grenade", "object/weapon/ranged/grenade/grenade_proton.iff",
+          "Thermal Detonator", "object/weapon/ranged/grenade/grenade_thermal_detonator.iff"
+        },
 				"Heavy",
 				{
 					"Acid Stream Launcher", "object/weapon/ranged/heavy/heavy_acid_beam.iff",
