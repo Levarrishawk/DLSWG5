@@ -439,18 +439,18 @@ bool PlayerCreationManager::createCharacter(ClientCreateCharacterCallback* callb
 	addHair(playerCreature, hairTemplate, hairCustomization);
 	if (!doTutorial) {
 		addProfessionStartingItems(playerCreature, profession, clientTemplate,
-				true);
-		addStartingItems(playerCreature, clientTemplate, true);
+				false);
+		addStartingItems(playerCreature, clientTemplate, false);
 		addRacialMods(playerCreature, fileName,
 				playerTemplate->getStartingSkills(),
-				playerTemplate->getStartingItems(), true);
+				playerTemplate->getStartingItems(), false);
 	} else {
 		addProfessionStartingItems(playerCreature, profession, clientTemplate,
-				true);
-		addStartingItems(playerCreature, clientTemplate, true);
+				false);
+		addStartingItems(playerCreature, clientTemplate, false);
 		addRacialMods(playerCreature, fileName,
 				playerTemplate->getStartingSkills(),
-				playerTemplate->getStartingItems(), true);
+				playerTemplate->getStartingItems(), false);
 	}
 
 	// Set starting cash and starting bank
