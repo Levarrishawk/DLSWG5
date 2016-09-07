@@ -3,14 +3,7 @@ local ObjectManager = require("managers.object.object_manager")
 JakkuBattleScreenPlay = ScreenPlay:new {
 	numberOfActs = 1,
 	
-	--[[turrets = {
-    { template = "object/installation/turret/turret_tower_large.iff", x = -5767.9, z = 55.5, y = 5575.1 },
-    { template = "object/installation/turret/turret_tower_large.iff", x = -5809.5, z = 55, y = 5513.6 },
-    { template = "object/installation/turret/turret_tower_large.iff", x = -5778.3, z = 53, y = 5443.3 },
-    { template = "object/installation/turret/turret_tower_large.iff", x = -5691.4, z = 44, y = 5599.2 },
-    { template = "object/installation/turret/turret_tower_large.iff", x = -5629.3, z = 41, y = 5550.7 },
-    { template = "object/installation/turret/turret_tower_large.iff", x = -5737.9, z = 50, y = 5620.0 },
-  }, --]]
+	turrets = {}, 
 
 }
 
