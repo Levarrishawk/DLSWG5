@@ -61,7 +61,7 @@ UnarmedCombo2Command = {
 	
 	weaponType = UNARMEDWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(UnarmedCombo2Command)

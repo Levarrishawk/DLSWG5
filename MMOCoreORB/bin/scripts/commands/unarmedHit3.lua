@@ -75,7 +75,7 @@ UnarmedHit3Command = {
 	
 	weaponType = UNARMEDWEAPON,	
 
-	range = -1
+	range = 10
 }
 
 AddCommand(UnarmedHit3Command)
