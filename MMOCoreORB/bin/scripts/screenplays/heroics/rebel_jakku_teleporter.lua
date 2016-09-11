@@ -15,7 +15,7 @@ registerScreenPlay("rebel_jakku_teleporter", true) --Initialize the screenplay I
 
 --Simply spawns the NPC
 function rebel_jakku_teleporter:start()
- --  spawnMobile("jakku", "rebel_jakku_teleporter", 1, 4352.2, 8.9, -5122.6, -105, 0)  --disabled until jakku focus test is completed.
+   spawnMobile("jakku", "rebel_jakku_teleporter", 1, 4352.2, 8.9, -5122.6, -105, 0)  --disabled until jakku focus test is completed.
    
    spawnMobile("jakku", "rebel_recruiter", 1, 4311, 7, -5100, 145, 0)
    spawnMobile("jakku", "imperial_recruiter", 1, 4315, 10, -5148, 31, 0)

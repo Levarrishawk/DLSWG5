@@ -535,9 +535,9 @@ bool PlayerManagerImplementation::checkPlayerName(ClientCreateCharacterCallback*
 }
 
 void PlayerManagerImplementation::createTutorialBuilding(CreatureObject* player) {
-	Zone* zone = server->getZone("jakku");  // talus
+	Zone* zone = server->getZone("talus");  // talus
 
-	player->initializePosition(4336, 9, -5129);  //333, 6, -2930
+	player->initializePosition(333, 6, -2930);  //333, 6, -2930
 	zone->transferObject(player, -1, true);
 
 	PlayerObject* ghost = player->getPlayerObject();
@@ -575,9 +575,9 @@ void PlayerManagerImplementation::createTutorialBuilding(CreatureObject* player)
 
 void PlayerManagerImplementation::createSkippedTutorialBuilding(CreatureObject* player) {
 
-	Zone* zone = server->getZone("jakku");  //talus
+	Zone* zone = server->getZone("talus");  //talus
 
-	player->initializePosition(4336, 9, -5129);  //333, 6, -2930
+	player->initializePosition(333, 6, -2930);  //333, 6, -2930
 	zone->transferObject(player, -1, true);
 
 	PlayerObject* ghost = player->getPlayerObject();
