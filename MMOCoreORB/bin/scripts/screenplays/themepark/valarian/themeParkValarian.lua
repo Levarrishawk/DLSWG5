@@ -238,9 +238,7 @@ ind_missions =
       { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Talus Savior" },
       },
 			secondarySpawns =  {},
-			{
 		
-			},
 		  itemSpawns = {},	
 				
 			rewards =
