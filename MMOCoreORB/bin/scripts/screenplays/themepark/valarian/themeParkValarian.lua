@@ -195,37 +195,37 @@ ind_missions =
 			}
 		},
 		{
-			missionType = "assassinate",
-			primarySpawns =
-			{
-			{ npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
-			{ npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
-			{ npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
-			{ npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Bank Robber" },
-			},
-			secondarySpawns =	{},
-			itemSpawns = {},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 8000 },
-				{ rewardType = "faction", faction = "townsperson", amount = 125 }
-			}
-		},
-		{
 			missionType = "escort",
-			primarySpawns =
-			{
-				{ npcTemplate = "ysho", planetName = "talus", npcName = "Bick" }
-			},
-			secondarySpawns =	{},
-			itemSpawns = {},
-			rewards =
-			{
-				{ rewardType = "credits", amount = 5000 },
-				{ rewardType = "faction", faction = "townsperson", amount = 150 }
-			}
-		},
-		{
+      primarySpawns =
+      {
+        { npcTemplate = "ysho", planetName = "talus", npcName = "Bick" }
+      },
+      secondarySpawns = {},
+      itemSpawns = {},
+      rewards =
+      {
+        { rewardType = "credits", amount = 5000 },
+        { rewardType = "faction", faction = "townsperson", amount = 150 }
+      }
+    },
+    {
+			missionType = "assassinate",
+      primarySpawns =
+      {
+      { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "City Raider" },
+      { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "City Raider" },
+      { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "City Raider" },
+      { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "City Raider" },
+      },
+      secondarySpawns = {},
+      itemSpawns = {},
+      rewards =
+      {
+        { rewardType = "credits", amount = 8000 },
+        { rewardType = "faction", faction = "townsperson", amount = 125 }
+      }
+    },
+    {
 			missionType = "assassinate",
 			primarySpawns =
       {
