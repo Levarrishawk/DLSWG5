@@ -212,45 +212,48 @@ ind_missions =
 			}
 		},
 		{
-			missionType = "assassinate",
+			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "assassin", planetName = "tatooine", npcName = "Roden Venthral" }
+				{ npcTemplate = "ysho", planetName = "talus", npcName = "Bick" }
 			},
 			secondarySpawns =	{},
 			itemSpawns = {},
 			rewards =
 			{
 				{ rewardType = "credits", amount = 5000 },
-				{ rewardType = "faction", faction = "valarian", amount = 150 }
+				{ rewardType = "faction", faction = "townsperson", amount = 150 }
 			}
 		},
 		{
-			missionType = "confiscate",
+			missionType = "assassinate",
 			primarySpawns =
+      {
+      { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Talus Savior" },
+      { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Talus Savior" },
+      { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Talus Savior" },
+      { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Talus Savior" },
+      { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Talus Savior" },
+      { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Talus Savior" },
+      { npcTemplate = "ind_jabba_enforcer", planetName = "talus", npcName = "Talus Savior" },
+      },
+			secondarySpawns =  {},
 			{
-				{ npcTemplate = "ind_jabba_enforcer", planetName = "tatooine", npcName = "Jabba's enforcer" },
+		
 			},
-			secondarySpawns =
-			{
-				{ npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Jabba's enforcer" },
-				{ npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Jabba's enforcer" }
-			},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/loot/misc/toxic_rations.iff", itemName = "Toxic Rations" }
-			},
+		  itemSpawns = {},	
+				
 			rewards =
 			{
 				{ rewardType = "credits", amount = 7000 },
-				{ rewardType = "faction", faction = "valarian", amount = 200 }
+				{ rewardType = "faction", faction = "townsperson", amount = 200 }
 			}
 		},
 		{
-			missionType = "confiscate",
+			missionType = "escort",
 			primarySpawns =
 			{
-				{ npcTemplate = "ind_jabba_henchman", planetName = "tatooine", npcName = "Jabba's Delivery Boy" }
+				{ npcTemplate = "valarian_compound_guard_quest", planetName = "talus", npcName = "Traud" }
 			},
 			secondarySpawns =
 			{
@@ -259,14 +262,12 @@ ind_missions =
 				{ npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Jabba's enforcer" },
 				{ npcTemplate = "jabba_enforcer", planetName = "tatooine", npcName = "Jabba's enforcer" }
 			},
-			itemSpawns =
-			{
-				{ itemTemplate = "object/tangible/loot/misc/petrified_avian_egg.iff", itemName = "Petrified Avian Egg" }
-			},
+			itemSpawns = {},
 			rewards =
 			{
 				{ rewardType = "credits", amount = 8000 },
-				{ rewardType = "faction", faction = "valarian", amount = 200 }
+				{ rewardType = "faction", faction = "townsperson", amount = 300 }
+				{ rewardType = "loot",  lootGroup = "treasure_map_group" }
 			}
 		}
 	}
