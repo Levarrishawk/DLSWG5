@@ -264,7 +264,7 @@ ind_missions =
 			rewards =
 			{
 				{ rewardType = "credits", amount = 8000 },
-				{ rewardType = "faction", faction = "townsperson", amount = 300 }
+				{ rewardType = "faction", faction = "townsperson", amount = 300 },
 				{ rewardType = "loot",  lootGroup = "treasure_map_group" }
 			}
 		}
