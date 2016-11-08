@@ -999,8 +999,8 @@ int CreatureObjectImplementation::inflictDamage(TangibleObject* attacker, int da
 		if (action <= 1)
 			setHAM(CreatureAttribute::ACTION, 1);
 
-	int action = getHAM(CreatureAttribute::MIND);
-		if (action > 2000)
+	int mind = getHAM(CreatureAttribute::MIND);
+		if (mind > 2000)
 			setHAM(CreatureAttribute::MIND, 2000);
 
 	int newValue = currentValue - (int) damage;
