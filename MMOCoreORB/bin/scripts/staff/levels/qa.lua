@@ -1,7 +1,7 @@
 qa = {
 	level = 13,
 	name = "qa",
-	tag = "DLSWG-QA",
+	tag = "Elysium-QA",
 	skills = {
 		"admin_base",
 		"admin_debug_01",

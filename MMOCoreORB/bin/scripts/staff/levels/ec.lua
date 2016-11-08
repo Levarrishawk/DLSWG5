@@ -1,7 +1,7 @@
 ec = {
 	level = 11,
 	name = "ec",
-	tag = "DLSWG-EC",
+	tag = "Elysium-EC",
 	skills = {
 		"admin_base",
 		"admin_debug_01",

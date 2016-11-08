@@ -1,7 +1,7 @@
 ct = {
 	level = 8,
 	name = "ct",
-	tag = "Darklight-CT",
+	tag = "Elysium-CT",
 	skills = {
 		"admin_base",
 		"admin_debug_01",

@@ -1,7 +1,7 @@
 eci = {
 	level = 10,
 	name = "eci",
-	tag = "DLSWG-ECI",
+	tag = "Elysium-ECI",
 	skills = {
 		"admin_base",
 		"admin_debug_01",

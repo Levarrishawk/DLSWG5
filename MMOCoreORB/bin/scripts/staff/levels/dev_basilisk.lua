@@ -1,7 +1,7 @@
 dev_basilisk = {
 	level = 3,
 	name = "dev_basilisk",
-	tag = "Darklight-Dev",
+	tag = "Elysium-Dev",
 	skills = {
 		"admin_base",
 		"admin_dev_basilisk",

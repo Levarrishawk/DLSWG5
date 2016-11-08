@@ -1,7 +1,7 @@
 csi = {
 	level = 9,
 	name = "csi",
-	tag = "DLSWG-CSI",
+	tag = "Elysium-CSI",
 	skills = {
 		"admin_base",
 		"admin_debug_01",
