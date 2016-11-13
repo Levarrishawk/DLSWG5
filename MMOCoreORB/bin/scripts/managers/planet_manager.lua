@@ -482,7 +482,7 @@ kaas = {
   gcwEnabled = 1,
   
   planetTravelPoints = {
-    --{name = "Hanna City Spaceport", x = 164, z = 6, y = -2937, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    {name = "an Imperial Garrison", x = -5163, z = 80, y = -2238, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
     },
     
     badgeAreas = {   
