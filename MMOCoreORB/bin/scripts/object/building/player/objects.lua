@@ -2405,4 +2405,9 @@ object_building_player_shared_tatooine_small_window_s01 = SharedBuildingObjectTe
 }
 ObjectTemplates:addClientTemplate(object_building_player_shared_tatooine_small_window_s01, "object/building/player/shared_tatooine_small_window_s01.iff")
 --**************************************************************************************************************************************
+object_building_player_shared_diner_house = SharedBuildingObjectTemplate:new {
+  clientTemplateFileName = "object/building/player/city/shared_diner_no_planet_restriction.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_player_shared_diner_house, "object/building/player/city/shared_diner_no_planet_restriction.iff")
+--**************************************************************************************************************************************
 
