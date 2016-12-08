@@ -514,3 +514,14 @@ coruscant = {
     badgeAreas = {   
   },
 }
+moraband = {
+  weatherEnabled = 1,
+  gcwEnabled = 1,
+  
+  planetTravelPoints = {
+   -- {name = "Bilbousa Starport", x = -789, z = 80, y = 1769, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    },
+    
+    badgeAreas = {   
+  },
+}
