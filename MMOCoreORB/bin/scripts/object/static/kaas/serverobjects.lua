@@ -43,19 +43,7 @@
 
 
 --Children folder includes
-includeFile("building/base/serverobjects.lua")
-includeFile("building/corellia/serverobjects.lua")
-includeFile("building/dathomir/serverobjects.lua")
-includeFile("building/endor/serverobjects.lua")
-includeFile("building/faction_perk/serverobjects.lua")
-includeFile("building/general/serverobjects.lua")
-includeFile("building/lok/serverobjects.lua")
-includeFile("building/military/serverobjects.lua")
-includeFile("building/naboo/serverobjects.lua")
-includeFile("building/player/serverobjects.lua")
-includeFile("building/poi/serverobjects.lua")
-includeFile("building/tatooine/serverobjects.lua")
-includeFile("building/yavin/serverobjects.lua")
+includeFile("static/kaas/kaas_sith_statue_scaletest.lua")
+includeFile("static/kaas/moraband_sith_statue_scaletest.lua")
 
 -- Server Objects
-includeFile("building/mustafar/structures/serverobjects.lua")

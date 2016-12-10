@@ -41,21 +41,8 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_static_structure_general_poi_all_monolith_s01r = object_static_structure_general_shared_poi_all_monolith_s01r:new {
 
---Children folder includes
-includeFile("building/base/serverobjects.lua")
-includeFile("building/corellia/serverobjects.lua")
-includeFile("building/dathomir/serverobjects.lua")
-includeFile("building/endor/serverobjects.lua")
-includeFile("building/faction_perk/serverobjects.lua")
-includeFile("building/general/serverobjects.lua")
-includeFile("building/lok/serverobjects.lua")
-includeFile("building/military/serverobjects.lua")
-includeFile("building/naboo/serverobjects.lua")
-includeFile("building/player/serverobjects.lua")
-includeFile("building/poi/serverobjects.lua")
-includeFile("building/tatooine/serverobjects.lua")
-includeFile("building/yavin/serverobjects.lua")
+}
 
--- Server Objects
-includeFile("building/mustafar/structures/serverobjects.lua")
+ObjectTemplates:addTemplate(object_static_structure_general_poi_all_monolith_s01r, "object/static/structure/general/poi_all_monolith_s01r.iff")

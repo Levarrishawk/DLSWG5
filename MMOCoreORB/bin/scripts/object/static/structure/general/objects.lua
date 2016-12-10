@@ -9645,6 +9645,15 @@ object_static_structure_general_shared_poi_all_monolith_s01 = SharedStaticObject
 
 ObjectTemplates:addClientTemplate(object_static_structure_general_shared_poi_all_monolith_s01, "object/static/structure/general/shared_poi_all_monolith_s01.iff")
 
+object_static_structure_general_shared_poi_all_monolith_s01r = SharedStaticObjectTemplate:new {
+  clientTemplateFileName = "object/static/structure/general/shared_poi_all_monolith_s01r.iff"
+  --Data below here is deprecated and loaded from the tres, keeping for easy lookups
+
+}
+
+ObjectTemplates:addClientTemplate(object_static_structure_general_shared_poi_all_monolith_s01r, "object/static/structure/general/shared_poi_all_monolith_s01r.iff")
+
+
 object_static_structure_general_shared_poi_all_obelisk_s01 = SharedStaticObjectTemplate:new {
 	clientTemplateFileName = "object/static/structure/general/shared_poi_all_obelisk_s01.iff"
 	--Data below here is deprecated and loaded from the tres, keeping for easy lookups

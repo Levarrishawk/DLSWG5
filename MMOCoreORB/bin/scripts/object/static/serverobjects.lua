@@ -58,5 +58,6 @@ includeFile("static/structure/serverobjects.lua")
 includeFile("static/terrain/serverobjects.lua")
 includeFile("static/test/serverobjects.lua")
 includeFile("static/vehicle/serverobjects.lua")
+includeFile("static/kaas/serverobjects.lua")
 
 -- Server Objects
