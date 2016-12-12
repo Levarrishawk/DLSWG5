@@ -59,5 +59,5 @@ includeFile("static/terrain/serverobjects.lua")
 includeFile("static/test/serverobjects.lua")
 includeFile("static/vehicle/serverobjects.lua")
 includeFile("static/kaas/serverobjects.lua")
-includeFile("static/mustafar/serverobject.lua")
+includeFile("static/mustafar/serverobjects.lua")
 -- Server Objects

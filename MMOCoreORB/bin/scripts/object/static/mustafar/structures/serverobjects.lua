@@ -10,3 +10,4 @@ includeFile("static/mustafar/structures/must_jeditemple_wall_long.lua")
 includeFile("static/mustafar/structures/must_jeditemple_wall_low.lua")
 includeFile("static/mustafar/structures/must_jeditemple_wall_low_02.lua")
 includeFile("static/mustafar/structures/must_jeditemple_watchtower.lua")
+--
