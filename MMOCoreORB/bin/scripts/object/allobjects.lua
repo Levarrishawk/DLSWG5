@@ -840,6 +840,6 @@ includeFile("weapon/objects.lua")
 includeFile("tangible/wearables/armor/clone_trooper/objects.lua")
 
 --Elysium New
-includeFile("building/mustafar/structures/objects.lua")
+includeFile("static/mustafar/structures/objects.lua")
 includeFile("static/kaas/objects.lua")
 

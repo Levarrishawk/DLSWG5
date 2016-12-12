@@ -58,4 +58,4 @@ includeFile("building/tatooine/serverobjects.lua")
 includeFile("building/yavin/serverobjects.lua")
 
 -- Server Objects
-includeFile("building/mustafar/structures/serverobjects.lua")
+--includeFile("building/mustafar/structures/serverobjects.lua")

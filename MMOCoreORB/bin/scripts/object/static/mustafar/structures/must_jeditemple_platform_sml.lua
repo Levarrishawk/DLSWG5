@@ -1,0 +1,5 @@
+object_static_mustafar_structures_must_jeditemple_platform_sml = object_static_mustafar_structures_shared_must_jeditemple_platform_sml:new {
+
+}
+
+ObjectTemplates:addTemplate(object_static_mustafar_structures_must_jeditemple_platform_sml, "object/static/mustafar/structures/must_jeditemple_platform_sml.iff")
