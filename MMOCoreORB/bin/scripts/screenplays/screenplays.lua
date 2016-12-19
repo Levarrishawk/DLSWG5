@@ -504,3 +504,6 @@ includeFile("gcw/jakku_weapons_facility_boss_4.lua")
 includeFile("gcw/jakku_weapons_facility_boss_5.lua")
 includeFile("gcw/jakku_weapons_facility_boss_6.lua")
 includeFile("heroics/jakku_overseer.lua")
+
+-- Elysium
+includeFile("cities/coruscant_entertainment_district.lua")
