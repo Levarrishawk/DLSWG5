@@ -186,7 +186,57 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "neutral")
   AiAgent(pNpc):setAiTemplate("idlewander")
   
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2247, 0, -4440, 2, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
   
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2239, 0, -4436, 100, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2257, 0, -4445, -126, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2249, 0, -4452, 179, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2246, 0, -4362, 0, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2243, 0, -4478, 55, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2249, 0, -4476, -132, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2253, 0, -4487, 177, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2257, 0, -4496, -155, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2246, 0, -4502, 97, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2241, 0, -4512, -1, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2257, 0, -4515, -176, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2252, 0, -4539, -18, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
   
   
   --
