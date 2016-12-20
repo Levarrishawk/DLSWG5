@@ -138,7 +138,25 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "neutral")
   AiAgent(pNpc):setAiTemplate("idlewander")
   
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2253, 0, -4413, 12, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2257, 0, -4419, 20, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2251, 0, -4417, 90, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2245, 0, -4425, 135, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2254, 0, -4430, 0, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
   --
   
 	
