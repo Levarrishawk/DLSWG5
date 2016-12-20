@@ -238,9 +238,18 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "neutral")
   AiAgent(pNpc):setAiTemplate("idlewander")
   
+  spawnMobile("coruscant", "civilian_patrolman", 60, 2238, 0, -4546, 90, 0)
   
+  
+  
+  spawnMobile("coruscant", "civilian_patrolman", 60, 2236, 0, -4469, 90, 0)
+  
+  spawnMobile("coruscant", "civilian_patrolman", 60, 2236, 0, -4395, 90, 0)
+ 
+  --  Cantina 1 
+  spawnMobile("coruscant", "bartender", 60, 0.3, 0.3, 4.4, 176, 37000721)
   --
-  
+  spawnMobile("coruscant", "bartender", 60, 0.3, 0.3, 4.4, 176, 37000714)
 	
 
 end
