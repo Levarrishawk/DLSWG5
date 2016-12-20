@@ -7,7 +7,7 @@ CoruscantEntertainmentScreenPlay = ScreenPlay:new {
 registerScreenPlay("CoruscantEntertainmentScreenPlay", true)
 
 function CoruscantEntertainmentScreenPlay:start()
-	if (isZoneEnabled("chandrila")) then
+	if (isZoneEnabled("coruscant")) then
 		self:spawnMobiles()
 		self:spawnSceneObjects()
 	end
@@ -130,7 +130,7 @@ end
 
 function CoruscantEntertainmentScreenPlay:spawnMobiles()
 
-	--Outdoors
+	--Entertainment District Exterior
 	local pNpc = spawnMobile("coruscant", "surgical_droid_21b",60,3.1,0.1,11.5,0,0)
 	self:setMoodString(pNpc, "neutral")
 	
@@ -157,6 +157,38 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   pNpc = spawnMobile("coruscant", "commoner", 60, 2254, 0, -4430, 0, 0)
   self:setMoodString(pNpc, "neutral")
   AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2239, 0, -4416, 118, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2245, 0, -4406, 180, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2254, 0, -4406, -122, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2243, 0, -4394, 12, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2249, 0, -4378, 22, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2243, 0, -4373, 108, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, 2255, 0, -4367, -118, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  
+  
+  
   --
   
 	
