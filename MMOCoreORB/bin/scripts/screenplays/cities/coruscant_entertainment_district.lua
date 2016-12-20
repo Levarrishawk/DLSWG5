@@ -79,6 +79,8 @@ function CoruscantEntertainmentScreenPlay:spawnSceneObjects()
   spawnSceneObject("coruscant", "object/tangible/furniture/modern/chair_modern_style_01.iff", 13.0, 0.5, -13.3, 37000721, math.rad(51) )
   spawnSceneObject("coruscant", "object/tangible/furniture/modern/chair_modern_style_01.iff", 13.0, 0.5, -10.6, 37000721, math.rad(128) )
   
+  spawnSceneObject("coruscant", "object/tangible/food/crafted/drink_ice_blaster.iff", 2.7, 2.2, 7.4, 37000721, math.rad(0) )
+  
 -- Entertainment District Sports Bar Cantina
   
      
