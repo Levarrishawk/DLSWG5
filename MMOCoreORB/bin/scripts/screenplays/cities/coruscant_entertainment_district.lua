@@ -300,5 +300,19 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   spawnMobile("coruscant", "stormtrooper", 60, -123.8, 40, 3216.3, 58, 0)
   spawnMobile("coruscant", "stormtrooper", 60, -29.3, 40.4, 3190, -75, 0)
   
-
+  spawnMobile("coruscant", "cll_8", 60, -210.9, 40, 3166.5, -109, 0)
+  
+  pNpc = spawnMobile("coruscant", "at_st", 60, -176, 40, 3245, 90, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  spawnMobile("coruscant", "commoner", 60, -121, 40, 3259, 22, 0)
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -116, 40, 3231, -148, 0)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -118.4, 40, 3228.1, 46, 0)
+  self:setMoodString(pNpc, "conversation")
+  
+  spawnMobile("coruscant", "commoner", 60, -129, 40, 3231, 143, 0)
 end
