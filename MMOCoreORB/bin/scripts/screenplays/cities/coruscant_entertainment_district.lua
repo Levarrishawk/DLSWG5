@@ -315,4 +315,19 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "conversation")
   
   spawnMobile("coruscant", "commoner", 60, -129, 40, 3231, 143, 0)
+  
+  --Imp Bunker
+  spawnMobile("coruscant", "fbase_imperial_specialist_noncom", 60, 7.0, -6.7, -8.0, -94, 37000432)
+  spawnMobile("coruscant", "fbase_imperial_specialist_noncom", 60, 2.0, -6.7, -8.0, 94, 37000432) 
+  spawnMobile("coruscant", "fbase_stormtrooper_medic", 60, 6.9, -13.8, 13.9, 174, 37000435) 
+  spawnMobile("coruscant", "fbase_dark_trooper_hard", 60, 15.7, -13.8, -15.0, 0, 37000437)
+  
+  spawnMobile("coruscant", "stormtrooper", 60, -176.1, 40, 3272.3, 90, 0)
+  spawnMobile("coruscant", "stormtrooper", 60, -176.1, 40, 3261.9, 90, 0) 
+  
+  pNpc = spawnMobile("coruscant", "at_st", 60, -69, 40, 3216, 0, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  spawnMobile("coruscant", "imperial_recruiter", 60, -188.7, 40, 3269.4, 90, 0) 
 end
