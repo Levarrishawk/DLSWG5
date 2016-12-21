@@ -362,6 +362,6 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   spawnMobile("coruscant", "fbase_dark_trooper_hard", 60, 4.4, -6.8, -7.2, 0, 37000254)  
   spawnMobile("coruscant", "fbase_stormtrooper_medic_hard", 60, 6.6, -13.8, 10.5, 0, 37000257)  
   spawnMobile("coruscant", "fbase_imperial_colonel", 60, 13.6, -13.8, 4.9, 64, 37000258)  
-  spawnMobile("coruscant", "fbase_comm_operator_hard", 60, 17.7, -11.5, -21.3, 168, 37000259) 
+  spawnMobile("coruscant", "fbase_imperial_corporal", 60, 17.7, -11.5, -21.3, 168, 37000259) 
   
 end
