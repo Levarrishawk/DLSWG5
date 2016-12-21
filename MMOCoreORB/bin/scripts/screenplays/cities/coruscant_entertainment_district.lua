@@ -317,8 +317,8 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   spawnMobile("coruscant", "commoner", 60, -129, 40, 3231, 143, 0)
   
   --Imp Bunker
-  spawnMobile("coruscant", "fbase_imperial_specialist_noncom", 60, 7.0, -6.7, -8.0, -94, 37000432)
-  spawnMobile("coruscant", "fbase_imperial_specialist_noncom", 60, 2.0, -6.7, -8.0, 94, 37000432) 
+  spawnMobile("coruscant", "fbase_specialist_noncom", 60, 7.0, -6.7, -8.0, -94, 37000432)
+  spawnMobile("coruscant", "fbase_specialist_noncom", 60, 2.0, -6.7, -8.0, 94, 37000432) 
   spawnMobile("coruscant", "fbase_stormtrooper_medic", 60, 6.9, -13.8, 13.9, 174, 37000435) 
   spawnMobile("coruscant", "fbase_dark_trooper_hard", 60, 15.7, -13.8, -15.0, 0, 37000437)
   
