@@ -408,4 +408,7 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   spawnMobile("coruscant", "stormtrooper", 60, 1541, 40, 724, 0, 0)
   spawnMobile("coruscant", "stormtrooper", 60, 1543, 40, 724, 0, 0)
   
+  pNpc = spawnMobile("coruscant", "imperial_moff", 60, 1534, 40, 728.6, 180, 0)
+  self:setMoodString(pNpc, "conversation")
+  
 end
