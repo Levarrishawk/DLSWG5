@@ -43,11 +43,11 @@ imperial_inquisitor = Creature:new {
 			}
 		}
 	},
-	weapons = {"imperial_weapons_heavy"},
+	weapons = {"dark_jedi_weapons_gen2"},
 	conversationTemplate = "",
 	reactionStf = "@npc_reaction/military",
 	personalityStf = "@hireling/hireling_military",
-	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
+	attacks = merge(lightsabermaster,forcewielder)
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_inquisitor, "imperial_inquisitor")

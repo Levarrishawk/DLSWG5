@@ -411,4 +411,14 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   pNpc = spawnMobile("coruscant", "imperial_moff", 60, 1534, 40, 728.6, 180, 0)
   self:setMoodString(pNpc, "conversation")
   
+  pNpc = spawnMobile("coruscant", "imperial_inquisitor", 60, 1531.5, 40, 730.7, 180, 0)
+  self:setMoodString(pNpc, "angry")
+  
+  pNpc = spawnMobile("coruscant", "imperial_inquisitor", 60, 1536.5, 40, 730.7, 180, 0)
+  self:setMoodString(pNpc, "angry")
+  
+  pNpc = spawnMobile("coruscant", "emperors_hand", 60, 1534, 40, 730.7, 180, 0)
+  self:setMoodString(pNpc, "angry")
+  
+  
 end
