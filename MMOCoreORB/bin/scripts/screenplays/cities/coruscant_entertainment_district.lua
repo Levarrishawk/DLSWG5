@@ -330,4 +330,38 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   AiAgent(pNpc):setAiTemplate("idlewander")
   
   spawnMobile("coruscant", "imperial_recruiter", 60, -188.7, 40, 3269.4, 90, 0) 
+  
+  -- :: Monument Square :: --
+  spawnMobile("coruscant", "stormtrooper", 60, 1551.5, 40, 775.7, 180, 0) 
+  
+  pNpc = spawnMobile("coruscant", "at_st", 60, 1655.6, 40, 648.8, -90, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "at_st", 60, 1541.3, 40, 574.3, 0, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "at_st", 60, 1490, 40, 655, 90, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "at_st", 60, 1484, 40, 753, 151, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  pNpc = spawnMobile("coruscant", "at_st", 60, 1596, 40, 740, -124, 0)
+  self:setMoodString(pNpc, "neutral")
+  AiAgent(pNpc):setAiTemplate("idlewander")
+  
+  spawnMobile("coruscant", "stormtrooper", 60, 1660.6, 40, 619.8, 0, 0)
+  spawnMobile("coruscant", "stormtrooper", 60, 1649.4, 40, 619.8, 0, 0)
+  
+  spawnMobile("coruscant", "imperial_recruiter", 60, 1653, 40, 606.9, 90, 0) 
+  
+  spawnMobile("coruscant", "fbase_dark_trooper_hard", 60, 4.4, -6.8, -7.2, 0, 37000254)  
+  spawnMobile("coruscant", "fbase_stormtrooper_medic_hard", 60, 6.6, -13.8, 10.5, 0, 37000257)  
+  spawnMobile("coruscant", "fbase_imperial_colonel", 60, 13.6, -13.8, 4.9, 64, 37000258)  
+  spawnMobile("coruscant", "fbase_comm_operator_hard", 60, 17.7, -11.5, -21.3, 168, 37000259) 
+  
 end
