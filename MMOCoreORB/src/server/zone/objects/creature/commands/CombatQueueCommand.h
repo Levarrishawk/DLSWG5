@@ -24,6 +24,7 @@
 #include "server/zone/packets/object/CombatSpam.h"
 #include "QueueCommand.h"
 #include "server/zone/managers/collision/PathFinderManager.h"
+#include "server/zone/packets/player/PlayMusicMessage.h"
 
 class CombatQueueCommand : public QueueCommand {
 protected:
