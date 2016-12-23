@@ -21,6 +21,7 @@
 #include "CombatQueueCommand.h"
 #include "server/zone/managers/collision/PathFinderManager.h"
 #include "server/zone/managers/visibility/VisibilityManager.h"
+#include "server/zone/packets/player/PlayMusicMessage.h"
 
 class ForcePowersQueueCommand : public CombatQueueCommand {
 public:
@@ -52,7 +53,7 @@ public:
 
 			if (playerObject != NULL && playerObject->getForcePower() < forceCost) {
 				creature->sendSystemMessage("@jedi_spam:no_force_power"); //"You do not have enough Force Power to peform that action.
-
+				creature->playMusicMessage("sound/ui_quest_spawn_escort.snd");
 				return GENERALERROR;
 			}
 
