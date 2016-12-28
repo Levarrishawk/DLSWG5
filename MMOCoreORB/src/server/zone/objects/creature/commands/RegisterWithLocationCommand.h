@@ -74,12 +74,11 @@ public:
 	}
 
 	bool isNoviceDoctor(CreatureObject* player) const {
-		return player->hasSkill("science_doctor_novice");
+		return player->hasSkill("combat_medic_novice");
 	}
 
 	bool isNoviceEntertainer(CreatureObject* player) const {
-		return (player->hasSkill("social_musician_novice") ||
-				player->hasSkill("social_dancer_novice"));
+		return (player->hasSkill("secondary_entertainer_novice"));
 	}
 
 	bool isInMedicalBuilding(CreatureObject* player, BuildingObject* building) const {
