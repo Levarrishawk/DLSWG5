@@ -49,7 +49,7 @@ Saber1hHit1Command = {
 	healthCostMultiplier = 0,
 	actionCostMultiplier = 1,
 	mindCostMultiplier = 0,
-	forceCostMultiplier = 1,
+	forceCostMultiplier = 0,
 	visMod = 25,
 	
 	animation = "combo_jedi_1", 
