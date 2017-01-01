@@ -43,31 +43,17 @@
 
 DrainForceCommand = {
     name = "drainforce",
-	
-	animation = "force_drain_1",
+  
+  animation = "force_drain_1",
 
-	combatSpam = "forcedrain_hit",
-	
-	poolsToDamage = ACTION,
-	
-	dotEffects = {
-    DotEffect( 
-    BLEEDING, 
-    { "resistance_bleeding", "bleed_resist" },
-    ACTION,
-    true,
-    300,
-    100,
-    100, 
-    100
-    )
-  },
+  combatSpam = "forcedrain_hit",
+  
+  poolsToDamage = NO_ATTRIBUTE,
 
-	minDamage = 250, --Force drained
+  minDamage = 20, --Force drained
 
-	range = 32
-	
+  range = 32
+  
 }
 
 AddCommand(DrainForceCommand)
-
