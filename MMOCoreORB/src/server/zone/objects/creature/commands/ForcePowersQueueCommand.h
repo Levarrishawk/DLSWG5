@@ -74,7 +74,7 @@ public:
 				}
 
 				if (playerObject != NULL)
-					playerObject->inflictDamage(playerObject, CreatureAttribute::ACTION, forceCost, true, true, true);//setForcePower(creature->getHAM(CreatureAttribute::ACTION) - forceCost);
+					creature->inflictDamage(creature, CreatureAttribute::ACTION, forceCost, true, true, true);//setForcePower(creature->getHAM(CreatureAttribute::ACTION) - forceCost);
 
 			} catch (Exception& e) {
 				error("unreported exception caught in ForcePowersQueueCommand::doCombatAction");
