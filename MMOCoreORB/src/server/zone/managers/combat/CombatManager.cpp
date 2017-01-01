@@ -1626,7 +1626,7 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	float action = weapon->getActionAttackCost() * data.getActionCostMultiplier();
 	float mind = weapon->getMindAttackCost() * data.getMindCostMultiplier();
 
-	if (action > 0) { // Need Force check first otherwise it can be spammed.
+	if (force > 0) { // Need Force check first otherwise it can be spammed.
 		ManagedReference<PlayerObject*> playerObject = attacker->getPlayerObject();
 		if (playerObject != NULL) {
 			if (attacker->getHAM(CreatureAttribute::ACTION) <= force) {
@@ -1667,7 +1667,7 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	if (mind > 0)
 		attacker->inflictDamage(attacker, CreatureAttribute::MIND, mind, true, true, true);
 		VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod());
-	if (force >= 0)
+	if (force > 0)
 				attacker->inflictDamage(attacker, CreatureAttribute::ACTION, action, true, true, true);
 				VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod());
 	return true;
