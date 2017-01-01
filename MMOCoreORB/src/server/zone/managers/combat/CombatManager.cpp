@@ -1631,7 +1631,7 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 				attacker->sendSystemMessage("@jedi_spam:no_force_power");
 				return false;
 			} else {
-				creature->inflictDamage(creature, CreatureAttribute::ACTION, forceCost, true, true, true);
+				creature->inflictDamage(creature, CreatureAttribute::ACTION, force, true, true, true);
 				VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod()); // Give visibility
 			}
 		}
