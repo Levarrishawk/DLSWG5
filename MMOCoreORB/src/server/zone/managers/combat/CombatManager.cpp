@@ -1621,8 +1621,9 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	if (attacker->isAiAgent() || data.isForceAttack())
 		return true;
 
-	float force = weapon->getForceCost() * data.getForceCostMultiplier();
+	float force = weapon->getActionAttackCost() * data.getActionCostMultiplier();
 
+	/*
 	if (force > 0) { // Need Force check first otherwise it can be spammed.
 		ManagedReference<PlayerObject*> playerObject = attacker->getPlayerObject();
 		if (playerObject != NULL) {
@@ -1634,7 +1635,7 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 				VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod()); // Give visibility
 			}
 		}
-	}
+	}*/
 
 	float health = weapon->getHealthAttackCost() * data.getHealthCostMultiplier();
 	float action = weapon->getActionAttackCost() * data.getActionCostMultiplier();
@@ -1655,13 +1656,13 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 
 	if (health > 0)
 		attacker->inflictDamage(attacker, CreatureAttribute::HEALTH, health, true, true, true);
-
+		VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod());
 	if (action > 0)
 		attacker->inflictDamage(attacker, CreatureAttribute::ACTION, action, true, true, true);
-
+		VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod());
 	if (mind > 0)
 		attacker->inflictDamage(attacker, CreatureAttribute::MIND, mind, true, true, true);
-
+		VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod());
 	return true;
 }
 
