@@ -47,11 +47,11 @@ SaberThrow3Command = {
 	damageMultiplier = 2.0,
 	speedMultiplier = 4.5,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 0,
+	actionCostMultiplier = 1,
 	mindCostMultiplier = 0,
 	coneAngle = 30,
 	coneAction = true,
-	forceCostMultiplier = 2.5,
+	forceCostMultiplier = 1,
 	visMod = 25,
 
 	stateEffects = {

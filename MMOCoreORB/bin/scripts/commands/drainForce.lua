@@ -48,9 +48,22 @@ DrainForceCommand = {
 
 	combatSpam = "forcedrain_hit",
 	
-	poolsToDamage = NO_ATTRIBUTE,
+	poolsToDamage = ACTION,
+	
+	dotEffects = {
+    DotEffect( 
+    BLEEDING, 
+    { "resistance_bleeding", "bleed_resist" },
+    ACTION,
+    true,
+    300,
+    100,
+    100, 
+    100
+    )
+  },
 
-	minDamage = 20, --Force drained
+	minDamage = 250, --Force drained
 
 	range = 32
 	

@@ -49,7 +49,7 @@ Saber2hSweep3Command = {
 	healthCostMultiplier = 0,
 	actionCostMultiplier = 1,
 	mindCostMultiplier = 0,
-	forceCostMultiplier = 2,
+	forceCostMultiplier = 1,
 	visMod = 25,
 
 	stateEffects = {

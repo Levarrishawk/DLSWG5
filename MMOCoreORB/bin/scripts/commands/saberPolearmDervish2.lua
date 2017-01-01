@@ -47,11 +47,11 @@ SaberPolearmDervish2Command = {
 	damageMultiplier = 4.5,
 	speedMultiplier = 1.0,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 0,
+	actionCostMultiplier = 1.0,
 	mindCostMultiplier = 0,
 	areaAction = true,
 	areaRange = 10,
-	forceCostMultiplier = 3.0,
+	forceCostMultiplier = 1.0,
 	visMod = 25,
 
 		stateEffects = {

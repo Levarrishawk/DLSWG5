@@ -1623,19 +1623,19 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 
 	float force = weapon->getActionAttackCost() * data.getActionCostMultiplier();
 
-	/*
-	if (force > 0) { // Need Force check first otherwise it can be spammed.
+
+	if (action > 0) { // Need Force check first otherwise it can be spammed.
 		ManagedReference<PlayerObject*> playerObject = attacker->getPlayerObject();
 		if (playerObject != NULL) {
-			if (playerObject->getForcePower() <= force) {
+			if (playerObject->getHAM(CreatureAttribute::ACTION) <= force) {
 				attacker->sendSystemMessage("@jedi_spam:no_force_power");
 				return false;
 			} else {
-				playerObject->setForcePower(playerObject->getForcePower() - force);
+				creature->inflictDamage(creature, CreatureAttribute::ACTION, forceCost, true, true, true);
 				VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod()); // Give visibility
 			}
 		}
-	}*/
+	}
 
 	float health = weapon->getHealthAttackCost() * data.getHealthCostMultiplier();
 	float action = weapon->getActionAttackCost() * data.getActionCostMultiplier();
