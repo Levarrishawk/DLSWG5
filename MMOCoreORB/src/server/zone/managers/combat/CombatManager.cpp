@@ -1644,6 +1644,7 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	health = attacker->calculateCostAdjustment(CreatureAttribute::STRENGTH, health);
 	action = attacker->calculateCostAdjustment(CreatureAttribute::QUICKNESS, action);
 	mind = attacker->calculateCostAdjustment(CreatureAttribute::FOCUS, mind);
+	force = attacker->calculateCostAdjustment(CreatureAttribute::QUICKNESS, action);
 
 	if (attacker->getHAM(CreatureAttribute::HEALTH) <= health)
 		return false;
