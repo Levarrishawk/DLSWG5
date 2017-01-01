@@ -1629,7 +1629,7 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	if (action > 0) { // Need Force check first otherwise it can be spammed.
 		ManagedReference<PlayerObject*> playerObject = attacker->getPlayerObject();
 		if (playerObject != NULL) {
-			if (playerObject->getHAM(CreatureAttribute::ACTION) <= force) {
+			if (attacker->getHAM(CreatureAttribute::ACTION) <= force) {
 				attacker->sendSystemMessage("@jedi_spam:no_force_power");
 				return false;
 			} else {
