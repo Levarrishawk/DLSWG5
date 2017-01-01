@@ -74,7 +74,7 @@ public:
 				}
 
 				if (playerObject != NULL)
-					playerObject->setForcePower(playerObject->getForcePower() - forceCost);
+					playerObject->setForcePower(playerObject->getHAM(CreatureAttribute::ACTION) - forceCost);
 
 			} catch (Exception& e) {
 				error("unreported exception caught in ForcePowersQueueCommand::doCombatAction");
