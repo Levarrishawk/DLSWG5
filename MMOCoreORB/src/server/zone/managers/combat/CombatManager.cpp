@@ -1622,24 +1622,24 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 		return true;
 
 	float force = weapon->getActionAttackCost() * data.getActionCostMultiplier();
-	float action = weapon->getActionAttackCost() * data.getActionCostMultiplier();
-	float health = weapon->getHealthAttackCost() * data.getHealthCostMultiplier();
-	float mind = weapon->getMindAttackCost() * data.getMindCostMultiplier();
 
-	if (action > 0) { // Need Force check first otherwise it can be spammed.
+	/*
+	if (force > 0) { // Need Force check first otherwise it can be spammed.
 		ManagedReference<PlayerObject*> playerObject = attacker->getPlayerObject();
 		if (playerObject != NULL) {
-			if (attacker->getHAM(CreatureAttribute::ACTION) <= force) {
+			if (playerObject->getForcePower() <= force) {
 				attacker->sendSystemMessage("@jedi_spam:no_force_power");
 				return false;
 			} else {
-				attacker->inflictDamage(attacker, CreatureAttribute::ACTION, force, true, true, true);
+				playerObject->setForcePower(playerObject->getForcePower() - force);
 				VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod()); // Give visibility
 			}
 		}
-	}
+	}*/
 
-
+	float health = weapon->getHealthAttackCost() * data.getHealthCostMultiplier();
+	float action = weapon->getActionAttackCost() * data.getActionCostMultiplier();
+	float mind = weapon->getMindAttackCost() * data.getMindCostMultiplier();
 
 	health = attacker->calculateCostAdjustment(CreatureAttribute::STRENGTH, health);
 	action = attacker->calculateCostAdjustment(CreatureAttribute::QUICKNESS, action);
