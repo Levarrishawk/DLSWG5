@@ -1655,6 +1655,9 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	if (attacker->getHAM(CreatureAttribute::MIND) <= mind)
 		return false;
 
+	if (attacker->getHAM(CreatureAttribute::ACTION) <= force)
+			return false;
+
 	if (health > 0)
 		attacker->inflictDamage(attacker, CreatureAttribute::HEALTH, health, true, true, true);
 		VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod());
@@ -1664,6 +1667,9 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	if (mind > 0)
 		attacker->inflictDamage(attacker, CreatureAttribute::MIND, mind, true, true, true);
 		VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod());
+	if (force >= 0)
+				attacker->inflictDamage(attacker, CreatureAttribute::ACTION, action, true, true, true);
+				VisibilityManager::instance()->increaseVisibility(attacker, data.getCommand()->getVisMod());
 	return true;
 }
 
