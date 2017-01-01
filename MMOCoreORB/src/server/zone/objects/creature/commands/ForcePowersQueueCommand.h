@@ -51,7 +51,7 @@ public:
 
 			ManagedReference<PlayerObject*> playerObject = creature->getPlayerObject();
 
-			if (playerObject != NULL && playerObject->getHAM(CreatureAttribute::ACTION) <= action() < weapon->getActionAttackCost) {
+			if (playerObject != NULL && playerObject->getForcePower() < forceCost) {
 				creature->sendSystemMessage("@jedi_spam:no_force_power"); //"You do not have enough Force Power to peform that action.
 				creature->playMusicMessage("sound/ui_quest_spawn_escort.snd");
 				return GENERALERROR;
