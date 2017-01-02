@@ -278,7 +278,7 @@ bool CreatureImplementation::canHarvestMe(CreatureObject* player) {
 bool CreatureImplementation::canDroidHarvestMe(CreatureObject* player,CreatureObject* droid) {
 
 	// droid should be able to harvest if in range, with current AI
-	if(!droid->isInRange(_this.getReferenceUnsafeStaticCast(), (10.0f + droid->getTemplateRadius() + getTemplateRadius())) || droid->isInCombat() || !player->hasSkill("outdoors_scout_novice")
+	if(!droid->isInRange(_this.getReferenceUnsafeStaticCast(), (10.0f + droid->getTemplateRadius() + getTemplateRadius())) || droid->isInCombat() || !player->hasSkill("secondary_ranger_novice")
 			|| droid->isDead() || droid->isIncapacitated() || isPet()) {
 		return false;
 	}
@@ -391,7 +391,7 @@ bool CreatureImplementation::hasSkillToSampleMe(CreatureObject* player) {
 }
 
 bool CreatureImplementation::canCollectDna(CreatureObject* player) {
-	if (!hasDNA() ||  _this.getReferenceUnsafeStaticCast()->isInCombat() || _this.getReferenceUnsafeStaticCast()->isDead() || !player->hasSkill("outdoors_bio_engineer_novice")){
+	if (!hasDNA() ||  _this.getReferenceUnsafeStaticCast()->isInCombat() || _this.getReferenceUnsafeStaticCast()->isDead() || !player->hasSkill("secondary_beastmaster_novice")){
 		return false;
 	}
 	if (player->getSkillMod("dna_harvesting") < 1)
