@@ -54,7 +54,7 @@ void CreatureImplementation::fillObjectMenuResponse(ObjectMenuResponse* menuResp
 			menuResponse->addRadialMenuItemToRadialID(112, 236, 3, "@sui:harvest_bone");
 	}
 
-	if (canTameMe(player) && player->hasSkill("outdoors_creaturehandler_novice") && getChanceToTame(player) >= 15) {
+	if (canTameMe(player) && player->hasSkill("secondary_beastmaster_novice") && getChanceToTame(player) >= 15) {
 		menuResponse->addRadialMenuItem(159, 3, "@pet/pet_menu:menu_tame");
 	}
 }
@@ -250,7 +250,7 @@ void CreatureImplementation::notifyDespawn(Zone* zone) {
 
 bool CreatureImplementation::canHarvestMe(CreatureObject* player) {
 
-	if(!player->isInRange(_this.getReferenceUnsafeStaticCast(), 10.0f) || player->isInCombat() || !player->hasSkill("outdoors_scout_novice")
+	if(!player->isInRange(_this.getReferenceUnsafeStaticCast(), 10.0f) || player->isInCombat() || !player->hasSkill("secondary_ranger_novice")
 			|| player->isDead() || player->isIncapacitated() || isPet())
 		return false;
 

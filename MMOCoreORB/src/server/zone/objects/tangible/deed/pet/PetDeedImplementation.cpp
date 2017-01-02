@@ -310,13 +310,13 @@ void PetDeedImplementation::fillObjectMenuResponse(ObjectMenuResponse* menuRespo
 	if(isASubChildOf(player))
 		menuResponse->addRadialMenuItem(20, 3, "@pet/pet_menu:menu_tame");
 	// Bio engineers can sample a deed
-	if(player->hasSkill("outdoors_bio_engineer_novice") && isASubChildOf(player))
+	if(player->hasSkill("secondary_beastmaster_novice") && isASubChildOf(player))
 		menuResponse->addRadialMenuItem(21, 3, "@sui:harvest_dna");
 }
 
 int PetDeedImplementation::handleObjectMenuSelect(CreatureObject* player, byte selectedID) {
 	if (selectedID == 21) {
-		if(generated || !player->hasSkill("outdoors_bio_engineer_novice") || !isASubChildOf(player))
+		if(generated || !player->hasSkill("secondary_beastmaster_novice") || !isASubChildOf(player))
 			return 1;
 		if (player->isRidingMount()) {
 			player->sendSystemMessage("You cannot sample DNA while mounted");
@@ -424,7 +424,7 @@ int PetDeedImplementation::handleObjectMenuSelect(CreatureObject* player, byte s
 		bool isVicious = petTemplate->getPvpBitmask() & CreatureFlag::AGGRESSIVE;
 
 		if (level > 10 || isVicious) {
-			if (!player->hasSkill("outdoors_creaturehandler_novice") || (level > maxLevelofPets)) {
+			if (!player->hasSkill("secondary_beastmaster_novice") || (level > maxLevelofPets)) {
 				player->sendSystemMessage("@pet/pet_menu:sys_lack_skill"); // You lack the skill to be able to tame that creature.
 				return 1;
 			}

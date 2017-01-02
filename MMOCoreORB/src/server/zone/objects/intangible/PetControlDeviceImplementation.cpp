@@ -138,7 +138,7 @@ void PetControlDeviceImplementation::callObject(CreatureObject* player) {
 		if (creaturePet == NULL)
 			return;
 
-		bool ch = player->hasSkill("outdoors_creaturehandler_novice");
+		bool ch = player->hasSkill("secondary_beastmaster_novice");
 
 		if (ch) {
 			maxPets = player->getSkillMod("keep_creature");
@@ -718,7 +718,7 @@ bool PetControlDeviceImplementation::canBeTradedTo(CreatureObject* player, Creat
 		int maxStoredPets = playerManager->getBaseStoredCreaturePets();
 		int maxLevelofPets = 10;
 		int level = pet->getAdultLevel();
-		bool ch = receiver->hasSkill("outdoors_creaturehandler_novice");
+		bool ch = receiver->hasSkill("secondary_beastmaster_novice");
 
 		if (ch) {
 			maxStoredPets += receiver->getSkillMod("stored_pets");
@@ -1073,20 +1073,20 @@ void PetControlDeviceImplementation::setTrainingCommand(unsigned int commandID) 
 		}
 	}
 	else if (petType == PetManager::CREATUREPET) {
-		if (((commandID == PetManager::ATTACK || commandID == PetManager::FOLLOW || commandID == PetManager::STORE) && !owner->hasSkill("outdoors_creaturehandler_novice") ) ||
-			(commandID == PetManager::STAY && !owner->hasSkill("outdoors_creaturehandler_training_01")) ||
-			(commandID == PetManager::GUARD && !owner->hasSkill("outdoors_creaturehandler_training_02")) ||
-			(commandID == PetManager::FRIEND && !owner->hasSkill("outdoors_creaturehandler_support_03")) ||
-			((commandID == PetManager::PATROL || commandID == PetManager::GETPATROLPOINT || commandID == PetManager::CLEARPATROLPOINTS) && !owner->hasSkill("outdoors_creaturehandler_training_03")) ||
-			((commandID == PetManager::FORMATION1 || commandID == PetManager::FORMATION2) && !owner->hasSkill("outdoors_creaturehandler_training_04")) ||
-			(commandID == PetManager::TRANSFER && !owner->hasSkill("outdoors_creaturehandler_master")) ||
-			(commandID == PetManager::TRICK1 && !owner->hasSkill("outdoors_creaturehandler_healing_01")) ||
-			(commandID == PetManager::TRICK2 && !owner->hasSkill("outdoors_creaturehandler_healing_03")) ||
-			(commandID == PetManager::GROUP && !owner->hasSkill("outdoors_creaturehandler_support_01")) ||
-			(commandID == PetManager::SPECIAL_ATTACK1 && (!owner->hasSkill("outdoors_creaturehandler_taming_03") || !pet->hasSpecialAttack(1))) ||
-			(commandID == PetManager::SPECIAL_ATTACK2 && (!owner->hasSkill("outdoors_creaturehandler_taming_04") || !pet->hasSpecialAttack(2))) ||
-			(commandID == PetManager::RANGED_ATTACK && (!owner->hasSkill("outdoors_creaturehandler_master") || !pet->hasRangedWeapon())) ||
-			(commandID == PetManager::FOLLOWOTHER && !owner->hasSkill("outdoors_creaturehandler_support_02")) ||
+		if (((commandID == PetManager::ATTACK || commandID == PetManager::FOLLOW || commandID == PetManager::STORE) && !owner->hasSkill("secondary_beastmaster_novice") ) ||
+			(commandID == PetManager::STAY && !owner->hasSkill("secondary_beastmaster_novice")) ||
+			(commandID == PetManager::GUARD && !owner->hasSkill("secondary_beastmaster_novice")) ||
+			(commandID == PetManager::FRIEND && !owner->hasSkill("secondary_beastmaster_novice")) ||
+			((commandID == PetManager::PATROL || commandID == PetManager::GETPATROLPOINT || commandID == PetManager::CLEARPATROLPOINTS) && !owner->hasSkill("secondary_beastmaster_novice")) ||
+			((commandID == PetManager::FORMATION1 || commandID == PetManager::FORMATION2) && !owner->hasSkill("secondary_beastmaster_novice")) ||
+			(commandID == PetManager::TRANSFER && !owner->hasSkill("secondary_beastmaster_novice")) ||
+			(commandID == PetManager::TRICK1 && !owner->hasSkill("secondary_beastmaster_novice")) ||
+			(commandID == PetManager::TRICK2 && !owner->hasSkill("secondary_beastmaster_novice")) ||
+			(commandID == PetManager::GROUP && !owner->hasSkill("secondary_beastmaster_novice")) ||
+			(commandID == PetManager::SPECIAL_ATTACK1 && (!owner->hasSkill("secondary_beastmaster_novice") || !pet->hasSpecialAttack(1))) ||
+			(commandID == PetManager::SPECIAL_ATTACK2 && (!owner->hasSkill("secondary_beastmaster_novice") || !pet->hasSpecialAttack(2))) ||
+			(commandID == PetManager::RANGED_ATTACK && (!owner->hasSkill("secondary_beastmaster_novice") || !pet->hasRangedWeapon())) ||
+			(commandID == PetManager::FOLLOWOTHER && !owner->hasSkill("secondary_beastmaster_novice")) ||
 			(commandID == PetManager::RECHARGEOTHER))
 				return;
 	}
@@ -1116,7 +1116,7 @@ void PetControlDeviceImplementation::setTrainingCommand(unsigned int commandID) 
 }
 
 void PetControlDeviceImplementation::trainAsMount(CreatureObject* player) {
-	if (isTrainedAsMount() || !player->hasSkill("outdoors_creaturehandler_support_04"))
+	if (isTrainedAsMount() || !player->hasSkill("secondary_beastmaster_novice"))
 		return;
 
 	PetManager* petManager = player->getZoneServer()->getPetManager();
