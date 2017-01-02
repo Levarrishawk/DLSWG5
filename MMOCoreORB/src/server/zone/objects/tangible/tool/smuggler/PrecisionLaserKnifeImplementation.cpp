@@ -19,7 +19,7 @@ int PrecisionLaserKnifeImplementation::handleObjectMenuSelect(CreatureObject* pl
 	if (!isASubChildOf(player))
 		return 0;
 
-	if(!player->hasSkill("combat_smuggler_novice")){
+	if(!player->hasSkill("secondary_scoundrel_novice")){
 		player->sendSystemMessage("You must be at least a Novice Smuggler to use this tool.");
 		return 0;
 	}
@@ -37,7 +37,7 @@ int PrecisionLaserKnifeImplementation::handleObjectMenuSelect(CreatureObject* pl
 	}
 
 	if (target->isMissionTerminal()) {
-		if (!player->hasSkill("combat_smuggler_slicing_01")) {
+		if (!player->hasSkill("secondary_scoundrel_novice")) {
 			return 0;
 		}
 
@@ -60,9 +60,9 @@ int PrecisionLaserKnifeImplementation::handleObjectMenuSelect(CreatureObject* pl
 			return 0;
 		}
 
-	} else if (target->isWeaponObject() && !player->hasSkill("combat_smuggler_slicing_02")) {
+	} else if (target->isWeaponObject() && !player->hasSkill("secondary_scoundrel_novice")) {
 		return 0;
-	} else if (target->isArmorObject() && !player->hasSkill("combat_smuggler_slicing_03")) {
+	} else if (target->isArmorObject() && !player->hasSkill("secondary_scoundrel_novice")) {
 		return 0;
 	} else if (target->isSecurityTerminal()) {
 		Zone* zone = target->getZone();
