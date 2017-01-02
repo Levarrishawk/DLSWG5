@@ -310,7 +310,7 @@ bool CreatureImplementation::canDroidHarvestMe(CreatureObject* player,CreatureOb
 
 bool CreatureImplementation::hasSkillToHarvestMe(CreatureObject* player) {
 
-	if(!player->hasSkill("outdoors_scout_novice"))
+	if(!player->hasSkill("secondary_ranger_novice"))
 		return false;
 
 	if (!hasOrganics())
@@ -372,7 +372,7 @@ bool CreatureImplementation::canMilkMe(CreatureObject* player) {
 
 bool CreatureImplementation::hasSkillToSampleMe(CreatureObject* player) {
 
-	if(!player->hasSkill("outdoors_bio_engineer_novice"))
+	if(!player->hasSkill("secondary_beastmaster_novice"))
 		return false;
 
 	if (!hasDNA())
