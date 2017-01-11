@@ -66,6 +66,13 @@ public:
 				creature->playMusicMessage("sound/music_themequest_victory_rebel.snd");
 				playerManager->killPlayer(creature, player, 1);
 			}
+			if (player->isAttackableBy(creature) && checkDistance(player, creature, 10) && player->getFaction() == Factions::FACTIONNEUTRAL) {
+				PlayerManager* playerManager = server->getPlayerManager();
+
+				creature->playEffect("clienteffect/holoemote_haunted.cef", "head");
+				creature->playMusicMessage("sound/music_combat_bfield_def.snd");
+				playerManager->killPlayer(creature, player, 1);
+			}
 		} else if (targetObject->isPet()) {
 			AiAgent* pet = cast<AiAgent*>( targetObject.get());
 
