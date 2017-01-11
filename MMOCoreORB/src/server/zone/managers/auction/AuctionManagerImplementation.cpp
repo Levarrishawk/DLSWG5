@@ -329,9 +329,9 @@ void AuctionManagerImplementation::addSaleItem(CreatureObject* player, uint64 ob
 		StringIdChatParameter str("@base_player:sale_fee"); // The fee for your listing is %DI credits.
 
 		float costReduction = 1;
-		if(player->hasSkill("crafting_merchant_sales_01"))
+		if(player->hasSkill("secondary_merchant_novice"))
 				costReduction = .80f;
-		if(player->hasSkill("crafting_merchant_sales_03"))
+		if(player->hasSkill("secondary_merchant_master"))
 				costReduction = .60f;
 
 		if (item->isPremiumAuction()) {

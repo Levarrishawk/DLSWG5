@@ -43,7 +43,7 @@ void VendorAdBarkingSessionImplementation::sendPhraseOptions() {
 	phrases->setCancelButton(true, "@cancel");
 	phrases->setCallback(new AdBarkingPhraseSuiCallback(owner->getZoneServer()));
 
-	if(owner->hasSkill("crafting_merchant_advertising_02"))
+	if(owner->hasSkill("secondary_merchant_vend_02"))
 		phrases->addMenuItem("Customize", 0);
 
 	phrases->addMenuItem("@map_loc_cat_n:vendor_armor", 1);

@@ -216,9 +216,9 @@ float VendorDataComponent::getMaintenanceRate() {
 	// Apply reduction for merchant skills
 	ManagedReference<CreatureObject*> owner = strongParent->getZoneServer()->getObject(getOwnerId()).castTo<CreatureObject*>();
 	if (owner != NULL && owner->isPlayerCreature() ) {
-		if(owner->hasSkill("crafting_merchant_master"))
+		if(owner->hasSkill("secondary_merchant_master"))
 			maintRate *= .60f;
-		else if(owner->hasSkill("crafting_merchant_sales_02"))
+		else if(owner->hasSkill("secondary_merchant_novice"))
 			maintRate *= .80f;
 	}
 

@@ -81,14 +81,14 @@ void VendorMenuComponent::fillObjectMenuResponse(SceneObject* sceneObject,
 		else if (!vendorData->isOnStrike())
 			menuResponse->addRadialMenuItemToRadialID(70, 75, 3, "@player_structure:enable_vendor_search");
 
-		if (player->hasSkill("crafting_merchant_advertising_03")) {
+		if (player->hasSkill("secondary_merchant_vend_03")) {
 			if (vendorData->isRegistered())
 				menuResponse->addRadialMenuItemToRadialID(70, 76, 3, "@player_structure:unregister_vendor");
 			else if (!vendorData->isOnStrike())
 				menuResponse->addRadialMenuItemToRadialID(70, 76, 3, "@player_structure:register_vendor");
 		}
 
-		if (player->hasSkill("crafting_merchant_advertising_01") && sceneObject->isCreatureObject()) {
+		if (player->hasSkill("secondary_merchant_vend_01") && sceneObject->isCreatureObject()) {
 			if (!vendorData->isAdBarkingEnabled())
 				menuResponse->addRadialMenuItemToRadialID(70, 77, 3, "@player_structure:vendor_areabarks_on");
 			else
@@ -164,7 +164,7 @@ int VendorMenuComponent::handleObjectMenuSelect(SceneObject* sceneObject,
 	}
 
 	case 76: {
-		if(player->hasSkill("crafting_merchant_advertising_03")) {
+		if(player->hasSkill("secondary_merchant_vend_03")) {
 			if (vendorData->isRegistered())
 				VendorManager::instance()->handleUnregisterVendor(player, vendor);
 			else if (!vendorData->isOnStrike())
@@ -174,7 +174,7 @@ int VendorMenuComponent::handleObjectMenuSelect(SceneObject* sceneObject,
 	}
 
 	case 77: {
-		if(player->hasSkill("crafting_merchant_advertising_01") && vendor->isCreatureObject()) {
+		if(player->hasSkill("secondary_merchant_vend_01") && vendor->isCreatureObject()) {
 			if (!vendorData->isAdBarkingEnabled()) {
 
 				if (player->containsActiveSession(SessionFacadeType::VENDORADBARKING)) {
