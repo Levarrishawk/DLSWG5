@@ -195,13 +195,13 @@ void VendorDataComponent::runVendorUpdate() {
 		assert(vendor->isLockedByCurrentThread());
 
 		Locker locker(owner, vendor);
-		playerManager->awardExperience(owner, "merchant", 150 * hoursSinceLastUpdate, false);
+		playerManager->awardExperience(owner, "merchant", 1150 * hoursSinceLastUpdate, false);
 
-		playerManager->awardExperience(owner, "merchant", awardUsageXP * 50, false);
+		playerManager->awardExperience(owner, "merchant", awardUsageXP * 2500, false);
 
 	}
 
-	awardUsageXP = 0;
+	awardUsageXP = 1;
 	lastSuccessfulUpdate.updateToCurrentTime();
 }
 
