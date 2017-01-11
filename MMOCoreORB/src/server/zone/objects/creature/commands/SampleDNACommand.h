@@ -35,7 +35,7 @@ public:
 
 		ManagedReference<SceneObject* > object = server->getZoneServer()->getObject(target);
 		ManagedReference<CreatureObject*> player = cast<CreatureObject*>(creature);
-		if (player && !player->hasSkill("outdoors_bio_engineer_novice")) {
+		if (player && !player->hasSkill("secondary_beastmaster_novice")) {
 			player->sendSystemMessage("@bio_engineer:harvest_dna_skill_too_low"); // You are not sufficiently skilled to take DNA samples.
 			return GENERALERROR;
 		}

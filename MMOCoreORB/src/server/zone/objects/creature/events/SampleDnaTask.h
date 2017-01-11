@@ -68,11 +68,11 @@ public:
 		switch(currentPhase) {
 		case BEGIN:
 			// We should be good to go now and try the sample
-			if (player->getHAM(CreatureAttribute::MIND) < mindCost) {
+			if (player->getHAM(CreatureAttribute::ACTION) < mindCost) {
 				player->sendSystemMessage("@bio_engineer:harvest_dna_attrib_too_low");
 			} else {
 				prepareCreatureForSampling();
-				player->inflictDamage(player, CreatureAttribute::MIND, mindCost, false, true);
+				player->inflictDamage(player, CreatureAttribute::ACTION, mindCost, false, true);
 				player->sendSystemMessage("@bio_engineer:harvest_dna_begin_harvest");
 				currentPhase = SAMPLING;
 				// We grab the original mask and faction in ctor
@@ -219,7 +219,7 @@ public:
 		int xp = DnaManager::instance()->generateXp(cl);
 		ManagedReference<PlayerManager*> playerManager = player->getZoneServer()->getPlayerManager();
 		if(playerManager != NULL)
-			playerManager->awardExperience(player, "bio_engineer_dna_harvesting", xp, true);
+			playerManager->awardExperience(player, "creaturehandler", xp, true);
 		int quality = 0;
 		// generate quality based on skill
 		int luckRoll = System::random(100);
