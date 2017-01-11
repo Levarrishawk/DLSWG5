@@ -1129,7 +1129,7 @@ void BuildingObjectImplementation::payAccessFee(CreatureObject* player) {
 		PlayerObject* ghost = owner->getPlayerObject();
 
 		if (ghost != NULL)
-			ghost->addExperience("merchant", 2000, true);
+			ghost->addExperience("merchant", 10000, true);
 	}
 
 	updatePaidAccessList();
