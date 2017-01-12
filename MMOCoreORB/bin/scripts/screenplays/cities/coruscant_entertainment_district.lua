@@ -163,6 +163,13 @@ function CoruscantEntertainmentScreenPlay:spawnSceneObjects()
   spawnSceneObject("coruscant", "object/tangible/gambling/wheel/roulette.iff", -4.8, -0.7, -8.6, 37000316, math.rad(0) )
 
 
+-- Collective Commerce district Objects
+  spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_piece_curve_s1.iff", 3.8, 0.1, -2.2, 37000549, math.rad(0) )
+  spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_piece_straight_s2.iff", -1, 0.1, -1.3, 37000549, math.rad(0) )
+  spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_piece_straight_s1.iff", -5.5, 0.1, -1.9, 37000549, math.rad(-90) )
+  
+
+
 end
 
 function CoruscantEntertainmentScreenPlay:spawnMobiles()
@@ -419,6 +426,10 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   
   pNpc = spawnMobile("coruscant", "emperors_hand", 60, 1534, 40, 730.7, 180, 0)
   self:setMoodString(pNpc, "angry")
+  
+  
+  --  Collective Commerce District NPCs
+  
   
   
 end
