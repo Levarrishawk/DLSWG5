@@ -166,7 +166,7 @@ function CoruscantEntertainmentScreenPlay:spawnSceneObjects()
 -- Collective Commerce district Objects
   spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_piece_curve_s1.iff", 3.8, 0.1, -2.2, 37000549, math.rad(0) )
   spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_piece_straight_s2.iff", -1, 0.1, -1.3, 37000549, math.rad(0) )
-  spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_piece_straight_s1.iff", -5.5, 0.1, -1.9, 37000549, math.rad(-90) )
+  spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_piece_straight_s1.iff", -5.5, 0.1, -1.9, 37000549, math.rad(180) )
   
 
 
