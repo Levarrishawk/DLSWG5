@@ -27,7 +27,7 @@ public:
 		if(!creature->isPlayerCreature())
 			return GENERALERROR;
 
-		if(!creature->hasSkill("outdoors_ranger_novice"))
+		if(!creature->hasSkill("secondary_ranger_novice"))
 			return GENERALERROR;
 
 		if(creature->getParent() != NULL && creature->getParent().get()->isCellObject()) {
@@ -56,10 +56,10 @@ public:
 
 		chooseTrackTarget->addMenuItem("@cmd_n:areatrack_animal");
 
-		if(creature->hasSkill("outdoors_ranger_harvest_02"))
+		if(creature->hasSkill("secondary_ranger_explore_02"))
 			chooseTrackTarget->addMenuItem("@cmd_n:areatrack_npc");
 
-		if(creature->hasSkill("outdoors_ranger_harvest_04"))
+		if(creature->hasSkill("secondary_ranger_master"))
 			chooseTrackTarget->addMenuItem("@cmd_n:areatrack_player");
 
 		chooseTrackTarget->setCancelButton(true, "");
