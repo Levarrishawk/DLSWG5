@@ -42,12 +42,12 @@ public:
 			return GENERALERROR;
 
 		// Do not execute if the player's force bar is full.
-		if (playerObject->getForcePower() >= playerObject->getForcePowerMax())
+		if (creature->getHAM(CreatureAttribute::ACTION) >= creature->getMaxHAM(CreatureAttribute::ACTION))
 			return GENERALERROR;
 
 		// To keep it from going over max...
-		if ((playerObject->getForcePowerMax() - playerObject->getForcePower()) < forceBonus)
-			forceBonus = ((playerObject->getForcePowerMax() - playerObject->getForcePower()) / 10) * 10;
+		if ((creature->getMaxHAM(CreatureAttribute::ACTION) - creature->getHAM(CreatureAttribute::ACTION)) < forceBonus)
+			forceBonus = ((creature->getMaxHAM(CreatureAttribute::ACTION) - creature->getHAM(CreatureAttribute::ACTION)) / 10) * 10;
 
 		int health = creature->getHAM(CreatureAttribute::HEALTH);
 		int action = creature->getHAM(CreatureAttribute::ACTION);
@@ -68,7 +68,10 @@ public:
 		}
 
 		// Give Force, and subtract HAM.
-		playerObject->setForcePower(playerObject->getForcePower() + forceBonus);
+		//playerObject->setForcePower(playerObject->getForcePower() + forceBonus);
+
+		creature->healDamage(creature, CreatureAttribute::ACTION, forceBonus);
+		creature->inflictDamage(creature, CreatureAttribute::HEALTH, forceBonus);
 
 		creature->playEffect("clienteffect/pl_force_channel_self.cef");
 
