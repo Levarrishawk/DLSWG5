@@ -21,6 +21,7 @@ public:
         // If these are active they will block buff use
 		blockingCRCs.add(BuffCRC::JEDI_FORCE_RUN_1);
 		blockingCRCs.add(BuffCRC::JEDI_FORCE_RUN_3);
+		blockingCRCs.add(BuffCRC::JEDI_RESIST_BLEEDING);
         
 		skillMods.put("force_run", 2);
 		skillMods.put("slope_move", 66);
