@@ -23,7 +23,7 @@ elan_sleazebaggano = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = HERD,
-	optionsBitmask = AIENABLED,
+  optionsBitmask = AIENABLED + CONVERSABLE,
 	diet = HERBIVORE,
 
 	templates = {	"object/mobile/dressed_commoner_old_zabrak_male_02.iff"
