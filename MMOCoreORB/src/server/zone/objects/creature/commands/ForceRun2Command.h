@@ -81,6 +81,7 @@ public:
 					creature->sendSystemMessage("You are not ready to Force Run again so soon.");
 					return GENERALERROR;
 				}
+
 		return SUCCESS;
 	}
 
