@@ -170,7 +170,13 @@ function CoruscantEntertainmentScreenPlay:spawnSceneObjects()
   spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_counter_s1.iff", 2.0, -0.1, 3.6, 37000549, math.rad(90) )
   spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_counter_s1.iff", -2.0, -0.1, 3.6, 37000549, math.rad(90) )
   spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_counter_s1.iff", -5.7, -0.1, 3.6, 37000549, math.rad(90) )
-  
+  spawnSceneObject("coruscant", "object/tangible/furniture/cheap/chair_s01.iff", 3.5, 0.1, 3.5, 37000549, math.rad(-90) )
+  spawnSceneObject("coruscant", "object/tangible/furniture/cheap/chair_s01.iff", 0.8, 0.1, 3.5, 37000549, math.rad(90) )
+  spawnSceneObject("coruscant", "object/tangible/furniture/cheap/chair_s01.iff", -0.6, 0.1, 3.5, 37000549, math.rad(-90) )
+  spawnSceneObject("coruscant", "object/tangible/furniture/cheap/chair_s01.iff", -3.2, 0.1, 3.5, 37000549, math.rad(90) )
+  spawnSceneObject("coruscant", "object/tangible/furniture/cheap/chair_s01.iff", -4.5, 0.1, 3.5, 37000549, math.rad(-90) )
+  spawnSceneObject("coruscant", "object/tangible/furniture/cheap/chair_s01.iff", -6.7, 0.1, 3.5, 37000549, math.rad(90) )
+  spawnSceneObject("coruscant", "object/static/structure/general/all_foodcart_s01.iff", -1.8, 0.1, -7.5, 37000549, math.rad(90) )
 
 end
 
