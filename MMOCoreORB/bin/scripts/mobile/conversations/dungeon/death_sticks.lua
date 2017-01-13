@@ -56,7 +56,7 @@ opt1a = ConvoScreen:new {
     {"You used to sell Death Sticks? How then did you start doing this?","opt2"},
   }
 }
-jakku_overseer:addScreen(opt1a);
+death_sticks:addScreen(opt1a);
 
 opt2 = ConvoScreen:new {
   id = "opt2",
