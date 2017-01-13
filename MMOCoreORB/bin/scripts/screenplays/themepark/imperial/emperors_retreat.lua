@@ -34,7 +34,7 @@ end
 function EmperorElevatorMenuComponent:handleObjectMenuSelect(pSceneObject, pPlayer, selectedID)
 	ObjectManager.withCreatureObject(pPlayer, function(creature)
 		if (selectedID ~= 198) or (not creature:hasScreenPlayState(16, "imperial_theme_park")) then
-			creature:sendSystemMessage("@theme_park_imperial/warning:emperor")
+			creature:sendSystemMessage("Access Denied.  Please present proper New Republic security clearance.")
 			return 0
 		end
 

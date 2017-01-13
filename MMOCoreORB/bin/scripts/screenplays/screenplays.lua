@@ -507,3 +507,4 @@ includeFile("heroics/jakku_overseer.lua")
 
 -- Elysium
 includeFile("cities/coruscant_entertainment_district.lua")
+includeFile("heroics/retreat_curator.lua")

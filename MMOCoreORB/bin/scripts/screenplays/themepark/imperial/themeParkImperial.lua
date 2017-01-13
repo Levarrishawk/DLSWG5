@@ -421,7 +421,7 @@ npcMapImperial =
 			missions = palpatine_missions
 		},
 		{
-			spawnData = { planetName = "lok", npcTemplate = "palpatine", x = -9.7, z = 1.0, y = -19.6, direction = -90, cellID = 8615426, position = STAND },
+			spawnData = { planetName = "lok", npcTemplate = "palpatine", x = -9.7, z = 1.0, y = -19.6, direction = 180, cellID = 8615420, position = STAND },
 			worldPosition = { x = -1891, y = -3076 },
 			npcNumber = 32,
 			stfFile = "@theme_park_imperial/darth_vader",
@@ -429,7 +429,7 @@ npcMapImperial =
 			missions = darth_vader_missions
 		},
 		{ 
-			spawnData = { planetName = "naboo", npcTemplate = "record_keeper_imperial", x = 32.70, z = 0.2, y = -36.70, direction = 0, cellID = 1418873, position = STAND }, 
+			spawnData = { planetName = "lok", npcTemplate = "record_keeper_imperial", x = 0, z = 1, y = 12.4, direction = 0, cellID = 1418873, position = STAND }, 
 			npcNumber = -1,  
 			stfFile = "",               
 			missions = {} 
