@@ -7,6 +7,8 @@
 
 #include "server/zone/objects/creature/buffs/PrivateSkillMultiplierBuff.h"
 #include "JediQueueCommand.h"
+#include "server/zone/objects/scene/SceneObject.h"
+#include "TendCommand.h"
 
 class ForceRun2Command : public JediQueueCommand {
 public:
@@ -26,14 +28,6 @@ public:
 
 	int doQueueCommand(CreatureObject* creature, const uint64& target, const UnicodeString& arguments) const {
 		int res = creature->hasBuff(buffCRC) ? NOSTACKJEDIBUFF : doJediSelfBuffCommand(creature);
-
-		int duration = 45;
-		uint32 buffcrc = BuffCRC::JEDI_RESIST_BLEEDING; //This is the temp. buff icon.
-
-		StringIdChatParameter startStringId("medical_heal", "apply_healCooldown");
-		StringIdChatParameter endStringId("medical_heal", "remove_healCooldown");
-
-
 
 		if (res == NOSTACKJEDIBUFF) {
 			creature->sendSystemMessage("@jedi_spam:already_force_running"); // You are already force running.
@@ -61,25 +55,32 @@ public:
 
 		Locker blocker(buff);
 
+
+
 		buff->addSecondaryBuffCRC(multBuff->getBuffCRC());
 
 		if (creature->hasBuff(STRING_HASHCODE("burstrun")) || creature->hasBuff(STRING_HASHCODE("retreat"))) {
 			creature->removeBuff(STRING_HASHCODE("burstrun"));
 			creature->removeBuff(STRING_HASHCODE("retreat"));
 		}
-		Locker.release();
+		locker.release();
 
-		ManagedReference<Buff2*> buff2 = new Buff2(creature, buffcrc, duration, BuffType::JEDI);
+		int duration2 = 45;
+		uint32 buffcrc2 = BuffCRC::JEDI_RESIST_BLEEDING;
+
+		StringIdChatParameter startStringId("medical_heal", "apply_healCooldown");
+		StringIdChatParameter endStringId("medical_heal", "remove_healCooldown");
+
+		ManagedReference<Buff2*> buff2 = new Buff2(creature, buffcrc2, duration2, BuffType::JEDI);
 		Locker locker(buff2);
 
 		if (!creature->hasBuff(BuffCRC::JEDI_RESIST_BLEEDING)){
 					creature->addBuff(buff2);
-					buff->setStartMessage(startStringId);
-					buff->setEndMessage(endStringId);
+					buff2->setStartMessage(startStringId);
+					buff2->setEndMessage(endStringId);
 				} else {
-					creature->sendSystemMessage("You are still under the effects of fatigue.  You can not Force Run right now.");
+					creature->sendSystemMessage("You are not ready to Force Run again so soon.");
 				}
-
 		return SUCCESS;
 	}
 
