@@ -27,6 +27,15 @@ public:
 	int doQueueCommand(CreatureObject* creature, const uint64& target, const UnicodeString& arguments) const {
 		int res = creature->hasBuff(buffCRC) ? NOSTACKJEDIBUFF : doJediSelfBuffCommand(creature);
 
+		int duration = 45;
+		uint32 buffcrc = BuffCRC::JEDI_RESIST_BLEEDING; //This is the temp. buff icon.
+
+				StringIdChatParameter startStringId("medical_heal", "apply_healCooldown");
+				StringIdChatParameter endStringId("medical_heal", "remove_healCooldown");
+
+				ManagedReference<Buff*> buff2 = new Buff2(creature, buffcrc, duration, BuffType::JEDI);
+				Locker locker(buff2);
+
 		if (res == NOSTACKJEDIBUFF) {
 			creature->sendSystemMessage("@jedi_spam:already_force_running"); // You are already force running.
 			return GENERALERROR;
@@ -59,6 +68,13 @@ public:
 			creature->removeBuff(STRING_HASHCODE("burstrun"));
 			creature->removeBuff(STRING_HASHCODE("retreat"));
 		}
+		if (!creature->hasBuff(BuffCRC::JEDI_RESIST_BLEEDING)){
+					creature->addBuff(buff2);
+					buff->setStartMessage(startStringId);
+					buff->setEndMessage(endStringId);
+				} else {
+					creature->sendSystemMessage("You are still under the effects of fatigue.  You can not Force Run right now.");
+				}
 
 		return SUCCESS;
 	}
