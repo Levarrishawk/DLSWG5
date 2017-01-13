@@ -1,6 +1,6 @@
-bartender = Creature:new {
-	objectName = "@npc_name:bartender",
-	customName = "a Bartender",
+elan_sleazebaggano = Creature:new {
+	objectName = "@mob/creature_names:commoner",
+	customName = "Elan Sleazebaggano",
 	socialGroup = "townsperson",
 	faction = "townsperson",
 	level = 4,
@@ -11,7 +11,7 @@ bartender = Creature:new {
 	baseHAM = 113,
 	baseHAMmax = 138,
 	armor = 0,
-	resists = {0,0,0,0,0,0,0,-1,-1},
+	resists = {15,15,15,15,15,15,15,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -22,18 +22,18 @@ bartender = Creature:new {
 	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = NONE,
-	creatureBitmask = NONE,
+	creatureBitmask = HERD,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_commoner_fat_human_male_01.iff",
-					"object/mobile/dressed_commoner_naboo_human_female_05.iff",
-					"object/mobile/dressed_commoner_tatooine_ishitib_male_02.iff"},
+	templates = {	"object/mobile/dressed_commoner_old_zabrak_male_02.iff"
+					},
+				
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "death_sticks",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(bartender, "bartender")
+CreatureTemplates:addCreatureTemplate(elan_sleazebaggano, "elan_sleazebaggano")

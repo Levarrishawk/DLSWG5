@@ -7,31 +7,31 @@ death_sticks = ConvoTemplate:new {
 
 
 --Intro First
-overseer_start = ConvoScreen:new {
-  id = "overseer_start",
+death_sticks_start = ConvoScreen:new {
+  id = "death_sticks_start",
   leftDialog = "",
-  customDialogText = "So, you are the intruders that breached the facility.  No matter.  You are too late, the data has been transmitted and all databanks in the facility have been wiped.  I will surrender to you if I must, I assume you have questions.",
+  customDialogText = "You want to hear some important information about the dangers of Death Sticks?",
   stopConversation = "false",
   options = {
-    {"What is Protocol 77?", "opt1"},
-    {"What is the purpose of this facility?", "opt2"},
-    {"Why would the Empire place such priority on defending Jakku?", "opt3"},
-    {"Remain here until security forces arrive to apprehend you.", "deny1"}
+    {"I'm not even sure what a Death Stick is, what are they?", "opt1"},
+    {"Something is not right here, how exactly did you get into doing this?", "opt2"},
+    {"Death Sticks, do you have any for sale?", "opt3"},
+    {"Eat poodoo.", "deny1"}
   
   }
 }
-jakku_overseer:addScreen(overseer_start);
+death_sticks:addScreen(death_sticks_start);
 
 --deny
 deny1 = ConvoScreen:new {
   id = "deny1",
   leftDialog = "",
-  customDialogText = "Fine.",
+  customDialogText = "I will, have a good day.",
   stopConversation = "true",
   options = {
   }
 }
-jakku_overseer:addScreen(deny1);
+death_sticks:addScreen(deny1);
 
 
 
@@ -39,21 +39,21 @@ jakku_overseer:addScreen(deny1);
 opt1 = ConvoScreen:new {
   id = "opt1",
   leftDialog = "",
-  customDialogText = "Protocol 77 was a security measure put in place by Emperor Palpatine meant to protect the work being done in this facility from any unauthorized hands.",
+  customDialogText = "A very good question.  You see, Death Sticks are one of the most addictive substances in the known galaxy, but have a nasty reputation of being lethal.",
   stopConversation = "false",
   options = {
-    {"Who would be considered unauthorized hands?","opt1a"},
+    {"Why the blazes would anyone want to use them then?","opt1a"},
   }
 }
-jakku_overseer:addScreen(opt1);
+death_sticks:addScreen(opt1);
 
 opt1a = ConvoScreen:new {
   id = "opt1a",
   leftDialog = "",
-  customDialogText = "Hands like yours for example. The majority of the research from this facility was for the Emperor's eyes only save for the weapons.",
+  customDialogText = "Well, they can be mildly hallucinogenic producing vivid visions to it's users and a state of euphoria.  They were very popular when I was a younger man before the Clone Wars.  In fact I used to sell them, right here in this club.",
   stopConversation = "false",
   options = {
-    {"What exactly was the purpose of this facility?","opt2"},
+    {"You used to sell Death Sticks? How then did you start doing this?","opt2"},
   }
 }
 jakku_overseer:addScreen(opt1a);
@@ -61,79 +61,79 @@ jakku_overseer:addScreen(opt1a);
 opt2 = ConvoScreen:new {
   id = "opt2",
   leftDialog = "",
-   customDialogText = "This facility served a twofold purpose for the Empire.  The highest priority was in research and data decryption received from satellite outposts established by the empire in the unexplored parts of the galaxy.  The second, well that is a bit complicated.",
+   customDialogText = "Let me ask you, have you ever had an epiphony?  A moment of such total clarity that blows your mind?",
   stopConversation = "false",
   options = {
-     {"Complicated how?","opt2a"},
+     {"I can't say that I have, no.","opt2a"},
   }
 }
-jakku_overseer:addScreen(opt2);
+death_sticks:addScreen(opt2);
 
 opt2a = ConvoScreen:new {
   id = "opt2a",
   leftDialog = "",
-   customDialogText = "I am just an administrator, not a theoretical physicist.  The weapons research conducted here was on a new type of super weapon to one day replace the Death Star.",
+   customDialogText = "Well I have, and let me tell you how, and when.  I remember it like it was yesterday. You see, it was just before the Clone Wars broke out...",
   stopConversation = "false",
   options = {
-     {"Replace the death star?  Just what kind of weapon are we talking about?","opt2b"},
+     {"Is this story going to take long?","opt2b"},
   }
 }
-jakku_overseer:addScreen(opt2a);
+death_sticks:addScreen(opt2a);
 
 opt2b = ConvoScreen:new {
   id = "opt2b",
   leftDialog = "",
-   customDialogText = "All I know is that it is supposed to be a directed energy weapon that is capable of destroying a target through hyperspace.",
+   customDialogText = "I was selling Death Sticks, right here in this bar.  Was having a profitable night too.  I see this long haired Human sitting at the bar, I think he was drinking Jawa Juice...",
   stopConversation = "false",
   options = {
-     {"How is that possible?","opt2c"},
+     {"Fascinating...","opt2c"},
   }
 }
-jakku_overseer:addScreen(opt2b);
+death_sticks:addScreen(opt2b);
 
 opt2c = ConvoScreen:new {
   id = "opt2c",
   leftDialog = "",
-   customDialogText = "That's the thing.  It was never able to be made to function.  Put simply the power requirements are just too great.  This facility goes deep into the core of this world.  We are able to generate more power than the entire imperial starfleet. However it's barely a drop in the bucket compared to what energy is apparently needed.",
+   customDialogText = "I went up to the guy, and asked him if he wanted to buy some Death Sticks.",
   stopConversation = "false",
   options = {
-     {"So where is this weapon?","opt2d"},
+     {"What did he say?","opt2d"},
   }
 }
-jakku_overseer:addScreen(opt2c);
+death_sticks:addScreen(opt2c);
 
 opt2d = ConvoScreen:new {
   id = "opt2d",
   leftDialog = "",
-   customDialogText = "It doesn't exist. Only design schematics and virtual models ran on the facilities databanks.  When Protocol-77 was initiated, the databanks were wiped clean once the data was transmitted.",
+   customDialogText = "Well, he didn't even look at me. But he said that I didn't want to sell him Death Sticks, and something about the way he said it was so clear.  He was right, I didn't want to sell him Death Sticks at all...",
   stopConversation = "false",
   options = {
-     {"Transmitted where?","opt2e"},
+     {"Is that all?","opt2e"},
   }
 }
-jakku_overseer:addScreen(opt2d);
+death_sticks:addScreen(opt2d);
 
 opt2e = ConvoScreen:new {
   id = "opt2e",
   leftDialog = "",
-   customDialogText = "I don't know.  Somewhere deep in the unknown regions of the galaxy.",
+   customDialogText = "With just a couple words he made me realize I didn't want to do what I was doing, but that wasn't the end of it!  I felt like I had to repeat after him like he was some kind of life coach so I said it aloud that I didn't want to sell him Death Sticks.",
   stopConversation = "false",
   options = {
-     {"What the hell would be out there to receive that data?","opt2f"},
+     {"Oh please, tell me more.....","opt2f"},
   }
 }
-jakku_overseer:addScreen(opt2e);
+death_sticks:addScreen(opt2e);
 
 opt2f = ConvoScreen:new {
   id = "opt2f",
   leftDialog = "",
-   customDialogText = "Your guess is as good as any.  I have no idea where much of the data that came into this facility came from to begin with.  I heard rumors, but nothing more.",
+   customDialogText = "Then he said that I wanted to go home and re-think my life, and right there in that moment everything changed for me.  I never got the guy's name, never saw him again either.  From that moment I completely transformed my life, now I spend my days handing out brochures, pamphlets and educating people on the dangers of Death Stick Addiction.",
   stopConversation = "false",
   options = {
-    {"What sort of rumors?","opt2g"},
+    {"So, do you have any Death Sticks for sale?","opt3"},
   }
 }
-jakku_overseer:addScreen(opt2f);
+death_sticks:addScreen(opt2f);
 
 opt2g = ConvoScreen:new {
   id = "opt2g",
@@ -146,22 +146,22 @@ opt2g = ConvoScreen:new {
     {"Remain here until security forces arrive to apprehend you.", "deny1"}
   }
 }
-jakku_overseer:addScreen(opt2g);
+death_sticks:addScreen(opt2g);
 
 opt3 = ConvoScreen:new {
   id = "opt3",
   leftDialog = "",
-   customDialogText = "The Emperor himself decreed that this facility was vital to the survival of the Empire and it needed to be defended at any cost due to the work being done here.",
+   customDialogText = "No, I don't have any Death Sticks.  If I did, I would just put them in the Trash Compactor.  Terrible things they are.",
   stopConversation = "false",
   options = {
-    {"What is Protocol-77.","opt1"},
-    {"What is the purpose of this facility?","opt2"},
-    {"Remain here until security forces arrive to apprehend you.", "deny1"}
+    --{"What is Protocol-77.","opt1"},
+    --{"What is the purpose of this facility?","opt2"},
+    {"Have a good day then.", "deny1"}
   }
 }
-jakku_overseer:addScreen(opt3);
+death_sticks:addScreen(opt3);
 
 
 
 
-addConversationTemplate("jakku_overseer", jakku_overseer);
+addConversationTemplate("death_sticks", death_sticks);
