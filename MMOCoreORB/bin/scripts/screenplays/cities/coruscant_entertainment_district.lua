@@ -192,103 +192,103 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2253, 0, -4413, 12, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+  --AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2257, 0, -4419, 20, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2251, 0, -4417, 90, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2245, 0, -4425, 135, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
  
   pNpc = spawnMobile("coruscant", "commoner", 60, 2254, 0, -4430, 0, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2239, 0, -4416, 118, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2245, 0, -4406, 180, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2254, 0, -4406, -122, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+--  AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2243, 0, -4394, 12, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+  --AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2249, 0, -4378, 22, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2243, 0, -4373, 108, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+--  AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2255, 0, -4367, -118, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+--  AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2247, 0, -4440, 2, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2239, 0, -4436, 100, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2257, 0, -4445, -126, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2249, 0, -4452, 179, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2246, 0, -4362, 0, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
 
   pNpc = spawnMobile("coruscant", "commoner", 60, 2243, 0, -4478, 55, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2249, 0, -4476, -132, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2253, 0, -4487, 177, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2257, 0, -4496, -155, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+--  AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2246, 0, -4502, 97, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2241, 0, -4512, -1, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2257, 0, -4515, -176, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+ -- AiAgent(pNpc):setAiTemplate("idlewander")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, 2252, 0, -4539, -18, 0)
   self:setMoodString(pNpc, "neutral")
-  AiAgent(pNpc):setAiTemplate("idlewander")
+  --AiAgent(pNpc):setAiTemplate("idlewander")
   
   spawnMobile("coruscant", "civilian_patrolman", 60, 2238, 0, -4546, 90, 0)
   
