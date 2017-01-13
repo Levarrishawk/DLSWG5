@@ -31,7 +31,7 @@ public:
 		int res = creature->hasBuff(buffCRC) ? NOSTACKJEDIBUFF : doJediSelfBuffCommand(creature);
 
 		if (res == NOSTACKJEDIBUFF) {
-			creature->sendSystemMessage("@jedi_spam:already_force_running"); // You are already force running.
+			creature->sendSystemMessage("You can not Force Run Yet!"); // You are already force running.
 			return GENERALERROR;
 		}
 
@@ -70,7 +70,7 @@ public:
 		uint32 buffcrc2 = BuffCRC::JEDI_RESIST_BLEEDING;
 
 		StringIdChatParameter startStringId("medical_heal", "apply_healCooldown");
-		StringIdChatParameter endStringId("medical_heal", "remove_healCooldown");
+		StringIdChatParameter endStringId("medical_heal", "force_run");
 
 		ManagedReference<Buff*> buff2 = new Buff(creature, buffcrc2, duration2, BuffType::JEDI);
 		Locker clocker(buff2);
