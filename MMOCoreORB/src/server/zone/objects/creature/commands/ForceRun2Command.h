@@ -63,7 +63,7 @@ public:
 			creature->removeBuff(STRING_HASHCODE("burstrun"));
 			creature->removeBuff(STRING_HASHCODE("retreat"));
 		}
-		locker.release();
+		//locker.release();
 
 		int duration2 = 45;
 		uint32 buffcrc2 = BuffCRC::JEDI_RESIST_BLEEDING;
@@ -72,16 +72,15 @@ public:
 		StringIdChatParameter endStringId("medical_heal", "remove_healCooldown");
 
 		ManagedReference<Buff*> buff2 = new Buff(creature, buffcrc2, duration2, BuffType::JEDI);
-		//Locker locker(buff2);
+		Locker clocker(buff2);
 
 		if (!creature->hasBuff(BuffCRC::JEDI_RESIST_BLEEDING)){
 					creature->addBuff(buff2);
 					buff2->setStartMessage(startStringId);
 					buff2->setEndMessage(endStringId);
+				} else {
 					creature->sendSystemMessage("You are not ready to Force Run again so soon.");
-					return GENERALERROR;
 				}
-
 		return SUCCESS;
 	}
 
