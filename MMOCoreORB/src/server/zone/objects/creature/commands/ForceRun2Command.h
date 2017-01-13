@@ -72,7 +72,7 @@ public:
 		StringIdChatParameter endStringId("medical_heal", "remove_healCooldown");
 
 		ManagedReference<Buff*> buff2 = new Buff(creature, buffcrc2, duration2, BuffType::JEDI);
-		Locker locker(buff2);
+		//Locker locker(buff2);
 
 		if (!creature->hasBuff(BuffCRC::JEDI_RESIST_BLEEDING)){
 					creature->addBuff(buff2);
