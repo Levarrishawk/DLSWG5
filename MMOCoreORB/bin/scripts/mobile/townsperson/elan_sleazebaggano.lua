@@ -26,7 +26,7 @@ elan_sleazebaggano = Creature:new {
   optionsBitmask = AIENABLED + CONVERSABLE,
 	diet = HERBIVORE,
 
-	templates = {	"object/mobile/dressed_commoner_old_zabrak_male_02.iff"
+	templates = {	"object/mobile/dressed_commoner_old_zabrak_male_01.iff"
 					},
 				
 	lootGroups = {},
