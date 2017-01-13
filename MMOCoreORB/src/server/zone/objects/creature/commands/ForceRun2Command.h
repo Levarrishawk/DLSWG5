@@ -78,10 +78,12 @@ public:
 					creature->addBuff(buff2);
 					buff2->setStartMessage(startStringId);
 					buff2->setEndMessage(endStringId);
+					return SUCCESS;
 				} else {
 					creature->sendSystemMessage("You are not ready to Force Run again so soon.");
+					return GENERALERROR;
 				}
-		return SUCCESS;
+
 	}
 
 };
