@@ -58,7 +58,7 @@ function dex_diner_convo_handler:getNextConversationScreen(pConversationTemplate
 end
 
 
-function death_sticks_convo_handler:runScreenHandlers(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
+function dex_diner_convo_handler:runScreenHandlers(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
   local screen = LuaConversationScreen(pConversationScreen)
   local screenID = screen:getScreenID() 
 
