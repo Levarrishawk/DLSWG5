@@ -111,7 +111,7 @@ opt2d = ConvoScreen:new {
      {"How barbaric...","opt2e"},
   }
 }
-death_sticks:addScreen(opt2d);
+dex_diner:addScreen(opt2d);
 
 opt2e = ConvoScreen:new {
   id = "opt2e",
