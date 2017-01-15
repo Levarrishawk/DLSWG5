@@ -2402,7 +2402,7 @@ int PlayerObjectImplementation::getSpentJediSkillPoints() {
 	if(player == NULL)
 		return 0;
 
-	int jediSkillPoints = 0;
+	int jediSkillPoints = 250;
 
 	SkillList* skillList = player->getSkillList();
 

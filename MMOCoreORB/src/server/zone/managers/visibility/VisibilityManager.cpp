@@ -81,7 +81,7 @@ float VisibilityManager::calculateVisibilityIncrease(CreatureObject* creature) {
 		}
 	}
 
-	//info("Increasing visibility for player " + String::valueOf(creature->getObjectID()) + " with " + String::valueOf(visibilityIncrease), true);
+	info("Increasing visibility for player " + String::valueOf(creature->getObjectID()) + " with " + String::valueOf(visibilityIncrease), true);
 	return visibilityIncrease;
 }
 
@@ -97,7 +97,7 @@ void VisibilityManager::decreaseVisibility(CreatureObject* creature) {
 			//info("VisDecayTickRate: " + String::valueOf(visDecayTickRate) + " DecayPerTick: " + String::valueOf(visDecayPerTick), true);
 			float visibilityDecrease = (((ghost->getLastVisibilityUpdateTimestamp().miliDifference() / 1000.0f) / visDecayTickRate) * visDecayPerTick);
 
-			//info("Decreasing visibility of player " + creature->getFirstName() + " by " + String::valueOf(visibilityDecrease), true);
+			info("Decreasing visibility of player " + creature->getFirstName() + " by " + String::valueOf(visibilityDecrease), true);
 			if (ghost->getVisibility() <= visibilityDecrease) {
 				clearVisibility(creature);
 			} else {
@@ -118,14 +118,14 @@ VisibilityManager::VisibilityManager() : Logger("VisibilityManager") {
 }
 
 void VisibilityManager::login(CreatureObject* creature) {
-	//info("Logging in " + creature->getFirstName(), true);
+	info("Logging in " + creature->getFirstName(), true);
 	Reference<PlayerObject*> ghost = creature->getSlottedObject("ghost").castTo<PlayerObject*>();
 
 	if (ghost != NULL) {
 
 		//You only gain visibility after completing the padawan trials
 		if(!creature->hasSkill("combat_jedi_novice") || !creature->hasSkill("combat_soldier_novice") || !creature->hasSkill("combat_mando_novice") || !creature->hasSkill("combat_shocktrooper_novice") || !creature->hasSkill("combat_assassin_novice") || !creature->hasSkill("combat_officer_novice") || !creature->hasSkill("combat_medic_novice") ) {
-			//info("Player " + creature->getFirstName() + " does not qualify for visibility", true);
+			info("Player " + creature->getFirstName() + " does not qualify for visibility", true);
 			return;
 		}
 
@@ -134,7 +134,7 @@ void VisibilityManager::login(CreatureObject* creature) {
 		Locker locker(&visibilityListLock);
 
 		if ((ghost->getVisibility() > 0) && (!visibilityList.contains(creature->getObjectID()))) {
-			//info("Adding player " + String::valueOf(creature->getObjectID()) + " to visibility list.", true);
+			info("Adding player " + String::valueOf(creature->getObjectID()) + " to visibility list.", true);
 			visibilityList.put(creature->getObjectID(), creature);
 		}
 
@@ -154,7 +154,7 @@ void VisibilityManager::logout(CreatureObject* creature) {
 	Locker locker(&visibilityListLock);
 
 	if (visibilityList.contains(creature->getObjectID())) {
-		//info("Dropping player " + String::valueOf(creature->getObjectID()) + " from visibility list.", true);
+		info("Dropping player " + String::valueOf(creature->getObjectID()) + " from visibility list.", true);
 		visibilityList.drop(creature->getObjectID());
 
 		removePlayerFromBountyList(creature);
