@@ -124,7 +124,7 @@ void VisibilityManager::login(CreatureObject* creature) {
 	if (ghost != NULL) {
 
 		//You only gain visibility after completing the padawan trials
-		if(!creature->hasSkill("combat_jedi_novice" || "combat_soldier_novice" || "combat_mando_novice" || "combat_shocktrooper_novice" || "combat_assassin_novice" || "combat_officer_novice" || "combat_medic_novice")) {
+		if(!creature->hasSkill("combat_jedi_novice") || !creature->hasSkill("combat_soldier_novice") || !creature->hasSkill("combat_mando_novice") || !creature->hasSkill("combat_shocktrooper_novice") || !creature->hasSkill("combat_assassin_novice") || !creature->hasSkill("combat_officer_novice") || !creature->hasSkill("combat_medic_novice") ) {
 			//info("Player " + creature->getFirstName() + " does not qualify for visibility", true);
 			return;
 		}
