@@ -32,7 +32,7 @@ int VisibilityManager::calculateReward(CreatureObject* creature) {
 	Reference<PlayerObject*> ghost = creature->getSlottedObject("ghost").castTo<PlayerObject*>();
 
 	if (ghost != NULL) {
-		int skillPoints = ghost->getSpentJediSkillPoints();
+		int skillPoints = 250;
 
 		reward = skillPoints * 1000;
 
@@ -140,7 +140,7 @@ void VisibilityManager::login(CreatureObject* creature) {
 
 		locker.release();
 
-		if (ghost->getVisibility() >= terminalVisThreshold) {
+		if (ghost->getVisibility() >= 1500) {
 			// TODO: Readjust after FRS implementation.
 			// +100k per FRS level
 			int reward = calculateReward(creature);
