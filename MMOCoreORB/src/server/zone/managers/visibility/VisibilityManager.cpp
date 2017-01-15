@@ -127,7 +127,7 @@ void VisibilityManager::login(CreatureObject* creature) {
 
 
 
-		if(!creature->hasSkill.beginsWith("combat_")) {
+		if(!creature->hasSkill(skill->getSkillName.beginsWith("combat_"))) {
 							info("Player " + creature->getFirstName() + " does not qualify for visibility. Not a combat profession", true);
 							return;
 						}
