@@ -7,8 +7,6 @@
 #include "server/zone/objects/player/PlayerObject.h"
 #include "server/zone/managers/visibility/tasks/VisibilityDecayTask.h"
 #include "server/zone/Zone.h"
-#include "server/zone/managers/skill/SkillManager.h"
-#include "server/zone/objects/creature/variables/Skill.h"
 
 const String VisibilityManager::factionStringRebel = "rebel";
 const String VisibilityManager::factionStringImperial = "imperial";
@@ -126,7 +124,7 @@ void VisibilityManager::login(CreatureObject* creature) {
 	if (ghost != NULL) {
 
 		//You only gain visibility after completing the padawan trials
-		if(!creature->hasSkill( skill->getSkillName().beginsWith("combat_") ) ) {
+		if(!creature->hasSkill("combat_jedi_novice" || "combat_soldier_novice" || "combat_mando_novice" || "combat_shocktrooper_novice" || "combat_assassin_novice" || "combat_officer_novice" || "combat_medic_novice")) {
 			//info("Player " + creature->getFirstName() + " does not qualify for visibility", true);
 			return;
 		}
