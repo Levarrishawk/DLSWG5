@@ -162,7 +162,7 @@ void VisibilityManager::logout(CreatureObject* creature) {
 }
 
 void VisibilityManager::increaseVisibility(CreatureObject* creature, int visibilityMultiplier) {
-	//info("Increasing visibility for " + creature->getFirstName(), true);
+	info("Increasing visibility for " + creature->getFirstName(), true);
 	Reference<PlayerObject*> ghost = creature->getSlottedObject("ghost").castTo<PlayerObject*>();
 
 	if (ghost != NULL  && !ghost->hasGodMode()) {
@@ -174,7 +174,7 @@ void VisibilityManager::increaseVisibility(CreatureObject* creature, int visibil
 
 		ghost->setVisibility(newVis);
 
-		//info("New visibility for " + creature->getFirstName() + " is " + String::valueOf(ghost->getVisibility()), true);
+		info("New visibility for " + creature->getFirstName() + " is " + String::valueOf(ghost->getVisibility()), true);
 		locker.release();
 
 		login(creature);
