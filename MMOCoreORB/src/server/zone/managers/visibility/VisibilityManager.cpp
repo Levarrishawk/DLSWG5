@@ -34,7 +34,7 @@ int VisibilityManager::calculateReward(CreatureObject* creature) {
 	if (ghost != NULL) {
 		int skillPoints = 250;
 
-		reward = skillPoints * 1000;
+		reward = skillPoints * 360;
 
 		if (reward < minReward)
 			reward = minReward;
