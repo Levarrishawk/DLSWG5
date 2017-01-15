@@ -123,12 +123,14 @@ void VisibilityManager::login(CreatureObject* creature) {
 
 	if (ghost != NULL) {
 
-		//You only gain visibility after completing the padawan trials
-		if(!creature->hasSkill("combat_jedi_novice") || !creature->hasSkill("combat_soldier_novice") || !creature->hasSkill("combat_mando_novice") || !creature->hasSkill("combat_shocktrooper_novice") || !creature->hasSkill("combat_assassin_novice") || !creature->hasSkill("combat_officer_novice") || !creature->hasSkill("combat_medic_novice") ) {
-			info("Player " + creature->getFirstName() + " does not qualify for visibility", true);
-			return;
-		}
+		//You only gain visibility if a primary combat profession
 
+
+
+		if(!creature->hasSkill.beginsWith("combat_")) {
+							info("Player " + creature->getFirstName() + " does not qualify for visibility. Not a combat profession", true);
+							return;
+						}
 		decreaseVisibility(creature);
 
 		Locker locker(&visibilityListLock);
