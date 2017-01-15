@@ -125,7 +125,7 @@ void VisibilityManager::login(CreatureObject* creature) {
 	if (ghost != NULL) {
 
 		//You only gain visibility after completing the padawan trials
-		if(!creature->hasSkill(skill->getSkillName().indexOf("combat_"))) {
+		if(!creature->hasSkill(getSkillName().beginsWith("combat_"))) {
 			//info("Player " + creature->getFirstName() + " does not qualify for visibility", true);
 			return;
 		}
