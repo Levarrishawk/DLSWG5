@@ -510,3 +510,8 @@ includeFile("cities/coruscant_entertainment_district.lua")
 includeFile("heroics/retreat_curator.lua")
 includeFile("heroics/death_sticks.lua")
 includeFile("heroics/dex_diner.lua")
+
+-- Florrum hidden world.
+
+includeFile("cities/florrum_outpost.lua")
+includeFile("heroics/hondo_return.lua")
