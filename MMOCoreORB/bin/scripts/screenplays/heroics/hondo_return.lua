@@ -1,6 +1,6 @@
 local ObjectManager = require("managers.object.object_manager")
 
-hondo_return = ScreenPlay:new { 
+hondo_return_teleporter = ScreenPlay:new { 
   numberOfActs = 1, 
   questString = "hondo_return_teleporter_queststring", --This needs to be unique! If not unique you will not pull the proper conversation.
   states = {}, --Blank, as we don't need screenplay states to teleport someone. It remains in-case we need to add it though.
