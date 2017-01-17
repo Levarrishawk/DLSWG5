@@ -314,3 +314,5 @@ includeFile("tatooine/wuher.lua")
 includeFile("tatooine/young_mos_taike_guard.lua")
 includeFile("tatooine/young_mountain_squill.lua")
 includeFile("tatooine/zucca_boar.lua")
+-- Elysium
+includeFile("tatooine/hondo_return_teleporter.lua")
