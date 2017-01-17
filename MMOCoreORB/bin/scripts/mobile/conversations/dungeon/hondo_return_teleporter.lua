@@ -21,32 +21,7 @@ hondo_first_conv = ConvoScreen:new {
   
   }
 }
-hondo_return_teleporter:addScreen(first_conv);
-
---deny
-deny = ConvoScreen:new {
-  id = "deny",
-  leftDialog = "",
-  customDialogText = "Suit yourself..  It's a big planet, maybe there is another dashing pirate out there with a starship.... You never know!",
-  stopConversation = "true",
-  options = {
-  }
-}
-hondo_return_teleporter:addScreen(deny);
-
-
-
-
-mayor2 = ConvoScreen:new {
-  id = "mayor2",
-  leftDialog = "",
-  customDialogText = "Okay, Okay.  Sheesh, can't a pirate kidnap anyone these days without problems?",
-  stopConversation = "true",
-  options = {
-  --   {"I see. What would I have to do?","mayor3"},
-  }
-}
-hondo_return_teleporter:addScreen(mayor2);
+hondo_return_teleporter:addScreen(hondo_first_conv);
 
 mayor3 = ConvoScreen:new {
   id = "mayor3",
@@ -132,7 +107,26 @@ deny1 = ConvoScreen:new {
 hondo_return_teleporter:addScreen(deny1);
 
 
+mayor2 = ConvoScreen:new {
+  id = "mayor2",
+  leftDialog = "",
+  customDialogText = "Okay, Okay.  Sheesh, can't a pirate kidnap anyone these days without problems?",
+  stopConversation = "true",
+  options = {
+  --   {"I see. What would I have to do?","mayor3"},
+  }
+}
+hondo_return_teleporter:addScreen(mayor2);
 
-
+--deny
+deny = ConvoScreen:new {
+  id = "deny",
+  leftDialog = "",
+  customDialogText = "Suit yourself..  It's a big planet, maybe there is another dashing pirate out there with a starship.... You never know!",
+  stopConversation = "true",
+  options = {
+  }
+}
+hondo_return_teleporter:addScreen(deny);
 
 addConversationTemplate("hondo_return_teleporter", hondo_return_teleporter);
