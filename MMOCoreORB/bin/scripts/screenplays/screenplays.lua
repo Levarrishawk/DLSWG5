@@ -515,3 +515,4 @@ includeFile("heroics/dex_diner.lua")
 
 includeFile("cities/florrum_outpost.lua")
 includeFile("heroics/hondo_return_teleporter.lua")
+includeFile("heroics/hondo_send_teleporter.lua")
