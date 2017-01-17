@@ -72,15 +72,17 @@ jediCrystal = "object/tangible/component/weapon/lightsaber/lightsaber_module_for
 
 gasTool = "object/tangible/survey_tool/survey_tool_gas.iff"
 
+stim = "object/tangible/medicine/crafted/crafted_stimpack_sm_s1_a.iff"
+
 
 professionSpecificItems = { 
-  combat_soldier = { marksmanPistol, marksmanCarbine, marksmanRifle },
-  combat_mando = { marksmanPistol, marksmanCarbine, marksmanRifle },
-  combat_assassin = { marksmanPistol, marksmanCarbine, marksmanRifle },
-  combat_shocktrooper = { marksmanPistol, marksmanCarbine, marksmanRifle },
-  combat_jedi = { genericTool, mineralTool, chemicalTool, gasTool, jediTool, jediCrystal },
-  combat_officer = { genericTool, marksmanPistol, marksmanCarbine, marksmanRifle  },
-  combat_medic = { foodTool, marksmanPistol, brawlerPolearm },
+  combat_soldier = { marksmanPistol, marksmanCarbine, marksmanRifle, stim },
+  combat_mando = { marksmanPistol, marksmanCarbine, marksmanRifle, stim },
+  combat_assassin = { marksmanPistol, marksmanCarbine, marksmanRifle, stim },
+  combat_shocktrooper = { marksmanPistol, marksmanCarbine, marksmanRifle, stim },
+  combat_jedi = { genericTool, mineralTool, chemicalTool, gasTool, jediTool, jediCrystal, stim },
+  combat_officer = { genericTool, marksmanPistol, marksmanCarbine, marksmanRifle, stim  },
+  combat_medic = { foodTool, marksmanPistol, brawlerPolearm, stim },
   trader_structures = { genericTool, mineralTool, chemicalTool, gasTool },
   trader_munitions = { genericTool, mineralTool, chemicalTool, gasTool}, 
   trader_engineering = { genericTool, mineralTool, chemicalTool, gasTool }, 
