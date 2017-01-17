@@ -13,13 +13,13 @@ function FlorrumOutpostScreenPlay:start()
 	end
 end
 
-function NayliOutpostScreenPlay:spawnSceneObjects()
+function FlorrumOutpostScreenPlay:spawnSceneObjects()
 
 	spawnSceneObject("09", "object/tangible/furniture/cheap/couch_s01.iff", 9.9, 0.6, 3.5, 35792086, math.rad(-90) )
 	 
 end
 
-function NayliOutpostScreenPlay:spawnMobiles()
+function FlorrumOutpostScreenPlay:spawnMobiles()
 
 	--Outdoors
 	local pNpc = spawnMobile("09", "surgical_droid_21b",60,3.1,0.1,11.5,0,0)
