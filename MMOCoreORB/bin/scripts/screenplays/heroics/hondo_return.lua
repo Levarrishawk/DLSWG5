@@ -15,7 +15,7 @@ registerScreenPlay("hondo_return_teleporter", true) --Initialize the screenplay 
 
 --Simply spawns the NPC
 function hondo_return_teleporter:start()
-   spawnMobile("09", "hondo_return_teleporter", 1, 3246, 51, -5122.6, -762, 0)  --disabled until jakku focus test is completed.
+   spawnMobile("09", "hondo_return_teleporter", 1, 3246, 51, -762, -180, 0)  --disabled until jakku focus test is completed.
    
 
 end
