@@ -127,6 +127,8 @@ wearables_rare = {
 		{itemTemplate = "wke_shoulder_pad_s01", weight = 80645}, -- Crested Battle Padding
 		{itemTemplate = "wke_shoulder_pad_s02", weight = 80645}, -- Crested Battle Padding
 		{itemTemplate = "wke_skirt_s01", weight = 80645}, -- Decorative Waist Wrap
+		{itemTemplate = "robe_jedi_dark_s04", weight = 256411},
+    {itemTemplate = "robe_jedi_light_s04", weight = 256411},
 	}
 }
 

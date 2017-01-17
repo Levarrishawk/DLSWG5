@@ -87,6 +87,8 @@ wearables_uncommon = {
 		{itemTemplate = "wke_hat_s01", weight = 119047}, -- Wookiee Traveller's Helm
 		{itemTemplate = "wke_skirt_s02", weight = 119047}, -- Sigiled Waist Wrap
 		{itemTemplate = "wke_skirt_s03", weight = 119047}, -- Weighted Waist Wrap
+		{itemTemplate = "robe_jedi_dark_s02", weight = 256411},
+    {itemTemplate = "robe_jedi_light_s02", weight = 256411},
 	}
 }
 

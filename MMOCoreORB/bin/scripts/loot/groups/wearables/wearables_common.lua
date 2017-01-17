@@ -42,6 +42,8 @@ wearables_common = {
 		{itemTemplate = "wke_shirt_s01", weight = 256411}, -- Wookiee Hide Jerkin
 		{itemTemplate = "wke_shirt_s02", weight = 256411}, -- Weighted Wookiee Pullover
 		{itemTemplate = "wke_skirt_s04", weight = 256411}, -- Simple Waist Wrap	
+		{itemTemplate = "robe_jedi_dark_s01", weight = 256411},
+		{itemTemplate = "robe_jedi_light_s01", weight = 256411},
 	}
 }
 

@@ -86,6 +86,8 @@ wearables_scarce = {
 		{itemTemplate = "vest_s03", weight = 120481}, -- Short Vest
 		{itemTemplate = "vest_s11", weight = 120481}, -- Long Vest
 		{itemTemplate = "wke_shirt_s04", weight = 120481}, -- Crested Battle Padding
+		{itemTemplate = "robe_jedi_dark_s03", weight = 256411},
+    {itemTemplate = "robe_jedi_light_s03", weight = 256411},
 	}
 }
 
