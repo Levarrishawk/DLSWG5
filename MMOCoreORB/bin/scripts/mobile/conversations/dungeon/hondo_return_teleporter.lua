@@ -113,7 +113,7 @@ mayor4d = ConvoScreen:new {
   customDialogText = "Look, If you want I can take you to Corellia.  It's a short jump from here.",
   stopConversation = "false",
   options = {
-     {"Fine, get me off this rock.","mayor5"},
+     {"Fine, get me off this rock.","mayor2"},
      {"I think I am going to go look around this planet for a while.","deny1"}
   }
 }
@@ -129,20 +129,8 @@ deny1 = ConvoScreen:new {
     -- {"I think I am going to go look around this planet for a while.","deny"}
   }
 }
-hondo_return_teleporter:addScreen(mayor4d);
+hondo_return_teleporter:addScreen(deny1);
 
-mayor5 = ConvoScreen:new {
-  id = "mayor5",
-  leftDialog = "",
-  customDialogText = "Next stop Corellia!",
-  stopConversation = "true",
-  options = {
-   --  {"I'll help her.","mayorvermin"},
-  --   {"I can't help right now.","deny"}
-  }
-}
-
-hondo_return_teleporter:addScreen(mayor5);
 
 
 
