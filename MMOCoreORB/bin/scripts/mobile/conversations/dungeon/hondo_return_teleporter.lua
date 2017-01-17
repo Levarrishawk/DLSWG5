@@ -51,10 +51,10 @@ hondo_return_teleporter:addScreen(mayor2);
 mayor3 = ConvoScreen:new {
   id = "mayor3",
   leftDialog = "",
-   customDialogText = "That, My friend is a very interesting question with a most intriguing answer.  You see, you..uhh.  Fainted right in front of my eyes, so tragic.. but Hondo knew just what to do!",
+  customDialogText = "That, My friend is a very interesting question with a most intriguing answer.  You see, you..uhh.  Fainted right in front of my eyes, so tragic.. but Hondo knew just what to do!",
   stopConversation = "false",
   options = {
-     {"You mean kidnap me and drag me to this deserted planet? .","mayor4"},
+     {"You mean kidnap me and drag me to this deserted planet?","mayor4"},
   }
 }
 hondo_return_teleporter:addScreen(mayor3);
@@ -114,7 +114,7 @@ mayor4d = ConvoScreen:new {
   stopConversation = "false",
   options = {
      {"Fine, get me off this rock.","mayor5"},
-     {"I think I am going to go look around this planet for a while.","deny1"}
+     {"I think I am going to go look around this planet for a while.","deny1"},
   }
 }
 hondo_return_teleporter:addScreen(mayor4d);

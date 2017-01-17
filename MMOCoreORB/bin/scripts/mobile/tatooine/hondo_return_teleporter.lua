@@ -1,7 +1,7 @@
 hondo_return_teleporter = Creature:new {
 	objectName = "@mob/creature_names:weequay_thug",
 	customName = "Hondo Ohnaka",
-	socialGroup = "weequay",
+	socialGroup = "townsperson",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -39,10 +39,9 @@ hondo_return_teleporter = Creature:new {
 			}
 		}
 	},
-	weapons = {"pirate_weapons_medium"},
+	weapons = {},
 	conversationTemplate = "hondo_return_teleporter",
-	reactionStf = "@npc_reaction/military",
-	attacks = merge(brawlermid,marksmanmaster,carbineernovice)
+	attacks = {},
 }
 
 CreatureTemplates:addCreatureTemplate(hondo_return_teleporter, "hondo_return_teleporter")

@@ -1,6 +1,6 @@
 FlorrumOutpostScreenPlay = ScreenPlay:new {
 	numberOfActs = 1,
-
+	
 	screenplayName = "FlorrumOutpostScreenPlay"
 }
 
@@ -15,7 +15,7 @@ end
 
 function FlorrumOutpostScreenPlay:spawnSceneObjects()
 
-	spawnSceneObject("09", "object/tangible/furniture/cheap/couch_s01.iff", 9.9, 0.6, 3.5, 35792086, math.rad(-90) )
+--	spawnSceneObject("09", "object/tangible/furniture/cheap/couch_s01.iff", 9.9, 0.6, 3.5, 35792086, math.rad(-90) )
 	 
 end
 

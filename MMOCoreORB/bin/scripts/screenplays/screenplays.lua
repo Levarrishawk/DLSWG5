@@ -514,4 +514,4 @@ includeFile("heroics/dex_diner.lua")
 -- Florrum hidden world.
 
 includeFile("cities/florrum_outpost.lua")
-includeFile("heroics/hondo_return.lua")
+includeFile("heroics/hondo_return_teleporter.lua")
