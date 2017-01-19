@@ -36,10 +36,11 @@ jakku_black_trooper_1 = Creature:new {
 				{group = "holocron_dark", chance = 150000},
 				{group = "holocron_light", chance = 150000},
 				{group = "weapons_all", chance = 1050000},
-				{group = "armor_all", chance = 1050000},
+				{group = "katarn_armor", chance = 1050000},
 				{group = "clothing_attachments", chance = 150000},
 				{group = "armor_attachments", chance = 150000},
-				{group = "wearables_all", chance = 1000000}
+				{group = "wearables_rare", chance = 1000000},
+				{group = "nge_housing_all", chance = 1000000}
 			}
 		}
 	},

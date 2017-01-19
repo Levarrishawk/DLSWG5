@@ -28,7 +28,22 @@ jakku_assassin_droid = Creature:new {
   scale = 2,
 
 	templates = {"object/mobile/ig_88.iff"},
-	lootGroups = {},
+	lootGroups = {
+    {
+      groups = {
+        {group = "color_crystals", chance = 300000},
+        {group = "junk", chance = 6000000},
+        {group = "holocron_dark", chance = 150000},
+        {group = "holocron_light", chance = 150000},
+        {group = "weapons_all", chance = 1050000},
+        {group = "katarn_armor", chance = 1050000},
+        {group = "clothing_attachments", chance = 150000},
+        {group = "armor_attachments", chance = 150000},
+        {group = "wearables_rare", chance = 1000000},
+        {group = "nge_housing_all", chance = 1000000}
+      }
+    }
+  },
 	weapons = {"battle_droid_weapons"},
   conversationTemplate = "",
   attacks = merge(pistoleermaster,carbineermaster,marksmanmaster)
