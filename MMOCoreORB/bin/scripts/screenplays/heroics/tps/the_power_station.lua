@@ -14,7 +14,7 @@ function ThePowerStationScreenPlay:start()
 	end
 end
 
-function ThePowerStationScreenPlat:spawnSceneObjects()
+function ThePowerStationScreenPlay:spawnSceneObjects()
 
   spawnSceneObject("dungeon2", "object/static/structure/military/military_wall_weak_imperial_16_style_01.iff", 0.0, 0.1, 5.1, 410000002, math.rad(0) )
 
