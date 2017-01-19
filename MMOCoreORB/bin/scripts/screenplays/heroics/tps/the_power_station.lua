@@ -10,10 +10,21 @@ registerScreenPlay("ThePowerStationScreenPlay", true)
 function ThePowerStationScreenPlay:start()
 	if (isZoneEnabled("dungeon2")) then
 		self:spawnMobiles()
+		self:spawnSceneObjects()
 	end
 end
 
+function ThePowerStationScreenPlat:spawnSceneObjects()
+
+  spawnSceneObject("dungeon2", "object/static/structure/military/military_wall_weak_imperial_16_style_01.iff", 0.0, 0.1, 5.1, 410000002, math.rad(0) )
+
+
+end
+
 function ThePowerStationScreenPlay:spawnMobiles()
+--Cloner exit NPC
+  spawnMobile("dungeon2", "rebel_jakku_teleporter", 300, 0.1, 0.1, 3.7, -90, 410000002)
+
 --Entrance/First Hallway
   spawnMobile("dungeon2", "tps_battle_droid", 300, -16.3, -7.0, -33.0, 86, 410000021)
   spawnMobile("dungeon2", "tps_battle_droid", 300, -27.4, -7.0, -33.0, 85, 410000021)
