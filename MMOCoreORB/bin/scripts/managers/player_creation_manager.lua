@@ -76,10 +76,10 @@ stim = "object/tangible/medicine/crafted/crafted_stimpack_sm_s1_a.iff"
 
 
 professionSpecificItems = { 
-  combat_soldier = { marksmanPistol, marksmanCarbine, marksmanRifle, stim },
-  combat_mando = { marksmanPistol, marksmanCarbine, marksmanRifle, stim },
+  combat_soldier = { marksmanPistol, marksmanCarbine, marksmanRifle, brawlerTwoHander, stim },
+  combat_mando = { marksmanPistol, marksmanCarbine, marksmanRifle, brawlerTwoHander, stim },
   combat_assassin = { marksmanPistol, marksmanCarbine, marksmanRifle, stim },
-  combat_shocktrooper = { marksmanPistol, marksmanCarbine, marksmanRifle, stim },
+  combat_shocktrooper = { marksmanPistol, marksmanCarbine, marksmanRifle, brawlerOneHander, stim },
   combat_jedi = { genericTool, mineralTool, chemicalTool, gasTool, jediTool, jediCrystal, stim },
   combat_officer = { genericTool, marksmanPistol, marksmanCarbine, marksmanRifle, stim  },
   combat_medic = { foodTool, marksmanPistol, brawlerPolearm, stim },
