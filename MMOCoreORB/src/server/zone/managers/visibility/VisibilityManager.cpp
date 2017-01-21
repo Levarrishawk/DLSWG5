@@ -81,7 +81,7 @@ float VisibilityManager::calculateVisibilityIncrease(CreatureObject* creature) {
 		}
 	}
 
-	info("Increasing visibility for player " + String::valueOf(creature->getObjectID()) + " with " + String::valueOf(visibilityIncrease), true);
+	//info("Increasing visibility for player " + String::valueOf(creature->getObjectID()) + " with " + String::valueOf(visibilityIncrease), true);
 	return visibilityIncrease;
 }
 
@@ -97,7 +97,7 @@ void VisibilityManager::decreaseVisibility(CreatureObject* creature) {
 			//info("VisDecayTickRate: " + String::valueOf(visDecayTickRate) + " DecayPerTick: " + String::valueOf(visDecayPerTick), true);
 			float visibilityDecrease = (((ghost->getLastVisibilityUpdateTimestamp().miliDifference() / 1000.0f) / visDecayTickRate) * visDecayPerTick);
 
-			info("Decreasing visibility of player " + creature->getFirstName() + " by " + String::valueOf(visibilityDecrease), true);
+			//info("Decreasing visibility of player " + creature->getFirstName() + " by " + String::valueOf(visibilityDecrease), true);
 			if (ghost->getVisibility() <= visibilityDecrease) {
 				clearVisibility(creature);
 			} else {
@@ -118,14 +118,14 @@ VisibilityManager::VisibilityManager() : Logger("VisibilityManager") {
 }
 
 void VisibilityManager::login(CreatureObject* creature) {
-	info("Logging in " + creature->getFirstName(), true);
+	//info("Logging in " + creature->getFirstName(), true);
 	Reference<PlayerObject*> ghost = creature->getSlottedObject("ghost").castTo<PlayerObject*>();
 
 	if (ghost != NULL) {
 
 		//You only gain visibility after completing the padawan trials
 		if(creature->hasSkill("trader_pharmacist_novice") || creature->hasSkill("trader_munitions_novice") || creature->hasSkill("trader_structures_novice") || creature->hasSkill("trader_engineering_novice") || creature->hasSkill("trader_domestics_novice") ) {
-			info("Player " + creature->getFirstName() + " is a trader and does not qualify for visibility", true);
+			//info("Player " + creature->getFirstName() + " is a trader and does not qualify for visibility", true);
 			return;
 		}
 
@@ -162,7 +162,7 @@ void VisibilityManager::logout(CreatureObject* creature) {
 }
 
 void VisibilityManager::increaseVisibility(CreatureObject* creature, int visibilityMultiplier) {
-	info("Increasing visibility for " + creature->getFirstName(), true);
+	//info("Increasing visibility for " + creature->getFirstName(), true);
 	Reference<PlayerObject*> ghost = creature->getSlottedObject("ghost").castTo<PlayerObject*>();
 
 	if (ghost != NULL  && !ghost->hasGodMode()) {
@@ -174,7 +174,7 @@ void VisibilityManager::increaseVisibility(CreatureObject* creature, int visibil
 
 		ghost->setVisibility(newVis);
 
-		info("New visibility for " + creature->getFirstName() + " is " + String::valueOf(ghost->getVisibility()), true);
+		//info("New visibility for " + creature->getFirstName() + " is " + String::valueOf(ghost->getVisibility()), true);
 		locker.release();
 
 		login(creature);
