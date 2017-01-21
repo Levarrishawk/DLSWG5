@@ -17,7 +17,9 @@ function TalusDearicScreenPlay:spawnSceneObjects()
 
   --outside starport
   spawnSceneObject("talus", "object/tangible/crafting/station/public_space_station.iff", 318.301, 6, -2896.49, 0, math.rad(95) )
-
+  spawnSceneObject("talus", "object/tangible/crafting/station/public_structure_station.iff", 343, 6, -2887, 0, math.rad(-90) )
+  spawnSceneObject("talus", "object/tangible/crafting/station/public_weapon_station.iff", 379, 6, -2885, 0, math.rad(90) )
+  
 end
 
 function TalusDearicScreenPlay:spawnMobiles()
@@ -140,7 +142,8 @@ function TalusDearicScreenPlay:spawnMobiles()
   spawnMobile("talus", "trainer_squadleader",1,588,6,-2934,90,0)
   spawnMobile("talus", "trainer_chef",1,11,1.1,-14,45,3175385)
   spawnMobile("talus", "trainer_chef",1,-12,1,6,180,3175560)
-  spawnMobile("talus", "trainer_chef",1,370.2,6,-2877.2,0,0)
+  spawnMobile("talus", "trainer_droidengineer",1,370.2,6,-2877.2,0,0)
+  spawnMobile("talus", "trainer_architect",1,343.2,6,-2882.2,-90,0)
   spawnMobile("talus", "trainer_rifleman",1,-31,0,10,90,3175401)
   spawnMobile("talus", "trainer_armorsmith",1,0,1,-14,0,3175562)
   spawnMobile("talus", "trainer_combatmedic",1,519,6,-2913.5,180,0)
