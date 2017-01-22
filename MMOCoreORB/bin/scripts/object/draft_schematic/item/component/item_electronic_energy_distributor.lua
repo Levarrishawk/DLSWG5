@@ -52,7 +52,7 @@ object_draft_schematic_item_component_item_electronic_energy_distributor = objec
    size = 3, 
 
    xpType = "crafting_general", 
-   xp = 55, 
+   xp = 155, 
 
    assemblySkill = "general_assembly", 
    experimentingSkill = "general_experimentation", 

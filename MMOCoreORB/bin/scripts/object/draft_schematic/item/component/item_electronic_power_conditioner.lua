@@ -52,7 +52,7 @@ object_draft_schematic_item_component_item_electronic_power_conditioner = object
    size = 2, 
 
    xpType = "crafting_general", 
-   xp = 74, 
+   xp = 250, 
 
    assemblySkill = "general_assembly", 
    experimentingSkill = "general_experimentation", 

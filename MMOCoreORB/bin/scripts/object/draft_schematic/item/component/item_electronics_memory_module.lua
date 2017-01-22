@@ -52,7 +52,7 @@ object_draft_schematic_item_component_item_electronics_memory_module = object_dr
    size = 2, 
 
    xpType = "crafting_general", 
-   xp = 40, 
+   xp = 140, 
 
    assemblySkill = "general_assembly", 
    experimentingSkill = "general_experimentation", 

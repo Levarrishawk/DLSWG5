@@ -52,7 +52,7 @@ object_draft_schematic_item_component_item_electronic_control_unit = object_draf
    size = 2, 
 
    xpType = "crafting_general", 
-   xp = 65, 
+   xp = 165, 
 
    assemblySkill = "general_assembly", 
    experimentingSkill = "general_experimentation", 

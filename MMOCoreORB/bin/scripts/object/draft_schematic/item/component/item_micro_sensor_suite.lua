@@ -52,7 +52,7 @@ object_draft_schematic_item_component_item_micro_sensor_suite = object_draft_sch
    size = 5, 
 
    xpType = "crafting_general", 
-   xp = 80, 
+   xp = 180, 
 
    assemblySkill = "general_assembly", 
    experimentingSkill = "general_experimentation", 

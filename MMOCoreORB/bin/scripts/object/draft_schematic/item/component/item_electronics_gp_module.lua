@@ -52,7 +52,7 @@ object_draft_schematic_item_component_item_electronics_gp_module = object_draft_
    size = 3, 
 
    xpType = "crafting_general", 
-   xp = 50, 
+   xp = 150, 
 
    assemblySkill = "general_assembly", 
    experimentingSkill = "general_experimentation", 
