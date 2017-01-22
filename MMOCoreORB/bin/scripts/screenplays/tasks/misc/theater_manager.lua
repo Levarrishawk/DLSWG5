@@ -562,7 +562,7 @@ function TheaterManagerScreenPlay:isValidEntertainer(pPlayer)
 		return false
 	end
 
-	return CreatureObject(pPlayer):hasSkill("social_entertainer_music_02") or CreatureObject(pPlayer):hasSkill("social_entertainer_dance_02")
+	return CreatureObject(pPlayer):hasSkill("secondary_entertainer_novice") or CreatureObject(pPlayer):hasSkill("secondary_entertainer_novice")
 end
 
 -- Checks if the player's current performance is the expected performance

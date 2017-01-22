@@ -32,7 +32,7 @@ function TheaterManagerConvoHandler:runScreenHandlers(conversationTemplate, conv
 		TheaterManagerScreenPlay:setCurrentSeries(conversingPlayer, 0)
 	elseif (screenID == "what_type_of_audition") then
 		-- Convo options for type of series
-		if (CreatureObject(conversingPlayer):hasSkill("social_entertainer_music_02")) then
+		if (CreatureObject(conversingPlayer):hasSkill("secondary_entertainer_novice")) then
 			if (showRunning ~= 0 and showRunning ~= nil) then
 				clonedConversation:addOption("@conversation/quest_crowd_pleaser_manager:s_183e8ee4", "someone_on_stage")
 			else
@@ -42,7 +42,7 @@ function TheaterManagerConvoHandler:runScreenHandlers(conversationTemplate, conv
 			clonedConversation:addOption("@conversation/quest_crowd_pleaser_manager:s_183e8ee4", "not_skilled_enough")
 		end
 
-		if (CreatureObject(conversingPlayer):hasSkill("social_entertainer_dance_02")) then
+		if (CreatureObject(conversingPlayer):hasSkill("secondary_entertainer_novice")) then
 			if (showRunning ~= 0 and showRunning ~= nil) then
 				clonedConversation:addOption("@conversation/quest_crowd_pleaser_manager:s_9172f29c", "someone_on_stage")
 			else
@@ -203,7 +203,7 @@ function TheaterManagerConvoHandler:getInitialScreen(pPlayer, pNpc, pConversatio
 
 	if (TheaterManagerScreenPlay.enabled == 0 or showRunning ~= 0) then
 		return convoTemplate:getScreen("init_event_in_progress")
-	elseif (not CreatureObject(pPlayer):hasSkill("social_entertainer_novice")) then
+	elseif (not CreatureObject(pPlayer):hasSkill("secondary_entertainer_novice")) then
 		return convoTemplate:getScreen("init_not_entertainer")
 	end
 
