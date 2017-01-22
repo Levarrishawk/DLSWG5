@@ -73,7 +73,7 @@ public:
 					return GENERALERROR;
 				}
 
-				if (playerObject != NULL)
+				if (playerObject != NULL && creature->getHAM(CreatureAtribute::ACTION) > forceCost)
 					creature->inflictDamage(creature, CreatureAttribute::ACTION, forceCost, true, true, true);//setForcePower(creature->getHAM(CreatureAttribute::ACTION) - forceCost);
 
 			} catch (Exception& e) {
