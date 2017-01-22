@@ -9,7 +9,14 @@ registerScreenPlay("DantooineImperialOutpostScreenPlay", true)
 function DantooineImperialOutpostScreenPlay:start()
 	if (isZoneEnabled("dantooine")) then
 		self:spawnMobiles()
+		self:spawnSceneObjects()
 	end
+end
+
+function DantooineImperialOutpostScreenPlay:spawnSceneObjects()
+  spawnSceneObject("dantooine", "object/tangible/terminal/terminal_mission_rebel.iff", -4196.54, 3, -2410.16, 0, math.rad(-90) )
+  spawnSceneObject("dantooine", "object/tangible/terminal/terminal_mission_rebel.iff", -4221.5, 10, -2434.53, 0, math.rad(-134) )
+  
 end
 
 function DantooineImperialOutpostScreenPlay:spawnMobiles()
