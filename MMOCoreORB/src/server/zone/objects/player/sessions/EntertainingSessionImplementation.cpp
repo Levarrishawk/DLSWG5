@@ -211,7 +211,7 @@ void EntertainingSessionImplementation::addHealingXpGroup(int xp) {
 			Locker clocker(groupMember, entertainer);
 
 			if (groupMember->isEntertaining() && groupMember->isInRange(entertainer, 40.0f)
-					&& groupMember->hasSkill("social_entertainer_novice")) {
+					&& groupMember->hasSkill("secondary_entertainer_novice")) {
 				String healxptype("entertainer_healing");
 
 				if (playerManager != NULL)
@@ -1060,7 +1060,7 @@ void EntertainingSessionImplementation::awardEntertainerExperience() {
 						Locker clocker(groupMember, player);
 
 						if (groupMember->isEntertaining() && groupMember->isInRange(player, 40.0f)
-								&& groupMember->hasSkill("social_entertainer_novice")) {
+								&& groupMember->hasSkill("secondary_entertainer_novice")) {
 							++groupBonusPercent;
 						}
 					}
