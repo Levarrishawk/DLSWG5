@@ -340,6 +340,14 @@ wearables_all = {
 		{itemTemplate = "vest_s03", weight = 13532}, -- Short Vest
 		{itemTemplate = "vest_s11", weight = 13532}, -- Long Vest
 		{itemTemplate = "wke_shirt_s04", weight = 13532}, -- Crested Battle Padding
+		{itemTemplate = "robe_jedi_dark_s01", weight = 135320},
+    {itemTemplate = "robe_jedi_light_s01", weight = 135320},
+    {itemTemplate = "robe_jedi_dark_s04", weight = 135320},
+    {itemTemplate = "robe_jedi_light_s04", weight = 135320},
+    {itemTemplate = "robe_jedi_dark_s03", weight = 135320},
+    {itemTemplate = "robe_jedi_light_s03", weight = 135320},
+    {itemTemplate = "robe_jedi_dark_s02", weight = 135320},
+    {itemTemplate = "robe_jedi_light_s02", weight = 135320},
 	}
 }
 

@@ -36,6 +36,8 @@ aakuan_champion = Creature:new {
 				{group = "junk", chance = 4000000},
 				{group = "data_storage_unit_parts", chance = 2000000},
 				{group = "aakuan_common", chance = 2600000},
+				{group = "color_crystals", chance = 1000000},
+				{group = "wearables_all", chance = 1000000},
 				{group = "armor_attachments", chance = 600000},
 				{group = "clothing_attachments", chance = 800000}
 			}

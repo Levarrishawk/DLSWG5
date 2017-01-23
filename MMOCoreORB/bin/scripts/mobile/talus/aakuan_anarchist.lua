@@ -35,7 +35,7 @@ aakuan_anarchist = Creature:new {
 		{
 			groups = {
 				{group = "junk", chance = 4000000},
-				{group = "wearables_all", chance = 1000000},
+				{group = "wearables_all", chance = 4000000},
 				{group = "data_storage_unit_parts", chance = 1600000},
 				{group = "aakuan_common", chance = 2300000},
 				{group = "armor_attachments", chance = 500000},

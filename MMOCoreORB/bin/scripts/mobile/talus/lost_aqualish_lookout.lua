@@ -35,6 +35,8 @@ lost_aqualish_lookout = Creature:new {
 			groups = {
 				{group = "junk", chance = 3000000},
 				{group = "wearables_common", chance = 2000000},
+				{group = "wearables_common", chance = 700000},
+        {group = "color_crystals", chance = 700000},
 				{group = "carbines", chance = 2000000},
 				{group = "tailor_components", chance = 1500000},
 				{group = "loot_kit_parts", chance = 1500000}
