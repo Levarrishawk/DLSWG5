@@ -14,9 +14,9 @@ heavy_rocket_launcher = {
 		{"maxrangemod",-45,-15,0},
 		{"midrange",48,48,0},
 		{"midrangemod",20,60,0},
-		{"attackhealthcost",124,67,0},
-		{"attackactioncost",85,40,0},
-		{"attackmindcost",60,36,0},
+		{"attackhealthcost",0,0,0},
+    {"attackactioncost",300,300,0},
+    {"attackmindcost",0,0,0},
 	},
 
 	-- randomDotChance: The chance of this weapon object dropping with a random dot on it. Higher number means less chance. Set to 0 to always have a random dot.

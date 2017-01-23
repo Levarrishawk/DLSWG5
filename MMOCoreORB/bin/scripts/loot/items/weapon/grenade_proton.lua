@@ -14,9 +14,9 @@ grenade_proton = {
 		{"maxrangemod",-45,-15,0},
 		{"midrange",0,30,0},
 		{"midrangemod",10,25,0},
-		{"attackhealthcost",139,85,0},
-		{"attackactioncost",178,73,0},
-		{"attackmindcost",125,86,0},
+		{"attackhealthcost",0,0,0},
+    {"attackactioncost",300,300,0},
+    {"attackmindcost",0,0,0},
 	},
 
 	-- randomDotChance: The chance of this weapon object dropping with a random dot on it. Higher number means less chance. Set to 0 to always have a random dot.

@@ -14,9 +14,9 @@ heavy_particle_beam = {
 		{"maxrangemod",-125,-95,0},
 		{"midrange",48,48,0},
 		{"midrangemod",0,60,0},
-		{"attackhealthcost",33,17,0},
-		{"attackactioncost",110,59,0},
-		{"attackmindcost",33,17,0},
+		{"attackhealthcost",0,0,0},
+    {"attackactioncost",300,300,0},
+    {"attackmindcost",0,0,0},
 	},
 
 	-- randomDotChance: The chance of this weapon object dropping with a random dot on it. Higher number means less chance. Set to 0 to always have a random dot.

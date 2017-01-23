@@ -14,9 +14,9 @@ heavy_acid_beam = {
 		{"maxrangemod",-125,-95,0},
 		{"midrange",16,16,0},
 		{"midrangemod",20,30,0},
-		{"attackhealthcost",78,42,0},
-		{"attackactioncost",78,42,0},
-		{"attackmindcost",20,10,0},
+		{"attackhealthcost",0,0,0},
+    {"attackactioncost",300,300,0},
+    {"attackmindcost",0,0,0},
 	},
 
 	-- randomDotChance: The chance of this weapon object dropping with a random dot on it. Higher number means less chance. Set to 0 to always have a random dot.

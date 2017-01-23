@@ -14,9 +14,9 @@ grenade_thermal_detonator = {
 		{"maxrangemod",-45,15,0},
 		{"midrange",0,30,0},
 		{"midrangemod",10,30,0},
-		{"attackhealthcost",98,53,0},
-		{"attackactioncost",98,53,0},
-		{"attackmindcost",46,25,0},
+		{"attackhealthcost",0,0,0},
+    {"attackactioncost",300,300,0},
+    {"attackmindcost",0,0,0},
 	},
 
 	-- randomDotChance: The chance of this weapon object dropping with a random dot on it. Higher number means less chance. Set to 0 to always have a random dot.
