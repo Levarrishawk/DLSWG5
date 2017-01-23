@@ -40,7 +40,7 @@ public:
 			return;
 
 		// TODO: Force Rank modifiers.
-		int forceCost = 25;
+		int forceCost = 5;
 		if (playerObject->getForcePower() <= forceCost) { // Remove buff if not enough force.
 			Buff* buff = creo->getBuff(BuffCRC::JEDI_FORCE_ARMOR_2);
 			if (buff != NULL) {
