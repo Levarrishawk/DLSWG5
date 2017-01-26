@@ -3,40 +3,14 @@ TalusErranSifScreenPlay = ScreenPlay:new {
 
 	screenplayName = "TalusErranSifScreenPlay",
 
-	lootContainers = {
-		134417,
-		134416,
-		134414,
-		134415,
-		134413,
-		134412,
-		9815510
-	},
 
-	lootLevel = 26,
-
-	lootGroups = {
-		{
-			groups = {
-				{group = "color_crystals", chance = 160000},
-				{group = "junk", chance = 8240000},
-				{group = "weapons_all", chance = 1000000},
-				{group = "clothing_attachments", chance = 300000},
-				{group = "armor_attachments", chance = 300000}
-			},
-			lootChance = 8000000
-		}
-	},
-
-	lootContainerRespawn = 1800
 }
  
 registerScreenPlay("TalusErranSifScreenPlay", true)
  
 function TalusErranSifScreenPlay:start()
 	if (isZoneEnabled("talus")) then
-                self:spawnMobiles()
-                self:initializeLootContainers()
+                self:spawnMobiles()               
         end
 end
 

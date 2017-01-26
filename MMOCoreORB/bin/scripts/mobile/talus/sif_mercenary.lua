@@ -31,12 +31,7 @@ sif_mercenary = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "color_crystals", chance = 4500000},
-				{group = "rifles", chance = 1000000},
-				{group = "pistols", chance = 1000000},
-				{group = "melee_weapons", chance = 1000000},
-				{group = "carbines", chance = 1000000},
-				{group = "nyms_rare", chance = 500000},
+				{group = "color_crystals", chance = 4500000},				
 				{group = "wearables_common", chance = 1000000}
 			}
 		}
