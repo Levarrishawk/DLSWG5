@@ -4,8 +4,8 @@ erran_sif = Creature:new {
 	faction = "sif",
 	level = 67,
 	chanceHit = 0.67,
-	damageMin = 480,
-	damageMax = 670,
+	damageMin = 180,
+	damageMax = 270,
 	baseXp = 6472,
 	baseHAM = 12000,
 	baseHAMmax = 14000,
@@ -29,7 +29,7 @@ erran_sif = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "jedi_robes_tier3", chance = 5000000},
+				{group = "jedi_robes_tier2", chance = 5000000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
 				{group = "melee_weapons", chance = 1000000},

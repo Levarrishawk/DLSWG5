@@ -4,13 +4,13 @@ sif_mercenary = Creature:new {
 	randomNameTag = true,
 	socialGroup = "sif",
 	faction = "sif",
-	level = 36,
+	level = 30,
 	chanceHit = 0.42,
-	damageMin = 325,
-	damageMax = 360,
+	damageMin = 125,
+	damageMax = 160,
 	baseXp = 3642,
-	baseHAM = 8900,
-	baseHAMmax = 10900,
+	baseHAM = 890,
+	baseHAMmax = 1090,
 	armor = 0,
 	resists = {0,0,0,0,0,0,0,0,-1},
 	meatType = "",
@@ -31,7 +31,7 @@ sif_mercenary = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 4500000},
+				{group = "color_crystals", chance = 4500000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
 				{group = "melee_weapons", chance = 1000000},

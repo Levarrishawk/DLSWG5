@@ -7,11 +7,11 @@ rodian_sif_02 = Creature:new {
 	faction = "sif",
 	level = 45,
 	chanceHit = 0.47,
-	damageMin = 370,
-	damageMax = 450,
+	damageMin = 70,
+	damageMax = 150,
 	baseXp = 4461,
-	baseHAM = 9700,
-	baseHAMmax = 11900,
+	baseHAM = 970,
+	baseHAMmax = 1190,
 	armor = 0,
 	resists = {40,40,0,-1,-1,0,-1,-1,-1},
 	meatType = "",
@@ -32,7 +32,7 @@ rodian_sif_02 = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 5000000},
+				{group = "color_crystals", chance = 5000000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
 				{group = "melee_weapons", chance = 1000000},
