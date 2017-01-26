@@ -43,7 +43,7 @@ jakku_battle_droid = Creature:new {
         {group = "katarn_armor", chance = 1050000},
         {group = "clothing_attachments", chance = 150000},
         {group = "armor_attachments", chance = 150000},
-        {group = "nge_housing_all", chance = 6000000}
+       -- {group = "nge_housing_all", chance = 6000000}
       }
     }
   },
