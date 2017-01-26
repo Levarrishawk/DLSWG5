@@ -45,7 +45,7 @@ object_tangible_loot_loot_schematic_droid_body_schematic = object_tangible_loot_
 	templateType = LOOTSCHEMATIC,
 	objectMenuComponent = "LootSchematicMenuComponent",
 	attributeListComponent = "LootSchematicAttributeListComponent",
-	requiredSkill = "crafting_droidengineer_techniques_02",
+	requiredSkill = "trader_engineering_novice",
 	targetDraftSchematic = "object/draft_schematic/furniture/furniture_droid_body.iff",
 	targetUseCount = 1,
 }
