@@ -5,8 +5,8 @@ jedi_robes_tier3 = {
 	lootItems = {
 		-- Common
 		
-		{itemTemplate = "robe_jedi_dark_s03", weight = 10000000},
-    {itemTemplate = "robe_jedi_light_s03", weight = 10000000},
+		{itemTemplate = "robe_jedi_dark_s03", weight = 5000000},
+    {itemTemplate = "robe_jedi_light_s03", weight = 5000000},
 	}
 }
 
