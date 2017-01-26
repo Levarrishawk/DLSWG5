@@ -29,10 +29,10 @@ erran_sif = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "jedi_robes_tier2", chance = 3000000},
-				{group = "jedi_robes_tier2_dark", chance = 3000000},
-				{group = "color_crystals", chance = 2000000},
-				{group = "crystals_select", chance = 2000000}
+				{group = "jedi_robes_tier2", chance = 3000001},
+				{group = "jedi_robes_tier2_dark", chance = 2999999},
+				{group = "color_crystals", chance = 2000001},
+				{group = "crystals_select", chance = 1999999}
 			}
 		}
 	},
