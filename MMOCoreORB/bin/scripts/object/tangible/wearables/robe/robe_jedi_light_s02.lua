@@ -68,7 +68,7 @@ object_tangible_wearables_robe_robe_jedi_light_s02 = object_tangible_wearables_r
            {"jedi_toughness", 20}
 				},
 
-				noTrade = 1,
+				noTrade = 0,
 
 				objectMenuComponent = "RobeObjectMenuComponent",
 				certificationsRequired = {"combat_jedi_light_02"},
