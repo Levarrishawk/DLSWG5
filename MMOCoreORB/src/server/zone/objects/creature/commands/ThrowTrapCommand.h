@@ -27,7 +27,7 @@ public:
 			return INVALIDLOCOMOTION;
 
 		int skillLevel = creature->getSkillMod("trapping");
-		if (skillLevel < 1 || !creature->hasSkill("outdoors_scout_novice")) {
+		if (skillLevel < 1 || !creature->hasSkill("secondary_ranger_novice")) {
 			creature->sendSystemMessage("@trap/trap:trap_no_skill");
 			return GENERALERROR;
 		}

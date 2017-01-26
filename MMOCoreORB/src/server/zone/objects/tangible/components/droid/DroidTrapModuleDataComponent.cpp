@@ -123,7 +123,7 @@ void DroidTrapModuleDataComponent::onStore() {
  * Add Droid sub-radial options, need to be a top level radial not submenu
  */
 void DroidTrapModuleDataComponent::fillObjectMenuResponse(SceneObject* droidObject, ObjectMenuResponse* menuResponse, CreatureObject* player) {
-	if (player != NULL && player->hasSkill("outdoors_scout_novice")) {
+	if (player != NULL && player->hasSkill("secondary_ranger_novice")) {
 		menuResponse->addRadialMenuItem(TRAP_MODULE_CONTROLS, 3, "@pet/droid_modules:throw_trap_options" );
 		menuResponse->addRadialMenuItemToRadialID(TRAP_MODULE_CONTROLS, TRAP_MODULE_TRAIN, 3, "@pet/droid_modules:train_throw_one" );
 		menuResponse->addRadialMenuItemToRadialID(TRAP_MODULE_CONTROLS, TRAP_MODULE_CLEAR, 3, "@pet/droid_modules:clear_trap" );
@@ -201,7 +201,7 @@ void DroidTrapModuleDataComponent::handleInsertTrap(CreatureObject* player, Tang
 	}
 
 	// we need to send the invlid stimpack message just wher eis a good question
-	if (!player->hasSkill("outdoors_scout_novice") || !compatibleTrap(player, input->getServerObjectCRC()) ) {
+	if (!player->hasSkill("secondary_ranger_novice") || !compatibleTrap(player, input->getServerObjectCRC()) ) {
 		player->sendSystemMessage("@pet/droid_modules:insufficient_skill");
 		return;
 	}

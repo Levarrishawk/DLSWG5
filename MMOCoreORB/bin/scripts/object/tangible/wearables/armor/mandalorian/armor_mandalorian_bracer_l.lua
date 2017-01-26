@@ -44,11 +44,10 @@
 object_tangible_wearables_armor_mandalorian_armor_mandalorian_bracer_l = object_tangible_wearables_armor_mandalorian_shared_armor_mandalorian_bracer_l:new {
 	templateType = ARMOROBJECT,
 
-  certificationsRequired = { "combat_bountyhunter_novice",
-          "combat_commando_novice",
-          "outdoors_squadleader_novice",
-          "combat_marksman_novice",
-          "outdoors_scout_novice" },
+  certificationsRequired = { "secondary_bountyhunter_novice",
+          "combat_mando_novice",
+          "combat_soldier_novice",
+          "combat_shocktrooper_novice"},
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",

@@ -278,7 +278,7 @@ bool GroupObjectImplementation::hasSquadLeader() {
 	if (leader == NULL)
 		return false;
 
-	if (leader->isPlayerCreature() && leader->hasSkill("outdoors_squadleader_novice")) {
+	if (leader->isPlayerCreature() && leader->hasSkill("combat_officer_novice")) {
 			return true;
 	}
 
@@ -372,8 +372,8 @@ void GroupObjectImplementation::removeGroupModifiers(CreatureObject* player) {
 
 float GroupObjectImplementation::getGroupHarvestModifier(CreatureObject* player) {
 
-	String skillNovice = "outdoors_ranger_novice";
-	String skillMaster = "outdoors_ranger_master";
+	String skillNovice = "secondary_ranger_novice";
+	String skillMaster = "secondary_ranger_master";
 
 	float modifier = 1.2f;
 

@@ -64,7 +64,7 @@ void DroidHarvestModuleDataComponent::fillObjectMenuResponse(SceneObject* droidO
 	// add top level optins
 	// then the sub menus
 	// multiple levels
-	if (player->hasSkill("outdoors_scout_novice")){
+	if (player->hasSkill("secondary_ranger_novice")){
 		menuResponse->addRadialMenuItem(HARVEST_MENU,3,"@pet/droid_modules:harvest_options");
 		menuResponse->addRadialMenuItemToRadialID(HARVEST_MENU,HARVEST_PROGRAM_COMMAND,3, "@pet/droid_modules:program_target_harvest");
 		menuResponse->addRadialMenuItemToRadialID(HARVEST_MENU,HARVEST_TOGGLE,3,"@pet/droid_modules:toggle_auto_harvest");

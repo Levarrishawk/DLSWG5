@@ -433,20 +433,19 @@ void FishingManagerImplementation::success(CreatureObject* player, int fish, Sce
 				}
 				int factor = 1;
 
-				if (player->hasSkill("outdoors_ranger_tracking_04"))
+				if (player->hasSkill("secondar_ranger_master"))
 					factor = 8;
-				else if (player->hasSkill("outdoors_ranger_tracking_03"))
+				else if (player->hasSkill("secondary_ranger_explore_04"))
 					factor = 7;
-				else if (player->hasSkill("outdoors_ranger_tracking_02"))
+				else if (player->hasSkill("secondary_ranger_explore_03"))
 					factor = 6;
-				else if (player->hasSkill("outdoors_ranger_tracking_01"))
+				else if (player->hasSkill("secondary_ranger_explore_02"))
 					factor = 5;
-				else if (player->hasSkill("outdoors_scout_camp_04"))
+				else if (player->hasSkill("secondary_ranger_explore_01"))
 					factor = 4;
-				else if (player->hasSkill("outdoors_scout_camp_03"))
+				else if (player->hasSkill("secondary_ranger_novice"))
 					factor = 3;
-				else if (player->hasSkill("outdoors_scout_camp_02"))
-					factor = 2;
+
 
 				float length = fishLength.get(fish)*factor;
 

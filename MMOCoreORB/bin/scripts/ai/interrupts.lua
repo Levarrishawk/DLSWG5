@@ -156,7 +156,7 @@ function DefaultInterrupt:startAwarenessInterrupt(pAgent, pObject)
 			if aiAgent:checkLineOfSight(pObject) then
 				aiAgent:setStalkObject(pObject)
 				aiAgent:setAlertDuration(10000)
-				if creoObject:hasSkill("outdoors_ranger_novice") then
+				if creoObject:hasSkill("secondary_ranger_novice") then
 					creoObject:sendSystemMessageWithTO("@skl_use:notify_stalked", SceneObject(pAgent):getDisplayedName())
 				end
 			end

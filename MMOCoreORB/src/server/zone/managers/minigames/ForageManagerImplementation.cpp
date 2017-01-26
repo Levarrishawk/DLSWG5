@@ -229,9 +229,9 @@ bool ForageManagerImplementation::forageGiveItems(CreatureObject* player, int fo
 	int itemCount = 1;
 	//Determine how many items the player finds.
 	if (forageType == ForageManager::SCOUT) {
-		if (player->hasSkill("outdoors_scout_camp_03") && System::random(5) == 1)
+		if (player->hasSkill("secondary_ranger_explore_03") && System::random(5) == 1)
 			itemCount += 1;
-		if (player->hasSkill("outdoors_scout_master") && System::random(5) == 1)
+		if (player->hasSkill("secondary_ranger_master") && System::random(5) == 1)
 			itemCount += 1;
 	}
 
