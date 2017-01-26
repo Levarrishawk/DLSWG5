@@ -351,3 +351,4 @@ includeFile("groups/weapon/startersword.lua")
 -- NGE House Tables
 includeFile("groups/deeds/structure/nge_housing_all.lua")
 includeFile("groups/armor/katarn_armor.lua")
+includeFile("groups/wearables/jedi_robes.lua")
