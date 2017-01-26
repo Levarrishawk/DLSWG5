@@ -30,8 +30,8 @@ erran_sif = Creature:new {
 		{
 			groups = {
 				{group = "jedi_robes_tier2", chance = 10000000},
-				{group = "color_crystals", chance = 10000000},
-				{group = "crystals_select", chance = 10000000}
+				{group = "color_crystals", chance = 5000000},
+				{group = "crystals_select", chance = 4000000}
 			}
 		}
 	},

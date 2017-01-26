@@ -5,8 +5,8 @@ jedi_robes_novice = {
 	lootItems = {
 		-- Common
 		
-		{itemTemplate = "robe_jedi_dark_s01", weight = 2000000},
-    {itemTemplate = "robe_jedi_light_s01", weight = 2000000},
+		{itemTemplate = "robe_jedi_dark_s01", weight = 10000000},
+    {itemTemplate = "robe_jedi_light_s01", weight = 10000000},
 	}
 }
 
