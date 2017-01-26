@@ -80,7 +80,7 @@ void LightsaberCrystalComponentImplementation::fillAttributeList(AttributeListMe
 		if (ownerID != 0) {
 			alm->insertAttribute("mindamage", minimumDamage);
 			alm->insertAttribute("maxdamage", maximumDamage);
-			alm->insertAttribute("wpn_attack_speed", attackSpeed);
+	//		alm->insertAttribute("wpn_attack_speed", attackSpeed);
 			alm->insertAttribute("wpn_wound_chance", woundChance);
 	//		alm->insertAttribute("wpn_attack_cost_health", sacHealth);
 			alm->insertAttribute("wpn_attack_cost_action", sacAction);
