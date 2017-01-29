@@ -44,10 +44,10 @@
 ActionShot2Command = {
         name = "actionshot2",
 
-  damageMultiplier = 1.0,
+  damageMultiplier = 1.5,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1,
+  actionCostMultiplier = 0.75,
   mindCostMultiplier = 0,
   visMod = 25,
 
