@@ -47,7 +47,7 @@ Melee1hHit1Command = {
 	damageMultiplier = 1.5,
   speedMultiplier = 0.5,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1,
+  actionCostMultiplier = 0.75,
   mindCostMultiplier = 0,
         accuracyBonus = 25,
         
