@@ -51,7 +51,7 @@ object_draft_schematic_weapon_rifle_blaster_cdef = object_draft_schematic_weapon
    complexity = 8, 
    size = 3, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_weapons_general", 
    xp = 42, 
 
    assemblySkill = "general_assembly", 
