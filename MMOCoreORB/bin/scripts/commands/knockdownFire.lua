@@ -44,10 +44,10 @@
 KnockdownFireCommand = {
         name = "knockdownfire",
 
-	damageMultiplier = 2.5,
+	damageMultiplier = 2,
   speedMultiplier = 1.0,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1,
+  actionCostMultiplier = 0.9,
   mindCostMultiplier = 0,
   coneAngle = 40,
   coneAction = true,

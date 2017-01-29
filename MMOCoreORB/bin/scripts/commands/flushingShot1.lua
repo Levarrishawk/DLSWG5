@@ -44,9 +44,9 @@
 FlushingShot1Command = {
         name = "flushingshot1",
 
-	damageMultiplier = 3.0,
+	damageMultiplier = 3,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 1,
+	actionCostMultiplier = 0.75,
 	mindCostMultiplier = 0,
 	accuracyBonus = 5,
 	visMod = 25,
