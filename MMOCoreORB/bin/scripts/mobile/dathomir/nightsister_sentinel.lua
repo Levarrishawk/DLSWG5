@@ -12,7 +12,7 @@ nightsister_sentinel = Creature:new {
 	baseHAM = 21000,
 	baseHAMmax = 26000,
 	armor = 1,
-	resists = {45,45,45,45,45,45,45,45,-1},
+	resists = {45,0,45,45,45,45,45,45,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -36,12 +36,8 @@ nightsister_sentinel = Creature:new {
 				{group = "nightsister_common", chance = 2000000},
 				{group = "armor_attachments", chance = 250000},
 				{group = "clothing_attachments", chance = 250000},
-				{group = "melee_weapons", chance = 2500000},
-				{group = "jedi_robes_tier4", chance = 1000000},
-				{group = "jedi_robes_tier4_dark", chance = 1000000},
-				{group = "carbines", chance = 1000000},
-				{group = "wearables_common", chance = 500000},
-				{group = "tailor_components", chance = 500000}
+				{group = "jedi_robes_tier4", chance = 2750000},
+				{group = "jedi_robes_tier4_dark", chance = 2750000}
 			}
 		}
 	},
