@@ -44,7 +44,7 @@
 SaberPolearmDervish2Command = {
         name = "saberpolearmdervish2",
 
-	damageMultiplier = 4.5,
+	damageMultiplier = 5,
 	speedMultiplier = 1.0,
 	healthCostMultiplier = 0,
 	actionCostMultiplier = 1.0,

@@ -45,12 +45,12 @@ SaberSlash2Command = {
         name = "saberslash2",
 
 
-	damageMultiplier = 4.5,
+	damageMultiplier = 5,
 	speedMultiplier = 1.0,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 1,
+	actionCostMultiplier = 0.75,
 	mindCostMultiplier = 0,
-	forceCostMultiplier = 1.0,
+	forceCostMultiplier = 0.75,
 	visMod = 25,
 
 	dotEffects = {

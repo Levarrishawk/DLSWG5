@@ -47,9 +47,9 @@ SaberPolearmHit1Command = {
 	damageMultiplier = 2.5,
 	speedMultiplier = 1,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 1,
+	actionCostMultiplier = 0.5,
 	mindCostMultiplier = 0,
-	forceCostMultiplier = 1.0,
+	forceCostMultiplier = 0.5,
 	visMod = 25,
 
 	animation = "combo_3a", 

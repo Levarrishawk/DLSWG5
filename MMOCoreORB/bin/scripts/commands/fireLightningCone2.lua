@@ -47,7 +47,7 @@ FireLightningCone2Command = {
 damageMultiplier = 1.5,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1.75,
+  actionCostMultiplier = 0.5,
   mindCostMultiplier = 0,
     visMod = 25,
 
@@ -64,7 +64,7 @@ damageMultiplier = 1.5,
 	
 	weaponType = SPECIALHEAVYWEAPON,
 
-	range = 16
+	range = 64
 }
 
 AddCommand(FireLightningCone2Command)

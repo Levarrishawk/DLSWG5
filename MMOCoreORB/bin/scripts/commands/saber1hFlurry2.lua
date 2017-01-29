@@ -44,8 +44,8 @@
 Saber1hFlurry2Command = {
         name = "saber1hflurry2",
 
-	damageMultiplier = 4.0,
-	speedMultiplier = 4.0,
+	damageMultiplier = 5.0,
+	speedMultiplier = 1.0,
 	healthCostMultiplier = 0,
 	actionCostMultiplier = 1,
 	mindCostMultiplier = 0,
