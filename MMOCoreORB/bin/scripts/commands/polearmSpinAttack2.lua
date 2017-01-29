@@ -44,7 +44,7 @@
 PolearmSpinAttack2Command = {
         name = "polearmspinattack2",
 
-	damageMultiplier = 1.5,
+	damageMultiplier = 1.75,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
   actionCostMultiplier = 1,
@@ -76,7 +76,7 @@ PolearmSpinAttack2Command = {
 	
 	weaponType = POLEARMWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(PolearmSpinAttack2Command)

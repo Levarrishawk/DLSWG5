@@ -43,10 +43,10 @@
 
 PolearmHit3Command = {
         name = "polearmhit3",
-	damageMultiplier = 1.5,
-  speedMultiplier = 3,
+	damageMultiplier = 3,
+  speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1,
+  actionCostMultiplier = 0.75,
   mindCostMultiplier = 0,
   accuracyBonus = 30,
     visMod = 25,
@@ -61,7 +61,7 @@ PolearmHit3Command = {
 	
 	weaponType = POLEARMWEAPON,
 
-	range = -1
+	range = 10
 }
 
 AddCommand(PolearmHit3Command)
