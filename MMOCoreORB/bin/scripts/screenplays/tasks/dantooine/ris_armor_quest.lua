@@ -53,7 +53,7 @@ function risArmorQuestConvoHandler:getInitialScreen(pPlayer, npc, pConversationT
 	return ObjectManager.withCreatureObject(pPlayer, function(player)
 		local convoTemplate = LuaConversationTemplate(pConversationTemplate)
 
-		if (not player:hasSkill("crafting_armorsmith_master")) then
+		if (not player:hasSkill("trader_munitions_master")) then
 			return convoTemplate:getScreen("not_master_armorsmith")
 		elseif (player:hasScreenPlayState(64, "ris_armor_quest")) then -- All quests completed
 			return convoTemplate:getScreen("completed_all_quests")
