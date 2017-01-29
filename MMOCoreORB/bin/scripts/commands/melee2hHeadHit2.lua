@@ -47,7 +47,7 @@ Melee2hHeadHit2Command = {
 	damageMultiplier = 3,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1.5,
+  actionCostMultiplier = 0.8,
   mindCostMultiplier = 0,
         --accuracyBonus = 10,
 

@@ -46,7 +46,7 @@ Melee2hArea1Command = {
 	damageMultiplier = 1.9,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 2,
+  actionCostMultiplier = 1,
   mindCostMultiplier = 0,
 
   areaRange = 7,
