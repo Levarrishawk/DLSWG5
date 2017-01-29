@@ -36,14 +36,14 @@ jakku_battle_droid = Creature:new {
     {
       groups = {
         {group = "color_crystals", chance = 3000000},
-        {group = "crystals_premium", chance = 100000},
+        {group = "crystals_premium", chance = 1000000},
         {group = "holocron_dark", chance = 150000},
         {group = "holocron_light", chance = 150000},
         {group = "weapons_all", chance = 1050000},
         {group = "katarn_armor", chance = 1050000},
         {group = "clothing_attachments", chance = 150000},
         {group = "armor_attachments", chance = 150000},
-       -- {group = "nge_housing_all", chance = 6000000}
+        {group = "av_21", chance = 500000}
       }
     }
   },

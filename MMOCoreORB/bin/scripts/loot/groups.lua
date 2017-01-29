@@ -350,7 +350,11 @@ includeFile("groups/weapon/startersword.lua")
 
 -- NGE House Tables
 includeFile("groups/deeds/structure/nge_housing_all.lua")
+
+-- New Armors
 includeFile("groups/armor/katarn_armor.lua")
+
+-- Jedi Robes
 includeFile("groups/wearables/jedi_robes.lua")
 includeFile("groups/wearables/jedi_robes_novice.lua")
 includeFile("groups/wearables/jedi_robes_tier2.lua")
@@ -359,3 +363,6 @@ includeFile("groups/wearables/jedi_robes_tier4.lua")
 includeFile("groups/wearables/jedi_robes_tier2_dark.lua")
 includeFile("groups/wearables/jedi_robes_tier3_dark.lua")
 includeFile("groups/wearables/jedi_robes_tier4_dark.lua")
+
+-- New Vehicles
+includeFile("groups/deeds/vehicle/av_21.lua")

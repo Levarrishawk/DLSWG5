@@ -1157,3 +1157,6 @@ includeFile("items/armor/armor_clone_trooper_imperial_s01_boots.lua")
 includeFile("items/armor/armor_clone_trooper_imperial_s01_chest_plate.lua")
 includeFile("items/armor/armor_clone_trooper_imperial_s01_helmet.lua")
 includeFile("items/armor/armor_clone_trooper_imperial_s01_leggings.lua")
+
+-- Vehicles
+includeFile("items/deed/vehicle_deed/swoop_deed.lua")
