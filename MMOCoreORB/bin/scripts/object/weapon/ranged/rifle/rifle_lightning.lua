@@ -114,7 +114,7 @@ object_weapon_ranged_rifle_rifle_lightning = object_weapon_ranged_rifle_shared_r
 	maxRangeAccuracy = -80,
 
 	minDamage = 415,
-	maxDamage = 740,
+	maxDamage = 537,
 
 	attackSpeed = 1,
 

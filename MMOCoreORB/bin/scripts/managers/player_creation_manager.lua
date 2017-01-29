@@ -74,14 +74,20 @@ gasTool = "object/tangible/survey_tool/survey_tool_gas.iff"
 
 stim = "object/tangible/medicine/crafted/crafted_stimpack_sm_s1_a.iff"
 
+officerPistol = "object/weapon/ranged/pistol/pistol_launcher.iff"
+
+shockRifle = "object/weapon/ranged/rifle/rifle_lightning.iff"
+
+mandoFlame = "object/weapon/ranged/rifle/rifle_flame_thrower.iff"
+
 
 professionSpecificItems = { 
-  combat_soldier = { marksmanPistol, marksmanCarbine, marksmanRifle, brawlerTwoHander, stim },
-  combat_mando = { marksmanPistol, marksmanCarbine, marksmanRifle, brawlerTwoHander, stim },
-  combat_assassin = { marksmanPistol, marksmanCarbine, marksmanRifle, stim },
-  combat_shocktrooper = { marksmanPistol, marksmanCarbine, marksmanRifle, brawlerOneHander, stim },
+  combat_soldier = { marksmanCarbine, brawlerTwoHander, stim },
+  combat_mando = { mandoFlame, brawlerTwoHander, stim },
+  combat_assassin = { marksmanRifle, stim },
+  combat_shocktrooper = { shockRifle, brawlerOneHander, stim },
   combat_jedi = { genericTool, mineralTool, chemicalTool, gasTool, jediTool, jediCrystal, stim },
-  combat_officer = { genericTool, marksmanPistol, marksmanCarbine, marksmanRifle, stim  },
+  combat_officer = { genericTool, officerPistol, marksmanCarbine, stim  },
   combat_medic = { foodTool, marksmanPistol, brawlerPolearm, stim },
   trader_structures = { genericTool, mineralTool, chemicalTool, gasTool },
   trader_munitions = { genericTool, mineralTool, chemicalTool, gasTool}, 
