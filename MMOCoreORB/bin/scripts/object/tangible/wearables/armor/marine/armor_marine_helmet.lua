@@ -91,7 +91,7 @@ object_tangible_wearables_armor_marine_armor_marine_helmet = object_tangible_wea
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,
 	
-	maxCondition = 15000,
+	maxCondition = 30000,
 	
 	kinetic = 70,
 	energy = 70,

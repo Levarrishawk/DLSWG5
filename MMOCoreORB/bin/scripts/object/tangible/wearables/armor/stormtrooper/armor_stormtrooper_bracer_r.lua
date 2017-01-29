@@ -100,7 +100,7 @@ object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_bracer_r = objec
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,
 	
-	maxCondition = 10000,
+	maxCondition = 30000,
 	
 	kinetic = 70,
 	energy = 70,
