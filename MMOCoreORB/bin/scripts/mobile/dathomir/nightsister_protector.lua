@@ -9,10 +9,10 @@ nightsister_protector = Creature:new {
 	damageMin = 170,
 	damageMax = 250,
 	baseXp = 12424,
-	baseHAM = 50000,
-	baseHAMmax = 61000,
+	baseHAM = 20000,
+	baseHAMmax = 21000,
 	armor = 2,
-	resists = {15,45,15,45,45,45,45,45,-1},
+	resists = {15,25,15,45,45,45,45,45,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -31,17 +31,13 @@ nightsister_protector = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "crystals_select", chance = 500000},
-				{group = "color_crystals", chance = 500000},
-				{group = "nightsister_common", chance = 2300000},
-				{group = "armor_attachments", chance = 350000},
-				{group = "clothing_attachments", chance = 350000},
-				{group = "melee_weapons", chance = 2000000},
-				{group = "rifles", chance = 1000000},
-				{group = "pistols", chance = 1000000},
-				{group = "carbines", chance = 1000000},
-				{group = "wearables_common", chance = 500000},
-				{group = "tailor_components", chance = 500000}
+				{group = "crystals_premium", chance = 500000},
+        {group = "color_crystals", chance = 500000},
+        {group = "nightsister_common", chance = 2000000},
+        {group = "armor_attachments", chance = 250000},
+        {group = "clothing_attachments", chance = 250000},
+        {group = "jedi_robes_tier4", chance = 2750000},
+        {group = "jedi_robes_tier4_dark", chance = 2750000}
 			}
 		}
 	},

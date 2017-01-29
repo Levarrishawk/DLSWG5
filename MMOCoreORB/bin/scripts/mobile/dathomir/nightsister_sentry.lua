@@ -31,7 +31,7 @@ nightsister_sentry = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "crystals_poor", chance = 500000},
+				{group = "crystals_premium", chance = 500000},
 				{group = "color_crystals", chance = 500000},
 				{group = "nightsister_common", chance = 2000000},
 				{group = "armor_attachments", chance = 250000},
@@ -40,7 +40,7 @@ nightsister_sentry = Creature:new {
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
 				{group = "carbines", chance = 1000000},
-				{group = "wearables_common", chance = 500000},
+				{group = "wearables_scarce", chance = 500000},
 				{group = "tailor_components", chance = 500000}
 			}
 		}
