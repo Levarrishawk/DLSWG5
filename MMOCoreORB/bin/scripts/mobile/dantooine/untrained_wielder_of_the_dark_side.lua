@@ -6,13 +6,13 @@ untrained_wielder_of_the_dark_side = Creature:new {
 	faction = "",
 	level = 65,
 	chanceHit = 0.6,
-	damageMin = 545,
-	damageMax = 800,
+	damageMin = 145,
+	damageMax = 200,
 	baseXp = 6288,
 	baseHAM = 11000,
 	baseHAMmax = 14000,
 	armor = 1,
-	resists = {130,130,15,15,15,15,15,15,-1},
+	resists = {30,30,15,15,15,15,15,15,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -31,16 +31,14 @@ untrained_wielder_of_the_dark_side = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 3500000},
-				{group = "crystals_poor", chance = 500000},
-				{group = "color_crystals", chance = 500000},
-				{group = "holocron_dark", chance = 500000},
-				{group = "holocron_light", chance = 500000},
-				{group = "melee_weapons", chance = 1000000},
-				{group = "armor_attachments", chance = 1000000},
-				{group = "clothing_attachments", chance = 1000000},
-				{group = "wearables_uncommon", chance = 750000},
-				{group = "wearables_common", chance = 750000}
+				{group = "jedi_robes_tier3", chance = 3000000},
+        {group = "jedi_robes_tier3_dark", chance = 3000000},
+        {group = "crystals_premium", chance = 1200000},
+        {group = "color_crystals", chance = 700000},
+        {group = "holocron_dark", chance = 500000},
+        {group = "holocron_light", chance = 500000},
+        {group = "clothing_attachments", chance = 1000000},
+        {group = "force_hunter_rare", chance = 100000}
 			}
 		}
 	},

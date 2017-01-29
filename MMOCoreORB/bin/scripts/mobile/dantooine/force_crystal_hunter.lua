@@ -6,13 +6,13 @@ force_crystal_hunter = Creature:new {
 	faction = "",
 	level = 115,
 	chanceHit = 1,
-	damageMin = 820,
-	damageMax = 1350,
+	damageMin = 120,
+	damageMax = 350,
 	baseXp = 10921,
-	baseHAM = 24000,
-	baseHAMmax = 30000,
+	baseHAM = 14000,
+	baseHAMmax = 20000,
 	armor = 2,
-	resists = {80,80,80,80,80,80,80,80,-1},
+	resists = {40,40,40,40,40,40,40,40,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -31,15 +31,13 @@ force_crystal_hunter = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 3000000},
-				{group = "crystals_poor", chance = 800000},
+				{group = "jedi_robes_tier3", chance = 3000000},
+				{group = "jedi_robes_tier3_dark", chance = 3000000},
+				{group = "crystals_premium", chance = 1200000},
 				{group = "color_crystals", chance = 700000},
 				{group = "holocron_dark", chance = 500000},
 				{group = "holocron_light", chance = 500000},
-				{group = "melee_weapons", chance = 1000000},
-				{group = "armor_attachments", chance = 1000000},
 				{group = "clothing_attachments", chance = 1000000},
-				{group = "wearables_all", chance = 1400000},
 				{group = "force_hunter_rare", chance = 100000}
 			}
 		}

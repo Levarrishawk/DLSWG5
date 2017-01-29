@@ -15,13 +15,13 @@ ForceCrystalCaveScreenPlay = ScreenPlay:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 3500000},
-				{group = "junk", chance = 3500000},
-				{group = "rifles", chance = 1000000},
-				{group = "pistols", chance = 1000000},
-				{group = "clothing_attachments", chance = 500000},
-				{group = "armor_attachments", chance = 500000}
+				{group = "crystals_premium", chance = 5000000},
+				{group = "wearables_rare", chance = 1000000},
+				{group = "wearables_scarce", chance = 1000000},
+				{group = "clothing_attachments", chance = 5000000},
+				{group = "armor_attachments", chance = 5000000}
 			},
-			lootChance = 8000000
+			lootChance = 9000000
 		}					
 	},
 	

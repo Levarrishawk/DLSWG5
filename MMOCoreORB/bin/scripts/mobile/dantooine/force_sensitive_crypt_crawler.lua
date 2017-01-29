@@ -6,8 +6,8 @@ force_sensitive_crypt_crawler = Creature:new {
 	faction = "",
 	level = 95,
 	chanceHit = 0.9,
-	damageMin = 685,
-	damageMax = 1080,
+	damageMin = 85,
+	damageMax = 280,
 	baseXp = 9057,
 	baseHAM = 16000,
 	baseHAMmax = 19000,
@@ -31,16 +31,14 @@ force_sensitive_crypt_crawler = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 3500000},
-				{group = "crystals_poor", chance = 500000},
-				{group = "color_crystals", chance = 500000},
-				{group = "holocron_dark", chance = 500000},
-				{group = "holocron_light", chance = 500000},
-				{group = "melee_weapons", chance = 1000000},
-				{group = "armor_attachments", chance = 1000000},
-				{group = "clothing_attachments", chance = 1000000},
-				{group = "wearables_common", chance = 750000},
-				{group = "wearables_uncommon", chance = 750000}
+				{group = "jedi_robes_tier3", chance = 3000000},
+        {group = "jedi_robes_tier3_dark", chance = 3000000},
+        {group = "crystals_premium", chance = 1200000},
+        {group = "color_crystals", chance = 700000},
+        {group = "holocron_dark", chance = 500000},
+        {group = "holocron_light", chance = 500000},
+        {group = "clothing_attachments", chance = 1000000},
+        {group = "force_hunter_rare", chance = 100000}
 			}
 		}
 	},

@@ -6,8 +6,8 @@ nightsister_sentinel = Creature:new {
 	faction = "nightsister",
 	level = 88,
 	chanceHit = 0.8,
-	damageMin = 545,
-	damageMax = 800,
+	damageMin = 245,
+	damageMax = 500,
 	baseXp = 8408,
 	baseHAM = 21000,
 	baseHAMmax = 26000,
@@ -31,14 +31,14 @@ nightsister_sentinel = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "crystals_quality", chance = 500000},
+				{group = "crystals_premium", chance = 500000},
 				{group = "color_crystals", chance = 500000},
 				{group = "nightsister_common", chance = 2000000},
 				{group = "armor_attachments", chance = 250000},
 				{group = "clothing_attachments", chance = 250000},
 				{group = "melee_weapons", chance = 2500000},
-				{group = "rifles", chance = 1000000},
-				{group = "pistols", chance = 1000000},
+				{group = "jedi_robes_tier4", chance = 1000000},
+				{group = "jedi_robes_tier4_dark", chance = 1000000},
 				{group = "carbines", chance = 1000000},
 				{group = "wearables_common", chance = 500000},
 				{group = "tailor_components", chance = 500000}
