@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_backpack_field_01 = object_draft_schema
    complexity = 17, 
    size = 2, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_clothing_general", 
    xp = 140, 
 
    assemblySkill = "general_assembly", 

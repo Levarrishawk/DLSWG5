@@ -51,7 +51,7 @@ object_draft_schematic_food_drink_caf = object_draft_schematic_food_shared_drink
    complexity = 3, 
    size = 1, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_food_general", 
    xp = 30, 
 
    assemblySkill = "general_assembly", 

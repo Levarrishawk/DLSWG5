@@ -51,7 +51,7 @@ object_draft_schematic_clothing_component_clothing_metal_fasteners = object_draf
    complexity = 6, 
    size = 2, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_clothing_general", 
    xp = 30, 
 
    assemblySkill = "general_assembly", 

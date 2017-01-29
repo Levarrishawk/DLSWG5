@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_armor_bone_gloves = object_draft_schema
    complexity = 12, 
    size = 3, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_clothing_armor", 
    xp = 86, 
 
    assemblySkill = "general_assembly", 

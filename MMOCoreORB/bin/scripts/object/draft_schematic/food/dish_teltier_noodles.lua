@@ -51,7 +51,7 @@ object_draft_schematic_food_dish_teltier_noodles = object_draft_schematic_food_s
    complexity = 5, 
    size = 1, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_food_general", 
    xp = 75, 
 
    assemblySkill = "general_assembly", 

@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_armor_bone_bicep_l = object_draft_schem
    complexity = 14, 
    size = 3, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_clothing_armor", 
    xp = 130, 
 
    assemblySkill = "general_assembly", 

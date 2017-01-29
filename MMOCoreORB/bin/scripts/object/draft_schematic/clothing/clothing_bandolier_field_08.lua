@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_bandolier_field_08 = object_draft_schem
    complexity = 12, 
    size = 2, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_clothing_general", 
    xp = 30, 
 
    assemblySkill = "general_assembly", 

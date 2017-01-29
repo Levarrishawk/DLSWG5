@@ -51,7 +51,7 @@ object_draft_schematic_food_component_container_large_glass = object_draft_schem
    complexity = 5, 
    size = 1, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_food_general", 
    xp = 200, 
 
    assemblySkill = "general_assembly", 

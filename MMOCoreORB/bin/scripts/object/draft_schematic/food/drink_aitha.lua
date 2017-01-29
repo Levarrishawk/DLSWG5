@@ -51,7 +51,7 @@ object_draft_schematic_food_drink_aitha = object_draft_schematic_food_shared_dri
    complexity = 3, 
    size = 1, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_food_general", 
    xp = 45, 
 
    assemblySkill = "general_assembly", 

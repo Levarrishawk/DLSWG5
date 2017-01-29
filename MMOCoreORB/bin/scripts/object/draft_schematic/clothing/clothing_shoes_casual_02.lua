@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_shoes_casual_02 = object_draft_schemati
    complexity = 4, 
    size = 3, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_clothing_general", 
    xp = 40, 
 
    assemblySkill = "general_assembly", 

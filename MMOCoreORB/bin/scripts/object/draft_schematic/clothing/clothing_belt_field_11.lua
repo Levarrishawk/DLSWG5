@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_belt_field_11 = object_draft_schematic_
    complexity = 8, 
    size = 1, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_clothing_general", 
    xp = 40, 
 
    assemblySkill = "general_assembly", 

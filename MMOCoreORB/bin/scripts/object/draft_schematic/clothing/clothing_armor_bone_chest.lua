@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_armor_bone_chest = object_draft_schemat
    complexity = 17, 
    size = 3, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_clothing_armor", 
    xp = 490, 
 
    assemblySkill = "general_assembly", 

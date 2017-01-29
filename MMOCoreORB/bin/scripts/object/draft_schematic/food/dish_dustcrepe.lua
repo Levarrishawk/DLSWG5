@@ -51,7 +51,7 @@ object_draft_schematic_food_dish_dustcrepe = object_draft_schematic_food_shared_
    complexity = 5, 
    size = 1, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_food_general", 
    xp = 30, 
 
    assemblySkill = "general_assembly", 

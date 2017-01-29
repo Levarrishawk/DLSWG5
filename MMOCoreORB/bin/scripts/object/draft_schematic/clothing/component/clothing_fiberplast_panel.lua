@@ -51,7 +51,7 @@ object_draft_schematic_clothing_component_clothing_fiberplast_panel = object_dra
    complexity = 5, 
    size = 2, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_clothing_general", 
    xp = 20, 
 
    assemblySkill = "general_assembly", 

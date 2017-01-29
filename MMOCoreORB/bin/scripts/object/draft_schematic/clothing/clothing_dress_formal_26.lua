@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_dress_formal_26 = object_draft_schemati
    complexity = 16, 
    size = 4, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_clothing_general", 
    xp = 30, 
 
    assemblySkill = "general_assembly", 

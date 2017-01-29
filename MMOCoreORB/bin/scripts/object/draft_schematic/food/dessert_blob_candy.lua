@@ -51,7 +51,7 @@ object_draft_schematic_food_dessert_blob_candy = object_draft_schematic_food_sha
    complexity = 3, 
    size = 1, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_food_general", 
    xp = 10, 
 
    assemblySkill = "general_assembly", 

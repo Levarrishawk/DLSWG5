@@ -51,7 +51,7 @@ object_draft_schematic_clothing_clothing_armor_bone_leggings = object_draft_sche
    complexity = 16, 
    size = 3, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_clothing_armor", 
    xp = 260, 
 
    assemblySkill = "general_assembly", 

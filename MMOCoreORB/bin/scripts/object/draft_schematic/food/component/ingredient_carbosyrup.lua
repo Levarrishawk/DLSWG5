@@ -51,7 +51,7 @@ object_draft_schematic_food_component_ingredient_carbosyrup = object_draft_schem
    complexity = 3, 
    size = 1, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_food_general", 
    xp = 12, 
 
    assemblySkill = "general_assembly", 
