@@ -47,7 +47,7 @@ HealthShot2Command = {
 	damageMultiplier = 1.75,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1.5,
+  actionCostMultiplier = 0.75,
   mindCostMultiplier = 0,
         --accuracyBonus = 50,
 
