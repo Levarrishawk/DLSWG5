@@ -44,7 +44,6 @@
 object_tangible_wearables_armor_mandalorian_armor_mandalorian_bicep_l = object_tangible_wearables_armor_mandalorian_shared_armor_mandalorian_bicep_l:new {
 	templateType = ARMOROBJECT,
 
-	certificationsRequired = { "combat_bountyhunter_novice",
 					certificationsRequired = { "secondary_bountyhunter_novice",
           "combat_mando_novice",
           "combat_soldier_novice",
