@@ -10,7 +10,7 @@ rebel_jakku_teleporter = ConvoTemplate:new {
 first_conv = ConvoScreen:new {
   id = "first_conv",
   leftDialog = "",
-  customDialogText = "You look like you want to get off of this rock.  I am heading to Corellia, but you'll have to ride in the cargo hold.  Sorry for the smell.",
+  customDialogText = "You look like you want to get off of this rock.  I am heading to Talus, but you'll have to ride in the cargo hold.  Sorry for the smell.",
   stopConversation = "false",
   options = {
     {"Whatever, just get me out of this place.", "mayor2"},
@@ -40,7 +40,7 @@ rebel_jakku_teleporter:addScreen(deny);
 mayor2 = ConvoScreen:new {
   id = "mayor2",
   leftDialog = "",
-  customDialogText = "Next stop, Coronet City.",
+  customDialogText = "Next stop, Dearic.",
   stopConversation = "true",
   options = {
   --   {"I see. What would I have to do?","mayor3"},
