@@ -1230,7 +1230,7 @@ void CreatureObjectImplementation::setMaxHAM(int type, int value,
 		healDamage(asCreatureObject(), type, value - hamList.get(type), notifyClient);
 	}
 }
-
+/*
 void CreatureObjectImplementation::setEncumbrance(int type, int value,
 		bool notifyClient) {
 	if (encumbrances.get(type) == value)
@@ -1248,7 +1248,7 @@ void CreatureObjectImplementation::setEncumbrance(int type, int value,
 		encumbrances.set(type, value, NULL);
 	}
 }
-
+*/
 void CreatureObjectImplementation::addMaxHAM(int type, int value,
 		bool notifyClient) {
 	if (type < 0 || type > maxHamList.size()) {
@@ -1261,7 +1261,7 @@ void CreatureObjectImplementation::addMaxHAM(int type, int value,
 
 	setMaxHAM(type, newValue, notifyClient);
 }
-
+/*
 void CreatureObjectImplementation::addEncumbrance(int type, int value,
 		bool notifyClient) {
 	if (type < 0 || type >= encumbrances.size()) {
@@ -1274,6 +1274,7 @@ void CreatureObjectImplementation::addEncumbrance(int type, int value,
 
 	setEncumbrance(type, newValue, notifyClient);
 }
+*/
 
 void CreatureObjectImplementation::setBankCredits(int credits,
 		bool notifyClient) {

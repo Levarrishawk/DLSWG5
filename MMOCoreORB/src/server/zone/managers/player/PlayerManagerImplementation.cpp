@@ -1338,6 +1338,7 @@ bool PlayerManagerImplementation::checkEncumbrancies(CreatureObject* player, Arm
 
 
 void PlayerManagerImplementation::applyEncumbrancies(CreatureObject* player, ArmorObject* armor) {
+/*
 	int healthEncumb = MAX(0, armor->getHealthEncumbrance());
 	int actionEncumb = MAX(0, armor->getActionEncumbrance());
 	int mindEncumb = MAX(0, armor->getMindEncumbrance());
@@ -1363,9 +1364,11 @@ void PlayerManagerImplementation::applyEncumbrancies(CreatureObject* player, Arm
 
 	player->inflictDamage(player, CreatureAttribute::WILLPOWER, mindEncumb, true);
 	player->addMaxHAM(CreatureAttribute::WILLPOWER, -mindEncumb, true);
+	*/
 }
 
 void PlayerManagerImplementation::removeEncumbrancies(CreatureObject* player, ArmorObject* armor) {
+/*
 	int healthEncumb = MAX(0, armor->getHealthEncumbrance());
 	int actionEncumb = MAX(0, armor->getActionEncumbrance());
 	int mindEncumb = MAX(0, armor->getMindEncumbrance());
@@ -1391,6 +1394,8 @@ void PlayerManagerImplementation::removeEncumbrancies(CreatureObject* player, Ar
 
 	player->addMaxHAM(CreatureAttribute::WILLPOWER, mindEncumb, true);
 	player->healDamage(player, CreatureAttribute::WILLPOWER, mindEncumb, true);
+
+	*/
 }
 
 void PlayerManagerImplementation::awardBadge(PlayerObject* ghost, uint32 badgeId) {
