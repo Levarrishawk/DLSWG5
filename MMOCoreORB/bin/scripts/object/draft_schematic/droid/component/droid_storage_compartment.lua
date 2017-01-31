@@ -52,7 +52,7 @@ object_draft_schematic_droid_component_droid_storage_compartment = object_draft_
    size = 2, 
 
    xpType = "crafting_droid_general", 
-   xp = 45, 
+   xp = 650, 
 
    assemblySkill = "droid_assembly", 
    experimentingSkill = "droid_experimentation", 
@@ -62,12 +62,12 @@ object_draft_schematic_droid_component_droid_storage_compartment = object_draft_
    customizationStringNames = {},
    customizationDefaults = {},
 
-   ingredientTemplateNames = {"craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n"},
-   ingredientTitleNames = {"module_frame", "compartment_enclosure", "content_handling_mechanism"},
-   ingredientSlotType = {0, 0, 0},
-   resourceTypes = {"metal", "metal", "metal"},
-   resourceQuantities = {12, 6, 5},
-   contribution = {100, 100, 100},
+   ingredientTemplateNames = {"craft_droid_ingredients_n"},
+   ingredientTitleNames = {"module_frame"},
+   ingredientSlotType = {0},
+   resourceTypes = {"metal"},
+   resourceQuantities = {5},
+   contribution = {100},
 
 
    targetTemplate = "object/tangible/component/droid/droid_storage_compartment.iff",
