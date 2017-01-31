@@ -52,7 +52,7 @@ object_draft_schematic_food_component_container_cask = object_draft_schematic_fo
    size = 1, 
 
    xpType = "crafting_food_general", 
-   xp = 450, 
+   xp = 4500, 
 
    assemblySkill = "food_assembly", 
    experimentingSkill = "food_experimentation", 
@@ -62,12 +62,12 @@ object_draft_schematic_food_component_container_cask = object_draft_schematic_fo
    customizationStringNames = {},
    customizationDefaults = {},
 
-   ingredientTemplateNames = {"craft_food_ingredients_n", "craft_food_ingredients_n"},
-   ingredientTitleNames = {"crystal", "cask_trim"},
-   ingredientSlotType = {0, 1},
-   resourceTypes = {"gemstone_crystalline", "object/tangible/component/clothing/shared_trim.iff"},
-   resourceQuantities = {150, 2},
-   contribution = {100, 100},
+   ingredientTemplateNames = {"craft_food_ingredients_n"},
+   ingredientTitleNames = {"crystal"},
+   ingredientSlotType = {0},
+   resourceTypes = {"gemstone_crystalline"},
+   resourceQuantities = {150},
+   contribution = {100},
 
 
    targetTemplate = "object/tangible/component/food/container_cask.iff",

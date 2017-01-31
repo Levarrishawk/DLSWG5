@@ -52,7 +52,7 @@ object_draft_schematic_food_component_container_barrel = object_draft_schematic_
    size = 1, 
 
    xpType = "crafting_food_general", 
-   xp = 500, 
+   xp = 5000, 
 
    assemblySkill = "food_assembly", 
    experimentingSkill = "food_experimentation", 
@@ -62,12 +62,12 @@ object_draft_schematic_food_component_container_barrel = object_draft_schematic_
    customizationStringNames = {},
    customizationDefaults = {},
 
-   ingredientTemplateNames = {"craft_food_ingredients_n", "craft_food_ingredients_n", "craft_food_ingredients_n"},
-   ingredientTitleNames = {"barrel_body", "power_conditioner", "coolant_control"},
-   ingredientSlotType = {0, 1, 1},
-   resourceTypes = {"metal_nonferrous", "object/tangible/component/item/shared_electronic_power_conditioner.iff", "object/tangible/component/item/shared_electronic_control_unit.iff"},
-   resourceQuantities = {300, 1, 1},
-   contribution = {100, 100, 100},
+   ingredientTemplateNames = {"craft_food_ingredients_n"},
+   ingredientTitleNames = {"barrel_body"},
+   ingredientSlotType = {0},
+   resourceTypes = {"metal_nonferrous"},
+   resourceQuantities = {300},
+   contribution = {100},
 
 
    targetTemplate = "object/tangible/component/food/container_barrel.iff",
