@@ -52,7 +52,7 @@ object_draft_schematic_droid_bounty_seeker_transmitter = object_draft_schematic_
    size = 1, 
 
    xpType = "crafting_droid_general", 
-   xp = 300, 
+   xp = 3000, 
 
    assemblySkill = "droid_assembly", 
    experimentingSkill = "droid_experimentation", 
@@ -62,12 +62,12 @@ object_draft_schematic_droid_bounty_seeker_transmitter = object_draft_schematic_
    customizationStringNames = {},
    customizationDefaults = {},
 
-   ingredientTemplateNames = {"craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n"},
-   ingredientTitleNames = {"primary_frame", "body_shell", "search_parameter_storage_circuit", "command_interpreter", "autonomous_searcher_logic_unit"},
-   ingredientSlotType = {0, 0, 1, 1, 1},
-   resourceTypes = {"metal_ferrous", "chemical", "object/tangible/component/item/shared_electronics_memory_module.iff", "object/tangible/component/item/shared_electronics_gp_module.iff", "object/tangible/component/item/shared_electronics_gp_module.iff"},
-   resourceQuantities = {30, 70, 1, 1, 1},
-   contribution = {100, 100, 100, 100, 100},
+   ingredientTemplateNames = {"craft_droid_ingredients_n", "craft_droid_ingredients_n"},
+   ingredientTitleNames = {"primary_frame", "body_shell", "autonomous_searcher_logic_unit"},
+   ingredientSlotType = {0, 0, 1},
+   resourceTypes = {"metal_ferrous", "chemical", "object/tangible/component/item/shared_electronics_memory_module.iff", },
+   resourceQuantities = {10, 10, 1},
+   contribution = {100, 100, 100},
 
 
    targetTemplate = "object/tangible/mission/mission_bounty_droid_seeker.iff",
