@@ -103,7 +103,7 @@ jtlresources = "steel_bicorbantium,steel_arveshian,aluminum_perovskitic,copper_b
 
   -- The minimum pool includes is a table of resources and occurrences. A resource will always be in spawn a number of times equal to it's occurrence.
   -- The minimum pool will never include the items in the excludes
-minimumpoolincludes = { {"steel", 4}, {"copper", 4}, {"gas", 4}, {"aluminum", 4}, {"ore_extrusive", 2}, {"ore_intrusive", 2}, {"ore_carbonate", 2}, {"gemstone_crystalline", 2}, {"gemstone_armophous", 2}, {"radioactive_known", 2}, {"fuel_petrochem_solid", 2}, {"fuel_petrochem_liquid", 2}, {"petrochem_inert_polymer", 2}, {"petrochem_inert_lubricating_oil", 2} }
+minimumpoolincludes = { {"steel", 4}, {"copper", 4}, {"gas", 4}, {"gas_inert_known_culsion", 1}, {"aluminum", 4}, {"ore_extrusive", 2}, {"ore_intrusive", 2}, {"ore_carbonate", 2}, {"gemstone_crystalline", 2}, {"gemstone_armophous", 2}, {"radioactive_known", 2}, {"fuel_petrochem_solid", 2}, {"fuel_petrochem_liquid", 2}, {"petrochem_inert_polymer", 2}, {"petrochem_inert_lubricating_oil", 2} }
 minimumpoolexcludes = jtlresources
 
 -- The random pool includes is a table of resources and weights. The higher the weight, the more likely the resource is to be chosen when a random pool resource shifts.
