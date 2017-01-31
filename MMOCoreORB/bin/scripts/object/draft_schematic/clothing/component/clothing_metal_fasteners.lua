@@ -52,7 +52,7 @@ object_draft_schematic_clothing_component_clothing_metal_fasteners = object_draf
    size = 2, 
 
    xpType = "crafting_clothing_general", 
-   xp = 30, 
+   xp = 300, 
 
    assemblySkill = "general_assembly", 
    experimentingSkill = "general_experimentation", 
@@ -66,7 +66,7 @@ object_draft_schematic_clothing_component_clothing_metal_fasteners = object_draf
    ingredientTitleNames = {"fastener_housing", "fastener_clip"},
    ingredientSlotType = {0, 0},
    resourceTypes = {"metal", "metal"},
-   resourceQuantities = {5, 10},
+   resourceQuantities = {5, 5},
    contribution = {100, 100},
 
 

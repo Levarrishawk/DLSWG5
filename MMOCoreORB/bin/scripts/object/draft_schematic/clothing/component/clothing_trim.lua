@@ -62,12 +62,12 @@ object_draft_schematic_clothing_component_clothing_trim = object_draft_schematic
    customizationStringNames = {},
    customizationDefaults = {},
 
-   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
-   ingredientTitleNames = {"body", "binding_and_reinforcement"},
+   ingredientTemplateNames = {"craft_clothing_ingredients_n"},
+   ingredientTitleNames = {"body"},
    ingredientSlotType = {0, 0},
-   resourceTypes = {"fiberplast", "petrochem_inert"},
-   resourceQuantities = {20, 5},
-   contribution = {100, 100},
+   resourceTypes = {"fiberplast"},
+   resourceQuantities = {5},
+   contribution = {100},
 
 
    targetTemplate = "object/tangible/component/clothing/trim.iff",

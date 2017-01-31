@@ -52,7 +52,7 @@ object_draft_schematic_clothing_component_clothing_padding_segment = object_draf
    size = 1, 
 
    xpType = "crafting_clothing_general", 
-   xp = 55, 
+   xp = 2000, 
 
    assemblySkill = "clothing_assembly", 
    experimentingSkill = "clothing_experimentation", 
@@ -62,12 +62,12 @@ object_draft_schematic_clothing_component_clothing_padding_segment = object_draf
    customizationStringNames = {},
    customizationDefaults = {},
 
-   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
-   ingredientTitleNames = {"body", "stuffing", "binding"},
+   ingredientTemplateNames = {"craft_clothing_ingredients_n"},
+   ingredientTitleNames = {"binding"},
    ingredientSlotType = {0, 0, 0},
-   resourceTypes = {"hide", "hide_wooly", "fiberplast"},
-   resourceQuantities = {15, 10, 5},
-   contribution = {100, 100, 100},
+   resourceTypes = {"fiberplast"},
+   resourceQuantities = {5},
+   contribution = {100},
 
 
    targetTemplate = "object/tangible/component/clothing/padding_segment.iff",

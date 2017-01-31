@@ -52,7 +52,7 @@ object_draft_schematic_clothing_component_clothing_reinforced_fiber_panels = obj
    size = 1, 
 
    xpType = "crafting_clothing_general", 
-   xp = 75, 
+   xp = 1000, 
 
    assemblySkill = "clothing_assembly", 
    experimentingSkill = "clothing_experimentation", 
@@ -62,12 +62,12 @@ object_draft_schematic_clothing_component_clothing_reinforced_fiber_panels = obj
    customizationStringNames = {},
    customizationDefaults = {},
 
-   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
-   ingredientTitleNames = {"body", "binding", "padding", "reinforcement", "enhancement"},
-   ingredientSlotType = {0, 0, 0, 0, 3},
-   resourceTypes = {"fiberplast", "petrochem_inert", "fiberplast", "metal", "object/tangible/component/bio/shared_base_bio_component_clothing_field.iff"},
-   resourceQuantities = {5, 5, 15, 5, 1},
-   contribution = {100, 100, 100, 100, 100},
+   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
+   ingredientTitleNames = {"reinforcement", "enhancement"},
+   ingredientSlotType = {0, 3},
+   resourceTypes = {"metal", "object/tangible/component/bio/shared_base_bio_component_clothing_field.iff"},
+   resourceQuantities = {5, 1},
+   contribution = {100, 100},
 
 
    targetTemplate = "object/tangible/component/clothing/reinforced_fiber_panels.iff",
