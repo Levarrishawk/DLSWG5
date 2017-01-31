@@ -36,8 +36,8 @@ nightsister_sentinel = Creature:new {
 				{group = "nightsister_common", chance = 2000000},
 				{group = "armor_attachments", chance = 250000},
 				{group = "clothing_attachments", chance = 250000},
-				{group = "jedi_robes_tier4", chance = 2750000},
-				{group = "jedi_robes_tier4_dark", chance = 2750000}
+				{group = "jedi_robes_tier4", chance = 250000},
+				{group = "jedi_robes_tier4_dark", chance = 250000}
 			}
 		}
 	},
