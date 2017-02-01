@@ -45,7 +45,7 @@ object_tangible_loot_loot_schematic_death_watch_razor_knuckler_schematic = objec
 	templateType = LOOTSCHEMATIC,
 	objectMenuComponent = "LootSchematicMenuComponent",
 	attributeListComponent = "LootSchematicAttributeListComponent",
-	requiredSkill = "crafting_weaponsmith_master",
+	requiredSkill = "trader_munitions_master",
 	targetDraftSchematic = "object/draft_schematic/weapon/razor_knuckler.iff",
 	targetUseCount = 1
 }

@@ -46,7 +46,7 @@ object_tangible_loot_quest_shield_generator_personal_imperial_test_schematic = o
 	templateType = LOOTSCHEMATIC,
 	objectMenuComponent = "LootSchematicMenuComponent",
 	attributeListComponent = "LootSchematicAttributeListComponent",
-	requiredSkill = "crafting_armorsmith_master", 
+	requiredSkill = "trader_munitions_master", 
 	targetDraftSchematic = "object/draft_schematic/armor/shield_generator_personal_imperial_test.iff",
 	targetUseCount = 5
 }

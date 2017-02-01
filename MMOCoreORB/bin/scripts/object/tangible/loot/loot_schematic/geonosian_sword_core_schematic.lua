@@ -45,7 +45,7 @@ object_tangible_loot_loot_schematic_geonosian_sword_core_schematic = object_tang
 	templateType = LOOTSCHEMATIC,
 	objectMenuComponent = "LootSchematicMenuComponent",
 	attributeListComponent = "LootSchematicAttributeListComponent",
-	requiredSkill = "crafting_weaponsmith_master",
+	requiredSkill = "trader_munitions_master",
 	targetDraftSchematic = "object/draft_schematic/weapon/component/sword_core_geo.iff",
 	targetUseCount = 5
 }

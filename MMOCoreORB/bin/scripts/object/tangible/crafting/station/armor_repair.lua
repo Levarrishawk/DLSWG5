@@ -47,7 +47,7 @@ object_tangible_crafting_station_armor_repair = object_tangible_crafting_station
 
 	canRepairType = 256, -- Armor
 
-	boostSkill = "crafting_armorsmith_master",
+	boostSkill = "trader_munitions_master",
 	boostSkillMod = "armor_repair",
 
 	stationType = 1,

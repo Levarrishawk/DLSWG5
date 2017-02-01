@@ -117,9 +117,9 @@ DeathWatchBunkerScreenPlay = ScreenPlay:new {
 
 	partStrings = { "@dungeon/death_watch:armorsmith_items", "@dungeon/death_watch:droid_engineer_items", "@dungeon/death_watch:tailored_items" },
 
-	terminalSkills = { "", "", "", "", "crafting_armorsmith_master", "crafting_droidengineer_master", "crafting_tailor_master", "crafting_artisan_master" },
+	terminalSkills = { "", "", "", "", "trader_munitions_master", "trader_engineering_master", "trader_domestics_master", "trader_engineering_master" },
 
-	terminalSkillMessage = { "@dungeon/death_watch:master_armorsmith_required", "@dungeon/death_watch:master_droidengineer_required", "@dungeon/death_watch:master_tailor_required", "@dungeon/death_watch:master_artisan_required" },
+	terminalSkillMessage = { "Master Munitions Trader Required", "Master Engineering Trader Required", "Master Domestics Trader Required", "Master Engineering Trader Required" },
 
 	missingSkillMessage = { "", "", "", "", "@dungeon/death_watch:not_enough_armorsmith_skill", "@dungeon/death_watch:not_enough_droidengineer_skill", "@dungeon/death_watch:not_enough_tailor_skill" },
 

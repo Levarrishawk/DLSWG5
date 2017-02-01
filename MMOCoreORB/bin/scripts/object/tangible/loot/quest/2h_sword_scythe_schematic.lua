@@ -45,7 +45,7 @@ object_tangible_loot_quest_2h_sword_scythe_schematic = object_tangible_loot_ques
 	templateType = LOOTSCHEMATIC,
 	objectMenuComponent = "LootSchematicMenuComponent",
 	attributeListComponent = "LootSchematicAttributeListComponent",
-	requiredSkill = "crafting_weaponsmith_master",
+	requiredSkill = "trader_munitions_master",
 	targetDraftSchematic = "object/draft_schematic/weapon/2h_sword_scythe.iff",
 	targetUseCount = 2
 }
