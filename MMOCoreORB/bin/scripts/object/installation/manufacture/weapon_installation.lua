@@ -46,6 +46,7 @@ object_installation_manufacture_weapon_installation = object_installation_manufa
 	lotSize = 1,
 	baseMaintenanceRate = 50,
 	basePowerRate = 50,
+	allowedZones = {"corellia", "dantooine", "dathomir", "endor", "lok", "naboo", "rori", "talus", "tatooine", "yavin4", "chandrila"},
 	objectMenuComponent = "FactoryObjectMenuComponent"
 
 

@@ -46,6 +46,7 @@ object_installation_manufacture_clothing_factory = object_installation_manufactu
 	lotSize = 1,
 	baseMaintenanceRate = 50,
 	basePowerRate = 50,
+	allowedZones = {"corellia", "dantooine", "dathomir", "endor", "lok", "naboo", "rori", "talus", "tatooine", "yavin4", "chandrila"},
 	width = 3,
 	length = 3,
 	objectMenuComponent = "FactoryObjectMenuComponent",
