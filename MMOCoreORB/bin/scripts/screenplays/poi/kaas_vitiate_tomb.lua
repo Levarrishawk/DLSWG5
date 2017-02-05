@@ -12,6 +12,8 @@ end
 
 function KaasVitiateScreenPlay:spawnMobiles()
 -- Entrance
+
+--[[
 	spawnMobile("kaas", "insane_vitiate_cultist", 200, -0.1, 0.0, 0.3, 0, 35791484)
 	spawnMobile("kaas", "insane_vitiate_cultist", 200, 2.0, 0.0, -4.2, 0, 35791484)
 	spawnMobile("kaas", "insane_vitiate_cultist", 200, -2.1, 0.0, -4.2, 0, 35791484)
@@ -39,4 +41,6 @@ function KaasVitiateScreenPlay:spawnMobiles()
 	spawnMobile("kaas", "insane_vitiate_cultist", 200, 4.8, -6.4, -4.0, 179, 35791495)
 	spawnMobile("kaas", "insane_vitiate_cultist", 200, 23.4, -6.5, -6.3, -45, 35791492)
 	spawnMobile("kaas", "insane_vitiate_cultist", 200, -22.7, -6.5, -6.5, 45, 35791493)
+	
+	--]]
    end

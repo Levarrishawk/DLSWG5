@@ -5,10 +5,10 @@ kaas_imperial_garison = ScreenPlay:new {
 
 }
 
-registerScreenPlay("kaas_imperial_garison", true) print("registered KIG")
+registerScreenPlay("kaas_imperial_garison", true)-- print("registered KIG")
 
 function kaas_imperial_garison:start()
-	if (isZoneEnabled("kaas")) then print("kaas enable check")
+	if (isZoneEnabled("kaas")) then -- print("kaas enable check")
 		self:spawnMobiles() ("spawning mobiles function")
 	end
 end
@@ -37,7 +37,9 @@ function kaas_imperial_garison:spawnMobiles()
 	spawnMobile("kaas", "stormtrooper", 300, -5147.8, 80.0, -2265.7, 90, 0)
 	spawnMobile("kaas", "stormtrooper", 300, -5149.2, 80.0, -2224.3, 179, 0)
 	spawnMobile("kaas", "at_st", 300, -5119.9, 80.0, -2192.4, 179, 0)
-	
+
+
+--[[	
 	-- Inside Police Station
 	spawnMobile("kaas", "stormtrooper_squad_leader", 300, -0.0, 2.0, 3.9, 0, 35791428)
 	spawnMobile("kaas", "stormtrooper", 300, -0.0, 1.0, -21.7, 0, 35791433)
@@ -56,8 +58,10 @@ function kaas_imperial_garison:spawnMobiles()
 	spawnMobile("kaas", "stormtrooper", 300, -4.8, 7.0, -4.7, -131, 35791436)
 	spawnMobile("kaas", "stormtrooper", 300, 3.1, 7.0, -11.3, 121, 35791436)
 	spawnMobile("kaas", "stormtrooper", 300, -0.3, 7.0, -10.20, 123, 35791436)
+
 	
-	spawnMobile("kaas", "prophet_kadann", 300, 14.5, 1.0, -21.2, 0, 35791432)
+	--spawnMobile("kaas", "prophet_kadann", 300, 14.5, 1.0, -21.2, 0, 35791432)
+	--]]
 	
 	-- Temple Entrance Guards
 
@@ -70,6 +74,7 @@ function kaas_imperial_garison:spawnMobiles()
 	spawnMobile("kaas", "stormtrooper", 300, -5105.2, 80.0, -2376.7, 0, 0)
 	
   -- Dark Temple Interior
+  --[[
 	spawnMobile("kaas", "prophet_of_the_dark_side", 900, -18.8, -2.0, 11.8, 0, 35791397)
 	spawnMobile("kaas", "prophet_of_the_dark_side", 900, 2.0, -17.0, -18.8, 0, 35791397)
 	spawnMobile("kaas", "prophet_of_the_dark_side", 900, 18.8, -26.5, 2.3, 0, 35791397)
@@ -86,7 +91,10 @@ function kaas_imperial_garison:spawnMobiles()
 	spawnMobile("kaas", "prophet_of_the_dark_side", 900, -20.9, -1.3, -11.0, 90, 35791397)
 	spawnMobile("kaas", "prophet_of_the_dark_side", 900, -5120.9, -81.3, -2406.3, 0, 0)
 	
+	--]]
 -- Det HQ
+
+--[[
 	spawnMobile("kaas", "dark_trooper", 200, -1.8, -6.8, -5.1, 90, 35791451)
 	spawnMobile("kaas", "dark_trooper", 200, 6.9, -6.8, -4.9, -90, 35791451)
 	spawnMobile("kaas", "imperial_inquisitor", 200, 4.5, -6.8, -5.9, 0, 35791451)
@@ -108,8 +116,11 @@ function kaas_imperial_garison:spawnMobiles()
 	spawnMobile("kaas", "imperial_inquisitor", 200, 16.8, -13.7, 8.1, -42, 35791455)
 	spawnMobile("kaas", "dark_trooper", 200, 13.2, -13.8, -14.3, 0, 35791456)
 	spawnMobile("kaas", "dark_trooper", 200, 17.8, -13.8, -14.2, 0, 35791456)
+	--]]
 	
 -- Research Facility
+
+--[[
 	spawnMobile("kaas", "imperial_noncom", 200, 3.4, -12.0, 30.3, 179, 35791462)
 	spawnMobile("kaas", "imperial_captain", 200, 19.4, -12.0, 51.9, 179, 35791462)
 	spawnMobile("kaas", "imperial_lieutenant_colonel", 200, 25.4, -12.0, 43.7, 0, 35791462)
@@ -251,5 +262,7 @@ function kaas_imperial_garison:spawnMobiles()
 	spawnMobile("kaas", "imperial_inquisitor", 200, 65.1, -12.0, 58.1, 168, 35791469)
 	spawnMobile("kaas", "imperial_inquisitor", 200, 55.6, -12.0, 59.3, 21, 35791469)
 	spawnMobile("kaas", "imperial_inquisitor", 200, 50.1, -12.0, 58.0, 179, 35791469)
+	
+	--]]
 	
 end

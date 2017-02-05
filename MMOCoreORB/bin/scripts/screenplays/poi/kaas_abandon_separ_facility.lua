@@ -31,6 +31,8 @@ end
 
 function KaasSeparatistScreenPlay:spawnMobiles()
 -- Entrance
+
+--[[
 	spawnMobile("kaas", "alert_droideka", 200, 10.3, 10.2, -4.1, -116, 35791497)
 	spawnMobile("kaas", "alert_droideka", 200, 37.3, 10.3, -14.0, 0, 35791498)	
 	spawnMobile("kaas", "death_watch_battle_droid", 200, 25.1, 4.5, -27.0, 90, 35791499)
@@ -86,4 +88,6 @@ function KaasSeparatistScreenPlay:spawnMobiles()
 	spawnMobile("kaas", "crazed_geonosian_guard", 200, 22.2, -34.0, -374.9, -179, 35791538)
 	spawnMobile("kaas", "crazed_geonosian_guard", 200, 16.2, -34.0, -383.9, -179, 35791538)
 	spawnMobile("kaas", "crazed_geonosian_guard", 200, -109.3, -22.2, -111.9, 90, 35791509)
+	
+	--]]
    end

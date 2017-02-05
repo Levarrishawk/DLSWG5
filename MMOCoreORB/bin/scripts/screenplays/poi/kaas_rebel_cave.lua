@@ -32,7 +32,7 @@ end
 function kaas_rebel_cave:spawnMobiles()
 
 -- Mobiles
-
+--[[
 	spawnMobile("kaas", "rebel_commando", 200, -90.5, -103.4, -124.8, 179, 35791564)
 	spawnMobile("kaas", "rebel_commando", 200, -94.2, -102.8, -135.1, 139, 35791561)
 	spawnMobile("kaas", "rebel_commando", 200, -79.1, -100.7, -136.4, 154, 35791561)
@@ -98,5 +98,5 @@ function kaas_rebel_cave:spawnMobiles()
 	spawnMobile("kaas", "rebel_commando", 200, 3356.7, 98.0, 2597.6, 0, 0)
 	spawnMobile("kaas", "rebel_commando", 200, 3345.3, 96.4, 2612.4, 0, 0)
 	spawnMobile("kaas", "rebel_commando", 200, 3329.8, 102.8, 2617.4, -25, 0)
-
+--]]
 end
