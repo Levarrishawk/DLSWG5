@@ -517,3 +517,11 @@ includeFile("heroics/fake_imperial_officer.lua")
 includeFile("cities/florrum_outpost.lua")
 includeFile("heroics/hondo_return_teleporter.lua")
 includeFile("heroics/hondo_send_teleporter.lua")
+
+-- Dromund Kaas
+includeFile("poi/kaas_abandon_separ_facility.lua")
+includeFile("poi/kaas_city_ruins.lua")
+includeFile("poi/kaas_imperial_garrison.lua")
+includeFile("poi/kaas_rebel_cave.lua")
+includeFile("poi/kaas_sith_facility.lua")
+includeFile("poi/kaas_vitiate_tomb.lua")
