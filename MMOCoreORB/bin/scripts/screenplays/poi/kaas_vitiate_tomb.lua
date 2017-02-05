@@ -1,4 +1,4 @@
-local ObjectManager = require("managers.object.object_manager") print("Object manager loaded for KIG")
+local ObjectManager = require("managers.object.object_manager")
 
 KaasVitiateScreenPlay = ScreenPlay:new {
 	numberOfActs = 1;

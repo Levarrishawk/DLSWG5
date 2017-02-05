@@ -1,15 +1,15 @@
-local ObjectManager = require("managers.object.object_manager")-- print("Object manager loaded for KIG")
+local ObjectManager = require("managers.object.object_manager")
 
 kaas_imperial_garison = ScreenPlay:new {
 	numberOfActs = 1,
 
 }
 
-registerScreenPlay("kaas_imperial_garison", true)-- print("registered KIG")
+registerScreenPlay("kaas_imperial_garison", true)
 
 function kaas_imperial_garison:start()
-	if (isZoneEnabled("kaas")) then -- print("kaas enable check")
-		self:spawnMobiles()-- ("spawning mobiles function")
+	if (isZoneEnabled("kaas")) then
+		self:spawnMobiles()
 	end
 end
 
@@ -128,9 +128,7 @@ function kaas_imperial_garison:spawnMobiles()
 
 
 	spawnMobile("kaas", "imperial_noncom", 200, 3.4, -12.0, 30.3, 179, 36000068)
-	spawnMobile("kaas", "imperial_captain", 200, 19.4, -12.0, 51.9, 179, 36000068)
 	spawnMobile("kaas", "imperial_lieutenant_colonel", 200, 25.4, -12.0, 43.7, 0, 36000068)
-	spawnMobile("kaas", "imperial_captain", 200, 10.2, -12.0, 47.1, -90, 36000068)
 	spawnMobile("kaas", "imperial_lieutenant_general", 200, 3.6, -12.0, 65.4, 179, 36000068)
 	spawnMobile("kaas", "imperial_major", 200, 9.8, -12.0, 62.8, 90, 36000068)
 	spawnMobile("kaas", "imperial_corporal", 200, -2.7, -12.0, 63.2, -90, 36000068)
