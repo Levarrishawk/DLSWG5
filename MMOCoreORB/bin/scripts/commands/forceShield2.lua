@@ -43,7 +43,7 @@
 
 ForceShield2Command = {
         name = "forceshield2",
-        forceCost = 50,
+        forceCost = 10,
         duration = 1800,
         --animationCRC = hashCode()
         clientEffect = "clienteffect/pl_force_shield_self.cef",
