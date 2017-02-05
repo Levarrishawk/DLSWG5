@@ -438,6 +438,43 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   
   --  Collective Commerce District NPCs
   
+  pNpc = spawnMobile("coruscant", "commoner", 60, 3.3, 0.1, 3.4, -90, 37000549)
+  self:setMoodString(pNpc, "npc_sitting_chair")
   
+  pNpc = spawnMobile("coruscant", "commoner", 60, 1.0, 0.1, 3.4, 90, 37000549)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -0.6, 0.1, 3.4, -90, 37000549)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -3.2, 0.1, 3.4, 90, 37000549)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -4.5, 0.1, 3.4, -90, 37000549)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -6.6, 0.1, 3.4, 90, 37000549)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -5.7, 0.1, -0.3, -150, 37000549)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -7.0, 0.1, -1.8, -172, 37000549)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -2.3, 0.1, -0.1, 172, 37000549)
+  self:setMoodString(pNpc, "angry")
+  
+  spawnMobile("coruscant", "r4", 60, -1851.8, 40, -143.6, 9, 0)
+  
+  pNpc = spawnMobile("coruscant", "commoner_fat", 60, -1852.1, 40, -141.5, 165, 0)
+  self:setMoodString(pNpc, "conversation")
+  
+  spawnMobile("coruscant", "commoner", 60, -1853.8, 40, -128.2, -80, 0)
+  spawnMobile("coruscant", "commoner", 60, -1879.2, 40, -122.7, 95, 0)
+  spawnMobile("coruscant", "commoner", 60, -1912.6, 40, -119.8, -110, 0)
+  spawnMobile("coruscant", "commoner", 60, -1929.6, 40, -133.6, 179, 0)
+  spawnMobile("coruscant", "commoner", 60, -1916.9, 40, -170.7, -7, 0)
+  spawnMobile("coruscant", "commoner", 60, -1931.8, 40, -196.3, 34, 0)
   
 end
