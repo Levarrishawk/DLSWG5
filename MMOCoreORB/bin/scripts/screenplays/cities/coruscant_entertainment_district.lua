@@ -180,6 +180,11 @@ function CoruscantEntertainmentScreenPlay:spawnSceneObjects()
   spawnSceneObject("coruscant", "object/static/structure/general/all_foodcart_s01.iff", -1.8, 0.1, -7.5, 37000549, math.rad(90) )
   --exterior
   spawnSceneObject("coruscant", "object/static/structure/corellia/corl_fountain_brazier_square_s01.iff", -1898.7, 40, -178.2, 0, math.rad(90) )
+  spawnSceneObject("coruscant", "object/static/structure/corellia/corl_fountain_brazier_square_s01.iff", -1868.2, 40, -47, 0, math.rad(90) )
+
+  -- Captured imperial bunker
+  
+
 end
 
 function CoruscantEntertainmentScreenPlay:spawnMobiles()
@@ -461,7 +466,7 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   pNpc = spawnMobile("coruscant", "commoner", 60, -5.7, 0.1, -0.3, -150, 37000549)
   self:setMoodString(pNpc, "conversation")
   
-  pNpc = spawnMobile("coruscant", "commoner", 60, -7.0, 0.1, -1.8, -172, 37000549)
+  pNpc = spawnMobile("coruscant", "commoner", 60, -7.0, 0.1, -1.8, 32, 37000549)
   self:setMoodString(pNpc, "conversation")
   
   pNpc = spawnMobile("coruscant", "commoner", 60, -2.3, 0.1, -0.1, 172, 37000549)
@@ -517,5 +522,36 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   spawnMobile("coruscant", "commoner", 60, -1977.9, 40, -154.9, -102, 0)
   spawnMobile("coruscant", "commoner", 60, -1971.9, 40, -199.4, 85, 0)
   
+  spawnMobile("coruscant", "imperial_first_lieutenant", 60, -1809.2, 47, -22.1, -142, 0)
+  spawnMobile("coruscant", "imperial_first_lieutenant", 60, -1804.8, 47, -23.9, 178, 0)
+  spawnMobile("coruscant", "imperial_first_lieutenant", 60, -1811, 47, -18, -90, 0)
+  
+  spawnMobile("coruscant", "stormtrooper", 60, 4.0, 0.5, 2.7, 176, 37000756)
+  spawnMobile("coruscant", "stormtrooper", 60, -1799.1, 40, -21.8, 85, 0)
+  spawnMobile("coruscant", "stormtrooper", 60, -1800.9, 40, -26.9, 176, 0)
+  spawnMobile("coruscant", "stormtrooper", 60, -1808.9, 40, -26.9, 176, 0)
+  spawnMobile("coruscant", "stormtrooper", 60, -1813.7, 40, -21.9, -90, 0)
+  spawnMobile("coruscant", "stormtrooper", 60, -1813.7, 40, -14.1, -90, 0)
+  
+  spawnMobile("coruscant", "rebel_trooper", 60, 0.2, 0.3, 3.2, 0, 37000570)
+  spawnMobile("coruscant", "rebel_trooper", 60, 4.6, 0.3, -1.1, -25, 37000570)
+  
+  spawnMobile("coruscant", "rebel_trooper", 60, 5.6, -6.8, -5.1, -7, 37000573)
+  spawnMobile("coruscant", "rebel_trooper", 60, 2.8, -6.8, -5.8, 0, 37000573)
+  
+  spawnMobile("coruscant", "rebel_trooper", 60, -2.6, -13.7, -9.6, 0, 37000575)
+  spawnMobile("coruscant", "rebel_trooper", 60, -5.8, -13.7, -4.2, 0, 37000575)
+  spawnMobile("coruscant", "rebel_trooper", 60, -1.8, -13.7, 0.6, 0, 37000575)
+  
+  spawnMobile("coruscant", "rebel_trooper", 60, -3.1, -13.8, 11.9, 0, 37000576)
+  spawnMobile("coruscant", "rebel_trooper", 60, 4.5, -13.8, 12.6, -90, 37000576)
+  
+  spawnMobile("coruscant", "rebel_trooper", 60, 17, -13.8, 11.6, -125, 37000577)
+  spawnMobile("coruscant", "rebel_trooper", 60, 15.5, -13.8, 6.8, 10, 37000577)
+  
+  spawnMobile("coruscant", "rebel_trooper", 60, 14.5, -13.8, -7.6, 157, 37000578)
+  spawnMobile("coruscant", "rebel_trooper", 60, 15.7, -13.8, -13.6, -5, 37000578)
+  
+  spawnMobile("coruscant", "fbase_rebel_heavy_trooper", 60, 14.8, -11.5, -20.8, -11, 37000578)
   
 end
