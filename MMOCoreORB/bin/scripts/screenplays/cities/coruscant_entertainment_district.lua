@@ -536,6 +536,8 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   spawnMobile("coruscant", "rebel_trooper", 60, 0.2, 0.3, 3.2, 0, 37000570)
   spawnMobile("coruscant", "rebel_trooper", 60, 4.6, 0.3, -1.1, -25, 37000570)
   
+  spawnMobile("coruscant", "rebel_recruiter", 60, -4.3, 0.3, -4.3, 90, 37000571)
+  
   spawnMobile("coruscant", "rebel_trooper", 60, 5.6, -6.8, -5.1, -7, 37000573)
   spawnMobile("coruscant", "rebel_trooper", 60, 2.8, -6.8, -5.8, 0, 37000573)
   

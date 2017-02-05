@@ -510,6 +510,7 @@ includeFile("cities/coruscant_entertainment_district.lua")
 includeFile("heroics/retreat_curator.lua")
 includeFile("heroics/death_sticks.lua")
 includeFile("heroics/dex_diner.lua")
+includeFile("heroics/fake_imperial_officer.lua")
 
 -- Florrum hidden world.
 
