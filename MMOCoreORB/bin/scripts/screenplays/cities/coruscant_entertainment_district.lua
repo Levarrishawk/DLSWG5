@@ -164,6 +164,7 @@ function CoruscantEntertainmentScreenPlay:spawnSceneObjects()
 
 
 -- Collective Commerce district Objects
+  --Dex's Diner
   spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_piece_curve_s1.iff", 3.8, 0.1, -2.2, 37000549, math.rad(0) )
   spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_piece_straight_s2.iff", -1, 0.1, -1.3, 37000549, math.rad(0) )
   spawnSceneObject("coruscant", "object/tangible/furniture/modern/bar_piece_straight_s1.iff", -5.5, 0.1, -1.9, 37000549, math.rad(180) )
@@ -177,7 +178,8 @@ function CoruscantEntertainmentScreenPlay:spawnSceneObjects()
   spawnSceneObject("coruscant", "object/tangible/furniture/cheap/chair_s01.iff", -4.5, 0.1, 3.5, 37000549, math.rad(-90) )
   spawnSceneObject("coruscant", "object/tangible/furniture/cheap/chair_s01.iff", -6.7, 0.1, 3.5, 37000549, math.rad(90) )
   spawnSceneObject("coruscant", "object/static/structure/general/all_foodcart_s01.iff", -1.8, 0.1, -7.5, 37000549, math.rad(90) )
-
+  --exterior
+  spawnSceneObject("coruscant", "object/static/structure/corellia/corl_fountain_brazier_square_s01.iff", -1898.7, 40, -178.2, 0, math.rad(90) )
 end
 
 function CoruscantEntertainmentScreenPlay:spawnMobiles()
@@ -476,5 +478,44 @@ function CoruscantEntertainmentScreenPlay:spawnMobiles()
   spawnMobile("coruscant", "commoner", 60, -1929.6, 40, -133.6, 179, 0)
   spawnMobile("coruscant", "commoner", 60, -1916.9, 40, -170.7, -7, 0)
   spawnMobile("coruscant", "commoner", 60, -1931.8, 40, -196.3, 34, 0)
+  
+  pNpc = spawnMobile("coruscant", "commoner_fat", 60, -1888.2, 40, -192.3, -175, 0)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("coruscant", "commoner_fat", 60, -1889.6, 40, -195.9, 22, 0)
+  self:setMoodString(pNpc, "conversation")
+  
+  spawnMobile("coruscant", "commoner", 60, -1874.8, 40, -153.9, 0, 0)
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -1847.3, 40, -163.8, 175, 0)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("coruscant", "commoner_fat", 60, -1847.8, 40, -166.6, 8, 0)
+  self:setMoodString(pNpc, "conversation")
+  
+  spawnMobile("coruscant", "commoner", 60, -1846.0, 40, -197.3, 51, 0)
+  
+  pNpc = spawnMobile("coruscant", "commoner_fat", 60, -1874.2, 40, -96.2, 48, 0)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -1871.3, 40, -93.1, -127, 0)
+  self:setMoodString(pNpc, "angry")
+  
+  spawnMobile("coruscant", "commoner", 60, -1902.8, 40, -77.2, -91, 0)
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -1921.7, 40, -101.2, -30, 0)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("coruscant", "commoner", 60, -1924.6, 40, -98, 132, 0)
+  self:setMoodString(pNpc, "conversation")
+  
+  spawnMobile("coruscant", "commoner", 60, -1928.5, 40, -58.6, 0, 0)
+  spawnMobile("coruscant", "commoner", 60, -1966.5, 40, -15.6, -141, 0)
+  spawnMobile("coruscant", "commoner", 60, -1993.2, 40, -39.5, 178, 0)
+  spawnMobile("coruscant", "commoner", 60, -1979.8, 40, -85.3, -9, 0)
+  spawnMobile("coruscant", "commoner", 60, -1988.6, 40, -113.4, -178, 0)
+  spawnMobile("coruscant", "commoner", 60, -1977.9, 40, -154.9, -102, 0)
+  spawnMobile("coruscant", "commoner", 60, -1971.9, 40, -199.4, 85, 0)
+  
   
 end
