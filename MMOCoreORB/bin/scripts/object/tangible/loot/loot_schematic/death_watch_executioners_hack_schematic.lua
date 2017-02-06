@@ -45,7 +45,7 @@ object_tangible_loot_loot_schematic_death_watch_executioners_hack_schematic = ob
 	templateType = LOOTSCHEMATIC,
 	objectMenuComponent = "LootSchematicMenuComponent",
 	attributeListComponent = "LootSchematicAttributeListComponent",
-	requiredSkill = "crafting_weaponsmith_master",
+	requiredSkill = "trader_munitions_master",
 	targetDraftSchematic = "object/draft_schematic/weapon/executioners_hack.iff",
 	targetUseCount = 1
 }
