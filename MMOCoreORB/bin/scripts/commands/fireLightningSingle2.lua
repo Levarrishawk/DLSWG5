@@ -74,7 +74,7 @@ FireLightningSingle2Command = {
   
   poolsToDamage = HEALTH_ATTRIBUTE,
 
-	animation = "fire_acid_rifle_single_2", 
+	animation = "fire_lightning_rifle_single_2", 
 	animType = GENERATE_INTENSITY,
 
 	combatSpam = "firelightningsingle2",

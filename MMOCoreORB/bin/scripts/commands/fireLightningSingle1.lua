@@ -52,14 +52,14 @@ FireLightningSingle1Command = {
     visMod = 25,
 
   poolsToDamage = HEALTH_ATTRIBUTE,
-	animation = "fire_acid_rifle_single_1", 
+	animation = "fire_lightning_rifle_single_2", 
 	animType = GENERATE_INTENSITY,
 
 	combatSpam = "firelightningsingle1",
 	
 	weaponType = SPECIALHEAVYWEAPON,
 
-	range = 16
+	range = 64
 }
 
 AddCommand(FireLightningSingle1Command)

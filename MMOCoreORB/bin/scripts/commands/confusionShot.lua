@@ -74,7 +74,7 @@ ConfusionShotCommand = {
   
   poolsToDamage = HEALTH_ATTRIBUTE,
 
-	animation = "fire_5_special_single", 
+	animation = "fire_lightning_rifle_single_2", 
 	animType = GENERATE_RANGED,
 
 	combatSpam = "confusionshot",
