@@ -46,3 +46,6 @@ includeFile("outfits/serverobjects.lua")
 -- dlswg custom
 includeFile("custom-dlswg/serverobjects.lua")
 includeFile("heroics/serverobjects.lua")
+
+-- Dromund Kaas
+includeFile("kaas/serverobjects.lua")
