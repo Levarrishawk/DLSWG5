@@ -1171,3 +1171,14 @@ includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_chest_plat
 includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_gloves.lua")
 includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_helmet.lua")
 includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_leggings.lua")
+
+-- BH Armor
+includeFile("items/loot_schematic/armor/bounty_hunter/armor_bounty_hunter_bicep_l.lua")
+includeFile("items/loot_schematic/armor/bounty_hunter/armor_bounty_hunter_bicep_r.lua")
+includeFile("items/loot_schematic/armor/bounty_hunter/armor_bounty_hunter_boots.lua")
+includeFile("items/loot_schematic/armor/bounty_hunter/armor_bounty_hunter_bracer_l.lua")
+includeFile("items/loot_schematic/armor/bounty_hunter/armor_bounty_hunter_bracer_r.lua")
+includeFile("items/loot_schematic/armor/bounty_hunter/armor_bounty_hunter_chest_plate.lua")
+includeFile("items/loot_schematic/armor/bounty_hunter/armor_bounty_hunter_gloves.lua")
+includeFile("items/loot_schematic/armor/bounty_hunter/armor_bounty_hunter_helmet.lua")
+includeFile("items/loot_schematic/armor/bounty_hunter/armor_bounty_hunter_leggings.lua")

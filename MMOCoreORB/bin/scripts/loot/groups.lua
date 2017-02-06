@@ -369,3 +369,4 @@ includeFile("groups/deeds/vehicle/av_21.lua")
 
 -- Armor Schematics
 includeFile("groups/death_watch_bunker/death_watch_bunker_mandalorian_armor.lua")
+includeFile("groups/death_watch_bunker/death_watch_bunker_bounty_hunter_armor.lua")
