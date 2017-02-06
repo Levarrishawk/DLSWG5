@@ -1160,3 +1160,14 @@ includeFile("items/armor/armor_clone_trooper_imperial_s01_leggings.lua")
 
 -- Vehicles
 includeFile("items/deed/vehicle_deed/swoop_deed.lua")
+
+-- Mandalorian Armor
+includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_bicep_l.lua")
+includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_bicep_r.lua")
+includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_boots.lua")
+includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_bracer_l.lua")
+includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_bracer_r.lua")
+includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_chest_plate.lua")
+includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_gloves.lua")
+includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_helmet.lua")
+includeFile("items/loot_schematic/armor/mandalorian/armor_mandalorian_leggings.lua")

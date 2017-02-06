@@ -31,7 +31,8 @@ death_watch_overlord = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "death_watch_bunker_overlord_shared", chance =  10000000}
+				{group = "death_watch_bunker_overlord_shared", chance =  9000000},
+				{group = "death_watch_bunker_mandalorian_armor", chance = 1000000}
 			},
 			lootChance = 10000000
 		},

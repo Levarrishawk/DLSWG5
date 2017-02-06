@@ -366,3 +366,6 @@ includeFile("groups/wearables/jedi_robes_tier4_dark.lua")
 
 -- New Vehicles
 includeFile("groups/deeds/vehicle/av_21.lua")
+
+-- Armor Schematics
+includeFile("groups/death_watch_bunker/death_watch_bunker_mandalorian_armor.lua")
