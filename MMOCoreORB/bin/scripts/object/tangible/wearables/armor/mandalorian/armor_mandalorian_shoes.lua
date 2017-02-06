@@ -48,6 +48,8 @@ object_tangible_wearables_armor_mandalorian_armor_mandalorian_shoes = object_tan
           "combat_mando_novice",
           "combat_soldier_novice",
           "combat_shocktrooper_novice"},
+          
+  objectMenuComponent = "ArmorObjectMenuComponent",
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
@@ -108,7 +110,17 @@ object_tangible_wearables_armor_mandalorian_armor_mandalorian_shoes = object_tan
 	heat = 70,
 	cold = 70,
 	acid = 70,
-	lightSaber = 0
+	lightSaber = 15,
+
+  numberExperimentalProperties = {1, 1, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 1},
+  experimentalProperties = {"XX", "XX", "XX", "XX", "OQ", "SR", "OQ", "UT", "MA", "OQ", "MA", "OQ", "XX", "XX", "XX", "XX", "OQ", "SR", "XX"},
+  experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+  experimentalGroupTitles = {"null", "null", "null", "exp_durability", "exp_quality", "exp_resistance", "null", "null", "null", "null", "null", "exp_resistance", "null"},
+  experimentalSubGroupTitles = {"null", "null", "sockets", "hit_points", "armor_effectiveness", "armor_integrity", "armor_health_encumbrance", "armor_action_encumbrance", "armor_mind_encumbrance", "armor_rating", "armor_special_type", "armor_special_effectiveness", "armor_special_integrity"},
+  experimentalMin = {0, 0, 0, 1000, 1, 30000, 0, 0, 0, 1, 0, 0, 0},
+  experimentalMax = {0, 0, 0, 1000, 40, 50000, 0, 0, 0, 1, 0, 0, 0},
+  experimentalPrecision = {0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0},
+  experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_armor_mandalorian_armor_mandalorian_shoes, "object/tangible/wearables/armor/mandalorian/armor_mandalorian_shoes.iff")
