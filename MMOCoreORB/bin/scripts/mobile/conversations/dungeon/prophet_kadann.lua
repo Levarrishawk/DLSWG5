@@ -97,7 +97,7 @@ opt1e = ConvoScreen:new {
    customDialogText = "You would want to speak with Cronal, he's our unofficial Historian. He has spent more time studying old texts and salvaged databanks all over the planet than anyone in our order's history.  He would be the man to ask.",
   stopConversation = "false",
   options = {
-     {"But, The Dark Side?  Are you Sith?","opt2"},
+     {"You lead this group?","opt2"},
   }
 }
 prophet_kadann:addScreen(opt1e);
