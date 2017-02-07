@@ -229,11 +229,13 @@ int ImageDesignManager::getSkillLevel(CreatureObject* imageDesigner, const Strin
 	String skillName = "secondary_entertainer_";
 
 	if (skillMod == "body")
-		skillName += "bodyform_0";
+		skillName += "image_0";
 	else if (skillMod == "face")
-		skillName += "exotic_0";
+		skillName += "image_0";
 	else if (skillMod == "hair")
-		skillName += "hairstyle_0";
+		skillName += "image_0";
+	else if (skillMod == "markings")
+		skilName += "image_0";
 	else {
 		skillName += skillMod;
 		skillName += "_0";
