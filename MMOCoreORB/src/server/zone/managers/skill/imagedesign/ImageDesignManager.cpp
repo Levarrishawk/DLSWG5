@@ -235,7 +235,7 @@ int ImageDesignManager::getSkillLevel(CreatureObject* imageDesigner, const Strin
 	else if (skillMod == "hair")
 		skillName += "image_0";
 	else if (skillMod == "markings")
-		skilName += "image_0";
+		skillName += "image_0";
 	else {
 		skillName += skillMod;
 		skillName += "_0";
