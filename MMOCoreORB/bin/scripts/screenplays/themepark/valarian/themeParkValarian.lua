@@ -40,15 +40,13 @@ kavas_missions =
 			}
 		},
 		{
-			missionType = "escort",
+			missionType = "retrieve",
 			primarySpawns =
 			{
 				{ npcTemplate = "ysho", planetName = "talus", npcName = "Bick" }
 			},
 			secondarySpawns =
 			{
-			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
-			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
 			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
 			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
 			{ npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior" },
@@ -94,10 +92,6 @@ kavas_missions =
 			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
 			 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
 			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
-			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
 			 { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" }
 			               
 			},
@@ -117,10 +111,6 @@ kavas_missions =
 				 { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
        { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
        { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
-       { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
-       { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
-       { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
-       { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
        { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
        { npcTemplate = "jabba_enforcer", planetName = "talus", npcName = "Talus Savior Thug" },
        { npcTemplate = "bith_sniper", planetName = "talus", npcName = "Talus Savior Thug" },
@@ -145,7 +135,7 @@ kavas_missions =
 ind_missions =
 	{
 		{
-			missionType = "escort",
+			missionType = "retrieve",
 			primarySpawns =
 			{
 				{ npcTemplate = "valarian_compound_guard_quest", planetName = "talus", npcName = "Tylo" }
@@ -195,7 +185,7 @@ ind_missions =
 			}
 		},
 		{
-			missionType = "escort",
+			missionType = "retrieve",
       primarySpawns =
       {
         { npcTemplate = "ysho", planetName = "talus", npcName = "Bick" }
@@ -269,7 +259,7 @@ ind_missions =
 			}
 		}
 	}
-
+--[[
 lady_valarian_missions =
 	{
 		{
@@ -378,16 +368,18 @@ lady_valarian_missions =
 			}
 		},
 	}
+--]]
 
 npcMapThemeParkValarian =
 	{
-		{
+	--[[	{
 			spawnData = { planetName = "tatooine", npcTemplate = "lady_valarian", x = -23.84, z = 9.01, y = 0.61, direction = 147, cellID = 1076945, position = STAND },
 			worldPosition = { x = 3363, y = -4607 },
 			npcNumber = 4,
 			stfFile = "@static_npc/tatooine/lady_valarian",
 			missions = lady_valarian_missions
 		},
+		--]]
 		{
 			spawnData = { planetName = "talus", npcTemplate = "ind", x = 389, z = 6.0, y = -2949, direction = -89, cellID = 0, position = STAND },
 			worldPosition = { x = 389, y = -2949 },
