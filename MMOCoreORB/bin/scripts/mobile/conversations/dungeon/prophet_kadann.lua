@@ -7,7 +7,7 @@ prophet_kadann = ConvoTemplate:new {
 
 
 --Intro First
-herald_of_the_prophets_start = ConvoScreen:new {
+prophet_kadann_start = ConvoScreen:new {
   id = "prophet_kadann_start",
   leftDialog = "",
   customDialogText = "Greetings, I have been expecting you. I am Kadann, Supreme Prophet of the Dark Side. Indeed you are the one from my vision, Welcome to Dromund Kaas.",
