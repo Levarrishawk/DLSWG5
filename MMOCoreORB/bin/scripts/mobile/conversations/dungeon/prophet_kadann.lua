@@ -75,7 +75,7 @@ opt1c = ConvoScreen:new {
   customDialogText = "To save the galaxy, in your own small way.",
   stopConversation = "false",
   options = {
-    {"You said whatever this is was awoken?  What is it?","opt1c"},
+    {"You said whatever this is was awoken?  What is it?","opt1d"},
   }
 }
 prophet_kadann:addScreen(opt1c);
@@ -86,7 +86,7 @@ opt1d = ConvoScreen:new {
   customDialogText = "Many old ghosts haunt the ruins scattered about this world.  Long ago, this planet was once the capitol of the Sith Empire.  Though we Prophets have been here a long time we are not alone on this planet.",
   stopConversation = "false",
   options = {
-    {"Not alone? Who else would ","opt1d"},
+    {"Not alone? Who else would ","opt1e"},
   }
 }
 prophet_kadann:addScreen(opt1d);
