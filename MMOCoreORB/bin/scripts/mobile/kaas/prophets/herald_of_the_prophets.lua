@@ -1,8 +1,6 @@
 herald_of_the_prophets = Creature:new {
 	objectName = "@mob/creature_names:prophet_of_the_dark_side",
-	customName ="Sariss",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+	customName ="Sariss (a Prophetess of the Dark Side)",
 	socialGroup = "thug",
 	faction = "prophets",
 	level = 126,
@@ -33,7 +31,7 @@ herald_of_the_prophets = Creature:new {
 		"object/mobile/dressed_dark_jedi_human_female_01.iff"},
 	lootGroups = {},
   weapons = {},
-  conversationTemplate = "fake_imperial_officer",
+  conversationTemplate = "herald_of_the_prophets",
   attacks = {
   }
 }
