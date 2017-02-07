@@ -258,7 +258,7 @@ opt2 = ConvoScreen:new {
   stopConversation = "false",
   options = {
      {"Tell me about the Sith Shadow","opt2a"},
-     {"Tell me about the Cult of Vitiate","opt2a"},
+     {"Tell me about the Cult of Vitiate","opt2d"},
   }
 }
 prophet_cronal:addScreen(opt2);
