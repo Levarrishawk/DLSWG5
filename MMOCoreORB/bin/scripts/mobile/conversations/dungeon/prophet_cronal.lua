@@ -161,7 +161,7 @@ opt1i = ConvoScreen:new {
      {"That makes sense, what happened next?","opt1j"},
   }
 }
-prophet_cronal:addScreen(opt1j);
+prophet_cronal:addScreen(opt1i);
 
 opt1j = ConvoScreen:new {
   id = "opt1j",
