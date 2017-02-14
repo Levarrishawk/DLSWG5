@@ -63,7 +63,7 @@ public:
 		if (creature->getPlayerObject() == NULL)
 			return;
 
-		if (!maskScent && !creature->hasSkill("outdoors_ranger_novice"))
+		if (!maskScent && !creature->hasSkill("secondary_ranger_novice"))
 			return;
 
 		if (maskScent) {

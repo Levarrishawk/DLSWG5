@@ -52,9 +52,9 @@ public:
 			}
 
 			int maxType = 0;
-			if (player->hasSkill("outdoors_ranger_harvest_04")) {
+			if (player->hasSkill("secondary_ranger_explore_04")) {
 				maxType = 2;
-			} else if (player->hasSkill("outdoors_ranger_harvest_02")) {
+			} else if (player->hasSkill("secondary_ranger_explore_02")) {
 				maxType = 1;
 			}
 
@@ -68,8 +68,8 @@ public:
 			rangerTrackResults->setPromptText("@skl_use:scan_results_d"); // You have examined the tracks and clues in the area for information about what kinds of creatures might be nearby. This is what you have determined.
 			StringBuffer results;
 
-			bool canGetDirection = player->hasSkill("outdoors_ranger_harvest_01");
-		    bool canGetDistance = player->hasSkill("outdoors_ranger_harvest_03");
+			bool canGetDirection = player->hasSkill("secondary_ranger_explore_01");
+		    bool canGetDistance = player->hasSkill("secondary_ranger_explore_03");
 
 			SortedVector<ManagedReference<QuadTreeEntry*> > objects(512, 512);
 			zone->getInRangeObjects(player->getPositionX(), player->getPositionY(), 512, &objects, true);
