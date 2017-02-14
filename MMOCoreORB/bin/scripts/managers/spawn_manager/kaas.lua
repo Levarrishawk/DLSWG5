@@ -68,6 +68,3 @@ kaas_static_spawns = {
 
 }
 
-kaas_badges = {
-
-}
