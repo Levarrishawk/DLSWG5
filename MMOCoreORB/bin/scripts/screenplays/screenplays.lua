@@ -101,6 +101,8 @@ includeFile("dungeon/corellian_corvette/klaatu.lua")
 includeFile("dungeon/corellian_corvette/lt_lance.lua")
 
 -- Village
+
+--[[
 includeFile("village/village_gm_commands.lua")
 includeFile("village/village_jedi_manager_common.lua")
 includeFile("village/village_jedi_manager_holocron.lua")
@@ -160,7 +162,7 @@ includeFile("village/convos/phase1/fs_reflex1_prisoner_conv_handler.lua")
 includeFile("village/convos/phase2/whip_phase2_conv_handler.lua")
 includeFile("village/convos/phase2/dageerin_phase2_conv_handler.lua")
 includeFile("village/convos/phase3/dageerin_phase3_conv_handler.lua")
-
+--]]
 -- Events
 includeFile("events/conversations/bestine_artist_conv_handler.lua")
 includeFile("events/conversations/imperial_commander_conv_handler.lua")
