@@ -1,6 +1,6 @@
 dark_jedi_sentinel = Creature:new {
 	objectName = "@mob/creature_names:dark_jedi_sentinel",
-	customName = "The Bringer of Atonement",
+	customName = "Dark Jedi Deathbringer",
 	--randomNameType = NAME_GENERIC,
 	--randomNameTag = true,
 	socialGroup = "self",
@@ -13,7 +13,7 @@ dark_jedi_sentinel = Creature:new {
 	baseHAM = 9999999,
 	baseHAMmax = 9999999,
 	armor = 3,
-	resists = {95,95,95,95,95,95,95,95,-1},
+	resists = {100,100,100,100,100,100,100,100,100},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
