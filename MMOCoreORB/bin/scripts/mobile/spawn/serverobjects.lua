@@ -9,7 +9,8 @@ includeFile("spawn/rori_world.lua")
 includeFile("spawn/talus_world.lua")
 includeFile("spawn/tatooine_world.lua")
 includeFile("spawn/yavin4_world.lua")
-includeFile("spawn/chandrila_world.lua")
+
+
 
 includeFile("spawn/corellia_easy.lua")
 includeFile("spawn/corellia_medium.lua")
@@ -42,5 +43,9 @@ includeFile("spawn/destroy_mission/yavin4_destroy_missions.lua")
 includeFile("spawn/destroy_mission/factional_imperial_destroy_missions.lua")
 includeFile("spawn/destroy_mission/factional_neutral_destroy_missions.lua")
 includeFile("spawn/destroy_mission/factional_rebel_destroy_missions.lua")
-includeFile("spawn/destroy_mission/chandrila_destroy_missions.lua")
 
+
+-- new worlds
+includeFile("spawn/chandrila_world.lua")
+includeFile("spawn/kaas_world.lua")
+includeFile("spawn/destroy_mission/chandrila_destroy_missions.lua")
