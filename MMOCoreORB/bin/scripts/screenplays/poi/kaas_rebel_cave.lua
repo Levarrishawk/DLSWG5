@@ -32,7 +32,7 @@ end
 
 function kaas_rebel_cave:spawnSceneObjects()
 
- spawnSceneObject("kaas", "object/building/player/city/shuttleport_corellia.iff", 2852.3, 125.6, 3896.6, 0, math.rad(0) )
+ spawnSceneObject("kaas", "object/building/player/city/shuttleport_corellia.iff", 2852.3, 125.6, 3896.6, 0, math.rad(180) )
  
 
 end
