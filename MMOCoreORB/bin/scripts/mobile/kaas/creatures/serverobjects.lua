@@ -1,0 +1,6 @@
+includeFile("kaas/creatures/kaas_gundark.lua")
+includeFile("kaas/creatures/kaas_mailoc.lua")
+includeFile("kaas/creatures/kaas_sleen.lua")
+includeFile("kaas/creatures/kaas_vine_cat.lua")
+includeFile("kaas/creatures/kaas_ysalamiri.lua")
+includeFile("kaas/creatures/kell_dragon.lua")
