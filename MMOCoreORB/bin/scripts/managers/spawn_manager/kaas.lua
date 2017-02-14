@@ -41,23 +41,19 @@ WORLDSPAWNAREA      = 0x0010
 NOBUILDZONEAREA     = 0x0100
 
 kaas_regions = {
-        {"mysterious_shrine",-6374,6400,{1,30},NOSPAWNAREA + NOBUILDZONEAREA,1},
-        {"northern_islands_1",-70,6370,{1,100},NOSPAWNAREA + NOBUILDZONEAREA,1},
-        {"eastern_islands_1",2850,3890,{1,200},NOSPAWNAREA + NOBUILDZONEAREA,1},
-        {"eastern_islands_2",3342,2634,{1,500},NOSPAWNAREA + NOBUILDZONEAREA,1},
-        {"swamp_general_1",6017,-1141,{1,400},NOSPAWNAREA + NOBUILDZONEAREA,1},
-        {"a_rebel_outpost",-6131,2705,{1,700},NOSPAWNAREA + NOBUILDZONEAREA,1},
-        {"mysterious_shrine_2",-4495,-7535,{1,30},NOSPAWNAREA + NOBUILDZONEAREA,1},
-	{"narmle_easy_newbie",-5205,-2290,{1,1400},SPAWNAREA,1,"kaas_world",1256},
-	{"narmle_medium_newbie",-5200,-2290,{3,1400,2200},SPAWNAREA,1,"kaas_world",1384},
---      {"narmle_spike",-3389,-2096,{1,30},NOSPAWNAREA + NOBUILDZONEAREA,1},
---	{"northeast_mountains",0,0,{1,0},UNDEFINEDAREA,1},
+       
+        {"northern_islands_1",-70,6370,{1,100},NOSPAWNAREA + NOBUILDZONEAREA,1},  -- ruined sith complex
+        {"eastern_islands_1",2850,3890,{1,200},NOSPAWNAREA + NOBUILDZONEAREA,1},  -- smuggler outpost
+        {"eastern_islands_2",3342,2634,{1,500},NOBUILDZONEAREA,1},  -- gundark cave
+        {"swamp_general_1",6017,-1141,{1,400},NOSPAWNAREA + NOBUILDZONEAREA,1},-- tomb of vitiate
+        {"a_rebel_outpost",-6131,2705,{1,700},NOSPAWNAREA + NOBUILDZONEAREA,1},  -- kaas city
+
+	      {"narmle_easy_newbie",-5205,-2290,{1,1400},SPAWNAREA,1,"kaas_world",1256},
+	      {"narmle_medium_newbie",-5200,-2290,{3,1400,2200},SPAWNAREA,1,"kaas_world",1384},
         {"rebel_outpost",3677,-6447,{1,1500},SPAWNAREA,1,"kaas_world",1384},
---	{"restuss",0,0,{1,0},UNDEFINEDAREA,1},
-	{"restuss_easy_newbie",5300,5700,{1,1400},SPAWNAREA,1,"kaas_world",1256},
-	{"restuss_medium_newbie",5305,5700,{3,1400,2200},SPAWNAREA,1,"kaas_world",1384},
---      {"rori_gungan_swamp_town",-2073,3315,{1,200},NOSPAWNAREA + NOBUILDZONEAREA,1},
-	{"world_spawner",0,0,{1,-1},SPAWNAREA + WORLDSPAWNAREA,1,"kaas_world",2048},
+	      {"restuss_easy_newbie",5300,5700,{1,1400},SPAWNAREA,1,"kaas_world",1256},
+	      {"restuss_medium_newbie",5305,5700,{3,1400,2200},SPAWNAREA,1,"kaas_world",1384},
+	      {"world_spawner",0,0,{1,-1},SPAWNAREA + WORLDSPAWNAREA,1,"kaas_world",2048},
 
 
 }
