@@ -27,6 +27,14 @@ registerScreenPlay("kaas_rebel_cave", true)
 
 function kaas_rebel_cave:start()
 	self:spawnMobiles()
+	self:spawnSceneObjects()
+end
+
+function kaas_rebel_cave:spawnSceneObjects()
+
+ spawnSceneObject("kaas", "object/building/player/city/shuttleport_corellia.iff", 2852.3, 125.6, 3896.6, 0, math.rad(0) )
+ 
+
 end
 
 function kaas_rebel_cave:spawnMobiles()
