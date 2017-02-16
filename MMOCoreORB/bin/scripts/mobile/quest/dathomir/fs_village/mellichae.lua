@@ -27,6 +27,7 @@ mellichae = Creature:new {
 	templates = {"object/mobile/dressed_fs_village_enemy_mellichae.iff"},
 	lootGroups = {},
 	weapons = {"dark_jedi_weapons_gen2"},
+	reactionStf = "@npc_reaction/sith_shadow_mellichae",
 	attacks = merge(lightsabermaster,forcewielder)
 }
 
