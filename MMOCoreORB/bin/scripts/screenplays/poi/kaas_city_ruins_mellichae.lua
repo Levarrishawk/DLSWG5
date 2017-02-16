@@ -30,7 +30,7 @@ function kaas_city_ruins_mellichae:notifyTriggerDead(pTrigger, pPlayer)
         local pBoss = spawnMobile("jakku", "vitiate", 0, -0.2, -43.3, -150.7, 0, 36000020)
         ObjectManager.withCreatureObject(pBoss, function(oBoss)
         writeData("kaas_city_ruins_mellichae:spawnState", 1)
-        writeData("facilityboss1", oBoss:getObjectID())
+        writeData("kaasboss1", oBoss:getObjectID())
           spatialChat(pBoss, "My life spans millennia. Legions have risen to test me.  My ascendance is inevitable. A day, a year, a millennium... it matters not. I hold the patience of stone and the will of stars. Your striving is insignificant. Let your death be the same..")
             createObserver(DAMAGERECEIVED,"kaas_city_ruins_mellichae","boss_damage", pBoss)
             createObserver(OBJECTDESTRUCTION, "kaas_city_ruins_mellichae", "notifyBossDead", pBoss)
@@ -48,7 +48,7 @@ end
  
 function kaas_city_ruins_mellichae:despawnBoss(pBoss, pPlayer)
       forcePeace(pBoss)
-        spHelper.destroy(readData("facilityboss1"),true)
+        spHelper.destroy(readData("kaasboss1"),true)
       writeData("kaas_city_ruins_mellichae:spawnState", 0)
     return 0
 end
@@ -65,8 +65,8 @@ function kaas_city_ruins_mellichae:boss_damage(pBoss, pPlayer)
   local bossMaxAction = boss:getMaxHAM(3)
   local bossMaxMind = boss:getMaxHAM(6)
    
-  local x1 = -32.6
-  local y1 = -17.9
+  local x1 = -0.2
+  local y1 = -150.7
   local x2 = boss:getPositionX()
   local y2 = boss:getPositionY()
    
