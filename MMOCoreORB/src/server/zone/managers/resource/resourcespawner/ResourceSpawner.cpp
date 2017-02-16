@@ -1064,8 +1064,8 @@ void ResourceSpawner::sendSampleResults(CreatureObject* player, const float dens
 
 		if (wound > 0) {
 			player->addWounds(CreatureAttribute::HEALTH, wound, true);
-			player->addWounds(CreatureAttribute::ACTION, wound, true);
-			player->addWounds(CreatureAttribute::MIND, wound, true);
+			//player->addWounds(CreatureAttribute::ACTION, wound, true);
+			//player->addWounds(CreatureAttribute::MIND, wound, true);
 		}
 	}
 }
