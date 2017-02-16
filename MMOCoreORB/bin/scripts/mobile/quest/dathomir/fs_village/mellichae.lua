@@ -22,12 +22,14 @@ mellichae = Creature:new {
 	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
-	creatureBitmask = KILLER,
-	diet = HERBIVORE,
+  creatureBitmask = KILLER,
+  optionsBitmask = AIENABLED,
+  diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_fs_village_enemy_mellichae.iff"},
 	lootGroups = {},
 	weapons = {"dark_jedi_weapons_gen2"},
+	conversationTemplate = "",
 	reactionStf = "@npc_reaction/sith_shadow_mellichae",
 	attacks = merge(lightsabermaster,forcewielder)
 }
