@@ -27,7 +27,22 @@ vitiate = Creature:new {
 	scale = 1.1,
 
 	templates = {"object/mobile/ep3/palpatine_hologram.iff"},
-	lootGroups = {},
+	lootGroups = {
+    {
+      groups = {
+        {group = "holocron_dark", chance = 600000},
+        {group = "holocron_light", chance = 600000},
+        {group = "crystals_premium", chance = 600000},
+        {group = "nge_housing_all", chance = 1300000},
+        {group = "pistols", chance = 1300000},
+        {group = "melee_weapons", chance = 1300000},
+        {group = "armor_attachments", chance = 1100000},
+        {group = "clothing_attachments", chance = 1100000},
+        {group = "carbines", chance = 1300000},
+        {group = "dark_jedi_common", chance = 800000}
+      }
+    }
+  },
 	weapons = {"dark_jedi_weapons_gen4"},
   conversationTemplate = "",
   attacks = merge(lightsabermaster,forcepowermaster)
