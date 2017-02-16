@@ -217,7 +217,7 @@ function KaasCityScreenPlay:spawnMobiles()
 	
 	-- Mellichae / Hidden Enclave Interior
 
-	--spawnMobile("kaas", "mellichae", 10800, -0.0, -35.4, -103.8, 0, 36000021)
+	spawnMobile("kaas", "dark_jedi_master", 10800, -0.0, -35.4, -103.8, 0, 36000021)
 	
 	spawnMobile("kaas", "sith_shadow_pirate", 200, 13.9, -43.4, -57.6, 179, 36000021)
 	spawnMobile("kaas", "sith_shadow_pirate", 200, 10.9, -43.4, -57.6, 179, 36000021)

@@ -17,7 +17,7 @@ end
 
 function kaas_city_ruins_mellichae:spawnMobiles()
 
-  local pTrigger = spawnMobile("kaas", "mellichae", 10800, -0.0, -35.4, -103.8, 0, 36000021)
+  local pTrigger = spawnMobile("kaas", "mellichae", 10800, -0.2, -43.3, -150.7, 0, 36000020)
         if (pTrigger ~= nil ) then
         createObserver(OBJECTDESTRUCTION, "kaas_city_ruins_mellichae", "notifyTriggerDead", pTrigger)
         end
