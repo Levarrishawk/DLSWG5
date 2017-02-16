@@ -1,5 +1,6 @@
 mellichae = Creature:new {
 	objectName = "@mob/creature_names:mellichae",
+	customName = "Mellichae (Voice of the Sith Emperor)",
 	socialGroup = "sith_shadow",
 	faction = "sith_shadow",
 	level = 140,
