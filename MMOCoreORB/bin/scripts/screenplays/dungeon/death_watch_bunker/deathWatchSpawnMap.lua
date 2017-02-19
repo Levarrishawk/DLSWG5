@@ -4,6 +4,7 @@ deathWatchQuestNpcs = {
 	{"mand_bunker_technician", 1, -23.9, -52, -163.8, 45, 5996378},
 	{"death_watch_medical_droid", 1, -80.3, -20, -121, -34, 5996329},
 	{"death_watch_rescue_scientist", 1, 113.9,-68,-187,1,5996351},
+	{"boba_fett", 1, -4676, 12, 4331, -90, 0},
 }
 
 deathWatchSpecialSpawns = {
