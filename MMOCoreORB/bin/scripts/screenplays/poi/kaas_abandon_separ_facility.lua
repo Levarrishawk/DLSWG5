@@ -52,8 +52,10 @@ function KaasSeparatistScreenPlay:spawnMobiles()
 	spawnMobile("kaas", "death_watch_s_battle_droid", 200, -56.3, -18.0, -81.7, -90, 36000113)
 	spawnMobile("kaas", "death_watch_s_battle_droid", 200, -61.7, -21.8, -110.2, 0, 36000114)
 	spawnMobile("kaas", "crazed_geonosian_guard", 200, -109.3, -22.2, -111.9, 90, 36000115)
+	--[[
 	spawnMobile("kaas", "alert_droideka", 200, -42.6, -22.0, -110.0, -90, 36000116)
 	spawnMobile("kaas", "alert_droideka", 200, -42.3, -21.9, -98.0, -179, 36000116)
+	
 	spawnMobile("kaas", "death_watch_s_battle_droid", 200, -4.0, -30.1, -98.0, -90, 36000117)
 	spawnMobile("kaas", "alert_droideka", 200, 25.2, -30.1, -97.9, -90, 36000118)
 	spawnMobile("kaas", "alert_droideka", 200, -62.3, -21.8, -123.5, 0, 36000118)
@@ -69,6 +71,6 @@ function KaasSeparatistScreenPlay:spawnMobiles()
 	spawnMobile("kaas", "death_watch_battle_droid", 200, -71.8, -34.0, -275.2, 0, 36000135)
 	spawnMobile("kaas", "alert_droideka", 200, -130.1, -33.8, -227.8, 90, 36000136)
 
-
+--]]
 
    end
