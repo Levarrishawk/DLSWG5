@@ -1,6 +1,6 @@
 stormtrooper_prophets = Creature:new {
 	objectName = "@mob/creature_names:stormtrooper",
-	randomNameType = NAME_STORMTROOPER,
+	customName = "a Prophet Trooper",
 	socialGroup = "thug",
 	faction = "prophets",
 	level = 25,
@@ -27,7 +27,7 @@ stormtrooper_prophets = Creature:new {
 	diet = HERBIVORE,
 	scale = 1.05,
 
-	templates = {"object/mobile/dressed_stormtrooper_m.iff"},
+	templates = {"object/mobile/dressed_stormtrooper_black_black.iff"},
 	lootGroups = {
 		{
 			groups = {
