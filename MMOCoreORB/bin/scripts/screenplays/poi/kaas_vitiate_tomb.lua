@@ -36,8 +36,13 @@ function KaasVitiateScreenPlay:notifySpawnArea(pActiveArea, pMovingObject)
     
     if (player:isImperial() or player:isRebel()or player:isNeutral()) then
       player:sendSystemMessage("Your intrusion into the tomb has awoken spirits of ancient Sith!")
-      spawnMobile("kaas", "sith_ghost", 1, 2.2, 0.0, 0.3, 0, 36000090)
-      spawnMobile("kaas", "sith_ghost", 1, -2.8, 0.0, -6.8, 0, 36000090)
+      local pMob1 = spawnMobile("kaas", "sith_ghost", 0, 2.2, 0.0, 0.3, 0, 36000090)
+      ObjectManager.withCreatureObject(pMob1, function(firstTime)
+      firstTime:engageCombat(player)end)
+    
+      local pMob2 = spawnMobile("kaas", "sith_ghost", 0, -2.8, 0.0, -6.8, 0, 36000090)
+      ObjectManager.withCreatureObject(pMob2, function(secondTime)
+      secondTime:engageCombat(player)end)
       end
     return 0    
   end)
