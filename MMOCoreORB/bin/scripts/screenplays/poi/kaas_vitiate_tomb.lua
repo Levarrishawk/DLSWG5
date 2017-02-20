@@ -54,16 +54,17 @@ function KaasVitiateScreenPlay:spawnMobiles()
 
 
 
-	spawnMobile("kaas", "sith_ghost", 200, -10.9, 0.0, -2.4, 179, 36000092) --86
-	spawnMobile("kaas", "sith_ghost", 200, -19.4, 0.0, -2.5, 90, 36000092)
-	spawnMobile("kaas", "sith_ghost", 200, -19.5, 0.0, -23.3, 0, 36000094)
-	spawnMobile("kaas", "sith_ghost", 200, -0.3, -0.0, -32.2, 0, 36000095)
+	spawnMobile("kaas", "sith_ghost", 200, -10.9, 0.0, -2.4, 179, 36000092) 
+	spawnMobile("kaas", "sith_ghost", 200, -19.4, 0.0, -2.5, 90, 36000092)  
+	spawnMobile("kaas", "sith_ghost", 200, -19.5, 0.0, -23.3, 0, 36000094) 
 	spawnMobile("kaas", "sith_ghost", 200, -8.5, 0.0, -24.4, -90, 36000094)
 	spawnMobile("kaas", "sith_ghost", 200, -8.5, 0.0, -22.0, -90, 36000094)
-	spawnMobile("kaas", "sith_ghost", 200, 2.1, 0.0, -43.1, 0, 36000095)
-	spawnMobile("kaas", "sith_ghost", 200, -0.2, 0.0, -40.0, 179, 36000095)
-	spawnMobile("kaas", "sith_ghost", 200, -4.1, 0.0, -43.4, 90, 36000095)
-	spawnMobile("kaas", "sith_ghost", 200, -13.0, -6.0, -20.0, 90, 36000095)
+	
+	spawnMobile("kaas", "sith_ghost", 200, -0.3, -0.0, -32.2, 0, 36000095) 
+	spawnMobile("kaas", "sith_ghost", 200, 2.1, 0.0, -43.1, 0, 36000095) 
+	spawnMobile("kaas", "sith_ghost", 200, -0.2, 0.0, -40.0, 179, 36000095) 
+	spawnMobile("kaas", "sith_ghost", 200, -4.1, 0.0, -43.4, 90, 36000095) 
+--	spawnMobile("kaas", "sith_ghost", 200, -13.0, -6.0, -20.0, 90, 36000095)
 	
 	spawnMobile("kaas", "sith_ghost", 200, -12.6, -4.0, -35.7, 179, 36000096)
 	spawnMobile("kaas", "sith_ghost", 200, 0.7, -6.0, -29.9, 179, 36000097)
