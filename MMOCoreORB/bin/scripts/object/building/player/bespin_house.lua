@@ -1,7 +1,7 @@
 object_building_player_bespin_house = object_building_player_shared_bespin_house:new {
 	lotSize = 2,
 	baseMaintenanceRate = 10,
-	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "chandrila"},
+	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "chandrila", "kaas"},
 	publicStructure = 0,
 	length = 1,
 	width = 1,

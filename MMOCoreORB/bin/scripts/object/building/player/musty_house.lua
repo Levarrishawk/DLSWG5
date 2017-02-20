@@ -1,7 +1,7 @@
 object_building_player_musty_house = object_building_player_shared_musty_house:new {
 	lotSize = 4,
 	baseMaintenanceRate = 30,
-	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "chandrila"},
+	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "chandrila", "kaas"},
 	publicStructure = 0,
 	constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
 	length = 1,

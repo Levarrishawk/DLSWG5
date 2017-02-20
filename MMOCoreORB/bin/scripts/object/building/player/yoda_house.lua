@@ -1,7 +1,7 @@
 object_building_player_yoda_house = object_building_player_shared_yoda_house:new {
 	lotSize = 1,
 	baseMaintenanceRate = 10,
-	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "chandrila"},
+	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "chandrila", "kaas"},
 	publicStructure = 0,
 	skillMods = {
 		{"private_medical_rating", 300},
