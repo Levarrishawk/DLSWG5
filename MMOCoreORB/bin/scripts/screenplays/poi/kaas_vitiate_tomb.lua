@@ -8,10 +8,10 @@ registerScreenPlay("KaasVitiateScreenPlay", true)
 
 function KaasVitiateScreenPlay:start()
 	self:spawnMobiles()
-	self:spawnActiveAreas()
+	self:spawnActiveArea1()
 end
 
-function KaasVitiateScreenPlay:spawnActiveAreas()
+function KaasVitiateScreenPlay:spawnActiveArea1()
   local pSpawnArea = spawnSceneObject("kaas", "object/active_area.iff", 5896.9, 81, -1137.0, 0, 36000090)
     
   if (pSpawnArea ~= nil) then
@@ -51,34 +51,32 @@ end
 function KaasVitiateScreenPlay:spawnMobiles()
 -- Entrance
 
---[[
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -0.1, 0.0, 0.3, 0, 35791484)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, 2.0, 0.0, -4.2, 0, 35791484)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -2.1, 0.0, -4.2, 0, 35791484)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, 2.9, 0.0, -8.5, 0, 35791484)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, 0.4, 0.0, -8.5, 0, 35791484)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -2.9, 0.0, -8.5, 0, 35791484)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -10.2, 0.0, -11.6, 90, 35791485)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -10.9, 0.0, -2.4, 179, 35791486)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -19.4, 0.0, -2.5, 90, 35791486)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -19.5, 0.0, -23.3, 0, 35791488)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -0.3, -0.0, -32.2, 0, 35791489)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -8.5, 0.0, -24.4, -90, 35791488)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -8.5, 0.0, -22.0, -90, 35791488)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, 2.1, 0.0, -43.1, 0, 35791489)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -0.2, 0.0, -40.0, 179, 35791489)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -4.1, 0.0, -43.4, 90, 35791489)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -12.6, -4.0, -35.7, 179, 35791490)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, 0.7, -6.0, -29.9, 179, 35791491)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, 15.0, -6.0, -18.8, -90, 35791491)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -13.0, -6.0, -20.0, 90, 35791489)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -2.8, -6.4, -4.1, -90, 35791494)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -6.1, -6.4, -1.6, 179, 35791494)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -10.0, -6.4, -4.1, 90, 35791494)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, 8.9, -6.4, -3.9, 179, 35791495)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, 4.8, -6.4, -4.0, 179, 35791495)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, 23.4, -6.5, -6.3, -45, 35791492)
-	spawnMobile("kaas", "insane_vitiate_cultist", 200, -22.7, -6.5, -6.5, 45, 35791493)
+
+
+
+	spawnMobile("kaas", "sith_ghost", 200, -10.9, 0.0, -2.4, 179, 36000092) --86
+	spawnMobile("kaas", "sith_ghost", 200, -19.4, 0.0, -2.5, 90, 36000092)
+	spawnMobile("kaas", "sith_ghost", 200, -19.5, 0.0, -23.3, 0, 36000094)
+	spawnMobile("kaas", "sith_ghost", 200, -0.3, -0.0, -32.2, 0, 36000095)
+	spawnMobile("kaas", "sith_ghost", 200, -8.5, 0.0, -24.4, -90, 36000094)
+	spawnMobile("kaas", "sith_ghost", 200, -8.5, 0.0, -22.0, -90, 36000094)
+	spawnMobile("kaas", "sith_ghost", 200, 2.1, 0.0, -43.1, 0, 36000095)
+	spawnMobile("kaas", "sith_ghost", 200, -0.2, 0.0, -40.0, 179, 36000095)
+	spawnMobile("kaas", "sith_ghost", 200, -4.1, 0.0, -43.4, 90, 36000095)
+	spawnMobile("kaas", "sith_ghost", 200, -13.0, -6.0, -20.0, 90, 36000095)
 	
-	--]]
+	spawnMobile("kaas", "sith_ghost", 200, -12.6, -4.0, -35.7, 179, 36000096)
+	spawnMobile("kaas", "sith_ghost", 200, 0.7, -6.0, -29.9, 179, 36000097)
+	spawnMobile("kaas", "sith_ghost", 200, 15.0, -6.0, -18.8, -90, 36000097)
+	spawnMobile("kaas", "sith_ghost", 200, 23.4, -6.5, -6.3, -45, 36000098)
+	spawnMobile("kaas", "sith_ghost", 200, -22.7, -6.5, -6.5, 45, 36000099)
+	spawnMobile("kaas", "sith_ghost", 200, -2.8, -6.4, -4.1, -90, 36000100)
+	spawnMobile("kaas", "sith_ghost", 200, -6.1, -6.4, -1.6, 179, 36000100)
+	spawnMobile("kaas", "sith_ghost", 200, -10.0, -6.4, -4.1, 90, 36000100)
+	spawnMobile("kaas", "sith_ghost", 200, 8.9, -6.4, -3.9, 179, 36000101)
+	spawnMobile("kaas", "sith_ghost", 200, 4.8, -6.4, -4.0, 179, 36000101)
+	
+	
+	
+
    end
