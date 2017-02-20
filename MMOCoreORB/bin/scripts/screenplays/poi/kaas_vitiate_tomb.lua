@@ -12,10 +12,14 @@ function KaasVitiateScreenPlay:start()
 end
 
 function KaasVitiateScreenPlay:spawnActiveAreas()
-  local pSpawnArea = spawnActiveArea("kaas", "object/active_area.iff", 5896.9, 81, -1137.0, 0, 36000090)
+  local pSpawnArea = spawnSceneObject("kaas", "object/active_area.iff", 5896.9, 81, -1137.0, 0, 36000090)
     
   if (pSpawnArea ~= nil) then
-          createObserver(ENTEREDAREA, "KaasVitiateScreenPlay", "notifySpawnArea", pSpawnArea)          
+    local activeArea = LuaActiveArea(pSpawnArea)
+          activeArea:setCellObjectID(36000090)
+          activeArea:setRadius(512)
+          createObserver(ENTEREDAREA, "KaasVitiateScreenPlay", "notifySpawnArea", pSpawnArea)
+          --createObserver(EXITEDAREA, "KaasVitiateScreenPlay", "notifySpawnAreaLeave", pSpawnArea)
       end
 end
 
