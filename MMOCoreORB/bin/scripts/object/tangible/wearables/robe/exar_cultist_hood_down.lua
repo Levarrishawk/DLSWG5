@@ -41,33 +41,40 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_tangible_wearables_robe_exar_cultist_hood_down = object_tangible_wearables_robe_shared_exar_cultist_hood_down:new {
+	playerRaces = { "object/creature/player/bothan_male.iff",
+				"object/creature/player/bothan_female.iff",
+				"object/creature/player/human_male.iff",
+				"object/creature/player/human_female.iff",
+				"object/creature/player/ithorian_male.iff",
+				"object/creature/player/ithorian_female.iff",
+				"object/creature/player/moncal_male.iff",
+				"object/creature/player/moncal_female.iff",
+				"object/creature/player/rodian_male.iff",
+				"object/creature/player/rodian_female.iff",
+				"object/creature/player/sullustan_male.iff",
+				"object/creature/player/sullustan_female.iff",
+				"object/creature/player/trandoshan_male.iff",
+				"object/creature/player/trandoshan_female.iff",
+				"object/creature/player/twilek_male.iff",
+				"object/creature/player/twilek_female.iff",
+				"object/creature/player/wookiee_male.iff",
+				"object/creature/player/wookiee_female.iff",
+				"object/creature/player/zabrak_male.iff",
+				"object/creature/player/zabrak_female.iff" },
+				
+				skillMods = {
+				   {"saber_block", 20},
+           {"jedi_toughness", 10},
+           {"lightsaber_toughness", 25},
+           {"forcelightning_accuracy", 25}
+				},
 
---Children folder includes
+				noTrade = 0,
 
--- Server Objects
-includeFile("tangible/wearables/robe/aakuan_robe.lua")
-includeFile("tangible/wearables/robe/robe_inquisitor.lua")
-includeFile("tangible/wearables/robe/robe_jedi_dark_s01.lua")
-includeFile("tangible/wearables/robe/robe_jedi_dark_s02.lua")
-includeFile("tangible/wearables/robe/robe_jedi_dark_s03.lua")
-includeFile("tangible/wearables/robe/robe_jedi_dark_s04.lua")
-includeFile("tangible/wearables/robe/robe_jedi_dark_s05.lua")
-includeFile("tangible/wearables/robe/robe_jedi_light_s01.lua")
-includeFile("tangible/wearables/robe/robe_jedi_light_s02.lua")
-includeFile("tangible/wearables/robe/robe_jedi_light_s03.lua")
-includeFile("tangible/wearables/robe/robe_jedi_light_s04.lua")
-includeFile("tangible/wearables/robe/robe_jedi_light_s05.lua")
-includeFile("tangible/wearables/robe/robe_jedi_padawan.lua")
-includeFile("tangible/wearables/robe/robe_jedi_test.lua")
-includeFile("tangible/wearables/robe/robe_prefect_talmont.lua")
-includeFile("tangible/wearables/robe/robe_s01.lua")
-includeFile("tangible/wearables/robe/robe_s04.lua")
-includeFile("tangible/wearables/robe/robe_s05.lua")
-includeFile("tangible/wearables/robe/robe_s05_h1.lua")
-includeFile("tangible/wearables/robe/robe_s12.lua")
-includeFile("tangible/wearables/robe/robe_s18.lua")
-includeFile("tangible/wearables/robe/robe_s27.lua")
-includeFile("tangible/wearables/robe/robe_tusken_raider_s01.lua")
-includeFile("tangible/wearables/robe/robe_tusken_raider_s02.lua")
--- New items
-includeFile("tangible/wearables/robe/exar_cultist_hood_down.lua")
+				objectMenuComponent = "RobeObjectMenuComponent",
+				--certificationsRequired = {"combat_jedi_light_04"},
+				attributeListComponent = "JediRobeAttributeListComponent",
+}
+
+ObjectTemplates:addTemplate(object_tangible_wearables_robe_exar_cultist_hood_down, "object/tangible/wearables/robe/exar_cultist_hood_down.iff")
