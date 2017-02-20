@@ -26,11 +26,10 @@ herald_of_the_prophets = Creature:new {
   optionsBitmask = AIENABLED + CONVERSABLE,
   diet = HERBIVORE,
 
-	templates = {
-		--"object/mobile/dressed_dark_jedi_human_male_01.iff",
-		"object/mobile/dressed_dark_jedi_human_female_01.iff"},
-	lootGroups = {},
+	templates = {"object/mobile/mara_jade.iff"},
+  lootGroups = {},
   weapons = {},
+  outfit = "prophet_outfit",
   conversationTemplate = "herald_of_the_prophets",
   attacks = {
   }
