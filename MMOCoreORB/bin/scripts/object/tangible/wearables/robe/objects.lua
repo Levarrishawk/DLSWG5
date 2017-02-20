@@ -1458,9 +1458,9 @@ object_tangible_wearables_robe_shared_robe_tusken_raider_s02 = SharedTangibleObj
 ObjectTemplates:addClientTemplate(object_tangible_wearables_robe_shared_robe_tusken_raider_s02, "object/tangible/wearables/robe/shared_robe_tusken_raider_s02.iff")
 --
 object_tangible_wearables_robe_shared_exar_cultist_hood_down = SharedTangibleObjectTemplate:new {
-  clientTemplateFileName = "object/tangible/wearables/robe/shared_exar_cultist_hood_down.iff"
- 
-
+  clientTemplateFileName = "object/tangible/wearables/robe/shared_exar_cultist_hood_down.iff",
+  objectName = "@wearables_name:exar_cultist_hood_down_n",
+  detailedDescription = "@wearables_detail:exar_cultist_hood_down",
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_wearables_robe_shared_exar_cultist_hood_down, "object/tangible/wearables/robe/shared_exar_cultist_hood_down.iff")
