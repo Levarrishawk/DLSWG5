@@ -28,6 +28,7 @@ lord_hethrir = Creature:new {
 	templates = {"object/mobile/lord_hethrir.iff"},
 	lootGroups = {},
 	weapons = {},
+	outfit = "prophet_outfit",
 	conversationTemplate = "theme_park_imperial_mission_giver_convotemplate",
 	outfit = "lord_hethrir_outfit",
 	attacks = {

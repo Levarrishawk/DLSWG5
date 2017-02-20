@@ -27,10 +27,11 @@ prophet_cronal = Creature:new {
   diet = HERBIVORE,
 
 	templates = {
-		"object/mobile/dressed_dark_jedi_human_male_01.iff"},
+		"object/mobile/loam_redge.iff"},
 		--"object/mobile/dressed_dark_jedi_human_female_01.iff"},
 	lootGroups = {},
   weapons = {},
+  outfit = "prophet_outfit",
   conversationTemplate = "prophet_cronal",
   attacks = {
   }

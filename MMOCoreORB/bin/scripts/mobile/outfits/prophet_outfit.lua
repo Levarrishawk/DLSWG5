@@ -1,6 +1,6 @@
 prophet_outfit = {
 	{ 
-		{objectTemplate = "object/tangible/wearables/robe/robe_jedi_light_s04.iff", customizationVariables = {} }
+		{objectTemplate = "object/tangible/wearables/robe/exar_cultist_hood_down.iff", customizationVariables = {} }
 	}
 	 
 }

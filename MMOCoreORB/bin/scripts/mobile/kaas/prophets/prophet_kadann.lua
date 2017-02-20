@@ -27,9 +27,10 @@ prophet_kadann = Creature:new {
   diet = HERBIVORE,
 
 	templates = {
-		"object/mobile/dressed_dark_jedi_human_male_01.iff"},
+		"object/mobile/lord_hethrir.iff"},
 		--"object/mobile/dressed_dark_jedi_human_female_01.iff"},
 	lootGroups = {},
+	outfit = "prophet_outfit",
   weapons = {},
   conversationTemplate = "prophet_kadann",
   attacks = {
