@@ -8,6 +8,39 @@ registerScreenPlay("KaasVitiateScreenPlay", true)
 
 function KaasVitiateScreenPlay:start()
 	self:spawnMobiles()
+	self:spawnActiveAreas()
+end
+
+function KaasVitiateScreenPlay:spawnActiveAreas()
+  local pSpawnArea = spawnActiveArea("kaas", "object/active_area.iff", 5896.9, 81, -1137.0, 0, 36000090)
+    
+  if (pSpawnArea ~= nil) then
+    local activeArea = LuaActiveArea(pSpawnArea)
+          activeArea:setCellObjectID(36000090)
+          --activeArea:setRadius(512)
+          createObserver(ENTEREDAREA, "KaasVitiateScreenPlay", "notifySpawnArea", pSpawnArea)
+          --createObserver(EXITEDAREA, "KaasVitiateScreenPlay", "notifySpawnAreaLeave", pSpawnArea)
+      end
+end
+
+function KaasVitiateScreenPlay:notifySpawnArea(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end
+    
+    if (player:isImperial() or player:isRebel()or player:isNeutral()) then
+      player:sendSystemMessage("Your intrusion into the tomb has awoken spirits of ancient Sith!")
+      spawnMobile("kaas", "sith_ghost", 1, 2.2, 0.0, 0.3, 0, 36000090)
+      spawnMobile("kaas", "sith_ghost", 1, -2.8, 0.0, -6.8, 0, 36000090)
+      end
+    return 0    
+  end)
 end
 
 function KaasVitiateScreenPlay:spawnMobiles()
