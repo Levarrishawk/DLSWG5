@@ -76,9 +76,7 @@ function jakku_weapons_facility_boss_6:boss_damage(pBoss, pPlayer)
   if distance > (maxDistance * maxDistance) then
   spatialChat(pBoss, "Hostiles retreating. Unit Standing down.")
  
-  boss:healDamage(pBoss, 0, 2000000)
-  boss:healDamage(pBoss, 3, 2000000)
-  boss:healDamage(pBoss, 6, 2000000)
+
   -- boss:setPvpStatusBitmask(0)
   forcePeace(pBoss)
   -- boss:setOptionsBitmask(128)

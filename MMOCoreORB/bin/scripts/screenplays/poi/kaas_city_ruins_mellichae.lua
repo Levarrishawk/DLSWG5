@@ -52,7 +52,7 @@ function kaas_city_ruins_mellichae:despawnBoss(pBoss, pPlayer)
       writeData("kaas_city_ruins_mellichae:spawnState", 0)
     return 0
 end
- 
+
 function kaas_city_ruins_mellichae:boss_damage(pBoss, pPlayer)
  
   local player = LuaCreatureObject(pPlayer)
@@ -76,16 +76,14 @@ function kaas_city_ruins_mellichae:boss_damage(pBoss, pPlayer)
   if distance > (maxDistance * maxDistance) then
   spatialChat(pBoss, "Do not fear death...")
  
-  boss:healDamage(pBoss, 0, 2000000)
-  boss:healDamage(pBoss, 3, 2000000)
-  boss:healDamage(pBoss, 6, 2000000)
-  -- boss:setPvpStatusBitmask(0)
+
+
   forcePeace(pBoss)
-  -- boss:setOptionsBitmask(128)
+
    
   createEvent(3500, "kaas_city_ruins_mellichae", "resetScreenplayStatus", pPlayer)
 end
- 
+
 if (((bossHealth <= (bossMaxHealth *0.95))) and readData("kaas_city_ruins_mellichae:spawnState") == 1) then
   spatialChat(pBoss, "You are mine. Servants. Slaves. Weapons. And you will obey…")
     writeData("kaas_city_ruins_mellichae:spawnState", 2)
